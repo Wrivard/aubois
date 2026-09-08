@@ -1,0 +1,170 @@
+import { Link, useLocation } from "wouter";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+
+export function Navbar() {
+  const [location] = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: "Accueil", href: "/" },
+    { name: "À propos", href: "/#a-propos" },
+    { name: "Réalisations", href: "/#realisations" },
+    { name: "Carrière", href: "/#carriere" },
+  ];
+
+  const servicesLinks = [
+    { name: "Résidentiel", href: "/#services" },
+    { name: "Commercial", href: "/#services" },
+    { name: "Rénovation", href: "/#services" },
+  ];
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-sm py-2" : "bg-white py-3"
+      }`}
+    >
+      <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
+        <Link href="/" className="relative z-50 block">
+          <img
+            src="/logo-lavallee.png"
+            alt="Lavallée Construction"
+            className="h-16 md:h-20 w-auto object-contain object-left"
+          />
+        </Link>
+
+        {/* Desktop Nav */}
+        <nav className="hidden lg:flex items-center gap-8">
+          <Link href="/" className="text-sm font-semibold hover:text-primary transition-colors">
+            Accueil
+          </Link>
+          <a href="/#a-propos" className="text-sm font-semibold hover:text-primary transition-colors">
+            À propos
+          </a>
+          
+          <div 
+            className="relative group"
+            onMouseEnter={() => setServicesDropdownOpen(true)}
+            onMouseLeave={() => setServicesDropdownOpen(false)}
+          >
+            <a href="/#services" className="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1">
+              Services <ChevronDown className="w-4 h-4" />
+            </a>
+            
+            {servicesDropdownOpen && (
+              <div className="absolute top-full left-0 pt-4 w-48">
+                <div className="bg-white border border-border shadow-lg flex flex-col p-2">
+                  {servicesLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="px-4 py-2 text-sm font-medium hover:bg-muted hover:text-primary transition-colors"
+                      onClick={() => setServicesDropdownOpen(false)}
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          <a href="/#realisations" className="text-sm font-semibold hover:text-primary transition-colors">
+            Réalisations
+          </a>
+          <a href="/#carriere" className="text-sm font-semibold hover:text-primary transition-colors">
+            Carrière
+          </a>
+        </nav>
+
+        <div className="hidden lg:block">
+          <Link href="/soumission">
+            <Button size="lg" className="font-bold tracking-wide uppercase text-xs">
+              Demander une soumission
+            </Button>
+          </Link>
+        </div>
+
+        {/* Mobile Toggle */}
+        <button
+          className="lg:hidden relative z-50 p-2 -mr-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Menu"
+        >
+          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 bg-white z-40 lg:hidden flex flex-col pt-24 px-6 h-[100dvh] overflow-y-auto">
+          <nav className="flex flex-col gap-6 text-xl font-bold">
+            <Link 
+              href="/" 
+              className="border-b border-border pb-4 hover:text-primary"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Accueil
+            </Link>
+            <a 
+              href="/#a-propos" 
+              className="border-b border-border pb-4 hover:text-primary"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              À propos
+            </a>
+            <div className="border-b border-border pb-4">
+              <span className="text-muted-foreground mb-4 block text-sm uppercase tracking-widest">Nos Services</span>
+              <div className="flex flex-col gap-4 pl-4 border-l-2 border-primary">
+                {servicesLinks.map(link => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-lg hover:text-primary"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <a 
+              href="/#realisations" 
+              className="border-b border-border pb-4 hover:text-primary"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Réalisations
+            </a>
+            <a 
+              href="/#carriere" 
+              className="border-b border-border pb-4 hover:text-primary"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Carrière
+            </a>
+          </nav>
+          
+          <div className="mt-auto py-8">
+            <Link href="/soumission" onClick={() => setMobileMenuOpen(false)}>
+              <Button size="lg" className="w-full font-bold tracking-wide uppercase text-sm h-14">
+                Demander une soumission
+              </Button>
+            </Link>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}

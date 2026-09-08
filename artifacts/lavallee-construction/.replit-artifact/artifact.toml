@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Lavallée Construction"
+description = "Site vitrine professionnel en français pour Lavallée Construction, avec présentation des services et réalisations, galerie, témoignages, FAQ et demande de soumission interactive en trois étapes."
+version = "1.0.0"
+id = "artifacts/lavallee-construction"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20943
+
+[services.development]
+run = "pnpm --filter @workspace/lavallee-construction run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lavallee-construction", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/lavallee-construction/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20943"
+BASE_PATH = "/"
