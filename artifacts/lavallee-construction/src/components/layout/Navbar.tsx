@@ -41,7 +41,7 @@ export function Navbar() {
           <img
             src="/logo-lavallee.png"
             alt="Lavallée Construction"
-            className="h-10 md:h-12 w-auto object-contain object-left"
+            className="h-15 md:h-18 w-auto object-contain object-left"
           />
         </Link>
 

@@ -44,7 +44,7 @@ export function TestimonialsSection() {
 export function FAQContactSection() {
   return (
     <section className="bg-muted">
-      <div className="container mx-auto px-6 md:px-12 py-24 grid lg:grid-cols-2 gap-16">
+      <div className="container mx-auto px-6 md:px-12 pt-24 pb-32 grid lg:grid-cols-2 gap-16">
         
         <div>
           <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Questions fréquentes</span>
@@ -82,7 +82,7 @@ export function FAQContactSection() {
           <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Coordonnées</span>
           <h2 className="text-4xl font-extrabold mb-10 text-secondary">Où nous trouver</h2>
           
-          <div className="bg-white border border-border p-8 h-full">
+          <div className="bg-white border border-border p-8 h-auto mb-10">
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <div className="bg-muted p-3">

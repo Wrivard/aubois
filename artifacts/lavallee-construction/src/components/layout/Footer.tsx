@@ -9,7 +9,7 @@ export function Footer() {
             <img 
               src="/logo-lavallee.png" 
               alt="Lavallée Construction" 
-              className="h-16 w-auto object-contain object-left mb-6"
+              className="h-24 w-auto object-contain object-left mb-6"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               L'excellence en construction résidentielle et commerciale au Québec. Une gestion rigoureuse pour des résultats impeccables.

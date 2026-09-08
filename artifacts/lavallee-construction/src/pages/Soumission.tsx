@@ -70,7 +70,15 @@ export default function Soumission() {
   return (
     <MainLayout>
       {/* Restrained Header Visual */}
-      <section className="relative pt-32 pb-16 bg-[#1B1B1B] text-white">
+      <section className="relative pt-32 pb-16 bg-[#1B1B1B] text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/quote-header.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center opacity-30"
+          />
+          <div className="absolute inset-0 bg-[#1B1B1B]/80" />
+        </div>
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Estimation gratuite</span>
