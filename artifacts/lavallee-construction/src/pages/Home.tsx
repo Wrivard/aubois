@@ -20,7 +20,7 @@ export default function Home() {
           >
             <source src="/lavallee-hero.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-[#1B1B1B]/55"></div>
+          <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
         </div>
 
         <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-20 pb-10">
