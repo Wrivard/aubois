@@ -43,8 +43,8 @@ export function TestimonialsSection() {
 
 export function FAQContactSection() {
   return (
-    <section className="py-24 bg-muted">
-      <div className="container mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-16">
+    <section className="bg-muted">
+      <div className="container mx-auto px-6 md:px-12 py-24 grid lg:grid-cols-2 gap-16">
         
         <div>
           <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Questions fréquentes</span>
@@ -82,7 +82,7 @@ export function FAQContactSection() {
           <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Coordonnées</span>
           <h2 className="text-4xl font-extrabold mb-10 text-secondary">Où nous trouver</h2>
           
-          <div className="bg-white border border-border p-8 mb-8">
+          <div className="bg-white border border-border p-8 h-full">
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <div className="bg-muted p-3">
@@ -113,17 +113,19 @@ export function FAQContactSection() {
               </li>
             </ul>
           </div>
-          
-          {/* Map Placeholder */}
-          <div className="bg-border h-64 w-full flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")'}}></div>
-            <div className="text-center relative z-10">
-              <MapPin className="w-10 h-10 text-primary mx-auto mb-2" />
-              <span className="font-bold text-secondary uppercase tracking-widest text-sm">Zone de service : Grand Montréal</span>
-            </div>
-          </div>
         </div>
-        
+      </div>
+      
+      {/* Full Bleed Embed Map */}
+      <div className="w-full h-[400px]">
+        <iframe
+          title="Zone de service Lavallée Construction - Montréal"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0%2C45.3%2C-73.4%2C45.7&layer=mapnik"
+        ></iframe>
       </div>
     </section>
   );

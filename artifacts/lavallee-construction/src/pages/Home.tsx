@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] md:min-h-[100dvh] flex items-center pt-24 md:pt-0">
-        <div className="absolute inset-0 bg-secondary">
+      <section className="relative h-[100dvh] flex flex-col">
+        <div className="absolute inset-0 bg-[#1B1B1B]">
           <video 
             autoPlay 
             muted 
@@ -20,10 +20,10 @@ export default function Home() {
           >
             <source src="/hero-bg.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
         </div>
 
-        <div className="container relative z-10 mx-auto px-6 md:px-12 py-12 md:py-24">
+        <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-20 pb-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary-foreground border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
@@ -32,7 +32,7 @@ export default function Home() {
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight">
               Bâtir solide. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Livrer juste.</span>
+              <span className="text-primary">Livrer juste.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed font-medium">
@@ -196,7 +196,7 @@ export default function Home() {
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[3/4]">
                 <img src={proj.img} alt={proj.title} className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
+                <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
                 </div>
@@ -210,10 +210,10 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* CTA Background */}
-      <section className="relative py-32 bg-secondary text-white overflow-hidden">
+      <section className="relative py-32 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img src="/cta-bg.jpg" alt="Blueprints" className="w-full h-full object-cover opacity-20" />
-          <div className="absolute inset-0 bg-secondary/80"></div>
+          <div className="absolute inset-0 bg-[#1B1B1B]/80"></div>
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
