@@ -1,0 +1,364 @@
+Update the EXISTING website template for O. Renaud Construction Inc.
+
+IMPORTANT:
+- DO NOT redesign the website.
+- DO NOT change the current layout.
+- DO NOT change the structure, spacing, components, navigation, animations, styling, or overall design.
+- DO NOT create a new website or new visual direction.
+- ONLY replace the existing business information, text, services, contact information, calls-to-action and SEO content with content appropriate for O. Renaud Construction Inc.
+- Keep all existing sections/components in their current locations and adapt the content to fit them.
+- If the template contains a section that does not perfectly match the business, rewrite its content so it becomes relevant instead of redesigning or removing the section.
+
+BUSINESS INFORMATION
+
+Company:
+O. Renaud Construction Inc.
+
+Business type:
+Entreprise de construction / entrepreneur
+
+Address:
+1359 Notre-Dame Ouest
+Victoriaville, QC
+G6T 2V6
+
+Phone:
+(819) 740-1938
+
+Email:
+info@orenaudconstruction.com
+
+Location:
+Victoriaville, Québec
+
+The company works on construction projects and has confirmed experience contributing to commercial projects, including the new Integra Tire / Pneus FT garage in Victoriaville.
+
+Create all website content in French.
+
+Do not invent:
+- RBQ number
+- Years of experience
+- Certifications
+- Guarantees
+- Number of employees
+- Number of completed projects
+- Exact service territory beyond what is confirmed
+- Specific construction services that cannot be supported by the available information
+
+
+HOME PAGE
+
+HERO
+
+Title:
+Construire avec rigueur. Réaliser avec fierté.
+
+Subtitle:
+O. Renaud Construction Inc. accompagne ses clients dans la réalisation de projets de construction à Victoriaville, avec une approche professionnelle et un souci constant du travail bien fait.
+
+Primary CTA:
+Demander une soumission
+
+Secondary CTA:
+Voir nos réalisations
+
+
+INTRODUCTION
+
+Title:
+Votre projet, notre engagement.
+
+Content:
+Chaque projet de construction comporte ses propres défis, besoins et objectifs.
+
+O. Renaud Construction Inc. accompagne ses clients dans la réalisation de leurs projets en misant sur une bonne planification, une exécution soignée et une collaboration efficace tout au long des travaux.
+
+Qu’il s’agisse d’un projet résidentiel, commercial ou de travaux de rénovation, notre objectif demeure le même : contribuer à un résultat solide et à la hauteur des attentes.
+
+
+SERVICES SECTION
+
+Use 6 service components.
+
+1. Construction résidentielle
+
+Content:
+Accompagnement dans la réalisation de projets de construction résidentielle adaptés aux besoins du propriétaire et aux particularités du projet.
+
+2. Construction commerciale
+
+Content:
+Réalisation et participation à des projets commerciaux nécessitant coordination, efficacité et qualité d’exécution.
+
+3. Rénovation
+
+Content:
+Transformation et amélioration de bâtiments existants afin de les adapter à de nouveaux besoins.
+
+4. Agrandissement
+
+Content:
+Création de nouveaux espaces permettant de faire évoluer un bâtiment selon les besoins de ses occupants.
+
+5. Charpenterie et structure
+
+Content:
+Travaux de construction et de charpenterie intégrés aux différents projets réalisés par l’entreprise.
+
+6. Gestion et réalisation de projet
+
+Content:
+Coordination des différentes étapes nécessaires pour faire progresser un projet de construction de façon structurée.
+
+If any of these services cannot be confirmed from additional available business information, keep the wording general and do not make unsupported claims.
+
+
+COMMERCIAL SECTION
+
+Title:
+Des projets commerciaux qui prennent forme.
+
+Content:
+Un projet commercial demande une coordination efficace et une exécution adaptée aux réalités du bâtiment et de l’entreprise.
+
+O. Renaud Construction Inc. contribue à la réalisation de projets commerciaux à Victoriaville, comme le nouveau garage Integra Tire / Pneus FT.
+
+De la structure aux différentes étapes de construction, nous travaillons afin de faire avancer chaque projet avec sérieux et professionnalisme.
+
+CTA:
+Discuter d’un projet commercial
+
+
+RESIDENTIAL SECTION
+
+Title:
+Construire et transformer votre propriété.
+
+Content:
+Votre maison doit évoluer avec vos besoins.
+
+Pour un projet de construction, de rénovation ou de transformation résidentielle, O. Renaud Construction Inc. vous accompagne afin de concrétiser votre projet et d’assurer une réalisation cohérente du début à la fin.
+
+CTA:
+Parler de mon projet
+
+
+PROJECT MANAGEMENT / TURNKEY SECTION
+
+Title:
+Un projet bien coordonné, du début à la fin.
+
+Content:
+La réussite d’un projet de construction repose autant sur la qualité des travaux que sur la coordination des différentes étapes.
+
+Notre approche vise à garder le projet structuré, à faciliter la communication et à assurer une progression efficace des travaux.
+
+Use the following steps:
+
+1. Discussion
+Comprendre le projet, les besoins et les objectifs.
+
+2. Évaluation
+Analyser les travaux nécessaires et les particularités du projet.
+
+3. Planification
+Établir les principales étapes avant le début des travaux.
+
+4. Réalisation
+Coordonner et effectuer les travaux prévus.
+
+5. Finalisation
+Compléter les derniers travaux et vérifier le résultat final.
+
+
+REALIZATIONS SECTION
+
+Title:
+Nos réalisations
+
+Intro:
+Découvrez quelques projets auxquels O. Renaud Construction Inc. a eu le plaisir de contribuer.
+
+Possible categories:
+- Commercial
+- Résidentiel
+- Construction
+- Rénovation
+- Projets en cours
+
+For every project, only use information that is actually available.
+
+Possible project information:
+- Type de projet
+- Localisation
+- Travaux réalisés
+- Participation de O. Renaud Construction
+- Particularités du projet
+- Photos du chantier
+- Résultat final
+
+Do not infer specific work from photos alone.
+
+
+FEATURED PROJECT
+
+Use the Integra Tire / Pneus FT project as a confirmed example where appropriate.
+
+Title:
+Nouveau garage Integra Tire / Pneus FT
+
+Location:
+Victoriaville
+
+Content:
+O. Renaud Construction Inc. a eu le plaisir de contribuer à la réalisation du nouveau garage Integra Tire / Pneus FT à Victoriaville.
+
+Un projet commercial important pour lequel notre équipe est fière du travail accompli et du résultat obtenu.
+
+Keep the description general unless additional confirmed information about the exact scope of work is available.
+
+
+WHY CHOOSE US SECTION
+
+Title:
+Une approche axée sur le projet.
+
+Use short content blocks:
+
+Écoute
+Comprendre les besoins avant de commencer les travaux.
+
+Planification
+Organiser les différentes étapes du projet de façon claire.
+
+Qualité d’exécution
+Porter attention au travail réalisé et aux détails.
+
+Collaboration
+Maintenir une communication efficace tout au long du projet.
+
+Polyvalence
+Intervenir sur différents types de projets de construction.
+
+Fierté du travail
+Livrer des réalisations dont l’équipe et le client peuvent être fiers.
+
+
+ABOUT SECTION
+
+Title:
+À propos de O. Renaud Construction Inc.
+
+Content:
+O. Renaud Construction Inc. est une entreprise de construction basée à Victoriaville.
+
+L’entreprise participe à la réalisation de projets résidentiels et commerciaux et accompagne ses clients dans différentes étapes de leurs travaux de construction et de rénovation.
+
+Notre approche repose sur le sérieux, la collaboration et le souci du travail bien fait.
+
+Chaque projet est différent. Nous prenons donc le temps de comprendre les besoins du client afin d’adapter notre intervention au projet à réaliser.
+
+
+FAQ SECTION
+
+Create concise answers for:
+
+- Quels types de projets réalisez-vous?
+- Réalisez-vous des projets résidentiels?
+- Travaillez-vous sur des projets commerciaux?
+- Faites-vous de la rénovation?
+- Pouvez-vous participer à des projets de plus grande envergure?
+- Comment fonctionne une demande de soumission?
+- Puis-je vous envoyer mes plans?
+- Puis-je vous envoyer des photos du projet?
+- Travaillez-vous à Victoriaville?
+- Quels autres secteurs desservez-vous?
+
+For the final question, do not invent municipalities. Tell visitors to contact the company to confirm availability for their location.
+
+
+CONTACT SECTION
+
+Title:
+Parlons de votre projet.
+
+Content:
+Vous avez un projet de construction, de rénovation ou un projet commercial à venir?
+
+Communiquez avec O. Renaud Construction Inc. pour nous présenter votre projet et discuter des prochaines étapes.
+
+O. Renaud Construction Inc.
+
+Address:
+1359 Notre-Dame Ouest
+Victoriaville, QC
+G6T 2V6
+
+Phone:
+(819) 740-1938
+
+Email:
+info@orenaudconstruction.com
+
+Contact form fields:
+- Nom
+- Téléphone
+- Courriel
+- Ville du projet
+- Type de projet
+- Description du projet
+- Échéancier souhaité
+- Budget approximatif
+- Photos
+- Plans ou documents
+
+Project type options:
+- Construction résidentielle
+- Construction commerciale
+- Rénovation
+- Agrandissement
+- Autre
+
+CTA:
+Envoyer ma demande
+
+
+FINAL CTA
+
+Title:
+Un projet à réaliser?
+
+Content:
+Résidentiel, commercial, construction ou rénovation : présentez-nous votre projet et voyons comment O. Renaud Construction Inc. peut y contribuer.
+
+CTA:
+Demander une soumission
+
+Phone CTA:
+(819) 740-1938
+
+
+SEO CONTENT
+
+Naturally incorporate relevant terms such as:
+- entrepreneur en construction Victoriaville
+- construction Victoriaville
+- entrepreneur général Victoriaville
+- construction résidentielle Victoriaville
+- construction commerciale Victoriaville
+- rénovation Victoriaville
+- entrepreneur en rénovation Victoriaville
+- projet commercial Victoriaville
+
+Do not keyword-stuff.
+
+Victoriaville is confirmed. Do not create SEO pages targeting other municipalities until the actual service territory is confirmed.
+
+
+FINAL INSTRUCTION
+
+Again, DO NOT redesign or restructure the existing website.
+
+Keep the exact current template, sections, components and overall design.
+
+Your job is ONLY to replace the existing placeholder/previous-business content with accurate, conversion-focused content for O. Renaud Construction Inc.
