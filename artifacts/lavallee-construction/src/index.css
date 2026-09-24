@@ -176,3 +176,9 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 }
+
+@media (min-width: 1024px) and (min-height: 900px) {
+  .hero-content {
+    justify-content: center;
+  }
+}
