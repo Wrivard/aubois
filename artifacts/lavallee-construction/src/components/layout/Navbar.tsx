@@ -21,13 +21,16 @@ export function Navbar() {
     { name: "Accueil", href: "/" },
     { name: "À propos", href: "/#a-propos" },
     { name: "Réalisations", href: "/#realisations" },
-    { name: "Carrière", href: "/#carriere" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   const servicesLinks = [
-    { name: "Résidentiel", href: "/#services" },
-    { name: "Commercial", href: "/#services" },
+    { name: "Construction résidentielle", href: "/#services" },
+    { name: "Construction commerciale", href: "/#services" },
     { name: "Rénovation", href: "/#services" },
+    { name: "Agrandissement", href: "/#services" },
+    { name: "Charpenterie et structure", href: "/#services" },
+    { name: "Gestion de projet", href: "/#services" },
   ];
 
   return (
@@ -39,8 +42,8 @@ export function Navbar() {
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="relative z-50 block">
           <img
-            src="/logo-lavallee.png"
-            alt="Lavallée Construction"
+            src="/logo-orenaud.png"
+            alt="O. Renaud Construction Inc."
             className="h-15 md:h-18 w-auto object-contain object-left"
           />
         </Link>
@@ -64,7 +67,7 @@ export function Navbar() {
             </a>
             
             {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 pt-4 w-48">
+              <div className="absolute top-full left-0 pt-4 w-64">
                 <div className="bg-[#1B1B1B] border border-[#333] shadow-lg flex flex-col p-2">
                   {servicesLinks.map((link) => (
                     <a
@@ -84,8 +87,8 @@ export function Navbar() {
           <a href="/#realisations" className="text-sm font-semibold text-white hover:text-primary transition-colors">
             Réalisations
           </a>
-          <a href="/#carriere" className="text-sm font-semibold text-white hover:text-primary transition-colors">
-            Carrière
+          <a href="/#contact" className="text-sm font-semibold text-white hover:text-primary transition-colors">
+            Contact
           </a>
         </nav>
 
@@ -148,11 +151,11 @@ export function Navbar() {
               Réalisations
             </a>
             <a 
-              href="/#carriere" 
+              href="/#contact"
               className="border-b border-[#333] pb-4 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Carrière
+              Contact
             </a>
           </nav>
           

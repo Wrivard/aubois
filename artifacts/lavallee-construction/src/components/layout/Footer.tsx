@@ -7,12 +7,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           <div className="lg:col-span-1 flex flex-col items-start">
             <img 
-              src="/logo-lavallee.png" 
-              alt="Lavallée Construction" 
+              src="/logo-orenaud.png"
+              alt="O. Renaud Construction Inc."
               className="h-24 w-auto object-contain object-left mb-6"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              L'excellence en construction résidentielle et commerciale au Québec. Une gestion rigoureuse pour des résultats impeccables.
+              Entreprise de construction basée à Victoriaville. Une approche professionnelle et un souci constant du travail bien fait.
             </p>
           </div>
           
@@ -31,29 +31,29 @@ export function Footer() {
             <ul className="flex flex-col gap-4 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <span className="font-bold text-primary">T.</span>
-                <span>(514) 555-0199</span>
+                <a href="tel:+18197401938" className="hover:text-white">(819) 740-1938</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-primary">C.</span>
-                <span>info@lavalleeconstruction.ca</span>
+                <a href="mailto:info@orenaudconstruction.com" className="hover:text-white break-all">info@orenaudconstruction.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-primary">A.</span>
-                <span>1234 Boulevard Industriel,<br/>Montréal, QC H1X 2Y3</span>
+                <span>1359 Notre-Dame Ouest,<br/>Victoriaville, QC G6T 2V6</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">RBQ</h3>
+            <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">Projet commercial</h3>
             <div className="p-4 border border-white/10 bg-white/5 flex flex-col gap-2">
-              <span className="text-xs text-white/70 uppercase tracking-widest font-bold">Licence RBQ</span>
-              <span className="font-mono text-xl font-medium tracking-wider">5678-1234-90</span>
+              <span className="text-xs text-white/70 uppercase tracking-widest font-bold">Victoriaville</span>
+              <span className="text-lg font-medium">Participation au nouveau garage Integra Tire / Pneus FT</span>
             </div>
             <div className="mt-6">
               <Link href="/soumission">
-                <button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full">
-                  Obtenir un devis
+                <button className="bg-primary hover:bg-primary/90 text-secondary font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full">
+                  Demander une soumission
                 </button>
               </Link>
             </div>
@@ -61,10 +61,10 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/70">
-          <p>© {new Date().getFullYear()} Lavallée Construction. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} O. Renaud Construction Inc. Tous droits réservés.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Politique de confidentialité</a>
-            <a href="#" className="hover:text-white transition-colors">Termes et conditions</a>
+            <a href="mailto:info@orenaudconstruction.com?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
+            <a href="mailto:info@orenaudconstruction.com" className="hover:text-white transition-colors">Nous écrire</a>
           </div>
         </div>
       </div>

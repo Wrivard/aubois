@@ -1,6 +1,6 @@
-# Lavallée Construction
+# O. Renaud Construction Inc.
 
-Site vitrine en français présentant les services, réalisations et demandes de soumission de Lavallée Construction.
+Site vitrine en français présentant les projets, les services et les demandes de soumission de O. Renaud Construction Inc. à Victoriaville.
 
 ## Run & Operate
 
@@ -33,15 +33,15 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-- Rich French-language construction company homepage
-- Responsive navigation, service dropdown, gallery, testimonials, FAQ, contact/map, and career CTA
-- Three-step quote request flow with validation and confirmation
+- Site vitrine en français pour une entreprise de construction de Victoriaville
+- Navigation responsive, services, présentation de projet, approche, FAQ et coordonnées
+- Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 
 ## User preferences
 
-- Keep the supplied logo intact and prominent.
-- Limit the palette to the logo blue, `#1B1B1B`, `#E4E4E4`, and white.
-- Do not use gradients, placeholder imagery, or inconsistent component styles.
+- Garder le gabarit existant, le logo O. Renaud et l'accent `#FDEB05`.
+- Ne pas attribuer les photos d'illustration à O. Renaud Construction Inc. ni inventer de réalisations, licences, garanties ou témoignages.
+- Conserver l'information confirmée sur la participation au garage Integra Tire / Pneus FT à Victoriaville.
 
 ## Gotchas
 

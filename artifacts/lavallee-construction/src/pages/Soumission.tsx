@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { TestimonialsSection, FAQContactSection } from "@/components/SharedSections";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,7 @@ const formSchema = z.object({
   budget: z.string().min(1, "Veuillez sélectionner un budget estimé"),
   timeline: z.string().min(1, "Veuillez sélectionner un délai"),
   description: z.string().min(10, "La description doit contenir au moins 10 caractères"),
-  address: z.string().min(5, "Veuillez entrer l'adresse du projet"),
+  city: z.string().min(2, "Veuillez entrer la ville du projet"),
   firstName: z.string().min(2, "Prénom requis"),
   lastName: z.string().min(2, "Nom requis"),
   email: z.string().email("Adresse courriel invalide"),
@@ -29,6 +29,24 @@ export default function Soumission() {
   const [step, setStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  useEffect(() => {
+    const title = "Demande de soumission | O. Renaud Construction Inc.";
+    const description = "Présentez votre projet de construction ou de rénovation à O. Renaud Construction Inc., entreprise de construction basée à Victoriaville.";
+    const previousTitle = document.title;
+    const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
+    const previous = tags.map((selector) => {
+      const element = document.querySelector<HTMLMetaElement>(selector);
+      const value = element?.content;
+      if (element) element.content = selector.includes("title") ? title : description;
+      return { element, value };
+    });
+    document.title = title;
+    return () => {
+      document.title = previousTitle;
+      previous.forEach(({ element, value }) => { if (element && value !== undefined) element.content = value; });
+    };
+  }, []);
+
   const { register, control, handleSubmit, trigger, formState: { errors } } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -36,7 +54,7 @@ export default function Soumission() {
       budget: "",
       timeline: "",
       description: "",
-      address: "",
+      city: "",
       firstName: "",
       lastName: "",
       email: "",
@@ -48,7 +66,7 @@ export default function Soumission() {
   const nextStep = async () => {
     let fieldsToValidate: (keyof FormValues)[] = [];
     if (step === 1) fieldsToValidate = ["projectType", "budget", "timeline"];
-    if (step === 2) fieldsToValidate = ["description", "address"];
+    if (step === 2) fieldsToValidate = ["description", "city"];
 
     const isStepValid = await trigger(fieldsToValidate);
     if (isStepValid) setStep(step + 1);
@@ -57,7 +75,20 @@ export default function Soumission() {
   const prevStep = () => setStep(step - 1);
 
   const onSubmit = (data: FormValues) => {
-    console.log(data);
+    const body = [
+      `Nom : ${data.firstName} ${data.lastName}`,
+      `Téléphone : ${data.phone}`,
+      `Courriel : ${data.email}`,
+      `Ville du projet : ${data.city}`,
+      `Type de projet : ${data.projectType}`,
+      `Budget approximatif : ${data.budget}`,
+      `Échéancier souhaité : ${data.timeline}`,
+      "",
+      `Description du projet : ${data.description}`,
+      "",
+      "Vous pouvez joindre vos photos et plans directement à ce courriel avant de l'envoyer."
+    ].join("\n");
+    window.location.href = `mailto:info@orenaudconstruction.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
     setIsSubmitted(true);
   };
 
@@ -81,10 +112,10 @@ export default function Soumission() {
         </div>
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
-            <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Estimation gratuite</span>
+            <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Demande de soumission</h1>
             <p className="text-lg text-white/80 leading-relaxed">
-              Détaillez votre projet. Un estimateur vous contactera sous 48h.
+              Présentez-nous votre projet de construction ou de rénovation à Victoriaville. Votre demande sera préparée dans votre messagerie.
             </p>
           </div>
         </div>
@@ -103,9 +134,9 @@ export default function Soumission() {
                   <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle2 className="w-10 h-10 text-primary" />
                   </div>
-                  <h2 className="text-3xl font-extrabold mb-4 text-secondary">Demande reçue avec succès</h2>
+                  <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre courriel est prêt</h2>
                   <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
-                    Merci de votre confiance. Notre équipe analysera vos informations et vous contactera dans les prochaines 48 heures ouvrables.
+                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à info@orenaudconstruction.com.
                   </p>
                   <Button className="uppercase tracking-wider font-bold px-8" onClick={() => window.location.href = "/"}>
                     Retour à l'accueil
@@ -117,7 +148,7 @@ export default function Soumission() {
                   <div className="flex flex-col sm:flex-row gap-4 mb-10 pb-6 border-b border-border">
                     {steps.map(s => (
                       <div key={s.num} className={`flex items-center gap-3 flex-1 ${step === s.num ? 'opacity-100' : step > s.num ? 'opacity-70' : 'opacity-40'}`}>
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= s.num ? 'bg-primary text-white' : 'bg-muted text-muted-foreground'}`}>
+                         <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= s.num ? 'bg-primary text-secondary' : 'bg-muted text-muted-foreground'}`}>
                           {step > s.num ? <CheckCircle2 className="w-4 h-4"/> : s.num}
                         </div>
                         <div>
@@ -144,9 +175,11 @@ export default function Soumission() {
                                     <SelectValue placeholder="Sélectionnez le type de travaux" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                    <SelectItem value="residentiel">Résidentiel (Maison neuve, chalet)</SelectItem>
-                                    <SelectItem value="commercial">Commercial (Bureau, commerce)</SelectItem>
-                                    <SelectItem value="renovation">Rénovation majeure / Agrandissement</SelectItem>
+                                     <SelectItem value="Construction résidentielle">Construction résidentielle</SelectItem>
+                                     <SelectItem value="Construction commerciale">Construction commerciale</SelectItem>
+                                     <SelectItem value="Rénovation">Rénovation</SelectItem>
+                                     <SelectItem value="Agrandissement">Agrandissement</SelectItem>
+                                     <SelectItem value="Autre">Autre</SelectItem>
                                   </SelectContent>
                                 </Select>
                               )}
@@ -155,7 +188,7 @@ export default function Soumission() {
                           </div>
 
                           <div className="space-y-3">
-                            <Label className="font-bold">Budget estimé *</Label>
+                            <Label className="font-bold">Budget approximatif *</Label>
                             <Controller
                               name="budget"
                               control={control}
@@ -178,7 +211,7 @@ export default function Soumission() {
                           </div>
                           
                           <div className="space-y-3">
-                            <Label className="font-bold">Délai souhaité *</Label>
+                            <Label className="font-bold">Échéancier souhaité *</Label>
                             <Controller
                               name="timeline"
                               control={control}
@@ -216,14 +249,17 @@ export default function Soumission() {
                         </div>
                         
                         <div className="space-y-3">
-                          <Label className="font-bold">Adresse du futur chantier *</Label>
+                            <Label className="font-bold">Ville du projet *</Label>
                           <Input 
-                            {...register("address")} 
-                            placeholder="Adresse complète ou code postal"
+                              {...register("city")}
+                              placeholder="Ville où se situe le projet"
                             className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                           />
-                          {errors.address && <p className="text-destructive text-sm">{errors.address.message}</p>}
+                            {errors.city && <p className="text-destructive text-sm">{errors.city.message}</p>}
                         </div>
+                        <p className="text-sm text-muted-foreground">
+                          Photos et plans ou documents : vous pourrez les joindre au courriel préparé à la dernière étape. Aucun fichier n'est téléversé sur ce site.
+                        </p>
                       </div>
                     )}
 
@@ -286,7 +322,7 @@ export default function Soumission() {
                         </Button>
                       ) : (
                         <Button type="submit" className="font-bold uppercase tracking-wider h-12 px-8 bg-secondary hover:bg-secondary/90 text-white w-full sm:w-auto mt-4 sm:mt-0">
-                          Envoyer la demande
+                           Préparer le courriel
                         </Button>
                       )}
                     </div>
@@ -298,17 +334,17 @@ export default function Soumission() {
 
             {/* Sidebar (Right) */}
             <div className="lg:col-span-1 space-y-6">
-              <div className="bg-primary text-white p-8">
-                <h3 className="text-xl font-bold mb-4">Besoin d'aide immédiate ?</h3>
-                <p className="mb-6 text-white/90 text-sm leading-relaxed">
-                  Contactez notre équipe directement. Nous sommes disponibles pour répondre à vos questions du lundi au vendredi.
+              <div className="bg-primary text-secondary p-8">
+                <h3 className="text-xl font-bold mb-4">Parlons de votre projet</h3>
+                <p className="mb-6 text-secondary/90 text-sm leading-relaxed">
+                  Vous pouvez aussi nous joindre directement par téléphone ou courriel pour discuter de votre projet.
                 </p>
                 <div className="space-y-4">
                   <p className="flex items-center gap-3 font-medium">
-                    <Phone className="w-5 h-5"/> (514) 555-0199
+                    <Phone className="w-5 h-5"/> <a href="tel:+18197401938">(819) 740-1938</a>
                   </p>
                   <p className="flex items-center gap-3 font-medium">
-                    <Mail className="w-5 h-5"/> info@lavalleeconstruction.ca
+                    <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:info@orenaudconstruction.com">info@orenaudconstruction.com</a>
                   </p>
                 </div>
               </div>
@@ -318,15 +354,15 @@ export default function Soumission() {
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                     <span className="text-sm text-white/80 leading-tight">Licence RBQ valide & Assurances complètes de 5M$</span>
+                      <span className="text-sm text-white/80 leading-tight">Écoute des besoins avant de commencer les travaux</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                     <span className="text-sm text-white/80 leading-tight">Transparence totale des coûts et échéanciers respectés</span>
+                      <span className="text-sm text-white/80 leading-tight">Planification claire des étapes du projet</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                     <span className="text-sm text-white/80 leading-tight">Gestion de chantier rigoureuse et sécuritaire</span>
+                      <span className="text-sm text-white/80 leading-tight">Collaboration et souci du travail bien fait</span>
                    </li>
                 </ul>
               </div>
