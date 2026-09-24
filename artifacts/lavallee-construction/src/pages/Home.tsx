@@ -52,19 +52,19 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Engagements */}
+            {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 pt-8 border-t border-white/10">
               <div>
-                <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">Écoute<span className="text-primary">.</span></p>
-                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Comprendre vos besoins</p>
+                <p className="text-4xl font-extrabold text-white mb-1">15<span className="text-primary">+</span></p>
+                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Années d'expérience</p>
               </div>
               <div>
-                <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">Planification<span className="text-primary">.</span></p>
-                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Avancer avec méthode</p>
+                <p className="text-4xl font-extrabold text-white mb-1">250<span className="text-primary">+</span></p>
+                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Projets livrés</p>
               </div>
               <div className="hidden md:block">
-                <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">Fierté<span className="text-primary">.</span></p>
-                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Le travail bien fait</p>
+                <p className="text-4xl font-extrabold text-white mb-1">100<span className="text-primary">%</span></p>
+                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Garantie qualité</p>
               </div>
             </div>
           </div>
