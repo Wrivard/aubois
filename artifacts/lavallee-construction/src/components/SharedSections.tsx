@@ -53,17 +53,12 @@ export function FAQContactSection() {
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
               ["Quels types de projets réalisez-vous?", "Nous discutons de projets résidentiels et commerciaux, de construction, de rénovation ou d'agrandissement, selon leurs besoins."],
-              ["Réalisez-vous des projets résidentiels?", "Oui. Présentez-nous votre projet de construction ou de transformation résidentielle pour en discuter."],
-              ["Travaillez-vous sur des projets commerciaux?", "Oui. Nous avons notamment contribué à la réalisation du nouveau garage Integra Tire / Pneus FT à Victoriaville."],
-              ["Faites-vous de la rénovation?", "Nous pouvons discuter avec vous de travaux visant à adapter un bâtiment existant à de nouveaux besoins."],
-              ["Pouvez-vous participer à des projets de plus grande envergure?", "Chaque projet a ses particularités. Communiquez avec nous pour évaluer notre participation possible."],
-              ["Comment fonctionne une demande de soumission?", "Décrivez votre projet dans un courriel ou appelez-nous; nous pourrons ensuite discuter des prochaines étapes."],
-              ["Puis-je vous envoyer mes plans?", "Oui. Écrivez-nous à info@orenaudconstruction.com pour partager les documents pertinents à votre projet."],
-              ["Puis-je vous envoyer des photos du projet?", "Oui. Vous pouvez joindre des photos à votre courriel pour nous aider à comprendre votre projet."],
-              ["Travaillez-vous à Victoriaville?", "O. Renaud Construction Inc. est basée à Victoriaville et y a contribué à un projet commercial confirmé."],
-              ["Quels autres secteurs desservez-vous?", "Contactez-nous pour confirmer notre disponibilité dans votre secteur."]
+              ["Avez-vous réalisé des projets commerciaux?", "O. Renaud Construction Inc. a contribué au nouveau garage Integra Tire / Pneus FT à Victoriaville."],
+              ["Faites-vous de la construction et de la rénovation résidentielles?", "Communiquez avec nous pour discuter de votre projet résidentiel et de ses besoins particuliers."],
+              ["Comment demander une soumission?", "Décrivez votre projet à l'aide du formulaire; votre messagerie préparera un courriel à envoyer."],
+              ["Puis-je joindre des plans ou des photos?", "Oui. Vous pourrez joindre vos plans et photos au courriel avant de l'envoyer."]
             ].map(([question, answer], i) => (
-              <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 9 ? "border-b border-border" : "border-b-0"}`}>
+              <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 4 ? "border-b border-border" : "border-b-0"}`}>
                 <AccordionTrigger className="text-left font-bold text-lg py-6 hover:no-underline hover:text-secondary">{question}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">{answer}</AccordionContent>
               </AccordionItem>

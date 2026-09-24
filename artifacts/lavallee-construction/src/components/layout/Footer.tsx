@@ -45,11 +45,7 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">Projet commercial</h3>
-            <div className="p-4 border border-white/10 bg-white/5 flex flex-col gap-2">
-              <span className="text-xs text-white/70 uppercase tracking-widest font-bold">Victoriaville</span>
-              <span className="text-lg font-medium">Participation au nouveau garage Integra Tire / Pneus FT</span>
-            </div>
+            <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">Votre projet</h3>
             <div className="mt-6">
               <Link href="/soumission">
                 <button className="bg-primary hover:bg-primary/90 text-secondary font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full">
