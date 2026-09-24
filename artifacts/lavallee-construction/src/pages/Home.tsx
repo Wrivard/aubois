@@ -15,7 +15,7 @@ export default function Home() {
             muted 
             loop 
             playsInline 
-            poster="/lavallee-hero-poster.jpg"
+            poster="/photos/orenaud-15.jpg"
             className="w-full h-full object-cover opacity-90"
           >
             <source src="/lavallee-hero.mp4" type="video/mp4" />
@@ -77,7 +77,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/reno-general.jpg" alt="Illustration d'un espace intérieur rénové" className="w-full h-full object-cover" />
+                <img src="/photos/orenaud-03.jpg" alt="Maison résidentielle en pierre" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -137,37 +137,37 @@ export default function Home() {
               {
                 title: "Construction résidentielle",
                 desc: "Accompagnement dans la réalisation de projets résidentiels adaptés aux besoins du propriétaire et aux particularités du projet.",
-                img: "/reno-cuisine.jpg",
+                img: "/photos/orenaud-01.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Construction commerciale",
                 desc: "Participation à des projets commerciaux nécessitant coordination, efficacité et qualité d'exécution.",
-                img: "/reno-sous-sol.jpg",
+                img: "/photos/orenaud-02.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Rénovation",
                 desc: "Transformation et amélioration de bâtiments existants afin de les adapter à de nouveaux besoins.",
-                img: "/reno-salle-de-bain.jpg",
+                img: "/photos/orenaud-06.jpg",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
                 title: "Agrandissement",
                 desc: "Création de nouveaux espaces permettant de faire évoluer un bâtiment selon les besoins de ses occupants.",
-                img: "/projet-agrandissement.jpg",
+                img: "/photos/orenaud-13.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Charpenterie et structure",
                 desc: "Travaux de construction et de charpenterie intégrés aux projets, selon les besoins à évaluer.",
-                img: "/reno-general.jpg",
+                img: "/photos/orenaud-12.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Gestion et réalisation de projet",
                 desc: "Coordination des étapes nécessaires pour faire progresser un projet de construction de façon structurée.",
-                img: "/quote-header.jpg",
+                img: "/photos/orenaud-05.jpg",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
@@ -209,12 +209,12 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: "/projet-cuisine.jpg", title: "Nouveau garage Integra Tire / Pneus FT", tag: "Commercial" },
-              { img: "/projet-agrandissement.jpg", title: "Votre projet d'agrandissement", tag: "Agrandissement" },
-              { img: "/projet-salle-de-bain.jpg", title: "Votre projet de rénovation", tag: "Rénovation" },
+              { img: "/photos/orenaud-12.jpg", title: "Nouveau garage Integra Tire / Pneus FT", tag: "Commercial" },
+              { img: "/photos/orenaud-13.jpg", title: "Votre projet d'agrandissement", tag: "Agrandissement" },
+              { img: "/photos/orenaud-08.jpg", title: "Votre projet de rénovation", tag: "Rénovation" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
-                <img src={proj.img} alt={`Photo d'illustration sans lien avec les travaux de O. Renaud Construction : ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                 <span className="absolute top-3 right-3 bg-secondary text-white px-2 py-1 text-xs font-bold">Photo d'illustration</span>
                 <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="inline-block bg-primary text-secondary text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
@@ -235,21 +235,35 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-extrabold text-secondary">Un projet bien coordonné, du début à la fin.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-              Discussion, évaluation, planification, réalisation et finalisation : notre approche vise à garder le projet structuré et la communication efficace. Photos d'illustration.
+               Discussion, évaluation, planification, réalisation et finalisation : notre approche vise à garder le projet structuré et la communication efficace. Images fournies à titre d'illustration.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/reno-patio.jpg"
-                alt="Illustration d'un espace extérieur, non attribué à O. Renaud Construction"
+                src="/photos/orenaud-07.jpg"
+                alt="Cuisine et salon aménagés"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/projet-patio.jpg"
-                alt="Illustration d'un patio résidentiel, non attribué à O. Renaud Construction"
+                src="/photos/orenaud-04.jpg"
+                alt="Espace commercial avec coin cuisine et table de réunion"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </figure>
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+              <img
+                src="/photos/orenaud-09.jpg"
+                alt="Hall d'accueil d'un espace commercial"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </figure>
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+              <img
+                src="/photos/orenaud-11.jpg"
+                alt="Coin détente et espace de travail aménagé"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
@@ -263,7 +277,7 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-32 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/cta-bg.jpg" alt="" className="w-full h-full object-cover opacity-20" />
+          <img src="/photos/orenaud-14.jpg" alt="" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-[#1B1B1B]/80"></div>
         </div>
         

@@ -104,7 +104,7 @@ export default function Soumission() {
       <section className="relative pt-32 pb-16 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/quote-header.jpg"
+            src="/photos/orenaud-10.jpg"
             alt=""
             className="w-full h-full object-cover object-center opacity-30"
           />
