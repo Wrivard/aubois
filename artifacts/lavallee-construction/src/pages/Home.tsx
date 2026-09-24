@@ -25,9 +25,9 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-start pt-36 pb-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary-foreground border border-primary/30 mb-6 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              <span className="text-xs font-bold tracking-widest uppercase">Victoriaville · visuels d'illustration</span>
+              <span className="text-xs font-bold tracking-widest uppercase">Construction à Victoriaville</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]">
@@ -209,9 +209,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: "/projet-cuisine.jpg", title: "Nouveau garage Integra Tire / Pneus FT — participation confirmée à Victoriaville (photo d'illustration)", tag: "Commercial" },
-              { img: "/projet-agrandissement.jpg", title: "Agrandissement — discutons de votre projet (photo d'illustration)", tag: "Agrandissement" },
-              { img: "/projet-salle-de-bain.jpg", title: "Rénovation — discutons de votre projet (photo d'illustration)", tag: "Rénovation" },
+              { img: "/projet-cuisine.jpg", title: "Nouveau garage Integra Tire / Pneus FT", tag: "Commercial" },
+              { img: "/projet-agrandissement.jpg", title: "Votre projet d'agrandissement", tag: "Agrandissement" },
+              { img: "/projet-salle-de-bain.jpg", title: "Votre projet de rénovation", tag: "Rénovation" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={`Photo d'illustration sans lien avec les travaux de O. Renaud Construction : ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />

@@ -109,10 +109,9 @@ export function FAQContactSection() {
       <div className="w-full h-[400px]">
         <iframe
           title="Carte de Victoriaville, emplacement de O. Renaud Construction Inc."
-          width="100%"
-          height="100%"
+          className="block w-full h-full"
           style={{ border: 0 }}
-          loading="lazy"
+          loading="eager"
           src="https://www.openstreetmap.org/export/embed.html?bbox=-72.04%2C46.02%2C-71.89%2C46.12&layer=mapnik&marker=46.06%2C-71.96"
         ></iframe>
       </div>
