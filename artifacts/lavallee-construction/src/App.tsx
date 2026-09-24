@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import { useEffect, useLayoutEffect, type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
@@ -14,6 +14,27 @@ import {
 } from 'wouter';
 
 const queryClient = new QueryClient();
+
+function RouteScrollReset() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    const previous = window.history.scrollRestoration;
+    window.history.scrollRestoration = 'manual';
+    return () => { window.history.scrollRestoration = previous; };
+  }, []);
+
+  useLayoutEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      document.getElementById(hash)?.scrollIntoView();
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+  }, [location]);
+
+  return null;
+}
 
 function Router() {
   return (
@@ -37,6 +58,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+          <RouteScrollReset />
           <Router />
         </WouterRouter>
         <Toaster />

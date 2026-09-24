@@ -215,7 +215,6 @@ export default function Home() {
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
-                <span className="absolute top-3 right-3 bg-secondary text-white px-2 py-1 text-xs font-bold">Photo d'illustration</span>
                 <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="inline-block bg-primary text-secondary text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
