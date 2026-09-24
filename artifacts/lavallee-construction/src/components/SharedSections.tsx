@@ -108,11 +108,12 @@ export function FAQContactSection() {
       {/* Full Bleed Embed Map */}
       <div className="w-full h-[400px]">
         <iframe
-          title="Carte de Victoriaville, emplacement de O. Renaud Construction Inc."
+          title="Carte indiquant O. Renaud Construction Inc. à Victoriaville"
           className="block w-full h-full"
           style={{ border: 0 }}
           loading="eager"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-72.04%2C46.02%2C-71.89%2C46.12&layer=mapnik&marker=46.06%2C-71.96"
+          referrerPolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=1359%20Notre-Dame%20Ouest%2C%20Victoriaville%2C%20QC%20G6T%202V6&z=15&output=embed"
         ></iframe>
       </div>
     </section>
