@@ -30,8 +30,8 @@ export default function Soumission() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    const title = "Demande de soumission | O. Renaud Construction Inc.";
-    const description = "Présentez votre projet de construction ou de rénovation à O. Renaud Construction Inc., entreprise de construction basée à Victoriaville.";
+    const title = "Demande de soumission | Céramiques Appalaches inc.";
+    const description = "Présentez votre projet de pose de céramique à Céramiques Appalaches inc., à Thetford Mines en Chaudière-Appalaches.";
     const previousTitle = document.title;
     const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
     const previous = tags.map((selector) => {
@@ -88,7 +88,7 @@ export default function Soumission() {
       "",
       "Vous pouvez joindre vos photos et plans directement à ce courriel avant de l'envoyer."
     ].join("\n");
-    window.location.href = `mailto:info@orenaudconstruction.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:ceramiquesappalaches@outlook.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
     setIsSubmitted(true);
   };
 
@@ -115,7 +115,7 @@ export default function Soumission() {
             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Demande de soumission</h1>
             <p className="text-lg text-white/80 leading-relaxed">
-              Présentez-nous votre projet de construction ou de rénovation à Victoriaville. Votre demande sera préparée dans votre messagerie.
+              Salle de bain, douche, cuisine, plancher ou projet commercial : présentez-nous votre projet de pose de céramique. Votre demande sera préparée dans votre messagerie.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function Soumission() {
                   </div>
                   <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre courriel est prêt</h2>
                   <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
-                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à info@orenaudconstruction.com.
+                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à ceramiquesappalaches@outlook.com.
                   </p>
                   <Button className="uppercase tracking-wider font-bold px-8" onClick={() => window.location.href = "/"}>
                     Retour à l'accueil
@@ -175,11 +175,11 @@ export default function Soumission() {
                                     <SelectValue placeholder="Sélectionnez le type de travaux" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                     <SelectItem value="Construction résidentielle">Construction résidentielle</SelectItem>
-                                     <SelectItem value="Construction commerciale">Construction commerciale</SelectItem>
-                                     <SelectItem value="Rénovation">Rénovation</SelectItem>
-                                     <SelectItem value="Agrandissement">Agrandissement</SelectItem>
-                                     <SelectItem value="Autre">Autre</SelectItem>
+                                      <SelectItem value="Salle de bain / douche">Salle de bain / douche</SelectItem>
+                                      <SelectItem value="Cuisine / dosseret">Cuisine / dosseret</SelectItem>
+                                      <SelectItem value="Plancher">Plancher</SelectItem>
+                                      <SelectItem value="Mur / motif personnalisé">Mur / motif personnalisé</SelectItem>
+                                      <SelectItem value="Commercial / autre">Commercial / autre</SelectItem>
                                   </SelectContent>
                                 </Select>
                               )}
@@ -198,10 +198,10 @@ export default function Soumission() {
                                     <SelectValue placeholder="Sélectionnez une fourchette" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                    <SelectItem value="50k-100k">50 000$ - 100 000$</SelectItem>
-                                    <SelectItem value="100k-250k">100 000$ - 250 000$</SelectItem>
-                                    <SelectItem value="250k-500k">250 000$ - 500 000$</SelectItem>
-                                    <SelectItem value="500k+">500 000$ et plus</SelectItem>
+                                     <SelectItem value="under-5k">Moins de 5 000 $</SelectItem>
+                                     <SelectItem value="5k-10k">5 000 $ à 10 000 $</SelectItem>
+                                     <SelectItem value="10k-25k">10 000 $ à 25 000 $</SelectItem>
+                                     <SelectItem value="25k+">25 000 $ et plus</SelectItem>
                                     <SelectItem value="tbd">À déterminer</SelectItem>
                                   </SelectContent>
                                 </Select>
@@ -242,7 +242,7 @@ export default function Soumission() {
                           <Label className="font-bold">Description détaillée du projet *</Label>
                           <Textarea 
                             {...register("description")} 
-                            placeholder="Décrivez brièvement les travaux à réaliser, la superficie approximative, les matériaux souhaités..."
+                             placeholder="Décrivez l’espace, la surface approximative, les carreaux ou motifs souhaités..."
                             className="min-h-[180px] rounded-none border-border focus:ring-primary focus:border-primary resize-y"
                           />
                           {errors.description && <p className="text-destructive text-sm">{errors.description.message}</p>}
@@ -341,10 +341,10 @@ export default function Soumission() {
                 </p>
                 <div className="space-y-4">
                   <p className="flex items-center gap-3 font-medium">
-                    <Phone className="w-5 h-5"/> <a href="tel:+18197401938">(819) 740-1938</a>
+                     <Phone className="w-5 h-5"/> <a href="tel:+14183349925">(418) 334-9925</a>
                   </p>
                   <p className="flex items-center gap-3 font-medium">
-                    <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:info@orenaudconstruction.com">info@orenaudconstruction.com</a>
+                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:ceramiquesappalaches@outlook.com">ceramiquesappalaches@outlook.com</a>
                   </p>
                 </div>
               </div>
@@ -354,15 +354,15 @@ export default function Soumission() {
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                      <span className="text-sm text-white/80 leading-tight">Écoute des besoins avant de commencer les travaux</span>
+                       <span className="text-sm text-white/80 leading-tight">Spécialisation en pose de céramique et de revêtements en carreaux</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                      <span className="text-sm text-white/80 leading-tight">Planification claire des étapes du projet</span>
+                       <span className="text-sm text-white/80 leading-tight">Attention portée aux alignements et aux découpes</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                      <span className="text-sm text-white/80 leading-tight">Collaboration et souci du travail bien fait</span>
+                       <span className="text-sm text-white/80 leading-tight">Installations adaptées aux projets résidentiels et commerciaux</span>
                    </li>
                 </ul>
               </div>

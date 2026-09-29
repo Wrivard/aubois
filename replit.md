@@ -1,6 +1,6 @@
-# O. Renaud Construction Inc.
+# Céramiques Appalaches inc.
 
-Site vitrine en français présentant les projets, les services et les demandes de soumission de O. Renaud Construction Inc. à Victoriaville.
+Site vitrine en français présentant les services de pose de céramique et les demandes de soumission de Céramiques Appalaches inc. à Thetford Mines.
 
 ## Run & Operate
 
@@ -25,7 +25,7 @@ Site vitrine en français présentant les projets, les services et les demandes 
 
 - `artifacts/lavallee-construction/src/` — pages, reusable sections, and site interactions
 - `artifacts/lavallee-construction/src/index.css` — global palette and visual tokens
-- `artifacts/lavallee-construction/public/` — supplied logo and local construction media
+- `artifacts/lavallee-construction/public/` — supplied logo and illustrative media retained from the template
 
 ## Architecture decisions
 
@@ -33,15 +33,15 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-- Site vitrine en français pour une entreprise de construction de Victoriaville
-- Navigation responsive, services, présentation de projet, approche, FAQ et coordonnées
+- Site vitrine en français pour une entreprise spécialisée en pose de céramique à Thetford Mines
+- Navigation responsive, services résidentiels et commerciaux, présentation de projet, FAQ et coordonnées
 - Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 
 ## User preferences
 
-- Garder le gabarit existant, le logo O. Renaud et l'accent `#FDEB05`.
-- Ne pas attribuer les photos d'illustration à O. Renaud Construction Inc. ni inventer de réalisations, licences, garanties ou témoignages.
-- Conserver l'information confirmée sur la participation au garage Integra Tire / Pneus FT à Victoriaville.
+- Garder le gabarit existant, le logo Céramiques Appalaches et l'accent `#FDEB05`.
+- Ne pas attribuer les photos d'illustration à Céramiques Appalaches inc. ni inventer de réalisations, licences, garanties ou témoignages.
+- Conserver inchangés les compteurs et statistiques du gabarit jusqu'à nouvelle instruction explicite.
 
 ## Gotchas
 

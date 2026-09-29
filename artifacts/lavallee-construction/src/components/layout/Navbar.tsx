@@ -25,12 +25,12 @@ export function Navbar() {
   ];
 
   const servicesLinks = [
-    { name: "Construction résidentielle", href: "/#services" },
-    { name: "Construction commerciale", href: "/#services" },
-    { name: "Rénovation", href: "/#services" },
-    { name: "Agrandissement", href: "/#services" },
-    { name: "Charpenterie et structure", href: "/#services" },
-    { name: "Gestion de projet", href: "/#services" },
+    { name: "Salles de bain", href: "/#services" },
+    { name: "Cuisines et dosserets", href: "/#services" },
+    { name: "Planchers de céramique", href: "/#services" },
+    { name: "Douches en céramique", href: "/#services" },
+    { name: "Murs et installations décoratives", href: "/#services" },
+    { name: "Projets commerciaux", href: "/#services" },
   ];
 
   return (
@@ -42,8 +42,8 @@ export function Navbar() {
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="relative z-50 block">
           <img
-            src="/logo-orenaud.png"
-            alt="O. Renaud Construction Inc."
+            src="/logo-ceramiques-appalaches.png"
+            alt="Céramiques Appalaches inc."
             className="h-15 md:h-18 w-auto object-contain object-left"
           />
         </Link>

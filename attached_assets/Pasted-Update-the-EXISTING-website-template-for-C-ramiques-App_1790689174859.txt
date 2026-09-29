@@ -1,0 +1,573 @@
+Update the EXISTING website template for Céramiques Appalaches inc.
+
+CRITICAL INSTRUCTIONS — FOLLOW THESE EXACTLY:
+
+- DO NOT redesign the website.
+- DO NOT change the current layout.
+- DO NOT change the structure or order of any sections.
+- DO NOT add or remove sections/components.
+- DO NOT change styling, spacing, navigation, animations, buttons, cards or visual elements.
+- DO NOT create a new website.
+- ONLY update the business-specific content for Céramiques Appalaches inc.
+- Keep every existing section/component exactly where it currently is.
+- Adapt the content to the template instead of adapting the template to the content.
+- DO NOT CHANGE ANY EXISTING STATS, COUNTERS, METRICS, NUMBERS OR STATISTIC COMPONENTS ON THE TEMPLATE SITE.
+- Leave ALL existing template statistics exactly as they currently are.
+- Do not replace template statistics with Facebook followers, reviews, project counts, years of experience or invented data.
+
+VERY IMPORTANT — TESTIMONIAL SECTION:
+- The existing TESTIMONIAL section MUST remain a testimonial section.
+- DO NOT transform the testimonial section into services, benefits, projects, FAQ, statistics or any other type of content.
+- Keep the exact existing testimonial component/layout.
+- Only replace the testimonial text/name/content when real testimonials are available.
+- DO NOT invent customer testimonials, names, ratings or quotes.
+- If no verified testimonials have been provided, keep the existing testimonial placeholders/content structure until real testimonials are supplied.
+
+
+BUSINESS INFORMATION
+
+Company:
+Céramiques Appalaches inc.
+
+Business type:
+Entrepreneur spécialisé en pose de céramique / service de pose de revêtements en carreaux
+
+Main markets:
+- Résidentiel
+- Commercial
+
+Region:
+Chaudière-Appalaches
+
+Confirmed location:
+Thetford Mines, Québec
+
+Phone:
+(418) 334-9925
+
+Email:
+ceramiquesappalaches@outlook.com
+
+Confirmed expertise:
+- Pose de céramique
+- Pose de revêtements en carreaux
+- Projets résidentiels
+- Projets commerciaux
+
+The company showcases detailed tile installations and decorative layouts, including patterns such as checkerboard / damier effects.
+
+Write the entire website in French.
+
+Do not invent:
+- RBQ number
+- Years of experience
+- Guarantees
+- Certifications
+- Number of employees
+- Number of projects
+- Brands
+- Suppliers
+- Specific service territory beyond confirmed information
+- Customer testimonials
+- Ratings
+- Business statistics
+
+
+1. ACCUEIL
+
+HERO
+
+Title:
+La précision au cœur de chaque installation.
+
+Subtitle:
+Pose de céramique résidentielle et commerciale dans la région de Chaudière-Appalaches. Des installations soignées pour donner caractère et durabilité à vos espaces.
+
+Primary CTA:
+Demander une soumission
+
+Secondary CTA:
+Voir nos réalisations
+
+
+INTRODUCTION
+
+Title:
+La céramique, installée avec précision.
+
+Content:
+Céramiques Appalaches inc. se spécialise dans la pose de céramique et de revêtements en carreaux pour les projets résidentiels et commerciaux.
+
+Planchers, murs, salles de bain, cuisines ou installations décoratives : chaque projet demande une préparation adéquate, des découpes précises et une attention particulière aux détails.
+
+Notre objectif est de réaliser une installation propre et cohérente qui met en valeur le matériau choisi et l’espace dans lequel il s’intègre.
+
+
+SERVICES SECTION
+
+Keep the EXACT existing number of service cards/components.
+
+If the template contains 6 service cards, use:
+
+1. SALLES DE BAIN
+
+Pose de céramique pour les planchers, murs, douches et différentes surfaces de salle de bain.
+
+2. CUISINES ET DOSSERETS
+
+Installation de carreaux pour les dosserets, murs et planchers afin de compléter l’aménagement de votre cuisine.
+
+3. PLANCHERS DE CÉRAMIQUE
+
+Pose de céramique pour créer des surfaces durables, uniformes et adaptées à différents espaces.
+
+4. DOUCHES EN CÉRAMIQUE
+
+Installation de carreaux pour les murs, planchers et différentes composantes de projets de douche.
+
+5. MURS ET INSTALLATIONS DÉCORATIVES
+
+Pose de céramique sur murs et surfaces décoratives, incluant différents motifs et compositions selon le projet.
+
+6. PROJETS COMMERCIAUX
+
+Pose de revêtements en carreaux pour différents espaces commerciaux selon les besoins du projet.
+
+If the template contains a different number of service cards, combine these services WITHOUT changing the layout.
+
+
+2. SALLES DE BAIN
+
+Title:
+Transformez votre salle de bain avec la céramique.
+
+Content:
+La céramique permet de créer une salle de bain à la fois fonctionnelle et distinctive.
+
+Céramiques Appalaches inc. réalise différents travaux de pose de carreaux pour les projets de salles de bain, en portant une attention particulière aux alignements, aux découpes et aux détails de finition.
+
+Possible applications:
+- Planchers
+- Murs
+- Douches
+- Contours de bain
+- Niches
+- Murs décoratifs
+- Motifs personnalisés
+
+Do not claim complete bathroom renovation, plumbing or electrical services unless confirmed.
+
+CTA:
+Parler de mon projet
+
+
+3. DOUCHES EN CÉRAMIQUE
+
+Title:
+Une douche où chaque détail compte.
+
+Content:
+Les projets de douche demandent une installation particulièrement précise afin d’obtenir un résultat propre et harmonieux.
+
+Du choix du format des carreaux jusqu’aux découpes et à l’alignement final, Céramiques Appalaches inc. réalise la pose de céramique en fonction de la configuration et du style recherchés.
+
+Possible applications:
+- Murs de douche
+- Planchers de douche
+- Niches
+- Accents décoratifs
+- Différents formats de carreaux
+
+Do not make unsupported claims regarding waterproofing systems unless confirmed.
+
+CTA:
+Demander une soumission
+
+
+4. CUISINES ET DOSSERETS
+
+Title:
+Le détail qui complète votre cuisine.
+
+Content:
+Un dosseret peut complètement transformer l’apparence d’une cuisine et créer un lien entre les armoires, les comptoirs et les autres éléments de l’espace.
+
+Céramiques Appalaches inc. réalise des installations de carreaux adaptées au style et aux dimensions de chaque cuisine.
+
+Possible applications:
+- Dosseret
+- Mur complet
+- Céramique décorative
+- Plancher
+- Installation autour des éléments existants
+
+CTA:
+Présenter mon projet
+
+
+5. PLANCHERS
+
+Title:
+Des planchers installés avec précision.
+
+Content:
+La qualité d’un plancher de céramique dépend autant du matériau choisi que de la précision de son installation.
+
+Céramiques Appalaches inc. réalise la pose de carreaux pour différents espaces résidentiels et commerciaux.
+
+Possible spaces:
+- Cuisine
+- Salle de bain
+- Entrée
+- Aire de vie
+- Espace commercial
+- Autres surfaces adaptées à la céramique
+
+CTA:
+Obtenir une soumission
+
+
+6. MOTIFS ET INSTALLATIONS DÉCORATIVES
+
+Title:
+Donnez du caractère à votre espace.
+
+Content:
+La céramique offre de nombreuses possibilités pour créer un résultat qui se démarque.
+
+Jeux de couleurs, contrastes, motifs et compositions peuvent permettre de transformer une surface en véritable élément architectural.
+
+Céramiques Appalaches inc. réalise différents projets où la précision de l’installation contribue directement à l’effet recherché.
+
+Confirmed example:
+- Effet damier / motif en carreaux contrastés
+
+Do not claim every complex pattern or specialty technique is available unless confirmed.
+
+CTA:
+Discuter de mon idée
+
+
+7. PROJETS COMMERCIAUX
+
+Title:
+Une installation adaptée aux espaces commerciaux.
+
+Content:
+Céramiques Appalaches inc. réalise également des projets de pose de céramique dans le secteur commercial.
+
+Chaque espace possède ses propres dimensions, contraintes et besoins. Les travaux sont donc évalués selon le projet afin de déterminer l’approche appropriée.
+
+Possible applications:
+- Planchers
+- Murs
+- Surfaces en carreaux
+- Espaces commerciaux
+- Installations décoratives
+
+CTA:
+Parler de mon projet commercial
+
+
+8. PROCESSUS
+
+Title:
+Votre projet, étape par étape.
+
+Keep the existing process component exactly as it currently is.
+
+1. DISCUSSION
+
+Présentez-nous votre projet, l’espace concerné et le résultat recherché.
+
+2. ÉVALUATION
+
+Nous prenons connaissance des surfaces, du matériau et des particularités de l’installation.
+
+3. PLANIFICATION
+
+Le projet est préparé en fonction du format, de la disposition et des détails à considérer.
+
+4. INSTALLATION
+
+Les carreaux sont installés avec attention aux alignements, aux découpes et à l’ensemble du résultat.
+
+5. FINITION
+
+Les dernières étapes sont complétées afin de finaliser l’installation.
+
+
+9. RÉALISATIONS
+
+Title:
+Nos réalisations
+
+Introduction:
+Découvrez quelques projets réalisés par Céramiques Appalaches inc. et différentes façons d’intégrer la céramique dans des espaces résidentiels et commerciaux.
+
+Keep the EXISTING project/gallery components exactly as they currently are.
+
+Possible categories:
+- Tous
+- Salles de bain
+- Douches
+- Cuisines
+- Planchers
+- Motifs
+- Commercial
+
+For each project, only include confirmed information:
+- Type de projet
+- Type de surface
+- Matériau if actually known
+- Motif if confirmed
+- Particularités du projet
+- Photos du résultat
+
+Do not guess exact tile brands, collections, dimensions or materials from photos alone.
+
+
+10. POURQUOI CÉRAMIQUES APPALACHES
+
+Keep the exact existing number of content blocks.
+
+Possible content:
+
+SPÉCIALISATION
+
+Une entreprise spécialisée dans la pose de céramique et de revêtements en carreaux.
+
+PRÉCISION
+
+Une attention particulière portée aux alignements, découpes et détails de chaque installation.
+
+RÉSIDENTIEL
+
+Des installations adaptées aux cuisines, salles de bain, planchers et autres espaces de la maison.
+
+COMMERCIAL
+
+Des services de pose de céramique également offerts pour différents projets commerciaux.
+
+PROJETS PERSONNALISÉS
+
+Des installations adaptées aux dimensions, au motif et au résultat recherché.
+
+FINITION
+
+Un souci du résultat final jusque dans les derniers détails.
+
+
+11. À PROPOS
+
+Title:
+À propos de Céramiques Appalaches inc.
+
+Content:
+Céramiques Appalaches inc. est un entrepreneur spécialisé en pose de céramique et de revêtements en carreaux dans la région de Chaudière-Appalaches.
+
+L’entreprise réalise des projets résidentiels et commerciaux et intervient sur différentes surfaces, notamment les planchers, murs, cuisines, salles de bain et douches.
+
+Chaque installation est abordée selon les particularités de l’espace, le matériau choisi et le résultat recherché.
+
+
+12. TESTIMONIALS / TÉMOIGNAGES
+
+THIS SECTION MUST REMAIN A TESTIMONIAL SECTION.
+
+DO NOT:
+- Replace it with a service section
+- Replace it with statistics
+- Replace it with "Pourquoi nous"
+- Replace it with projects
+- Replace it with FAQ
+- Remove it
+- Change its component type or layout
+
+Section title:
+Ce que nos clients disent de notre travail
+
+Optional intro:
+La satisfaction de nos clients est au cœur de chaque projet réalisé.
+
+IMPORTANT:
+Only use REAL customer testimonials that already exist in the template/database or that are explicitly provided.
+
+DO NOT invent:
+- Customer names
+- Quotes
+- Star ratings
+- Project descriptions attributed to customers
+- Review dates
+
+If no verified testimonial content is currently available, PRESERVE the existing testimonial content/placeholders and structure rather than fabricating reviews.
+
+
+13. STATS / COUNTERS SECTION
+
+DO NOT MODIFY THIS SECTION AT ALL.
+
+Keep EXACTLY:
+- Every existing statistic
+- Every existing number
+- Every existing percentage
+- Every existing counter
+- Every existing metric
+- Every existing value
+- Existing animations
+- Existing statistic labels where necessary to preserve their meaning
+
+DO NOT replace template stats with:
+- 302 Facebook followers
+- 6 following
+- 2 Facebook reviews
+- Years of experience
+- Number of projects
+- Number of customers
+- Satisfaction rate
+- Any invented statistic
+
+ALL TEMPLATE STATS MUST REMAIN EXACTLY AS THEY CURRENTLY ARE.
+
+
+14. FAQ
+
+Create concise answers for:
+
+- Quels types de projets réalisez-vous?
+- Faites-vous de la pose de céramique résidentielle?
+- Travaillez-vous également dans le commercial?
+- Faites-vous des salles de bain?
+- Installez-vous de la céramique dans les douches?
+- Faites-vous des dosserets de cuisine?
+- Installez-vous des planchers de céramique?
+- Pouvez-vous réaliser des motifs comme un effet damier?
+- Faites-vous des murs complets en céramique?
+- Comment fonctionne une demande de soumission?
+- Puis-je vous envoyer des photos ou des plans?
+- Dans quelle région travaillez-vous?
+
+Confirmed region:
+Chaudière-Appalaches
+
+Confirmed location:
+Thetford Mines, Québec
+
+Do not invent a more precise service radius.
+
+
+15. CONTACT / SOUMISSION
+
+Title:
+Parlons de votre projet.
+
+Content:
+Salle de bain, douche, cuisine, plancher ou projet commercial : présentez-nous votre espace et ce que vous souhaitez réaliser.
+
+Céramiques Appalaches inc.
+
+Location:
+Thetford Mines, Québec
+
+Region:
+Chaudière-Appalaches
+
+Phone:
+(418) 334-9925
+
+Email:
+ceramiquesappalaches@outlook.com
+
+Keep the EXISTING contact form structure exactly as it currently is.
+
+If field labels can be updated without changing the component, use:
+- Nom
+- Téléphone
+- Courriel
+- Ville du projet
+- Type de projet
+- Description
+- Surface approximative
+- Échéancier souhaité
+- Photos
+- Inspirations
+
+Project type options:
+- Salle de bain
+- Douche
+- Cuisine / dosseret
+- Plancher
+- Mur
+- Commercial
+- Motif / projet personnalisé
+- Autre
+
+CTA:
+Demander une soumission
+
+
+16. FINAL CTA
+
+Title:
+Vous avez un projet de céramique?
+
+Content:
+Présentez-nous votre projet et discutons de l’installation que vous souhaitez réaliser.
+
+CTA:
+Demander une soumission
+
+Phone:
+(418) 334-9925
+
+
+SEO CONTENT
+
+Naturally incorporate relevant terms such as:
+- pose de céramique Thetford Mines
+- carreleur Thetford Mines
+- installateur céramique Thetford Mines
+- pose de céramique Chaudière-Appalaches
+- céramique salle de bain
+- douche en céramique
+- dosseret de cuisine
+- plancher de céramique
+- installation de carreaux
+- pose de carrelage
+- céramique commerciale
+- entrepreneur spécialisé en céramique
+
+Do not keyword-stuff.
+
+Do not create individual location-specific SEO pages beyond confirmed locations/service areas.
+
+
+FINAL INSTRUCTION — ABSOLUTELY CRITICAL
+
+KEEP THE EXISTING WEBSITE TEMPLATE EXACTLY AS IT CURRENTLY IS.
+
+DO NOT:
+- Redesign the website
+- Change the visual identity
+- Change the layout
+- Change page structure
+- Reorder sections
+- Add sections
+- Remove sections
+- Change cards/components
+- Change navigation
+- Change styling
+- Change spacing
+- Change animations
+- Change existing statistics
+- Change counters
+- Change metrics
+- Replace any existing template numbers
+- Convert the testimonial section into another type of section
+- Invent testimonials
+
+ONLY UPDATE THE BUSINESS-SPECIFIC CONTENT.
+
+ALL EXISTING TEMPLATE STATS MUST REMAIN COMPLETELY UNCHANGED.
+
+THE TESTIMONIAL SECTION MUST REMAIN A TESTIMONIAL SECTION.

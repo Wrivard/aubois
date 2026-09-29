@@ -7,12 +7,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           <div className="lg:col-span-1 flex flex-col items-start">
             <img 
-              src="/logo-orenaud.png"
-              alt="O. Renaud Construction Inc."
+              src="/logo-ceramiques-appalaches.png"
+              alt="Céramiques Appalaches inc."
               className="h-24 w-auto object-contain object-left mb-6"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Entreprise de construction basée à Victoriaville. Une approche professionnelle et un souci constant du travail bien fait.
+              Entrepreneur spécialisé en pose de céramique à Thetford Mines, pour les projets résidentiels et commerciaux en Chaudière-Appalaches.
             </p>
           </div>
           
@@ -31,15 +31,15 @@ export function Footer() {
             <ul className="flex flex-col gap-4 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <span className="font-bold text-primary">T.</span>
-                <a href="tel:+18197401938" className="hover:text-white">(819) 740-1938</a>
+                <a href="tel:+14183349925" className="hover:text-white">(418) 334-9925</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-primary">C.</span>
-                <a href="mailto:info@orenaudconstruction.com" className="hover:text-white break-all">info@orenaudconstruction.com</a>
+                <a href="mailto:ceramiquesappalaches@outlook.com" className="hover:text-white break-all">ceramiquesappalaches@outlook.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-primary">A.</span>
-                <span>1359 Notre-Dame Ouest,<br/>Victoriaville, QC G6T 2V6</span>
+                <span>Thetford Mines, Québec<br/>Chaudière-Appalaches</span>
               </li>
             </ul>
           </div>
@@ -57,10 +57,10 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/70">
-          <p>© {new Date().getFullYear()} O. Renaud Construction Inc. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Céramiques Appalaches inc. Tous droits réservés.</p>
           <div className="flex gap-6">
-            <a href="mailto:info@orenaudconstruction.com?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
-            <a href="mailto:info@orenaudconstruction.com" className="hover:text-white transition-colors">Nous écrire</a>
+            <a href="mailto:ceramiquesappalaches@outlook.com?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
+            <a href="mailto:ceramiquesappalaches@outlook.com" className="hover:text-white transition-colors">Nous écrire</a>
           </div>
         </div>
       </div>

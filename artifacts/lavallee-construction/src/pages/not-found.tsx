@@ -14,7 +14,7 @@ export default function NotFound() {
           </div>
 
           <p className="mt-4 text-sm text-gray-600">
-            Cette page n'existe pas. Retournez à l'accueil pour découvrir O. Renaud Construction Inc.
+            Cette page n'existe pas. Retournez à l'accueil pour découvrir Céramiques Appalaches inc.
           </p>
         </CardContent>
       </Card>

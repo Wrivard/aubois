@@ -27,16 +27,16 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              <span className="text-xs font-bold tracking-widest uppercase">Construction à Victoriaville</span>
+              <span className="text-xs font-bold tracking-widest uppercase">Pose de céramique à Thetford Mines</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]">
-              Construire avec rigueur. <br />
-              <span className="text-primary">Réaliser avec fierté.</span>
+              La précision au cœur <br />
+              <span className="text-primary">de chaque installation.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl leading-relaxed font-medium drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
-              O. Renaud Construction Inc. accompagne ses clients dans la réalisation de projets de construction à Victoriaville, avec une approche professionnelle et un souci constant du travail bien fait.
+              Pose de céramique résidentielle et commerciale dans la région de Chaudière-Appalaches. Des installations soignées pour donner caractère et durabilité à vos espaces.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -77,32 +77,32 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/orenaud-03.jpg" alt="Maison résidentielle en pierre" className="w-full h-full object-cover" />
+                <img src="/photos/orenaud-03.jpg" alt="Image d’illustration d’un espace intérieur" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
               <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-secondary text-white p-6 shadow-xl z-20 hidden md:block w-48">
                 <HardHat className="w-10 h-10 text-primary mb-4" />
-                <p className="font-bold text-lg leading-tight">Votre projet, notre engagement.</p>
+                <p className="font-bold text-lg leading-tight">La précision dans chaque détail.</p>
               </div>
             </div>
             
             <div>
-              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos de O. Renaud Construction Inc.</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-secondary">Votre projet, notre engagement.</h2>
+              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos de Céramiques Appalaches inc.</span>
+              <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-secondary">La céramique, installée avec précision.</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                O. Renaud Construction Inc. est une entreprise de construction basée à Victoriaville. Chaque projet comporte ses propres défis, besoins et objectifs.
+                Céramiques Appalaches inc. est un entrepreneur spécialisé en pose de céramique et de revêtements en carreaux dans la région de Chaudière-Appalaches.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Nous accompagnons nos clients dans leurs projets résidentiels et commerciaux, de construction et de rénovation, en misant sur la planification, la collaboration et le souci du travail bien fait.
+                Planchers, murs, salles de bain, cuisines ou installations décoratives : chaque projet demande une préparation adéquate, des découpes précises et une attention particulière aux détails.
               </p>
               
               <ul className="space-y-4 mb-10">
                 {[
-                  "Écouter et comprendre les besoins du projet",
-                  "Organiser clairement les différentes étapes",
-                  "Collaborer tout au long des travaux",
-                  "Porter attention aux détails de l'exécution"
+                  "Pose de céramique résidentielle et commerciale",
+                  "Installation de carreaux sur murs et planchers",
+                  "Alignements et découpes soignés",
+                  "Motifs et compositions selon le projet"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 font-medium text-secondary">
                     <CheckCircle className="w-6 h-6 text-primary shrink-0" />
@@ -113,7 +113,7 @@ export default function Home() {
               
               <Link href="/soumission">
                 <Button className="font-bold uppercase tracking-wider">
-                  Discuter de votre projet
+                  Parler de mon projet
                 </Button>
               </Link>
             </div>
@@ -126,47 +126,47 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Nos Services</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-secondary">Construire et transformer votre propriété.</h2>
+              <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-secondary">La céramique adaptée à votre espace.</h2>
             <p className="text-lg text-muted-foreground">
-                Votre maison ou votre bâtiment doit évoluer avec vos besoins. Découvrez les types de projets dont nous pouvons discuter avec vous à Victoriaville.
+                Découvrez nos services de pose de céramique pour les espaces résidentiels et commerciaux.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Construction résidentielle",
-                desc: "Accompagnement dans la réalisation de projets résidentiels adaptés aux besoins du propriétaire et aux particularités du projet.",
+                title: "Salles de bain",
+                desc: "Pose de céramique pour les planchers, murs, douches et différentes surfaces de salle de bain.",
                 img: "/photos/orenaud-01.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
-                title: "Construction commerciale",
-                desc: "Participation à des projets commerciaux nécessitant coordination, efficacité et qualité d'exécution.",
+                title: "Cuisines et dosserets",
+                desc: "Installation de carreaux pour les dosserets, murs et planchers afin de compléter l’aménagement de votre cuisine.",
                 img: "/photos/orenaud-02.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
-                title: "Rénovation",
-                desc: "Transformation et amélioration de bâtiments existants afin de les adapter à de nouveaux besoins.",
+                title: "Planchers de céramique",
+                desc: "Pose de céramique pour créer des surfaces durables, uniformes et adaptées à différents espaces.",
                 img: "/photos/orenaud-06.jpg",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
-                title: "Agrandissement",
-                desc: "Création de nouveaux espaces permettant de faire évoluer un bâtiment selon les besoins de ses occupants.",
+                title: "Douches en céramique",
+                desc: "Installation de carreaux pour les murs, planchers et différentes composantes de projets de douche.",
                 img: "/photos/orenaud-13.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
-                title: "Charpenterie et structure",
-                desc: "Travaux de construction et de charpenterie intégrés aux projets, selon les besoins à évaluer.",
+                title: "Murs et installations décoratives",
+                desc: "Pose de céramique sur murs et surfaces décoratives, incluant différents motifs et compositions selon le projet.",
                 img: "/photos/orenaud-12.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
-                title: "Gestion et réalisation de projet",
-                desc: "Coordination des étapes nécessaires pour faire progresser un projet de construction de façon structurée.",
+                title: "Projets commerciaux",
+                desc: "Pose de revêtements en carreaux pour différents espaces commerciaux selon les besoins du projet.",
                 img: "/photos/orenaud-05.jpg",
                 icon: <HardHat className="w-6 h-6" />
               }
@@ -197,21 +197,21 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
               <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold">Des projets commerciaux qui prennent forme.</h2>
-              <p className="text-white/80 mt-4">O. Renaud Construction Inc. a contribué au nouveau garage Integra Tire / Pneus FT à Victoriaville. Pour les autres types de projets, discutons de vos besoins.</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold">La céramique, selon votre projet.</h2>
+              <p className="text-white/80 mt-4">Céramiques Appalaches inc. réalise des installations de carreaux pour différents espaces. Images présentées à titre d’illustration et non comme des réalisations de l’entreprise.</p>
             </div>
             <Link href="/soumission">
               <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-secondary uppercase tracking-wider font-bold">
-                Discuter d'un projet commercial
+                Discuter de mon projet
               </Button>
             </Link>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: "/photos/orenaud-12.jpg", title: "Nouveau garage Integra Tire / Pneus FT", tag: "Commercial" },
-              { img: "/photos/orenaud-13.jpg", title: "Votre projet d'agrandissement", tag: "Agrandissement" },
-              { img: "/photos/orenaud-08.jpg", title: "Votre projet de rénovation", tag: "Rénovation" },
+              { img: "/photos/orenaud-12.jpg", title: "Votre projet commercial", tag: "Commercial" },
+              { img: "/photos/orenaud-13.jpg", title: "Votre projet de salle de bain", tag: "Salle de bain" },
+              { img: "/photos/orenaud-08.jpg", title: "Votre projet de cuisine", tag: "Cuisine" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
@@ -231,38 +231,38 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div className="max-w-2xl">
                 <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">En images</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-secondary">Un projet bien coordonné, du début à la fin.</h2>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-secondary">Votre projet, étape par étape.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Discussion, évaluation, planification, réalisation et finalisation : notre approche vise à garder le projet structuré et la communication efficace. Images fournies à titre d'illustration.
+               Discussion, évaluation, planification, installation et finition : chaque étape tient compte de votre espace et du résultat recherché. Images fournies à titre d’illustration.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
                 src="/photos/orenaud-07.jpg"
-                alt="Cuisine et salon aménagés"
+                 alt="Image d’illustration d’un espace intérieur"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
                 src="/photos/orenaud-04.jpg"
-                alt="Espace commercial avec coin cuisine et table de réunion"
+                 alt="Image d’illustration d’un espace commercial"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
                 src="/photos/orenaud-09.jpg"
-                alt="Hall d'accueil d'un espace commercial"
+                 alt="Image d’illustration d’un espace intérieur"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
                 src="/photos/orenaud-11.jpg"
-                alt="Coin détente et espace de travail aménagé"
+                 alt="Image d’illustration d’un espace intérieur"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
@@ -281,9 +281,9 @@ export default function Home() {
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
-            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Un projet à réaliser?</h2>
+            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Vous avez un projet de céramique?</h2>
           <p className="text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Résidentiel, commercial, construction ou rénovation : présentez-nous votre projet et voyons comment O. Renaud Construction Inc. peut y contribuer.
+              Présentez-nous votre projet et discutons de l’installation que vous souhaitez réaliser.
           </p>
           <Link href="/soumission">
             <Button size="lg" className="h-16 px-10 text-lg font-bold uppercase tracking-wider">
