@@ -30,15 +30,15 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">Contact</h3>
             <ul className="flex flex-col gap-4 text-sm text-white/70">
               <li className="flex items-start gap-3">
-                <span className="font-bold text-primary">T.</span>
+                <span className="font-bold text-white">T.</span>
                 <a href="tel:+14183349925" className="hover:text-white">(418) 334-9925</a>
               </li>
               <li className="flex items-start gap-3">
-                <span className="font-bold text-primary">C.</span>
+                <span className="font-bold text-white">C.</span>
                 <a href="mailto:ceramiquesappalaches@outlook.com" className="hover:text-white break-all">ceramiquesappalaches@outlook.com</a>
               </li>
               <li className="flex items-start gap-3">
-                <span className="font-bold text-primary">A.</span>
+                <span className="font-bold text-white">A.</span>
                 <span>Thetford Mines, Québec<br/>Chaudière-Appalaches</span>
               </li>
             </ul>
@@ -48,7 +48,7 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">Votre projet</h3>
             <div className="mt-6">
               <Link href="/soumission">
-                <button className="bg-primary hover:bg-primary/90 text-secondary font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full">
+                <button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full">
                   Demander une soumission
                 </button>
               </Link>

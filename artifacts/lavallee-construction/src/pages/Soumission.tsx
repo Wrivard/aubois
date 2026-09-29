@@ -112,7 +112,7 @@ export default function Soumission() {
         </div>
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
-            <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
+            <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Demande de soumission</h1>
             <p className="text-lg text-white/80 leading-relaxed">
               Salle de bain, douche, cuisine, plancher ou projet commercial : présentez-nous votre projet de pose de céramique. Votre demande sera préparée dans votre messagerie.
@@ -148,7 +148,7 @@ export default function Soumission() {
                   <div className="flex flex-col sm:flex-row gap-4 mb-10 pb-6 border-b border-border">
                     {steps.map(s => (
                       <div key={s.num} className={`flex items-center gap-3 flex-1 ${step === s.num ? 'opacity-100' : step > s.num ? 'opacity-70' : 'opacity-40'}`}>
-                         <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= s.num ? 'bg-primary text-secondary' : 'bg-muted text-muted-foreground'}`}>
+                         <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= s.num ? 'bg-primary text-white' : 'bg-muted text-muted-foreground'}`}>
                           {step > s.num ? <CheckCircle2 className="w-4 h-4"/> : s.num}
                         </div>
                         <div>
@@ -334,9 +334,9 @@ export default function Soumission() {
 
             {/* Sidebar (Right) */}
             <div className="lg:col-span-1 space-y-6">
-              <div className="bg-primary text-secondary p-8">
+              <div className="bg-primary text-white p-8">
                 <h3 className="text-xl font-bold mb-4">Parlons de votre projet</h3>
-                <p className="mb-6 text-secondary/90 text-sm leading-relaxed">
+                 <p className="mb-6 text-white/90 text-sm leading-relaxed">
                   Vous pouvez aussi nous joindre directement par téléphone ou courriel pour discuter de votre projet.
                 </p>
                 <div className="space-y-4">

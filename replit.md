@@ -39,7 +39,7 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## User preferences
 
-- Garder le gabarit existant, le logo Céramiques Appalaches et l'accent `#FDEB05`.
+- Garder le gabarit existant, le logo Céramiques Appalaches et l'accent `#294898`.
 - Ne pas attribuer les photos d'illustration à Céramiques Appalaches inc. ni inventer de réalisations, licences, garanties ou témoignages.
 - Conserver inchangés les compteurs et statistiques du gabarit jusqu'à nouvelle instruction explicite.
 

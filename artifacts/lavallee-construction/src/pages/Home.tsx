@@ -32,7 +32,7 @@ export default function Home() {
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]">
               La précision au cœur <br />
-              <span className="text-primary">de chaque installation.</span>
+              <span className="text-white">de chaque installation.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl leading-relaxed font-medium drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
@@ -174,7 +174,7 @@ export default function Home() {
               <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img src={srv.img} alt={`Image d'illustration — ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute top-4 left-4 bg-primary text-secondary p-3 shadow-lg">
+                  <div className="absolute top-4 left-4 bg-primary text-white p-3 shadow-lg">
                     {srv.icon}
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
-              <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
+              <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
               <h2 className="text-4xl md:text-5xl font-extrabold">La céramique, selon votre projet.</h2>
               <p className="text-white/80 mt-4">Céramiques Appalaches inc. réalise des installations de carreaux pour différents espaces. Images présentées à titre d’illustration et non comme des réalisations de l’entreprise.</p>
             </div>
@@ -216,7 +216,7 @@ export default function Home() {
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                 <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block bg-primary text-secondary text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
+                  <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
                 </div>
               </div>

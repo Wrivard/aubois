@@ -50,10 +50,10 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
-          <Link href="/" className="text-sm font-semibold text-white hover:text-primary transition-colors">
+          <Link href="/" className="text-sm font-semibold text-white hover:underline transition-colors">
             Accueil
           </Link>
-          <a href="/#a-propos" className="text-sm font-semibold text-white hover:text-primary transition-colors">
+          <a href="/#a-propos" className="text-sm font-semibold text-white hover:underline transition-colors">
             À propos
           </a>
           
@@ -62,7 +62,7 @@ export function Navbar() {
             onMouseEnter={() => setServicesDropdownOpen(true)}
             onMouseLeave={() => setServicesDropdownOpen(false)}
           >
-            <a href="/#services" className="text-sm font-semibold text-white hover:text-primary transition-colors flex items-center gap-1">
+            <a href="/#services" className="text-sm font-semibold text-white hover:underline transition-colors flex items-center gap-1">
               Services <ChevronDown className="w-4 h-4" />
             </a>
             
@@ -73,7 +73,7 @@ export function Navbar() {
                     <a
                       key={link.name}
                       href={link.href}
-                      className="px-4 py-2 text-sm font-medium text-white hover:bg-white/10 hover:text-primary transition-colors"
+                      className="px-4 py-2 text-sm font-medium text-white hover:bg-white/10 hover:underline transition-colors"
                       onClick={() => setServicesDropdownOpen(false)}
                     >
                       {link.name}
@@ -84,10 +84,10 @@ export function Navbar() {
             )}
           </div>
 
-          <a href="/#realisations" className="text-sm font-semibold text-white hover:text-primary transition-colors">
+          <a href="/#realisations" className="text-sm font-semibold text-white hover:underline transition-colors">
             Réalisations
           </a>
-          <a href="/#contact" className="text-sm font-semibold text-white hover:text-primary transition-colors">
+          <a href="/#contact" className="text-sm font-semibold text-white hover:underline transition-colors">
             Contact
           </a>
         </nav>
@@ -116,14 +116,14 @@ export function Navbar() {
           <nav className="flex flex-col gap-6 text-xl font-bold">
             <Link 
               href="/" 
-              className="border-b border-[#333] pb-4 hover:text-primary"
+              className="border-b border-[#333] pb-4 hover:underline"
               onClick={() => setMobileMenuOpen(false)}
             >
               Accueil
             </Link>
             <a 
               href="/#a-propos" 
-              className="border-b border-[#333] pb-4 hover:text-primary"
+              className="border-b border-[#333] pb-4 hover:underline"
               onClick={() => setMobileMenuOpen(false)}
             >
               À propos
@@ -135,7 +135,7 @@ export function Navbar() {
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-lg hover:text-primary"
+                    className="text-lg hover:underline"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.name}
@@ -145,14 +145,14 @@ export function Navbar() {
             </div>
             <a 
               href="/#realisations" 
-              className="border-b border-[#333] pb-4 hover:text-primary"
+              className="border-b border-[#333] pb-4 hover:underline"
               onClick={() => setMobileMenuOpen(false)}
             >
               Réalisations
             </a>
             <a 
               href="/#contact"
-              className="border-b border-[#333] pb-4 hover:text-primary"
+              className="border-b border-[#333] pb-4 hover:underline"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
