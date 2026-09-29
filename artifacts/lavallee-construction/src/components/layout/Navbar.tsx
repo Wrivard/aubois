@@ -36,20 +36,20 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#1B1B1B] shadow-md py-4" : "bg-[#1B1B1B] py-6"
+        isScrolled ? "bg-[#1B1B1B] shadow-md py-3" : "bg-[#1B1B1B] py-4"
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="relative z-50 block">
+      <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[75px] lg:min-h-[90px]">
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Céramiques Appalaches inc. — accueil" onClick={() => setMobileMenuOpen(false)}>
           <img
             src="/logo-ceramiques-appalaches.png"
             alt="Céramiques Appalaches inc."
-            className="h-15 md:h-18 w-auto object-contain object-left"
+            className="h-[75px] lg:h-[90px] w-auto object-contain"
           />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-3 xl:gap-8">
           <Link href="/" className="text-sm font-semibold text-white hover:underline transition-colors">
             Accueil
           </Link>
@@ -68,7 +68,7 @@ export function Navbar() {
             
             {servicesDropdownOpen && (
               <div className="absolute top-full left-0 pt-4 w-64">
-                <div className="bg-[#1B1B1B] border border-[#333] shadow-lg flex flex-col p-2">
+                <div className="bg-[#1B1B1B] border border-[#333] shadow-lg flex flex-col p-2 rounded-xl">
                   {servicesLinks.map((link) => (
                     <a
                       key={link.name}
@@ -102,7 +102,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden relative z-50 p-2 -mr-2"
+          className="lg:hidden relative z-50 p-2 -mr-2 ml-auto"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Menu"
         >
@@ -112,7 +112,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#1B1B1B] z-40 lg:hidden flex flex-col pt-24 px-6 h-[100dvh] overflow-y-auto text-white">
+        <div className="fixed inset-0 bg-[#1B1B1B] z-40 lg:hidden flex flex-col pt-32 px-6 h-[100dvh] overflow-y-auto text-white">
           <nav className="flex flex-col gap-6 text-xl font-bold">
             <Link 
               href="/" 

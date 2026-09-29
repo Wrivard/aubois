@@ -25,7 +25,7 @@ export default function Home() {
 
         <div className="container hero-content relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-start pt-36 pb-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm rounded-full">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
               <span className="text-xs font-bold tracking-widest uppercase">Pose de céramique à Thetford Mines</span>
             </div>
@@ -76,10 +76,10 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
+              <div className="aspect-square bg-muted relative z-10 rounded-2xl overflow-hidden">
                 <img src="/photos/orenaud-03.jpg" alt="Image d’illustration d’un espace intérieur" className="w-full h-full object-cover" />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
+              <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 rounded-2xl"></div>
               
               <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-secondary text-white p-6 shadow-xl z-20 hidden md:block w-48">
                 <HardHat className="w-10 h-10 text-primary mb-4" />
@@ -171,10 +171,10 @@ export default function Home() {
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
-              <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300">
+              <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300 rounded-xl overflow-hidden">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img src={srv.img} alt={`Image d'illustration — ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute top-4 left-4 bg-primary text-white p-3 shadow-lg">
+                  <div className="absolute top-4 left-4 bg-primary text-white p-3 shadow-lg rounded-lg">
                     {srv.icon}
                   </div>
                 </div>
@@ -213,10 +213,10 @@ export default function Home() {
               { img: "/photos/orenaud-13.jpg", title: "Votre projet de salle de bain", tag: "Salle de bain" },
               { img: "/photos/orenaud-08.jpg", title: "Votre projet de cuisine", tag: "Cuisine" },
             ].map((proj, i) => (
-              <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
+              <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3] rounded-xl">
                 <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                 <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
+                  <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit rounded-md">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
                 </div>
               </div>
@@ -238,28 +238,28 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
               <img
                 src="/photos/orenaud-07.jpg"
                  alt="Image d’illustration d’un espace intérieur"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
               <img
                 src="/photos/orenaud-04.jpg"
                  alt="Image d’illustration d’un espace commercial"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
               <img
                 src="/photos/orenaud-09.jpg"
                  alt="Image d’illustration d’un espace intérieur"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
               <img
                 src="/photos/orenaud-11.jpg"
                  alt="Image d’illustration d’un espace intérieur"

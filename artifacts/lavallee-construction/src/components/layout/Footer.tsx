@@ -9,7 +9,7 @@ export function Footer() {
             <img 
               src="/logo-ceramiques-appalaches.png"
               alt="Céramiques Appalaches inc."
-              className="h-24 w-auto object-contain object-left mb-6"
+              className="h-30 w-auto object-contain object-left mb-6"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Entrepreneur spécialisé en pose de céramique à Thetford Mines, pour les projets résidentiels et commerciaux en Chaudière-Appalaches.
@@ -48,7 +48,7 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">Votre projet</h3>
             <div className="mt-6">
               <Link href="/soumission">
-                <button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full">
+                <button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full rounded-lg">
                   Demander une soumission
                 </button>
               </Link>
