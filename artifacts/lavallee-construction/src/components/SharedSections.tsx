@@ -14,7 +14,7 @@ export function TestimonialsSection() {
         <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-secondary text-center">Ce que nos clients disent de notre travail</h2>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="p-10 border border-border bg-muted/50 relative rounded-xl">
+          <div className="p-10 border border-border bg-muted/50 relative">
             <div className="text-6xl text-primary/20 absolute top-6 left-6 font-serif leading-none">01</div>
             <p className="text-lg text-secondary font-medium leading-relaxed mb-8 relative z-10 mt-4">
               Aucun témoignage vérifié n’a encore été fourni pour publication.
@@ -25,7 +25,7 @@ export function TestimonialsSection() {
             </div>
           </div>
           
-          <div className="p-10 border border-border bg-muted/50 relative rounded-xl">
+          <div className="p-10 border border-border bg-muted/50 relative">
             <div className="text-6xl text-primary/20 absolute top-6 left-6 font-serif leading-none">02</div>
             <p className="text-lg text-secondary font-medium leading-relaxed mb-8 relative z-10 mt-4">
               Cet espace accueillera un témoignage de client lorsqu’il sera disponible.
@@ -50,7 +50,7 @@ export function FAQContactSection() {
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Questions fréquentes</span>
           <h2 className="text-4xl font-extrabold mb-10 text-secondary">Ce qu'il faut savoir</h2>
           
-          <Accordion type="single" collapsible className="w-full bg-white border border-border rounded-xl overflow-hidden">
+          <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
               ["Quels types de projets réalisez-vous?", "Nous réalisons la pose de céramique et de revêtements en carreaux pour les salles de bain, douches, cuisines, planchers, murs et espaces commerciaux."],
               ["Travaillez-vous également dans le commercial?", "Oui, Céramiques Appalaches inc. réalise des projets de pose de carreaux dans des espaces commerciaux."],
@@ -71,10 +71,10 @@ export function FAQContactSection() {
           <h2 className="text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet.</h2>
           <p className="text-muted-foreground mb-10">Salle de bain, douche, cuisine, plancher ou projet commercial : présentez-nous votre espace et ce que vous souhaitez réaliser.</p>
           
-          <div className="bg-white border border-border p-8 h-auto mb-10 rounded-xl">
+          <div className="bg-white border border-border p-8 h-auto mb-10">
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
-                <div className="bg-muted p-3 rounded-lg">
+                <div className="bg-muted p-3">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -83,7 +83,7 @@ export function FAQContactSection() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="bg-muted p-3 rounded-lg">
+                <div className="bg-muted p-3">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ export function FAQContactSection() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="bg-muted p-3 rounded-lg">
+                <div className="bg-muted p-3">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>

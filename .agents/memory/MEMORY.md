@@ -1,0 +1,1 @@
+- [Preview image timing](preview-image-timing.md) — large eager images can appear black or partly painted in immediate previews; prioritize and preload above-the-fold media.

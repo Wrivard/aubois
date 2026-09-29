@@ -104,7 +104,7 @@ export default function Soumission() {
       <section className="relative pt-32 pb-16 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/photos/orenaud-10.jpg"
+            src="/photos/tile-white-shower.jpg"
             alt=""
             className="w-full h-full object-cover object-center opacity-30"
           />
@@ -128,7 +128,7 @@ export default function Soumission() {
           <div className="grid lg:grid-cols-3 gap-8 items-start">
             
             {/* Form Panel (Left) */}
-            <div className="lg:col-span-2 bg-white border border-border shadow-sm p-6 md:p-10 rounded-xl">
+            <div className="lg:col-span-2 bg-white border border-border shadow-sm p-6 md:p-10">
               {isSubmitted ? (
                 <div className="text-center py-16">
                   <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -171,10 +171,10 @@ export default function Soumission() {
                               control={control}
                               render={({ field }) => (
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                  <SelectTrigger className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary">
+                                  <SelectTrigger className="h-12 rounded-none border-border focus:ring-primary focus:border-primary">
                                     <SelectValue placeholder="Sélectionnez le type de travaux" />
                                   </SelectTrigger>
-                                  <SelectContent className="rounded-lg">
+                                  <SelectContent className="rounded-none">
                                       <SelectItem value="Salle de bain / douche">Salle de bain / douche</SelectItem>
                                       <SelectItem value="Cuisine / dosseret">Cuisine / dosseret</SelectItem>
                                       <SelectItem value="Plancher">Plancher</SelectItem>
@@ -194,10 +194,10 @@ export default function Soumission() {
                               control={control}
                               render={({ field }) => (
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                  <SelectTrigger className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary">
+                                  <SelectTrigger className="h-12 rounded-none border-border focus:ring-primary focus:border-primary">
                                     <SelectValue placeholder="Sélectionnez une fourchette" />
                                   </SelectTrigger>
-                                  <SelectContent className="rounded-lg">
+                                  <SelectContent className="rounded-none">
                                      <SelectItem value="under-5k">Moins de 5 000 $</SelectItem>
                                      <SelectItem value="5k-10k">5 000 $ à 10 000 $</SelectItem>
                                      <SelectItem value="10k-25k">10 000 $ à 25 000 $</SelectItem>
@@ -217,10 +217,10 @@ export default function Soumission() {
                               control={control}
                               render={({ field }) => (
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                  <SelectTrigger className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary">
+                                  <SelectTrigger className="h-12 rounded-none border-border focus:ring-primary focus:border-primary">
                                     <SelectValue placeholder="Quand souhaitez-vous débuter ?" />
                                   </SelectTrigger>
-                                  <SelectContent className="rounded-lg">
+                                  <SelectContent className="rounded-none">
                                     <SelectItem value="asap">Le plus tôt possible</SelectItem>
                                     <SelectItem value="3-6-months">Dans 3 à 6 mois</SelectItem>
                                     <SelectItem value="6-12-months">Dans 6 à 12 mois</SelectItem>
@@ -243,7 +243,7 @@ export default function Soumission() {
                           <Textarea 
                             {...register("description")} 
                              placeholder="Décrivez l’espace, la surface approximative, les carreaux ou motifs souhaités..."
-                             className="min-h-[180px] rounded-lg border-border focus:ring-primary focus:border-primary resize-y"
+                             className="min-h-[180px] rounded-none border-border focus:ring-primary focus:border-primary resize-y"
                           />
                           {errors.description && <p className="text-destructive text-sm">{errors.description.message}</p>}
                         </div>
@@ -253,7 +253,7 @@ export default function Soumission() {
                           <Input 
                               {...register("city")}
                               placeholder="Ville où se situe le projet"
-                            className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary"
+                            className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                           />
                             {errors.city && <p className="text-destructive text-sm">{errors.city.message}</p>}
                         </div>
@@ -271,7 +271,7 @@ export default function Soumission() {
                             <Label className="font-bold">Prénom *</Label>
                             <Input 
                               {...register("firstName")} 
-                              className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary"
+                              className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                             />
                             {errors.firstName && <p className="text-destructive text-sm">{errors.firstName.message}</p>}
                           </div>
@@ -279,7 +279,7 @@ export default function Soumission() {
                             <Label className="font-bold">Nom *</Label>
                             <Input 
                               {...register("lastName")} 
-                              className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary"
+                              className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                             />
                             {errors.lastName && <p className="text-destructive text-sm">{errors.lastName.message}</p>}
                           </div>
@@ -291,7 +291,7 @@ export default function Soumission() {
                             <Input 
                               type="email"
                               {...register("email")} 
-                              className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary"
+                              className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                             />
                             {errors.email && <p className="text-destructive text-sm">{errors.email.message}</p>}
                           </div>
@@ -300,7 +300,7 @@ export default function Soumission() {
                             <Input 
                               type="tel"
                               {...register("phone")} 
-                              className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary"
+                              className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                             />
                             {errors.phone && <p className="text-destructive text-sm">{errors.phone.message}</p>}
                           </div>
@@ -334,7 +334,7 @@ export default function Soumission() {
 
             {/* Sidebar (Right) */}
             <div className="lg:col-span-1 space-y-6">
-              <div className="bg-primary text-white p-8 rounded-xl">
+              <div className="bg-primary text-white p-8">
                 <h3 className="text-xl font-bold mb-4">Parlons de votre projet</h3>
                  <p className="mb-6 text-white/90 text-sm leading-relaxed">
                   Vous pouvez aussi nous joindre directement par téléphone ou courriel pour discuter de votre projet.
@@ -349,7 +349,7 @@ export default function Soumission() {
                 </div>
               </div>
               
-              <div className="bg-[#1B1B1B] text-white p-8 rounded-xl">
+              <div className="bg-[#1B1B1B] text-white p-8">
                 <h3 className="text-xl font-bold mb-6">Pourquoi nous choisir ?</h3>
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">

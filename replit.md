@@ -25,7 +25,7 @@ Site vitrine en français présentant les services de pose de céramique et les 
 
 - `artifacts/lavallee-construction/src/` — pages, reusable sections, and site interactions
 - `artifacts/lavallee-construction/src/index.css` — global palette and visual tokens
-- `artifacts/lavallee-construction/public/` — supplied logo and illustrative media retained from the template
+- `artifacts/lavallee-construction/public/` — supplied logo and tile-installation images
 
 ## Architecture decisions
 
@@ -40,7 +40,7 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 ## User preferences
 
 - Garder le gabarit existant, le logo Céramiques Appalaches et l'accent `#294898`.
-- Ne pas attribuer les photos d'illustration à Céramiques Appalaches inc. ni inventer de réalisations, licences, garanties ou témoignages.
+- Ne pas attribuer les photos fournies à des réalisations confirmées de Céramiques Appalaches inc. ni inventer de réalisations, licences, garanties ou témoignages.
 - Conserver inchangés les compteurs et statistiques du gabarit jusqu'à nouvelle instruction explicite.
 
 ## Gotchas

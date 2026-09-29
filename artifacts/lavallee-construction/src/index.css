@@ -42,10 +42,10 @@
 
   --font-sans: var(--app-font-sans);
 
-  --radius-sm: 0.375rem;
-  --radius-md: 0.625rem;
-  --radius-lg: 0.875rem;
-  --radius-xl: 1.25rem;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
   
   --spacing-18: 4.5rem;
   --spacing-22: 5.5rem;
@@ -114,7 +114,7 @@
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   
-  --radius: 0.875rem;
+  --radius: 0px;
   
   /* Hard shadows instead of soft shadows */
   --shadow-sm: 2px 2px 0px 0px hsl(var(--foreground) / 0.1);

@@ -10,22 +10,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] flex flex-col">
         <div className="absolute inset-0 bg-[#1B1B1B]">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline 
-            poster="/photos/orenaud-15.jpg"
-            className="w-full h-full object-cover opacity-90"
-          >
-            <source src="/lavallee-hero.mp4" type="video/mp4" />
-          </video>
+          <img src="/photos/tile-bathroom.jpg" alt="" className="w-full h-full object-cover opacity-90" fetchPriority="high" />
           <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
         </div>
 
         <div className="container hero-content relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-start pt-36 pb-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm rounded-full">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
               <span className="text-xs font-bold tracking-widest uppercase">Pose de céramique à Thetford Mines</span>
             </div>
@@ -76,10 +67,10 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="aspect-square bg-muted relative z-10 rounded-2xl overflow-hidden">
-                <img src="/photos/orenaud-03.jpg" alt="Image d’illustration d’un espace intérieur" className="w-full h-full object-cover" />
+              <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
+                <img src="/photos/tile-vanity.jpg" alt="Salle de bain avec carrelage au sol et derrière le lavabo" className="w-full h-full object-cover" loading="lazy" />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 rounded-2xl"></div>
+              <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
               <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-secondary text-white p-6 shadow-xl z-20 hidden md:block w-48">
                 <HardHat className="w-10 h-10 text-primary mb-4" />
@@ -137,44 +128,44 @@ export default function Home() {
               {
                 title: "Salles de bain",
                 desc: "Pose de céramique pour les planchers, murs, douches et différentes surfaces de salle de bain.",
-                img: "/photos/orenaud-01.jpg",
+                img: "/photos/tile-vanity.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Cuisines et dosserets",
                 desc: "Installation de carreaux pour les dosserets, murs et planchers afin de compléter l’aménagement de votre cuisine.",
-                img: "/photos/orenaud-02.jpg",
+                img: "/photos/tile-kitchen.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Planchers de céramique",
                 desc: "Pose de céramique pour créer des surfaces durables, uniformes et adaptées à différents espaces.",
-                img: "/photos/orenaud-06.jpg",
+                img: "/photos/tile-entry.jpg",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
                 title: "Douches en céramique",
                 desc: "Installation de carreaux pour les murs, planchers et différentes composantes de projets de douche.",
-                img: "/photos/orenaud-13.jpg",
+                img: "/photos/tile-stone-shower.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Murs et installations décoratives",
                 desc: "Pose de céramique sur murs et surfaces décoratives, incluant différents motifs et compositions selon le projet.",
-                img: "/photos/orenaud-12.jpg",
+                img: "/photos/tile-fireplace.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Projets commerciaux",
                 desc: "Pose de revêtements en carreaux pour différents espaces commerciaux selon les besoins du projet.",
-                img: "/photos/orenaud-05.jpg",
+                img: "/photos/tile-patio.jpg",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
-              <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300 rounded-xl overflow-hidden">
+              <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300">
                 <div className="aspect-[4/3] overflow-hidden relative">
-                  <img src={srv.img} alt={`Image d'illustration — ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute top-4 left-4 bg-primary text-white p-3 shadow-lg rounded-lg">
+                  <img src={srv.img} alt={`Image d'illustration — ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                  <div className="absolute top-4 left-4 bg-primary text-white p-3 shadow-lg">
                     {srv.icon}
                   </div>
                 </div>
@@ -209,14 +200,14 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: "/photos/orenaud-12.jpg", title: "Votre projet commercial", tag: "Commercial" },
-              { img: "/photos/orenaud-13.jpg", title: "Votre projet de salle de bain", tag: "Salle de bain" },
-              { img: "/photos/orenaud-08.jpg", title: "Votre projet de cuisine", tag: "Cuisine" },
+              { img: "/photos/tile-patio.jpg", title: "Votre projet commercial", tag: "Commercial" },
+              { img: "/photos/tile-white-shower.jpg", title: "Votre projet de salle de bain", tag: "Salle de bain" },
+              { img: "/photos/tile-kitchen.jpg", title: "Votre projet de cuisine", tag: "Cuisine" },
             ].map((proj, i) => (
-              <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3] rounded-xl">
-                <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+              <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
+                <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit rounded-md">{proj.tag}</span>
+                  <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
                 </div>
               </div>
@@ -238,32 +229,36 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/orenaud-07.jpg"
-                 alt="Image d’illustration d’un espace intérieur"
+                src="/photos/tile-bathroom.jpg"
+                 alt="Salle de bain carrelée avec lavabo et douche"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                 loading="lazy"
               />
             </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/orenaud-04.jpg"
-                 alt="Image d’illustration d’un espace commercial"
+                src="/photos/tile-laundry.jpg"
+                 alt="Buanderie avec carrelage mural et au sol"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                 loading="lazy"
               />
             </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/orenaud-09.jpg"
-                 alt="Image d’illustration d’un espace intérieur"
+                src="/photos/tile-white-shower.jpg"
+                 alt="Douche aux carreaux blancs décoratifs"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                 loading="lazy"
               />
             </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted rounded-xl">
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/orenaud-11.jpg"
-                 alt="Image d’illustration d’un espace intérieur"
+                src="/photos/tile-fireplace.jpg"
+                 alt="Mur carrelé autour d’un foyer"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                 loading="lazy"
               />
             </figure>
           </div>
@@ -276,7 +271,7 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-32 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/photos/orenaud-14.jpg" alt="" className="w-full h-full object-cover opacity-20" />
+          <img src="/photos/tile-stone-shower.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
           <div className="absolute inset-0 bg-[#1B1B1B]/80"></div>
         </div>
         

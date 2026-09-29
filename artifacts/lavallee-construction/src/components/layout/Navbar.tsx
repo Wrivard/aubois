@@ -42,7 +42,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[75px] lg:min-h-[90px]">
         <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Céramiques Appalaches inc. — accueil" onClick={() => setMobileMenuOpen(false)}>
           <img
-            src="/logo-ceramiques-appalaches.png"
+            src="/logo-ceramiques-appalaches.webp"
             alt="Céramiques Appalaches inc."
             className="h-[75px] lg:h-[90px] w-auto object-contain"
           />
@@ -68,7 +68,7 @@ export function Navbar() {
             
             {servicesDropdownOpen && (
               <div className="absolute top-full left-0 pt-4 w-64">
-                <div className="bg-[#1B1B1B] border border-[#333] shadow-lg flex flex-col p-2 rounded-xl">
+                <div className="bg-[#1B1B1B] border border-[#333] shadow-lg flex flex-col p-2">
                   {servicesLinks.map((link) => (
                     <a
                       key={link.name}
