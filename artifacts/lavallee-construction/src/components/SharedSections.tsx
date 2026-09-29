@@ -8,13 +8,13 @@ import {
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-20 xl:py-24 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block text-center">Témoignages</span>
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-secondary text-center">Ce que nos clients disent de notre travail</h2>
+        <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-10 md:mb-16 text-secondary text-center">Ce que nos clients disent de notre travail</h2>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="p-10 border border-border bg-muted/50 relative">
+          <div className="p-6 sm:p-10 border border-border bg-muted/50 relative">
             <div className="text-6xl text-primary/20 absolute top-6 left-6 font-serif leading-none">01</div>
             <p className="text-lg text-secondary font-medium leading-relaxed mb-8 relative z-10 mt-4">
               Aucun témoignage vérifié n’a encore été fourni pour publication.
@@ -25,7 +25,7 @@ export function TestimonialsSection() {
             </div>
           </div>
           
-          <div className="p-10 border border-border bg-muted/50 relative">
+          <div className="p-6 sm:p-10 border border-border bg-muted/50 relative">
             <div className="text-6xl text-primary/20 absolute top-6 left-6 font-serif leading-none">02</div>
             <p className="text-lg text-secondary font-medium leading-relaxed mb-8 relative z-10 mt-4">
               Cet espace accueillera un témoignage de client lorsqu’il sera disponible.
@@ -43,12 +43,12 @@ export function TestimonialsSection() {
 
 export function FAQContactSection() {
   return (
-    <section id="contact" className="bg-muted">
-      <div className="container mx-auto px-6 md:px-12 pt-24 pb-32 grid lg:grid-cols-2 gap-16">
+    <section id="contact" className="bg-muted scroll-mt-32 xl:scroll-mt-36">
+      <div className="container mx-auto px-6 md:px-12 pt-16 md:pt-20 xl:pt-24 pb-20 xl:pb-32 grid lg:grid-cols-2 gap-10 xl:gap-16">
         
         <div>
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Questions fréquentes</span>
-          <h2 className="text-4xl font-extrabold mb-10 text-secondary">Ce qu'il faut savoir</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 lg:mb-10 text-secondary">Ce qu'il faut savoir</h2>
           
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
@@ -68,10 +68,10 @@ export function FAQContactSection() {
 
         <div>
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Coordonnées</span>
-          <h2 className="text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet.</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet.</h2>
           <p className="text-muted-foreground mb-10">Salle de bain, douche, cuisine, plancher ou projet commercial : présentez-nous votre espace et ce que vous souhaitez réaliser.</p>
           
-          <div className="bg-white border border-border p-8 h-auto mb-10">
+          <div className="bg-white border border-border p-5 sm:p-8 h-auto mb-10">
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <div className="bg-muted p-3">

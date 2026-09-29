@@ -1,1 +1,2 @@
 - [Preview image timing](preview-image-timing.md) — large eager images can appear black or partly painted in immediate previews; prioritize and preload above-the-fold media.
+- [Local build environment](local-build-environment.md) — direct shell builds lack the managed workflow's PORT and BASE_PATH; supply both when verifying production bundles.

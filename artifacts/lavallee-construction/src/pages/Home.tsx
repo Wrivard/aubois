@@ -14,48 +14,47 @@ export default function Home() {
           <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
         </div>
 
-        <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-[150px] lg:pt-[169px] pb-6">
-          <div className="max-w-3xl">
+        <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-[150px] xl:pt-[169px] pb-8 sm:pb-10">
+          <div className="max-w-3xl 2xl:max-w-5xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
               <span className="text-xs font-bold tracking-widest uppercase">Pose de céramique à Thetford Mines</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]">
-              La précision au cœur <br />
-              <span className="text-white">de chaque installation.</span>
+            <h1 className="text-[clamp(2.5rem,5vw,5.5rem)] font-extrabold text-white leading-[1.08] mb-5 sm:mb-6 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]">
+              La précision au cœur <span className="text-white">de chaque installation.</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl leading-relaxed font-medium drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
+            <p className="text-base sm:text-lg xl:text-xl text-white/90 mb-8 sm:mb-10 max-w-2xl leading-relaxed font-medium drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
               Pose de céramique résidentielle et commerciale dans la région de Chaudière-Appalaches. Des installations soignées pour donner caractère et durabilité à vos espaces.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-16">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 sm:mb-12 xl:mb-16">
               <Link href="/soumission">
-                <Button size="lg" className="h-14 px-8 text-base font-bold uppercase tracking-wider w-full sm:w-auto">
+                <Button size="lg" className="h-14 px-5 sm:px-8 text-sm sm:text-base font-bold uppercase tracking-wider w-full sm:w-auto">
                   Demander une soumission <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <a href="#realisations">
-                <Button size="lg" variant="outline" className="h-14 px-8 text-base font-bold uppercase tracking-wider w-full sm:w-auto bg-white/5 text-white border-white/20 hover:bg-white hover:text-secondary">
+                <Button size="lg" variant="outline" className="h-14 px-5 sm:px-8 text-sm sm:text-base font-bold uppercase tracking-wider w-full sm:w-auto bg-white/5 text-white border-white/20 hover:bg-white hover:text-secondary">
                   Voir nos réalisations
                 </Button>
               </a>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 pt-8 border-t border-white/10">
+            <div className="grid grid-cols-3 gap-2 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 border-t border-white/10">
               <div>
-                <p className="text-4xl font-extrabold text-white mb-1">15<span className="text-primary">+</span></p>
-                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Années d'expérience</p>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-1">15<span className="text-primary">+</span></p>
+                <p className="text-[10px] sm:text-xs uppercase tracking-wide sm:tracking-widest text-white/75 font-bold">Années d'expérience</p>
               </div>
               <div>
-                <p className="text-4xl font-extrabold text-white mb-1">250<span className="text-primary">+</span></p>
-                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Projets livrés</p>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-1">250<span className="text-primary">+</span></p>
+                <p className="text-[10px] sm:text-xs uppercase tracking-wide sm:tracking-widest text-white/75 font-bold">Projets livrés</p>
               </div>
-              <div className="hidden md:block">
-                <p className="text-4xl font-extrabold text-white mb-1">100<span className="text-primary">%</span></p>
-                <p className="text-xs uppercase tracking-widest text-white/75 font-bold">Garantie qualité</p>
+              <div>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-1">100<span className="text-primary">%</span></p>
+                <p className="text-[10px] sm:text-xs uppercase tracking-wide sm:tracking-widest text-white/75 font-bold">Garantie qualité</p>
               </div>
             </div>
           </div>
@@ -63,16 +62,16 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="a-propos" className="py-24 bg-white relative">
+      <section id="a-propos" className="py-16 md:py-20 xl:py-24 bg-white relative scroll-mt-32 xl:scroll-mt-36">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="relative">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
+            <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
                 <img src="/photos/tile-vanity.jpg" alt="Salle de bain avec carrelage au sol et derrière le lavabo" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
-              <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-secondary text-white p-6 shadow-xl z-20 hidden md:block w-48">
+              <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-secondary text-white p-6 shadow-xl z-20 hidden xl:block w-48">
                 <HardHat className="w-10 h-10 text-primary mb-4" />
                 <p className="font-bold text-lg leading-tight">La précision dans chaque détail.</p>
               </div>
@@ -80,7 +79,7 @@ export default function Home() {
             
             <div>
               <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos de Céramiques Appalaches inc.</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-secondary">La céramique, installée avec précision.</h2>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 lg:mb-8 text-secondary">La céramique, installée avec précision.</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Céramiques Appalaches inc. est un entrepreneur spécialisé en pose de céramique et de revêtements en carreaux dans la région de Chaudière-Appalaches.
               </p>
@@ -113,17 +112,17 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 bg-muted border-y border-border">
+      <section id="services" className="py-16 md:py-20 xl:py-24 bg-muted border-y border-border scroll-mt-32 xl:scroll-mt-36">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Nos Services</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-secondary">La céramique adaptée à votre espace.</h2>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">La céramique adaptée à votre espace.</h2>
             <p className="text-lg text-muted-foreground">
                 Découvrez nos services de pose de céramique pour les espaces résidentiels et commerciaux.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
                 title: "Salles de bain",
@@ -169,7 +168,7 @@ export default function Home() {
                     {srv.icon}
                   </div>
                 </div>
-                <div className="p-8">
+                <div className="p-6 xl:p-8">
                   <h3 className="text-2xl font-bold mb-3 text-secondary">{srv.title}</h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">{srv.desc}</p>
                   <a href="/soumission" className="inline-flex items-center font-bold text-secondary hover:text-primary transition-colors uppercase tracking-wider text-sm">
@@ -183,12 +182,12 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="realisations" className="py-24 bg-secondary text-white">
+      <section id="realisations" className="py-16 md:py-20 xl:py-24 bg-secondary text-white scroll-mt-32 xl:scroll-mt-36">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-10 md:mb-16 gap-6">
             <div className="max-w-2xl">
               <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold">La céramique, selon votre projet.</h2>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">La céramique, selon votre projet.</h2>
               <p className="text-white/80 mt-4">Céramiques Appalaches inc. réalise des installations de carreaux pour différents espaces. Images présentées à titre d’illustration et non comme des réalisations de l’entreprise.</p>
             </div>
             <Link href="/soumission">
@@ -198,7 +197,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {[
               { img: "/photos/tile-patio.jpg", title: "Votre projet commercial", tag: "Commercial" },
               { img: "/photos/tile-white-shower.jpg", title: "Votre projet de salle de bain", tag: "Salle de bain" },
@@ -206,7 +205,7 @@ export default function Home() {
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
-                <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-6 xl:p-8 opacity-100 xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus-within:opacity-100 transition-opacity duration-300">
                   <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
                 </div>
@@ -217,18 +216,18 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-24 bg-white">
+      <section className="py-16 md:py-20 xl:py-24 bg-white">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div className="max-w-2xl">
                 <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">En images</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-secondary">Votre projet, étape par étape.</h2>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Votre projet, étape par étape.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
                Discussion, évaluation, planification, installation et finition : chaque étape tient compte de votre espace et du résultat recherché. Images fournies à titre d’illustration.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+           <div className="grid sm:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
                 src="/photos/tile-bathroom.jpg"
@@ -269,19 +268,19 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* CTA Background */}
-      <section className="relative py-32 bg-[#1B1B1B] text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 xl:py-32 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img src="/photos/tile-stone-shower.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
           <div className="absolute inset-0 bg-[#1B1B1B]/80"></div>
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
-            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Vous avez un projet de céramique?</h2>
-          <p className="text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
+             <h2 className="text-3xl sm:text-4xl xl:text-6xl font-extrabold mb-6 leading-tight">Vous avez un projet de céramique?</h2>
+          <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
               Présentez-nous votre projet et discutons de l’installation que vous souhaitez réaliser.
           </p>
           <Link href="/soumission">
-            <Button size="lg" className="h-16 px-10 text-lg font-bold uppercase tracking-wider">
+            <Button size="lg" className="min-h-14 md:h-16 px-6 md:px-10 text-sm sm:text-lg font-bold uppercase tracking-wider">
               Demander une soumission
             </Button>
           </Link>

@@ -39,17 +39,17 @@ export function Navbar() {
         isScrolled ? "bg-[#1B1B1B] shadow-md py-3" : "bg-[#1B1B1B] py-4"
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[94px] lg:min-h-[113px]">
+      <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[94px] xl:min-h-[113px]">
         <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Céramiques Appalaches inc. — accueil" onClick={() => setMobileMenuOpen(false)}>
           <img
             src="/logo-ceramiques-appalaches.webp"
             alt="Céramiques Appalaches inc."
-            className="h-[94px] lg:h-[113px] w-auto object-contain"
+            className="h-[94px] xl:h-[113px] w-auto object-contain"
           />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-3 xl:gap-8">
+        <nav className="hidden xl:flex items-center gap-6">
           <Link href="/" className="text-sm font-semibold text-white hover:underline transition-colors">
             Accueil
           </Link>
@@ -92,7 +92,7 @@ export function Navbar() {
           </a>
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <Link href="/soumission">
             <Button size="lg" className="font-bold tracking-wide uppercase text-xs">
               Demander une soumission
@@ -102,7 +102,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden relative z-50 p-2 -mr-2 ml-auto"
+          className="xl:hidden relative z-50 p-2 -mr-2 ml-auto"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Menu"
         >
@@ -112,7 +112,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#1B1B1B] z-40 lg:hidden flex flex-col pt-32 px-6 h-[100dvh] overflow-y-auto text-white">
+        <div className="fixed inset-0 bg-[#1B1B1B] z-40 xl:hidden flex flex-col pt-32 px-6 h-[100dvh] overflow-y-auto text-white">
           <nav className="flex flex-col gap-6 text-xl font-bold">
             <Link 
               href="/" 

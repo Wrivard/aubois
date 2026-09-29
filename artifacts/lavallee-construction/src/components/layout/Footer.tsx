@@ -2,9 +2,9 @@ import { Link } from "wouter";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1B1B1B] text-white pt-20 pb-10">
+    <footer className="bg-[#1B1B1B] text-white pt-16 md:pt-20 pb-10">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-8 mb-12 md:mb-16">
           <div className="lg:col-span-1 flex flex-col items-start">
             <img 
               src="/logo-ceramiques-appalaches.webp"
@@ -57,7 +57,7 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/70">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-xs text-white/70">
           <p>© {new Date().getFullYear()} Céramiques Appalaches inc. Tous droits réservés.</p>
           <div className="flex gap-6">
             <a href="mailto:ceramiquesappalaches@outlook.com?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
