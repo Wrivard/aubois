@@ -14,7 +14,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
         </div>
 
-        <div className="container hero-content relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-start pt-36 pb-10">
+        <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-[150px] lg:pt-[169px] pb-6">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
