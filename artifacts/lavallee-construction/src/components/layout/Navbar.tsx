@@ -39,12 +39,12 @@ export function Navbar() {
         isScrolled ? "bg-[#1B1B1B] shadow-md py-3" : "bg-[#1B1B1B] py-4"
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[75px] lg:min-h-[90px]">
+      <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[94px] lg:min-h-[113px]">
         <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Céramiques Appalaches inc. — accueil" onClick={() => setMobileMenuOpen(false)}>
           <img
             src="/logo-ceramiques-appalaches.webp"
             alt="Céramiques Appalaches inc."
-            className="h-[75px] lg:h-[90px] w-auto object-contain"
+            className="h-[94px] lg:h-[113px] w-auto object-contain"
           />
         </Link>
 

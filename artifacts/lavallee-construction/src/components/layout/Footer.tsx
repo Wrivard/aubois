@@ -9,7 +9,7 @@ export function Footer() {
             <img 
               src="/logo-ceramiques-appalaches.webp"
               alt="Céramiques Appalaches inc."
-              className="h-30 w-auto object-contain object-left mb-6"
+              className="h-[150px] w-auto object-contain object-left mb-6"
               loading="lazy"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
