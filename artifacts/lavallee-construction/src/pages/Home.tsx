@@ -9,7 +9,7 @@ export default function Home() {
     <MainLayout>
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] flex flex-col">
-        <div className="absolute inset-0 bg-[#1B1B1B]">
+        <div className="absolute inset-0 bg-forest">
           <video
             className="w-full h-full object-cover opacity-90"
             autoPlay
@@ -28,7 +28,7 @@ export default function Home() {
           >
             <source src="/lavallee-hero-optimized.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
+          <div className="absolute inset-0 bg-forest/65"></div>
         </div>
 
         <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-[150px] xl:pt-[169px] pb-8 sm:pb-10">
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
-              <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-secondary text-white p-6 shadow-xl z-20 hidden xl:block w-48">
+              <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-forest text-white p-6 shadow-xl z-20 hidden xl:block w-48">
                 <HardHat className="w-10 h-10 text-primary mb-4" />
                 <p className="font-bold text-lg leading-tight">La précision dans chaque détail.</p>
               </div>
