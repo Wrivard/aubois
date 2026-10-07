@@ -20,8 +20,13 @@ export default function Home() {
             poster="/photos/jagster-garage.webp"
             aria-hidden="true"
             tabIndex={-1}
+            onCanPlay={(event) => {
+              void event.currentTarget.play().catch((error) => {
+                console.error("Hero background video playback failed:", error);
+              });
+            }}
           >
-            <source src="/hero-bg-optimized.mp4" type="video/mp4" />
+            <source src="/lavallee-hero-optimized.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
         </div>

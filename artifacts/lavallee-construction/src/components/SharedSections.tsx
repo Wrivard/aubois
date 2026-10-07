@@ -53,21 +53,11 @@ export function FAQContactSection() {
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
               ["Quels types de rénovations réalisez-vous?", "Gestion Jagster Inc. réalise des rénovations intérieures et extérieures, notamment de cuisines et de salles de bain, ainsi que des travaux de finition, de plancher, de patio, de cabanon, de revêtement extérieur, de terrassement et d’entretien."],
-              ["Faites-vous de la rénovation de cuisine?", "Oui. Gestion Jagster Inc. réalise des projets de rénovation de cuisine adaptés aux besoins du propriétaire et à son espace."],
-              ["Rénovez-vous les salles de bain?", "Oui. Des rénovations de salle de bain font partie des services résidentiels offerts."],
-              ["Faites-vous la pose de gypse?", "Oui. La pose de gypse est offerte dans le cadre de projets résidentiels."],
-              ["Offrez-vous des services de plâtrage et de peinture?", "Oui. Gestion Jagster Inc. offre des travaux de plâtrage et de peinture."],
-              ["Installez-vous des revêtements de plancher?", "Oui. La pose de revêtement de plancher fait partie des services offerts."],
-              ["Construisez-vous des patios?", "Oui. Gestion Jagster Inc. réalise des projets de patio."],
-              ["Faites-vous des cabanons?", "Oui. La construction et la rénovation de cabanons font partie des services extérieurs offerts."],
-              ["Installez-vous du revêtement extérieur?", "Oui. Des travaux de revêtement extérieur sont offerts pour les projets résidentiels."],
-              ["Faites-vous du terrassement?", "Oui. Le terrassement fait partie des services offerts à Québec et dans les environs."],
-              ["Offrez-vous des travaux d’entretien?", "Oui. Gestion Jagster Inc. réalise différents travaux d’entretien résidentiel."],
-              ["Est-ce que la soumission est gratuite?", "Oui. Vous pouvez présenter votre projet afin d’obtenir une soumission gratuite."],
-              ["Travaillez-vous à Québec et dans les environs?", "Oui. Gestion Jagster Inc. dessert Québec et les environs; le secteur précis est à confirmer selon le projet."],
+              ["La soumission est-elle gratuite?", "Oui. Vous pouvez présenter votre projet afin d’obtenir une soumission gratuite."],
+              ["Dans quelles régions intervenez-vous?", "Gestion Jagster Inc. dessert Québec et les environs; le secteur précis est à confirmer selon le projet."],
               ["Puis-je vous envoyer des photos de mon projet?", "Oui. Vous pourrez joindre des photos ou des plans au courriel préparé avant de l’envoyer. Aucun fichier n’est téléversé sur ce site."]
             ].map(([question, answer], i) => (
-              <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 4 ? "border-b border-border" : "border-b-0"}`}>
+              <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 3 ? "border-b border-border" : "border-b-0"}`}>
                 <AccordionTrigger className="text-left font-bold text-lg py-6 hover:no-underline hover:text-secondary">{question}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">{answer}</AccordionContent>
               </AccordionItem>
