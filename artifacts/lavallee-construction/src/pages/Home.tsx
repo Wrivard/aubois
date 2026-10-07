@@ -10,7 +10,19 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] flex flex-col">
         <div className="absolute inset-0 bg-[#1B1B1B]">
-          <img src="/photos/tile-bathroom.jpg" alt="" className="w-full h-full object-cover opacity-90" fetchPriority="high" />
+          <video
+            className="w-full h-full object-cover opacity-90"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/photos/jagster-garage.webp"
+            aria-hidden="true"
+            tabIndex={-1}
+          >
+            <source src="/hero-bg-optimized.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
         </div>
 
@@ -18,21 +30,21 @@ export default function Home() {
           <div className="max-w-3xl 2xl:max-w-5xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              <span className="text-xs font-bold tracking-widest uppercase">Pose de céramique à Thetford Mines</span>
+              <span className="text-xs font-bold tracking-widest uppercase">Rénovation résidentielle à Québec</span>
             </div>
             
             <h1 className="text-[clamp(2.5rem,5vw,5.5rem)] font-extrabold text-white leading-[1.08] mb-5 sm:mb-6 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]">
-              La précision au cœur <span className="text-white">de chaque installation.</span>
+              Transformez votre maison <span className="text-white">selon vos besoins.</span>
             </h1>
             
             <p className="text-base sm:text-lg xl:text-xl text-white/90 mb-8 sm:mb-10 max-w-2xl leading-relaxed font-medium drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
-              Pose de céramique résidentielle et commerciale dans la région de Chaudière-Appalaches. Des installations soignées pour donner caractère et durabilité à vos espaces.
+              Entrepreneur général en rénovation résidentielle à Québec et ses environs. Gestion Jagster Inc. réalise vos projets intérieurs et extérieurs, des rénovations complètes aux travaux de finition.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 sm:mb-12 xl:mb-16">
               <Link href="/soumission">
                 <Button size="lg" className="h-14 px-5 sm:px-8 text-sm sm:text-base font-bold uppercase tracking-wider w-full sm:w-auto">
-                  Demander une soumission <ArrowRight className="ml-2 w-5 h-5" />
+                  Obtenir une soumission gratuite <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <a href="#realisations">
@@ -67,7 +79,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/tile-vanity.jpg" alt="Salle de bain avec carrelage au sol et derrière le lavabo" className="w-full h-full object-cover" loading="lazy" />
+                <img src="/photos/jagster-bathroom-01.webp" alt="Salle de bain avec vanité blanche, baignoire et douche" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -78,21 +90,21 @@ export default function Home() {
             </div>
             
             <div>
-              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos de Céramiques Appalaches inc.</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 lg:mb-8 text-secondary">La céramique, installée avec précision.</h2>
+              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos de Gestion Jagster Inc.</span>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 lg:mb-8 text-secondary">Un seul entrepreneur pour vos rénovations.</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Céramiques Appalaches inc. est un entrepreneur spécialisé en pose de céramique et de revêtements en carreaux dans la région de Chaudière-Appalaches.
+                Gestion Jagster Inc. accompagne les propriétaires dans leurs projets de rénovation résidentielle à Québec et dans les environs.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Planchers, murs, salles de bain, cuisines ou installations décoratives : chaque projet demande une préparation adéquate, des découpes précises et une attention particulière aux détails.
+                Cuisine, salle de bain, finition intérieure, revêtement extérieur, patio ou travaux d’entretien : notre polyvalence nous permet d’intervenir sur différents aspects de votre propriété. Chaque projet commence par une compréhension claire de vos besoins afin de réaliser des travaux adaptés à votre maison et au résultat recherché.
               </p>
               
               <ul className="space-y-4 mb-10">
                 {[
-                  "Pose de céramique résidentielle et commerciale",
-                  "Installation de carreaux sur murs et planchers",
-                  "Alignements et découpes soignés",
-                  "Motifs et compositions selon le projet"
+                  "Rénovation intérieure et extérieure",
+                  "Cuisine, salle de bain, patio et cabanon",
+                  "Gypse, plâtrage, peinture et finition intérieure",
+                  "Revêtement de plancher et revêtement extérieur"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 font-medium text-secondary">
                     <CheckCircle className="w-6 h-6 text-primary shrink-0" />
@@ -115,56 +127,56 @@ export default function Home() {
       <section id="services" className="py-16 md:py-20 xl:py-24 bg-muted border-y border-border scroll-mt-32 xl:scroll-mt-36">
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-            <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Nos Services</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">La céramique adaptée à votre espace.</h2>
+                <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Nos services</span>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">Des rénovations adaptées à votre maison.</h2>
             <p className="text-lg text-muted-foreground">
-                Découvrez nos services de pose de céramique pour les espaces résidentiels et commerciaux.
+                Des travaux intérieurs et extérieurs pour améliorer votre propriété à Québec et dans les environs.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
-                title: "Salles de bain",
-                desc: "Pose de céramique pour les planchers, murs, douches et différentes surfaces de salle de bain.",
-                img: "/photos/tile-vanity.jpg",
+                title: "Rénovation intérieure",
+                desc: "Transformation et amélioration de vos espaces intérieurs, des travaux préparatoires jusqu’à la finition.",
+                img: "/photos/jagster-garage.webp",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
-                title: "Cuisines et dosserets",
-                desc: "Installation de carreaux pour les dosserets, murs et planchers afin de compléter l’aménagement de votre cuisine.",
-                img: "/photos/tile-kitchen.jpg",
+                title: "Cuisine et salle de bain",
+                desc: "Rénovation de deux des espaces les plus importants de la maison afin de les rendre plus fonctionnels et adaptés à vos besoins.",
+                img: "/photos/jagster-bathroom-02.webp",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
-                title: "Planchers de céramique",
-                desc: "Pose de céramique pour créer des surfaces durables, uniformes et adaptées à différents espaces.",
-                img: "/photos/tile-entry.jpg",
+                title: "Gypse, plâtrage et peinture",
+                desc: "Pose de gypse, travaux de plâtrage et peinture pour préparer ou transformer vos espaces intérieurs.",
+                img: "/photos/jagster-garage.webp",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
-                title: "Douches en céramique",
-                desc: "Installation de carreaux pour les murs, planchers et différentes composantes de projets de douche.",
-                img: "/photos/tile-stone-shower.jpg",
+                title: "Plancher et finition intérieure",
+                desc: "Pose de revêtement de plancher et travaux de finition permettant de compléter votre projet de rénovation.",
+                img: "/photos/jagster-bathroom-01.webp",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
-                title: "Murs et installations décoratives",
-                desc: "Pose de céramique sur murs et surfaces décoratives, incluant différents motifs et compositions selon le projet.",
-                img: "/photos/tile-fireplace.jpg",
+                title: "Patio et cabanon",
+                desc: "Construction et rénovation d’aménagements extérieurs comme les patios et les cabanons.",
+                img: "/photos/jagster-cabanon-terrace.webp",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
-                title: "Projets commerciaux",
-                desc: "Pose de revêtements en carreaux pour différents espaces commerciaux selon les besoins du projet.",
-                img: "/photos/tile-patio.jpg",
+                title: "Revêtement extérieur et terrassement",
+                desc: "Travaux extérieurs pour améliorer, transformer ou entretenir les différentes composantes de votre propriété.",
+                img: "/photos/jagster-patio-01.webp",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
               <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img src={srv.img} alt={`Image d'illustration — ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-                  <div className="absolute top-4 left-4 bg-primary text-white p-3 shadow-lg">
+                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground p-3 shadow-lg">
                     {srv.icon}
                   </div>
                 </div>
@@ -187,8 +199,8 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-10 md:mb-16 gap-6">
             <div className="max-w-2xl">
               <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">La céramique, selon votre projet.</h2>
-              <p className="text-white/80 mt-4">Céramiques Appalaches inc. réalise des installations de carreaux pour différents espaces. Images présentées à titre d’illustration et non comme des réalisations de l’entreprise.</p>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">Des idées pour votre rénovation.</h2>
+              <p className="text-white/80 mt-4">Découvrez des exemples de projets résidentiels à Québec et dans les environs. Les photos illustrent les types de travaux offerts; les détails de chaque projet sont à confirmer.</p>
             </div>
             <Link href="/soumission">
               <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-secondary uppercase tracking-wider font-bold">
@@ -199,14 +211,14 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {[
-              { img: "/photos/tile-patio.jpg", title: "Votre projet commercial", tag: "Commercial" },
-              { img: "/photos/tile-white-shower.jpg", title: "Votre projet de salle de bain", tag: "Salle de bain" },
-              { img: "/photos/tile-kitchen.jpg", title: "Votre projet de cuisine", tag: "Cuisine" },
+              { img: "/photos/jagster-deck-01.webp", title: "Patio et aménagement extérieur", tag: "Extérieur" },
+              { img: "/photos/jagster-bathroom-03.webp", title: "Rénovation de salle de bain", tag: "Salle de bain" },
+              { img: "/photos/jagster-garage.webp", title: "Rénovation intérieure", tag: "Intérieur" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-6 xl:p-8 opacity-100 xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus-within:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
+                  <span className="inline-block bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
                 </div>
               </div>
@@ -221,41 +233,41 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div className="max-w-2xl">
                 <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">En images</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Votre projet, étape par étape.</h2>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Des idées pour votre prochaine rénovation.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Discussion, évaluation, planification, installation et finition : chaque étape tient compte de votre espace et du résultat recherché. Images fournies à titre d’illustration.
+               Gestion Jagster Inc. accompagne les propriétaires dans leurs projets intérieurs et extérieurs. Les photos fournies illustrent les types de travaux offerts; les détails de chaque projet sont à confirmer.
             </p>
           </div>
            <div className="grid sm:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-bathroom.jpg"
-                 alt="Salle de bain carrelée avec lavabo et douche"
+                src="/photos/jagster-bathroom-01.webp"
+                 alt="Salle de bain avec vanité blanche, baignoire et douche"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-laundry.jpg"
-                 alt="Buanderie avec carrelage mural et au sol"
+                src="/photos/jagster-deck-02.webp"
+                 alt="Escalier extérieur et terrasse avec garde-corps"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-white-shower.jpg"
-                 alt="Douche aux carreaux blancs décoratifs"
+                src="/photos/jagster-bathroom-02.webp"
+                 alt="Vanité de salle de bain et douche"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-fireplace.jpg"
-                 alt="Mur carrelé autour d’un foyer"
+                src="/photos/jagster-patio-01.webp"
+                 alt="Aménagement extérieur pavé près d’une piscine"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
@@ -270,18 +282,18 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-20 md:py-28 xl:py-32 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/photos/tile-stone-shower.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
+          <img src="/photos/jagster-deck-01.webp" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
           <div className="absolute inset-0 bg-[#1B1B1B]/80"></div>
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
-             <h2 className="text-3xl sm:text-4xl xl:text-6xl font-extrabold mb-6 leading-tight">Vous avez un projet de céramique?</h2>
+             <h2 className="text-3xl sm:text-4xl xl:text-6xl font-extrabold mb-6 leading-tight">Un projet de rénovation en tête?</h2>
           <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Présentez-nous votre projet et discutons de l’installation que vous souhaitez réaliser.
+              Communiquez avec Gestion Jagster Inc. pour discuter de votre projet résidentiel à Québec et dans les environs, ou appelez-nous au <a href="tel:+15819910397" className="underline underline-offset-4">(581) 991-0397</a>.
           </p>
           <Link href="/soumission">
             <Button size="lg" className="min-h-14 md:h-16 px-6 md:px-10 text-sm sm:text-lg font-bold uppercase tracking-wider">
-              Demander une soumission
+              Obtenir une soumission gratuite
             </Button>
           </Link>
         </div>

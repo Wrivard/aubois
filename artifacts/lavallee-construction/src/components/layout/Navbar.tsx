@@ -25,12 +25,12 @@ export function Navbar() {
   ];
 
   const servicesLinks = [
-    { name: "Salles de bain", href: "/#services" },
-    { name: "Cuisines et dosserets", href: "/#services" },
-    { name: "Planchers de céramique", href: "/#services" },
-    { name: "Douches en céramique", href: "/#services" },
-    { name: "Murs et installations décoratives", href: "/#services" },
-    { name: "Projets commerciaux", href: "/#services" },
+    { name: "Rénovation intérieure", href: "/#services" },
+    { name: "Cuisine et salle de bain", href: "/#services" },
+    { name: "Gypse, plâtrage et peinture", href: "/#services" },
+    { name: "Plancher et finition intérieure", href: "/#services" },
+    { name: "Patio et cabanon", href: "/#services" },
+    { name: "Revêtement extérieur et terrassement", href: "/#services" },
   ];
 
   return (
@@ -40,11 +40,11 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[94px] xl:min-h-[113px]">
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Céramiques Appalaches inc. — accueil" onClick={() => setMobileMenuOpen(false)}>
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Gestion Jagster Inc. — accueil" onClick={() => setMobileMenuOpen(false)}>
           <img
-            src="/logo-ceramiques-appalaches.webp"
-            alt="Céramiques Appalaches inc."
-            className="h-[94px] xl:h-[113px] w-auto object-contain"
+            src="/logo-gestion-jagster.png"
+            alt="Gestion Jagster Inc."
+            className="h-[94px] xl:h-[113px] w-auto object-contain mix-blend-screen"
           />
         </Link>
 
@@ -95,7 +95,7 @@ export function Navbar() {
         <div className="hidden xl:block">
           <Link href="/soumission">
             <Button size="lg" className="font-bold tracking-wide uppercase text-xs">
-              Demander une soumission
+              Soumission gratuite
             </Button>
           </Link>
         </div>
@@ -162,7 +162,7 @@ export function Navbar() {
           <div className="mt-auto py-8">
             <Link href="/soumission" onClick={() => setMobileMenuOpen(false)}>
               <Button size="lg" className="w-full font-bold tracking-wide uppercase text-sm h-14">
-                Demander une soumission
+                Soumission gratuite
               </Button>
             </Link>
           </div>

@@ -1,6 +1,6 @@
-# Céramiques Appalaches inc.
+# Gestion Jagster Inc.
 
-Site vitrine en français présentant les services de pose de céramique et les demandes de soumission de Céramiques Appalaches inc. à Thetford Mines.
+Site vitrine en français présentant les services de rénovation résidentielle et les demandes de soumission gratuite de Gestion Jagster Inc. à Québec et dans les environs.
 
 ## Run & Operate
 
@@ -33,14 +33,14 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-- Site vitrine en français pour une entreprise spécialisée en pose de céramique à Thetford Mines
-- Navigation responsive, services résidentiels et commerciaux, présentation de projet, FAQ et coordonnées
+- Site vitrine en français pour Gestion Jagster Inc., entrepreneur général en rénovation résidentielle à Québec et dans les environs
+- Navigation responsive, services résidentiels, présentation de projets, témoignages, FAQ, coordonnées et formulaire de soumission gratuite
 - Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 
 ## User preferences
 
-- Garder le gabarit existant, le logo Céramiques Appalaches et l'accent `#294898`.
-- Ne pas attribuer les photos fournies à des réalisations confirmées de Céramiques Appalaches inc. ni inventer de réalisations, licences, garanties ou témoignages.
+- Garder le gabarit existant, le logo fourni de Gestion Jagster Inc. et l'accent `#D0B07C`.
+- Ne pas attribuer les photos d’illustration à des réalisations confirmées de Gestion Jagster Inc. ni inventer de réalisations, licences, garanties ou témoignages.
 - Conserver inchangés les compteurs et statistiques du gabarit jusqu'à nouvelle instruction explicite.
 
 ## Gotchas

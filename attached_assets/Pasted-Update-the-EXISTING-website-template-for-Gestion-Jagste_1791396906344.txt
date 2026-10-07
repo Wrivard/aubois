@@ -1,0 +1,583 @@
+Update the EXISTING website template for Gestion Jagster Inc.
+
+CRITICAL INSTRUCTIONS — FOLLOW THESE EXACTLY:
+
+- DO NOT redesign the website.
+- DO NOT change the current layout.
+- DO NOT change the structure or order of any sections.
+- DO NOT add or remove sections/components.
+- DO NOT change styling, spacing, navigation, animations, buttons, cards or visual elements.
+- DO NOT create a new website.
+- ONLY update the business-specific content for Gestion Jagster Inc.
+- Keep every existing section/component exactly where it currently is.
+- Adapt the content to the existing template instead of adapting the template to the content.
+
+VERY IMPORTANT — STATS:
+- DO NOT CHANGE ANY EXISTING STATS, COUNTERS, METRICS, NUMBERS OR STATISTIC COMPONENTS ON THE TEMPLATE SITE.
+- Leave ALL existing template statistics exactly as they currently are.
+- Do not replace template statistics with Facebook followers, reviews, years of experience, number of projects or any other numbers.
+
+VERY IMPORTANT — TESTIMONIAL SECTION:
+- The existing TESTIMONIAL section MUST remain a testimonial section.
+- DO NOT transform it into services, projects, benefits, statistics, FAQ or another type of section.
+- Keep the exact existing testimonial layout/components.
+- Only use REAL, verified customer testimonials if they are available.
+- DO NOT invent testimonials, customer names, quotes, ratings or reviews.
+- If no verified testimonials are available, preserve the existing testimonial placeholders/content structure.
+
+
+BUSINESS INFORMATION
+
+Company:
+Gestion Jagster Inc.
+
+Business type:
+Entrepreneur général en rénovation résidentielle
+
+Location / service area:
+Québec et environs
+
+Phone:
+(581) 991-0397
+
+Email:
+info@gestionjagster.com
+
+Confirmed services:
+- Rénovation intérieure
+- Rénovation extérieure
+- Rénovation de cuisine
+- Rénovation de salle de bain
+- Patio
+- Cabanon
+- Travaux d’entretien
+- Terrassement
+- Pose de gypse
+- Plâtrage
+- Peinture
+- Revêtement de plancher
+- Finition intérieure
+- Revêtement extérieur
+
+Confirmed offer:
+- Soumission gratuite
+
+Write the entire website in French.
+
+Do not invent:
+- RBQ number
+- Street address
+- Years of experience
+- Guarantees
+- Certifications
+- Number of employees
+- Number of completed projects
+- Awards
+- Business statistics
+- Services not confirmed above
+
+
+1. ACCUEIL
+
+HERO
+
+Title:
+Transformez votre maison selon vos besoins.
+
+Subtitle:
+Entrepreneur général en rénovation résidentielle à Québec et ses environs. Gestion Jagster Inc. réalise vos projets intérieurs et extérieurs, des rénovations complètes aux travaux de finition.
+
+Primary CTA:
+Obtenir une soumission gratuite
+
+Secondary CTA:
+Voir nos réalisations
+
+
+INTRODUCTION
+
+Title:
+Un seul entrepreneur pour vos rénovations.
+
+Content:
+Gestion Jagster Inc. accompagne les propriétaires dans leurs projets de rénovation résidentielle à Québec et dans les environs.
+
+Cuisine, salle de bain, finition intérieure, revêtement extérieur, patio ou travaux d’entretien : notre polyvalence nous permet d’intervenir sur différents aspects de votre propriété.
+
+Chaque projet commence par une compréhension claire de vos besoins afin de réaliser des travaux adaptés à votre maison et au résultat recherché.
+
+
+SERVICES SECTION
+
+Keep the EXACT existing number of service cards/components.
+
+If the template contains 6 service cards, use:
+
+1. RÉNOVATION INTÉRIEURE
+
+Transformation et amélioration de vos espaces intérieurs, des travaux préparatoires jusqu’à la finition.
+
+2. CUISINE ET SALLE DE BAIN
+
+Rénovation de deux des espaces les plus importants de la maison afin de les rendre plus fonctionnels et adaptés à vos besoins.
+
+3. GYPSE, PLÂTRAGE ET PEINTURE
+
+Pose de gypse, travaux de plâtrage et peinture pour compléter ou transformer vos espaces intérieurs.
+
+4. PLANCHER ET FINITION INTÉRIEURE
+
+Pose de revêtement de plancher et travaux de finition permettant de compléter votre projet de rénovation.
+
+5. PATIO ET CABANON
+
+Construction et rénovation d’aménagements extérieurs comme les patios et les cabanons.
+
+6. REVÊTEMENT EXTÉRIEUR ET TERRASSEMENT
+
+Travaux extérieurs permettant d’améliorer, transformer ou entretenir les différentes composantes de votre propriété.
+
+If the template contains a different number of service cards, combine these services WITHOUT changing the layout.
+
+
+2. RÉNOVATION INTÉRIEURE
+
+Title:
+Redonnez vie à votre intérieur.
+
+Content:
+Votre maison doit évoluer avec vos besoins.
+
+Gestion Jagster Inc. réalise différents travaux de rénovation intérieure afin de transformer, moderniser et améliorer vos espaces de vie.
+
+Notre offre permet de regrouper plusieurs étapes d’un projet, notamment la pose de gypse, le plâtrage, la peinture, les revêtements de plancher et la finition intérieure.
+
+CTA:
+Parler de ma rénovation
+
+
+3. CUISINE
+
+Title:
+Une cuisine adaptée à votre quotidien.
+
+Content:
+Rénover une cuisine permet de revoir autant son apparence que son utilisation au quotidien.
+
+Gestion Jagster Inc. réalise des projets de rénovation de cuisine en coordonnant les différents travaux nécessaires à la transformation de l’espace.
+
+L’objectif est de créer une cuisine fonctionnelle, cohérente avec la maison et adaptée aux besoins du propriétaire.
+
+CTA:
+Rénover ma cuisine
+
+
+4. SALLE DE BAIN
+
+Title:
+Transformez votre salle de bain.
+
+Content:
+Gestion Jagster Inc. réalise des projets de rénovation de salle de bain adaptés aux dimensions de l’espace et au résultat recherché.
+
+Que le projet vise à moderniser la pièce ou à revoir plus largement son aménagement, les différentes étapes sont planifiées afin d’obtenir un résultat cohérent et fonctionnel.
+
+CTA:
+Parler de ma salle de bain
+
+
+5. GYPSE, PLÂTRAGE ET PEINTURE
+
+Title:
+Une finition soignée pour vos espaces.
+
+Content:
+Les murs et les plafonds occupent une place importante dans le résultat final d’une rénovation.
+
+Gestion Jagster Inc. offre des services de pose de gypse, de plâtrage et de peinture afin de préparer et compléter vos espaces intérieurs.
+
+Services confirmed:
+- Pose de gypse
+- Plâtrage
+- Peinture
+
+CTA:
+Demander une soumission
+
+
+6. REVÊTEMENT DE PLANCHER
+
+Title:
+Complétez votre intérieur jusqu’au plancher.
+
+Content:
+Le revêtement de plancher contribue directement au style et à la fonctionnalité d’une pièce.
+
+Gestion Jagster Inc. réalise des travaux de pose de revêtement de plancher dans le cadre de projets de rénovation résidentielle.
+
+Do not invent specific flooring materials unless confirmed.
+
+CTA:
+Parler de mon projet
+
+
+7. PATIOS ET CABANONS
+
+Title:
+Profitez davantage de votre extérieur.
+
+Content:
+Gestion Jagster Inc. réalise également des projets de patios et de cabanons afin d’améliorer les espaces extérieurs d’une propriété.
+
+Chaque projet est adapté à l’espace disponible, aux besoins du propriétaire et à l’utilisation prévue.
+
+Confirmed services:
+- Patio
+- Cabanon
+
+Do not invent specific materials or dimensions.
+
+CTA:
+Présenter mon projet extérieur
+
+
+8. REVÊTEMENT EXTÉRIEUR
+
+Title:
+Renouvelez l’extérieur de votre propriété.
+
+Content:
+Le revêtement extérieur contribue autant à l’apparence générale de la maison qu’à son enveloppe.
+
+Gestion Jagster Inc. réalise des travaux de revêtement extérieur dans le cadre de projets de rénovation résidentielle.
+
+Chaque projet est évalué selon le bâtiment existant et la transformation recherchée.
+
+CTA:
+Parler de mon revêtement
+
+
+9. TERRASSEMENT ET ENTRETIEN
+
+Title:
+Des services pour prendre soin de votre propriété.
+
+Content:
+En plus des travaux de rénovation, Gestion Jagster Inc. offre des services de terrassement et différents travaux d’entretien.
+
+Cette polyvalence permet d’intervenir sur plusieurs besoins liés à l’amélioration et à l’entretien d’une propriété résidentielle.
+
+CTA:
+Discuter de mes travaux
+
+
+10. PROCESSUS
+
+Title:
+Votre projet, étape par étape.
+
+Keep the existing process component EXACTLY as it currently is.
+
+1. DISCUSSION
+
+Présentez-nous votre projet, vos besoins et le résultat recherché.
+
+2. ÉVALUATION
+
+Nous prenons connaissance de l’espace et des travaux à réaliser.
+
+3. SOUMISSION
+
+Une soumission est préparée selon la portée du projet.
+
+4. RÉALISATION
+
+Les travaux sont réalisés selon le projet établi.
+
+5. FINITION
+
+Les dernières étapes viennent compléter votre rénovation.
+
+
+11. RÉALISATIONS
+
+Title:
+Nos réalisations
+
+Introduction:
+Découvrez quelques projets réalisés par Gestion Jagster Inc. à Québec et dans les environs.
+
+Keep the EXISTING gallery/project components exactly as they currently are.
+
+Possible categories:
+- Tous
+- Rénovation intérieure
+- Cuisine
+- Salle de bain
+- Patio
+- Revêtement extérieur
+- Finition
+- Extérieur
+
+For each project, only include confirmed information:
+- Type de projet
+- Localisation if known
+- Travaux réalisés
+- Photos
+- Avant / après when available
+- Résultat final
+
+Do not infer:
+- Exact materials
+- Brands
+- Costs
+- Dimensions
+- Timelines
+- Technical specifications
+from photos alone.
+
+
+12. POURQUOI GESTION JAGSTER
+
+Keep the exact existing number of content blocks.
+
+Possible content:
+
+ENTREPRENEUR GÉNÉRAL
+
+Un seul point de contact pour coordonner différents travaux de rénovation résidentielle.
+
+INTÉRIEUR ET EXTÉRIEUR
+
+Des services couvrant plusieurs aspects de la maison.
+
+POLYVALENCE
+
+Cuisine, salle de bain, gypse, peinture, plancher, patio, revêtement extérieur et plus.
+
+FINITION
+
+Une offre comprenant plusieurs travaux nécessaires pour compléter une rénovation.
+
+PROJETS RÉSIDENTIELS
+
+Des services pensés pour les propriétaires et leurs besoins d’amélioration.
+
+SOUMISSION GRATUITE
+
+Présentez votre projet afin d’obtenir une soumission gratuite.
+
+
+13. À PROPOS
+
+Title:
+À propos de Gestion Jagster Inc.
+
+Content:
+Gestion Jagster Inc. est un entrepreneur général spécialisé en rénovation résidentielle à Québec et dans les environs.
+
+L’entreprise réalise des travaux de rénovation intérieure et extérieure et offre une gamme de services comprenant notamment la rénovation de cuisines et salles de bain, la pose de gypse, le plâtrage, la peinture, les revêtements de plancher, la finition intérieure, les patios, les cabanons, le terrassement et le revêtement extérieur.
+
+Cette polyvalence permet d’accompagner les propriétaires dans différents types de projets et de regrouper plusieurs travaux au sein d’un même mandat.
+
+
+14. TESTIMONIALS / TÉMOIGNAGES
+
+THIS SECTION MUST REMAIN A TESTIMONIAL SECTION.
+
+DO NOT:
+- Remove it
+- Convert it into services
+- Convert it into projects
+- Convert it into statistics
+- Convert it into "Pourquoi nous"
+- Convert it into FAQ
+- Change its component type
+- Change its layout
+
+Section title:
+Ce que nos clients disent de nous
+
+Optional intro:
+La confiance de nos clients est au cœur des projets que nous réalisons.
+
+ONLY use REAL customer testimonials already available in the existing website/database or explicitly provided.
+
+DO NOT invent:
+- Testimonials
+- Customer names
+- Quotes
+- Star ratings
+- Review dates
+- Project details attributed to customers
+
+If no verified testimonials are available, KEEP THE EXISTING TESTIMONIAL CONTENT/PLACEHOLDERS rather than generating fake reviews.
+
+
+15. STATS / COUNTERS SECTION
+
+DO NOT MODIFY THIS SECTION AT ALL.
+
+KEEP EXACTLY AS-IS:
+- Every existing number
+- Every percentage
+- Every counter
+- Every statistic
+- Every metric
+- Every value
+- Existing counter animations
+- Existing statistic labels where necessary to preserve their meaning
+
+DO NOT replace template stats with:
+- 132 Facebook followers
+- 22 following
+- Number of projects
+- Number of clients
+- Years of experience
+- Number of employees
+- Satisfaction percentages
+- Any invented or Facebook-derived information
+
+ALL EXISTING TEMPLATE STATS MUST REMAIN COMPLETELY UNCHANGED.
+
+
+16. FAQ
+
+Create concise answers for:
+
+- Quels types de rénovations réalisez-vous?
+- Faites-vous de la rénovation de cuisine?
+- Rénovez-vous les salles de bain?
+- Faites-vous la pose de gypse?
+- Offrez-vous des services de plâtrage et de peinture?
+- Installez-vous des revêtements de plancher?
+- Construisez-vous des patios?
+- Faites-vous des cabanons?
+- Installez-vous du revêtement extérieur?
+- Faites-vous du terrassement?
+- Offrez-vous des travaux d’entretien?
+- Est-ce que la soumission est gratuite?
+- Travaillez-vous à Québec et dans les environs?
+- Puis-je vous envoyer des photos de mon projet?
+
+Do not invent a precise service radius or list of municipalities unless confirmed.
+
+
+17. CONTACT / SOUMISSION
+
+Title:
+Parlons de votre rénovation.
+
+Content:
+Cuisine, salle de bain, finition intérieure, patio, revêtement extérieur ou autre projet résidentiel : présentez-nous vos besoins afin que nous puissions discuter des travaux à réaliser.
+
+Gestion Jagster Inc.
+
+Service area:
+Québec et environs
+
+Phone:
+(581) 991-0397
+
+Email:
+info@gestionjagster.com
+
+Soumission:
+Gratuite
+
+Keep the EXISTING contact form structure exactly as it currently is.
+
+If field labels can be updated without changing the component, use:
+- Nom
+- Téléphone
+- Courriel
+- Ville du projet
+- Type de projet
+- Description
+- Échéancier souhaité
+- Budget approximatif
+- Photos
+- Plans / inspirations
+
+Project type options:
+- Rénovation intérieure
+- Cuisine
+- Salle de bain
+- Gypse / plâtrage
+- Peinture
+- Revêtement de plancher
+- Finition intérieure
+- Patio / cabanon
+- Revêtement extérieur
+- Terrassement
+- Entretien
+- Autre
+
+CTA:
+Obtenir ma soumission gratuite
+
+
+18. FINAL CTA
+
+Title:
+Un projet de rénovation en tête?
+
+Content:
+Communiquez avec Gestion Jagster Inc. pour discuter de votre projet résidentiel à Québec et dans les environs.
+
+Primary CTA:
+Obtenir une soumission gratuite
+
+Phone:
+(581) 991-0397
+
+
+SEO CONTENT
+
+Naturally incorporate relevant terms such as:
+- entrepreneur rénovation Québec
+- entrepreneur général Québec
+- rénovation résidentielle Québec
+- rénovation intérieure Québec
+- rénovation extérieure Québec
+- rénovation cuisine Québec
+- rénovation salle de bain Québec
+- pose de gypse Québec
+- plâtrage Québec
+- peinture résidentielle Québec
+- revêtement de plancher Québec
+- construction patio Québec
+- revêtement extérieur Québec
+
+Do not keyword-stuff.
+
+
+FINAL INSTRUCTION — ABSOLUTELY CRITICAL
+
+KEEP THE EXISTING WEBSITE TEMPLATE EXACTLY AS IT CURRENTLY IS.
+
+DO NOT:
+- Redesign the website
+- Change the visual identity
+- Change the layout
+- Change page structure
+- Reorder sections
+- Add sections
+- Remove sections
+- Change cards/components
+- Change navigation
+- Change styling
+- Change spacing
+- Change animations
+- Change existing statistics
+- Change counters
+- Change metrics
+- Replace any existing template numbers
+- Convert the testimonial section into another type of section
+- Invent testimonials
+
+ONLY UPDATE THE BUSINESS-SPECIFIC CONTENT.
+
+ALL EXISTING TEMPLATE STATS MUST REMAIN COMPLETELY UNCHANGED.
+
+THE TESTIMONIAL SECTION MUST REMAIN A TESTIMONIAL SECTION.

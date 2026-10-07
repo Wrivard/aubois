@@ -80,19 +80,19 @@
   --sidebar: 0 0% 100%;
   --sidebar-foreground: 0 0% 11%;
   --sidebar-border: 0 0% 89%;
-  --sidebar-primary: 223.243 57.513% 37.843%;
-  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-primary: 37.143 47.191% 65.098%;
+  --sidebar-primary-foreground: 0 0% 11%;
   --sidebar-accent: 0 0% 96%;
   --sidebar-accent-foreground: 0 0% 11%;
-  --sidebar-ring: 223.243 57.513% 37.843%;
+  --sidebar-ring: 37.143 47.191% 65.098%;
 
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 11%;
   --popover-border: 0 0% 89%;
 
-  /* Céramiques Appalaches blue: #294898 */
-  --primary: 223.243 57.513% 37.843%;
-  --primary-foreground: 0 0% 100%;
+  /* Gestion Jagster accent: #D0B07C */
+  --primary: 37.143 47.191% 65.098%;
+  --primary-foreground: 0 0% 11%;
 
   /* #1B1B1B as secondary */
   --secondary: 0 0% 11%;
@@ -110,7 +110,7 @@
   --destructive-foreground: 0 0% 100%;
 
   --input: 0 0% 89%;
-  --ring: 223.243 57.513% 37.843%;
+  --ring: 37.143 47.191% 65.098%;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   

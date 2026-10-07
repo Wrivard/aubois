@@ -30,8 +30,8 @@ export default function Soumission() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    const title = "Demande de soumission | Céramiques Appalaches inc.";
-    const description = "Présentez votre projet de pose de céramique à Céramiques Appalaches inc., à Thetford Mines en Chaudière-Appalaches.";
+    const title = "Soumission gratuite | Gestion Jagster Inc.";
+    const description = "Présentez votre projet de rénovation résidentielle à Gestion Jagster Inc., à Québec et dans les environs.";
     const previousTitle = document.title;
     const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
     const previous = tags.map((selector) => {
@@ -88,7 +88,7 @@ export default function Soumission() {
       "",
       "Vous pouvez joindre vos photos et plans directement à ce courriel avant de l'envoyer."
     ].join("\n");
-    window.location.href = `mailto:ceramiquesappalaches@outlook.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@gestionjagster.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
     setIsSubmitted(true);
   };
 
@@ -104,7 +104,7 @@ export default function Soumission() {
       <section className="relative pt-[158px] xl:pt-[177px] pb-12 md:pb-16 bg-[#1B1B1B] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/photos/tile-white-shower.jpg"
+             src="/photos/jagster-bathroom-03.webp"
             alt=""
             className="w-full h-full object-cover object-center opacity-30"
           />
@@ -113,9 +113,9 @@ export default function Soumission() {
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
             <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
-            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Demande de soumission</h1>
+            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Demande de soumission gratuite</h1>
             <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-              Salle de bain, douche, cuisine, plancher ou projet commercial : présentez-nous votre projet de pose de céramique. Votre demande sera préparée dans votre messagerie.
+              Présentez votre projet de rénovation résidentielle à Québec et dans les environs. Votre demande de soumission gratuite sera préparée dans votre messagerie.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function Soumission() {
                   </div>
                   <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre courriel est prêt</h2>
                   <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
-                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à ceramiquesappalaches@outlook.com.
+                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à info@gestionjagster.com.
                   </p>
                   <Button className="uppercase tracking-wider font-bold px-8" onClick={() => window.location.href = "/"}>
                     Retour à l'accueil
@@ -148,7 +148,7 @@ export default function Soumission() {
                   <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-10 pb-6 border-b border-border">
                     {steps.map(s => (
                       <div key={s.num} className={`flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left ${step === s.num ? 'opacity-100' : step > s.num ? 'opacity-70' : 'opacity-40'}`}>
-                         <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= s.num ? 'bg-primary text-white' : 'bg-muted text-muted-foreground'}`}>
+                         <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= s.num ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'}`}>
                           {step > s.num ? <CheckCircle2 className="w-4 h-4"/> : s.num}
                         </div>
                          <div>
@@ -175,11 +175,18 @@ export default function Soumission() {
                                     <SelectValue placeholder="Sélectionnez le type de travaux" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                      <SelectItem value="Salle de bain / douche">Salle de bain / douche</SelectItem>
-                                      <SelectItem value="Cuisine / dosseret">Cuisine / dosseret</SelectItem>
-                                      <SelectItem value="Plancher">Plancher</SelectItem>
-                                      <SelectItem value="Mur / motif personnalisé">Mur / motif personnalisé</SelectItem>
-                                      <SelectItem value="Commercial / autre">Commercial / autre</SelectItem>
+                                      <SelectItem value="Rénovation intérieure">Rénovation intérieure</SelectItem>
+                                      <SelectItem value="Cuisine">Cuisine</SelectItem>
+                                      <SelectItem value="Salle de bain">Salle de bain</SelectItem>
+                                      <SelectItem value="Gypse / plâtrage">Gypse / plâtrage</SelectItem>
+                                      <SelectItem value="Peinture">Peinture</SelectItem>
+                                      <SelectItem value="Revêtement de plancher">Revêtement de plancher</SelectItem>
+                                      <SelectItem value="Finition intérieure">Finition intérieure</SelectItem>
+                                      <SelectItem value="Patio / cabanon">Patio / cabanon</SelectItem>
+                                      <SelectItem value="Revêtement extérieur">Revêtement extérieur</SelectItem>
+                                      <SelectItem value="Terrassement">Terrassement</SelectItem>
+                                      <SelectItem value="Entretien">Entretien</SelectItem>
+                                      <SelectItem value="Autre">Autre</SelectItem>
                                   </SelectContent>
                                 </Select>
                               )}
@@ -242,7 +249,7 @@ export default function Soumission() {
                           <Label className="font-bold">Description détaillée du projet *</Label>
                           <Textarea 
                             {...register("description")} 
-                             placeholder="Décrivez l’espace, la surface approximative, les carreaux ou motifs souhaités..."
+                              placeholder="Décrivez les travaux que vous souhaitez réaliser..."
                              className="min-h-[180px] rounded-none border-border focus:ring-primary focus:border-primary resize-y"
                           />
                           {errors.description && <p className="text-destructive text-sm">{errors.description.message}</p>}
@@ -322,7 +329,7 @@ export default function Soumission() {
                         </Button>
                       ) : (
                         <Button type="submit" className="font-bold uppercase tracking-wider h-12 px-8 bg-secondary hover:bg-secondary/90 text-white w-full sm:w-auto mt-4 sm:mt-0">
-                           Préparer le courriel
+                           Obtenir ma soumission gratuite
                         </Button>
                       )}
                     </div>
@@ -334,17 +341,17 @@ export default function Soumission() {
 
             {/* Sidebar (Right) */}
             <div className="xl:col-span-1 min-w-0 space-y-6">
-              <div className="bg-primary text-white p-8">
+              <div className="bg-primary text-primary-foreground p-8">
                 <h3 className="text-xl font-bold mb-4">Parlons de votre projet</h3>
-                 <p className="mb-6 text-white/90 text-sm leading-relaxed">
+                  <p className="mb-6 text-primary-foreground/90 text-sm leading-relaxed">
                   Vous pouvez aussi nous joindre directement par téléphone ou courriel pour discuter de votre projet.
                 </p>
                 <div className="space-y-4">
                   <p className="flex items-center gap-3 font-medium">
-                     <Phone className="w-5 h-5"/> <a href="tel:+14183349925">(418) 334-9925</a>
+                     <Phone className="w-5 h-5"/> <a href="tel:+15819910397">(581) 991-0397</a>
                   </p>
                   <p className="flex items-center gap-3 font-medium">
-                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:ceramiquesappalaches@outlook.com">ceramiquesappalaches@outlook.com</a>
+                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:info@gestionjagster.com">info@gestionjagster.com</a>
                   </p>
                 </div>
               </div>
@@ -354,15 +361,15 @@ export default function Soumission() {
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                       <span className="text-sm text-white/80 leading-tight">Spécialisation en pose de céramique et de revêtements en carreaux</span>
+                        <span className="text-sm text-white/80 leading-tight">Entrepreneur général en rénovation résidentielle</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                       <span className="text-sm text-white/80 leading-tight">Attention portée aux alignements et aux découpes</span>
+                        <span className="text-sm text-white/80 leading-tight">Travaux de rénovation intérieure et extérieure</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                       <span className="text-sm text-white/80 leading-tight">Installations adaptées aux projets résidentiels et commerciaux</span>
+                        <span className="text-sm text-white/80 leading-tight">Soumission gratuite pour votre projet</span>
                    </li>
                 </ul>
               </div>

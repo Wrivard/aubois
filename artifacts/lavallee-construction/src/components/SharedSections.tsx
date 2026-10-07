@@ -11,7 +11,7 @@ export function TestimonialsSection() {
     <section className="py-16 md:py-20 xl:py-24 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block text-center">Témoignages</span>
-        <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-10 md:mb-16 text-secondary text-center">Ce que nos clients disent de notre travail</h2>
+        <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-10 md:mb-16 text-secondary text-center">Ce que nos clients disent de nous</h2>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div className="p-6 sm:p-10 border border-border bg-muted/50 relative">
@@ -52,11 +52,20 @@ export function FAQContactSection() {
           
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
-              ["Quels types de projets réalisez-vous?", "Nous réalisons la pose de céramique et de revêtements en carreaux pour les salles de bain, douches, cuisines, planchers, murs et espaces commerciaux."],
-              ["Travaillez-vous également dans le commercial?", "Oui, Céramiques Appalaches inc. réalise des projets de pose de carreaux dans des espaces commerciaux."],
-              ["Pouvez-vous réaliser des motifs comme un effet damier?", "Oui, des installations décoratives avec des carreaux contrastés, notamment un effet damier, font partie des projets présentés par l’entreprise."],
-              ["Comment demander une soumission?", "Décrivez votre projet à l’aide du formulaire; votre messagerie préparera un courriel à envoyer."],
-              ["Puis-je joindre des plans ou des photos?", "Oui. Vous pourrez joindre vos plans et photos au courriel avant de l’envoyer. Nous sommes basés à Thetford Mines et intervenons en Chaudière-Appalaches."]
+              ["Quels types de rénovations réalisez-vous?", "Gestion Jagster Inc. réalise des rénovations intérieures et extérieures, notamment de cuisines et de salles de bain, ainsi que des travaux de finition, de plancher, de patio, de cabanon, de revêtement extérieur, de terrassement et d’entretien."],
+              ["Faites-vous de la rénovation de cuisine?", "Oui. Gestion Jagster Inc. réalise des projets de rénovation de cuisine adaptés aux besoins du propriétaire et à son espace."],
+              ["Rénovez-vous les salles de bain?", "Oui. Des rénovations de salle de bain font partie des services résidentiels offerts."],
+              ["Faites-vous la pose de gypse?", "Oui. La pose de gypse est offerte dans le cadre de projets résidentiels."],
+              ["Offrez-vous des services de plâtrage et de peinture?", "Oui. Gestion Jagster Inc. offre des travaux de plâtrage et de peinture."],
+              ["Installez-vous des revêtements de plancher?", "Oui. La pose de revêtement de plancher fait partie des services offerts."],
+              ["Construisez-vous des patios?", "Oui. Gestion Jagster Inc. réalise des projets de patio."],
+              ["Faites-vous des cabanons?", "Oui. La construction et la rénovation de cabanons font partie des services extérieurs offerts."],
+              ["Installez-vous du revêtement extérieur?", "Oui. Des travaux de revêtement extérieur sont offerts pour les projets résidentiels."],
+              ["Faites-vous du terrassement?", "Oui. Le terrassement fait partie des services offerts à Québec et dans les environs."],
+              ["Offrez-vous des travaux d’entretien?", "Oui. Gestion Jagster Inc. réalise différents travaux d’entretien résidentiel."],
+              ["Est-ce que la soumission est gratuite?", "Oui. Vous pouvez présenter votre projet afin d’obtenir une soumission gratuite."],
+              ["Travaillez-vous à Québec et dans les environs?", "Oui. Gestion Jagster Inc. dessert Québec et les environs; le secteur précis est à confirmer selon le projet."],
+              ["Puis-je vous envoyer des photos de mon projet?", "Oui. Vous pourrez joindre des photos ou des plans au courriel préparé avant de l’envoyer. Aucun fichier n’est téléversé sur ce site."]
             ].map(([question, answer], i) => (
               <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 4 ? "border-b border-border" : "border-b-0"}`}>
                 <AccordionTrigger className="text-left font-bold text-lg py-6 hover:no-underline hover:text-secondary">{question}</AccordionTrigger>
@@ -68,8 +77,8 @@ export function FAQContactSection() {
 
         <div>
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Coordonnées</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet.</h2>
-          <p className="text-muted-foreground mb-10">Salle de bain, douche, cuisine, plancher ou projet commercial : présentez-nous votre espace et ce que vous souhaitez réaliser.</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre rénovation.</h2>
+          <p className="text-muted-foreground mb-10">Cuisine, salle de bain, finition intérieure, patio, revêtement extérieur ou autre projet résidentiel : présentez-nous vos besoins pour obtenir une soumission gratuite.</p>
           
           <div className="bg-white border border-border p-5 sm:p-8 h-auto mb-10">
             <ul className="space-y-6">
@@ -79,7 +88,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Localisation</h4>
-                  <p className="text-muted-foreground">Thetford Mines, Québec<br />Chaudière-Appalaches</p>
+                  <p className="text-muted-foreground">Québec et environs</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -88,7 +97,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Téléphone</h4>
-                  <a className="text-muted-foreground hover:text-secondary" href="tel:+14183349925">(418) 334-9925</a>
+                  <a className="text-muted-foreground hover:text-secondary" href="tel:+15819910397">(581) 991-0397</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -97,7 +106,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Courriel</h4>
-                  <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:ceramiquesappalaches@outlook.com">ceramiquesappalaches@outlook.com</a>
+                  <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:info@gestionjagster.com">info@gestionjagster.com</a>
                 </div>
               </li>
             </ul>
@@ -108,12 +117,12 @@ export function FAQContactSection() {
       {/* Full Bleed Embed Map */}
       <div className="w-full h-[400px]">
         <iframe
-          title="Carte de Thetford Mines, Québec"
+          title="Carte de Québec, Québec"
           className="block w-full h-full"
           style={{ border: 0 }}
           loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Thetford%20Mines%2C%20Qu%C3%A9bec&z=11&output=embed"
+          src="https://maps.google.com/maps?q=Qu%C3%A9bec%2C%20Qu%C3%A9bec&z=10&output=embed"
         ></iframe>
       </div>
     </section>
