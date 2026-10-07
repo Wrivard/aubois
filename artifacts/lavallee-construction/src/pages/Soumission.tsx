@@ -101,14 +101,14 @@ export default function Soumission() {
   return (
     <MainLayout>
       {/* Restrained Header Visual */}
-      <section className="relative pt-[158px] xl:pt-[177px] pb-12 md:pb-16 bg-[#1B1B1B] text-white overflow-hidden">
+      <section className="relative pt-[158px] xl:pt-[177px] pb-12 md:pb-16 bg-secondary text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
              src="/photos/jagster-bathroom-03.webp"
             alt=""
             className="w-full h-full object-cover object-center opacity-30"
           />
-          <div className="absolute inset-0 bg-[#1B1B1B]/80" />
+          <div className="absolute inset-0 bg-secondary/80" />
         </div>
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
@@ -356,7 +356,7 @@ export default function Soumission() {
                 </div>
               </div>
               
-              <div className="bg-[#1B1B1B] text-white p-8">
+              <div className="bg-secondary text-white p-8">
                 <h3 className="text-xl font-bold mb-6">Pourquoi nous choisir ?</h3>
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">
