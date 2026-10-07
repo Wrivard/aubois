@@ -9,7 +9,7 @@ export default function Home() {
     <MainLayout>
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] flex flex-col">
-        <div className="absolute inset-0 bg-secondary">
+        <div className="absolute inset-0 bg-[#1B1B1B]">
           <video
             className="w-full h-full object-cover opacity-90"
             autoPlay
@@ -28,7 +28,7 @@ export default function Home() {
           >
             <source src="/lavallee-hero-optimized.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-secondary/65"></div>
+          <div className="absolute inset-0 bg-[#1B1B1B]/65"></div>
         </div>
 
         <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-[150px] xl:pt-[169px] pb-8 sm:pb-10">
@@ -199,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="realisations" className="py-16 md:py-20 xl:py-24 bg-secondary text-white scroll-mt-32 xl:scroll-mt-36">
+      <section id="realisations" className="py-16 md:py-20 xl:py-24 bg-forest text-white scroll-mt-32 xl:scroll-mt-36">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-10 md:mb-16 gap-6">
             <div className="max-w-2xl">
@@ -285,10 +285,10 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* CTA Background */}
-      <section className="relative py-20 md:py-28 xl:py-32 bg-secondary text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 xl:py-32 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
           <img src="/photos/jagster-deck-01.webp" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
-          <div className="absolute inset-0 bg-secondary/80"></div>
+          <div className="absolute inset-0 bg-forest/80"></div>
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
