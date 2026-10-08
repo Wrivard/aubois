@@ -92,7 +92,10 @@ export function Navbar() {
           </a>
         </nav>
 
-        <div className="hidden xl:block">
+        <div className="hidden xl:flex items-center gap-4">
+          <span className="text-sm font-semibold text-white whitespace-nowrap">
+            RBQ : 5855-8107-01
+          </span>
           <Link href="/soumission">
             <Button size="lg" className="font-bold tracking-wide uppercase text-xs">
               Soumission gratuite
@@ -165,6 +168,9 @@ export function Navbar() {
                 Soumission gratuite
               </Button>
             </Link>
+            <p className="mt-3 text-center text-sm font-semibold text-white/80">
+              RBQ : 5855-8107-01
+            </p>
           </div>
         </div>
       )}
