@@ -17,7 +17,7 @@ export default function Home() {
             loop
             playsInline
             preload="auto"
-            poster="/godin-photo-01.jpg"
+            poster="/hero-fallback.jpg"
             aria-hidden="true"
             tabIndex={-1}
             onCanPlay={(event) => {
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/godin-photo-02.jpg" alt="Cuisine rénovée avec armoires foncées et îlot en bois" className="w-full h-full object-cover" loading="lazy" />
+                <img src="/reno-general.jpg" alt="Photo d’illustration d’un intérieur résidentiel rénové" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -135,7 +135,7 @@ export default function Home() {
                 <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Nos services</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">Des projets adaptés à votre maison.</h2>
             <p className="text-lg text-muted-foreground">
-                Des services de construction et de rénovation résidentielle en Mauricie, à Tadoussac et à Baie-Comeau.
+                Des services de construction et de rénovation résidentielle en Mauricie, à Tadoussac et à Baie-Comeau. Certaines photos des services sont illustratives.
             </p>
           </div>
 
@@ -144,43 +144,43 @@ export default function Home() {
               {
                 title: "Rénovation résidentielle",
                 desc: "Transformez votre propriété grâce à des travaux de rénovation adaptés à vos besoins, à votre espace et au résultat recherché.",
-                img: "/godin-photo-01.jpg",
+                img: "/service-renovation.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Rénovation de cuisine",
                 desc: "Modernisez votre cuisine avec un aménagement pensé pour améliorer sa fonctionnalité, son apparence et votre confort quotidien.",
-                img: "/godin-photo-02.jpg",
+                img: "/reno-cuisine.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Construction résidentielle",
                 desc: "Des services de construction adaptés aux caractéristiques de votre projet résidentiel et aux besoins de votre propriété.",
-                img: "/godin-photo-01.jpg",
+                img: "/projet-agrandissement.jpg",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
                 title: "Transformation intérieure",
                 desc: "Repensez vos espaces de vie afin de créer un environnement plus fonctionnel, moderne et agréable.",
-                img: "/godin-photo-03.jpg",
+                img: "/reno-sous-sol.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Travaux de finition",
                 desc: "Une attention portée aux détails et aux finitions qui contribuent à l’apparence finale de votre rénovation.",
-                img: "/godin-photo-04.jpg",
+                img: "/projet-salle-de-bain.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Projets de rénovation personnalisés",
                 desc: "Des solutions adaptées aux particularités de votre maison et à la vision que vous souhaitez concrétiser.",
-                img: "/godin-photo-05.jpg",
+                img: "/service-residentiel.jpg",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
               <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300">
                 <div className="aspect-[4/3] overflow-hidden relative">
-                  <img src={srv.img} alt={`${srv.title} — projet des Constructions Godin`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                  <img src={srv.img} alt={`Photo d’illustration pour le service ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                   <div className="absolute top-4 left-4 bg-primary text-primary-foreground p-3 shadow-lg">
                     {srv.icon}
                   </div>
@@ -216,12 +216,12 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {[
-              { img: "/godin-photo-01.jpg", title: "Projet résidentiel", tag: "Construction" },
-              { img: "/godin-photo-02.jpg", title: "Rénovation de cuisine", tag: "Cuisine" },
-              { img: "/godin-photo-05.jpg", title: "Cuisine rénovée", tag: "Réalisation" },
+              { img: "/godin-photo-01.jpg", title: "Projet résidentiel", tag: "Extérieur", alt: "Projet résidentiel avec terrasse en bois et espace vitré" },
+              { img: "/godin-photo-02.jpg", title: "Rénovation de cuisine", tag: "Cuisine", alt: "Cuisine rénovée avec armoires foncées et îlot en bois" },
+              { img: "/godin-photo-05.jpg", title: "Cuisine rénovée", tag: "Réalisation", alt: "Cuisine rénovée avec grand îlot en bois" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
-                <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
+                <img src={proj.img} alt={proj.alt} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-6 xl:p-8 opacity-100 xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus-within:opacity-100 transition-opacity duration-300">
                   <span className="inline-block bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
                   <h3 className="text-2xl font-bold">{proj.title}</h3>
@@ -241,26 +241,10 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Des idées pour votre prochain projet.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Les photos montrent des projets résidentiels des Constructions Godin, dont une rénovation de cuisine.
+               Les photos de projets des Constructions Godin sont accompagnées de quelques images d’illustration pour inspirer votre prochain projet.
             </p>
           </div>
            <div className="grid sm:grid-cols-2 gap-6">
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
-              <img
-                src="/godin-photo-01.jpg"
-                  alt="Terrasse en bois et agrandissement résidentiel"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                 loading="lazy"
-              />
-            </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
-              <img
-                src="/godin-photo-02.jpg"
-                  alt="Cuisine rénovée avec armoires foncées et îlot en bois"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                 loading="lazy"
-              />
-            </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
                 src="/godin-photo-03.jpg"
@@ -271,8 +255,24 @@ export default function Home() {
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/godin-photo-05.jpg"
-                  alt="Cuisine rénovée avec grand îlot en bois"
+                src="/godin-photo-04.jpg"
+                  alt="Détail d’une cuisine rénovée avec armoires foncées et comptoirs"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                 loading="lazy"
+              />
+            </figure>
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+              <img
+                src="/projet-cuisine.jpg"
+                  alt="Image d’illustration d’une cuisine contemporaine"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                 loading="lazy"
+              />
+            </figure>
+            <figure className="overflow-hidden aspect-[16/10] bg-muted">
+              <img
+                src="/reno-patio.jpg"
+                  alt="Image d’illustration d’un aménagement extérieur résidentiel"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
@@ -287,7 +287,7 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-20 md:py-28 xl:py-32 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/godin-photo-01.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
+          <img src="/cta-bg.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
           <div className="absolute inset-0 bg-forest/80"></div>
         </div>
         

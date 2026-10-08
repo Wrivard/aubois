@@ -41,6 +41,7 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 - Garder le gabarit existant, le logo fourni des Constructions Godin et l'accent `#795931`; préserver le noir `#1B1B1B` de la navigation, du pied de page et du texte.
 - Utiliser les photos fournies par le client pour illustrer les projets; ne pas inventer de réalisations, licences, garanties ou témoignages.
+- Ne pas réutiliser la même photo à plusieurs endroits du site; choisir des visuels distincts et adaptés au contenu.
 - Conserver inchangés les compteurs et statistiques du gabarit; utiliser uniquement des témoignages vérifiés.
 
 ## Gotchas
