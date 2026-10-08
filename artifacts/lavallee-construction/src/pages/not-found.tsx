@@ -14,7 +14,7 @@ export default function NotFound() {
           </div>
 
           <p className="mt-4 text-sm text-gray-600">
-            Cette page n'existe pas. Retournez à l'accueil pour découvrir Gestion Jagster Inc.
+            Cette page n'existe pas. Retournez à l'accueil pour découvrir Les Constructions Godin.
           </p>
         </CardContent>
       </Card>

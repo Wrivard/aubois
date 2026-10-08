@@ -1,0 +1,623 @@
+# Website Content Update — Les Constructions Godin
+
+Update the EXISTING website template for **Les Constructions Godin**.
+
+## CRITICAL INSTRUCTIONS — FOLLOW EXACTLY
+
+- DO NOT redesign the website.
+- DO NOT change the existing layout, design, colors, typography, spacing, animations, navigation or visual elements.
+- DO NOT add, remove, rearrange or replace sections or components.
+- DO NOT create a new website.
+- ONLY update the business-specific content.
+- Adapt the content to the EXISTING template, not the template to the content.
+- Keep the exact existing number of service cards, project cards and other components.
+- If the template contains fewer content slots than suggested below, prioritize the most relevant information without modifying the structure.
+- Write all customer-facing content in French.
+
+**STATISTICS — ABSOLUTELY DO NOT MODIFY**
+
+Keep every existing statistic, number, counter, metric, percentage, label and animation exactly as it currently appears in the template.
+
+Do not replace template statistics with Facebook followers, years of experience, project counts or any other business numbers.
+
+**TESTIMONIALS — MUST REMAIN TESTIMONIALS**
+
+The existing testimonial section MUST remain a testimonial section with the same layout and components.
+
+Do not transform it into services, projects, benefits, statistics or FAQ.
+
+Only use authentic, verified testimonials. Never invent customer names, quotes, ratings or reviews. If no verified testimonials are available, retain the existing testimonial placeholders without presenting fictional content as real reviews.
+
+---
+
+# BUSINESS INFORMATION
+
+**Company:** Les Constructions Godin
+
+**Business type:** Entreprise de construction et rénovation
+
+**Phone:** (819) 944-9037
+
+**Email:** lesconstructionsgodin@gmail.com
+
+**RBQ:** 5855-8107-01
+
+**Confirmed service areas:**
+- Mauricie
+- Tadoussac
+- Baie-Comeau
+
+**Company slogan:**
+Rénover, innover, bâtir l'avenir ensemble!
+
+**Confirmed specialties and business activities:**
+- Rénovation résidentielle
+- Construction
+- Rénovation de cuisine
+- Transformation intérieure
+- Amélioration d'espaces résidentiels
+- Travaux de finition associés aux projets de rénovation
+
+**Confirmed portfolio example:**
+A kitchen renovation showing a residential interior transformation, including cabinetry, countertops and finishing work.
+
+Do not assume the company manufactures cabinetry or countertops itself.
+
+**IMPORTANT:**
+
+Do not invent:
+- Street address
+- Years of experience
+- Number of employees
+- Number of projects
+- Awards
+- Additional certifications
+- Guarantees
+- Unconfirmed service areas
+- Technical construction specialties
+- Customer satisfaction percentages
+
+---
+
+# 1. ACCUEIL
+
+## HERO
+
+**Title:**
+Rénover, innover, bâtir l'avenir ensemble.
+
+**Subtitle:**
+Construction et rénovation résidentielle en Mauricie, à Tadoussac et à Baie-Comeau. Les Constructions Godin transforme vos idées en projets concrets, adaptés à vos besoins.
+
+**Primary CTA:**
+Demander une soumission
+
+**Secondary CTA:**
+Voir nos réalisations
+
+## INTRODUCTION
+
+**Title:**
+Votre vision, notre engagement.
+
+**Content:**
+
+Chez Les Constructions Godin, chaque projet est une occasion de transformer un espace et de lui donner une nouvelle vie.
+
+Que vous souhaitiez moderniser votre cuisine, rénover une partie de votre maison ou entreprendre un projet de construction, notre approche repose sur la compréhension de vos besoins et le souci d'une réalisation soignée.
+
+Nous accompagnons nos clients dans leurs projets de construction et de rénovation avec un objectif simple : créer des espaces fonctionnels, harmonieux et adaptés à leur quotidien.
+
+---
+
+# 2. SERVICES
+
+Keep the EXACT existing number of service cards.
+
+If the template contains 6 cards, use:
+
+### 1. RÉNOVATION RÉSIDENTIELLE
+
+Transformez votre propriété grâce à des travaux de rénovation adaptés à vos besoins, à votre espace et au résultat recherché.
+
+### 2. RÉNOVATION DE CUISINE
+
+Modernisez votre cuisine avec un aménagement pensé pour améliorer sa fonctionnalité, son apparence et votre confort quotidien.
+
+### 3. CONSTRUCTION RÉSIDENTIELLE
+
+Des services de construction adaptés aux caractéristiques de votre projet résidentiel et aux besoins de votre propriété.
+
+### 4. TRANSFORMATION INTÉRIEURE
+
+Repensez vos espaces de vie afin de créer un environnement plus fonctionnel, moderne et agréable.
+
+### 5. TRAVAUX DE FINITION
+
+Une attention portée aux détails et aux finitions qui contribuent à l'apparence finale de votre rénovation.
+
+### 6. PROJETS DE RÉNOVATION PERSONNALISÉS
+
+Des solutions adaptées aux particularités de votre maison et à la vision que vous souhaitez concrétiser.
+
+If the template contains fewer service cards, combine related services without modifying the layout.
+
+---
+
+# 3. RÉNOVATION RÉSIDENTIELLE
+
+**Title:**
+Donnez une nouvelle vie à votre maison.
+
+**Content:**
+
+Les besoins d'une maison évoluent avec le temps. Une rénovation permet d'améliorer la fonctionnalité d'un espace, de moderniser son apparence ou de l'adapter à un nouveau mode de vie.
+
+Les Constructions Godin réalise des projets de rénovation résidentielle en tenant compte des caractéristiques de la propriété et des attentes du propriétaire.
+
+Chaque projet est abordé avec une attention particulière aux travaux nécessaires et au résultat final.
+
+**CTA:**
+Parler de ma rénovation
+
+---
+
+# 4. RÉNOVATION DE CUISINE
+
+**Title:**
+Une cuisine à votre image.
+
+**Content:**
+
+La cuisine occupe une place centrale dans la maison. C'est un espace où le confort, la fonctionnalité et l'esthétique doivent se rencontrer.
+
+Les Constructions Godin réalise des projets de rénovation de cuisine afin de transformer les espaces existants et de les adapter aux besoins des propriétaires.
+
+De la préparation aux travaux de finition, chaque étape contribue à créer une cuisine agréable et fonctionnelle.
+
+**Content themes:**
+- Transformation de cuisine
+- Réaménagement intérieur
+- Modernisation de l'espace
+- Intégration des nouvelles composantes
+- Travaux de finition
+- Amélioration de la fonctionnalité
+
+Do not claim custom cabinetry manufacturing, stone fabrication, plumbing or electrical specialties unless separately confirmed.
+
+**CTA:**
+Rénover ma cuisine
+
+---
+
+# 5. CONSTRUCTION RÉSIDENTIELLE
+
+**Title:**
+Des projets construits autour de vos besoins.
+
+**Content:**
+
+Un projet de construction résidentielle demande une bonne planification et une attention particulière à chacune de ses étapes.
+
+Les Constructions Godin accompagne ses clients dans leurs projets de construction en tenant compte des plans, des besoins et des particularités du bâtiment.
+
+Notre objectif est de contribuer à la réalisation d'espaces adaptés à votre quotidien et à vos attentes.
+
+**CTA:**
+Discuter de mon projet
+
+---
+
+# 6. TRANSFORMATION INTÉRIEURE
+
+**Title:**
+Repensez vos espaces de vie.
+
+**Content:**
+
+Une transformation intérieure peut complètement changer la façon dont vous profitez de votre maison.
+
+Les Constructions Godin réalise des travaux permettant de moderniser, améliorer et adapter différents espaces résidentiels.
+
+Qu'il s'agisse de revoir l'aménagement d'une pièce ou de renouveler son apparence, chaque projet est pensé en fonction du résultat recherché.
+
+**CTA:**
+Présenter mon projet
+
+---
+
+# 7. FINITION INTÉRIEURE
+
+**Title:**
+Les détails qui font la différence.
+
+**Content:**
+
+La qualité des finitions joue un rôle important dans l'apparence et l'harmonie d'un espace rénové.
+
+Les Constructions Godin accorde une attention particulière aux détails qui viennent compléter les projets de rénovation intérieure.
+
+Notre approche vise un résultat cohérent avec l'ensemble du projet et les attentes du propriétaire.
+
+**CTA:**
+Demander une soumission
+
+---
+
+# 8. PROCESSUS
+
+**Title:**
+Votre projet, étape par étape.
+
+Keep the existing process component EXACTLY as it currently is.
+
+Use the following content only where the existing template has corresponding content slots.
+
+**1. DISCUSSION**
+
+Nous prenons le temps de comprendre votre projet, vos besoins et vos attentes.
+
+**2. ÉVALUATION**
+
+Nous examinons les particularités de votre propriété et les travaux à réaliser.
+
+**3. PLANIFICATION**
+
+Les principales étapes du projet sont organisées selon les besoins identifiés.
+
+**4. RÉALISATION**
+
+Les travaux sont réalisés selon le projet établi.
+
+**5. FINALISATION**
+
+Les dernières étapes viennent compléter votre projet de construction ou de rénovation.
+
+---
+
+# 9. RÉALISATIONS
+
+**Title:**
+Nos réalisations
+
+**Introduction:**
+
+Découvrez quelques projets réalisés par Les Constructions Godin, de la rénovation de cuisine aux transformations résidentielles.
+
+Keep the EXISTING gallery and project components exactly as they currently are.
+
+Suggested categories, only if the existing template supports them:
+- Tous
+- Rénovation résidentielle
+- Cuisine
+- Transformation intérieure
+- Construction
+- Finition
+- Avant / Après
+
+For each project, use only verified information:
+- Type de projet
+- Travaux réalisés
+- Localisation, if known
+- Photos
+- Particularités confirmées
+- Résultat final
+
+Do not invent:
+- Materials
+- Brands
+- Project costs
+- Timelines
+- Dimensions
+- Technical specifications
+
+## FEATURED PROJECT — IF THE TEMPLATE ALREADY HAS THIS COMPONENT
+
+**Title:**
+Une cuisine transformée.
+
+**Content:**
+
+Un projet de rénovation qui donne une nouvelle vie à un espace central de la maison.
+
+Cette réalisation illustre comment une transformation intérieure peut renouveler l'apparence d'une cuisine tout en améliorant son utilisation au quotidien.
+
+Use the confirmed kitchen renovation photos if available.
+
+Do not invent technical project details.
+
+---
+
+# 10. POURQUOI LES CONSTRUCTIONS GODIN
+
+Keep the exact existing number of content blocks.
+
+Suggested content:
+
+**APPROCHE PERSONNALISÉE**
+
+Chaque projet est abordé selon les besoins du client et les particularités de sa propriété.
+
+**RÉNOVATION RÉSIDENTIELLE**
+
+Des services adaptés aux projets d'amélioration et de transformation des habitations.
+
+**CONSTRUCTION**
+
+Une entreprise qui intervient dans les projets de construction et de rénovation.
+
+**SOUCI DU DÉTAIL**
+
+Une attention portée aux éléments qui contribuent au résultat final.
+
+**ESPACES FONCTIONNELS**
+
+Des transformations pensées pour améliorer l'utilisation quotidienne de votre propriété.
+
+**VISION DU CLIENT**
+
+Un projet qui tient compte de vos idées, de vos attentes et du résultat recherché.
+
+---
+
+# 11. À PROPOS
+
+**Title:**
+À propos des Constructions Godin
+
+**Content:**
+
+Les Constructions Godin est une entreprise spécialisée dans les projets de construction et de rénovation résidentielle.
+
+L'entreprise dessert notamment la Mauricie, Tadoussac et Baie-Comeau et réalise différents projets visant à transformer, moderniser et améliorer les propriétés.
+
+Notre approche repose sur une compréhension des besoins de chaque client et une attention portée à la réalisation des travaux.
+
+Qu'il s'agisse de rénover une cuisine, de transformer un espace intérieur ou d'entreprendre un projet de construction, notre objectif est de donner vie à votre vision.
+
+**Notre philosophie :**
+Rénover, innover, bâtir l'avenir ensemble!
+
+**RBQ :**
+5855-8107-01
+
+---
+
+# 12. TESTIMONIALS / TÉMOIGNAGES
+
+**THIS SECTION MUST REMAIN A TESTIMONIAL SECTION.**
+
+**Section title:**
+Ce que nos clients disent de nous
+
+**Optional introduction:**
+La confiance de nos clients est au cœur des projets que nous réalisons.
+
+DO NOT:
+- Remove the section
+- Convert it into services
+- Convert it into projects
+- Convert it into statistics
+- Convert it into benefits
+- Convert it into FAQ
+- Change its layout or component type
+- Invent testimonials
+
+Only use authentic customer testimonials that are already verified and available.
+
+Do not invent:
+- Customer names
+- Quotes
+- Star ratings
+- Review dates
+- Project details attributed to customers
+
+If no verified testimonials are available, retain the existing testimonial placeholders and structure.
+
+---
+
+# 13. STATS / COUNTERS
+
+**DO NOT MODIFY THIS SECTION AT ALL.**
+
+Preserve:
+- Every existing number
+- Every percentage
+- Every counter
+- Every metric
+- Every label
+- Every animation
+- Every statistical component
+
+Do not substitute:
+- 123 Facebook followers
+- 5 Facebook following
+- Project counts
+- Employee counts
+- Years of experience
+- Number of renovations
+- Number of clients
+- Satisfaction percentages
+- Any invented figures
+
+**ALL EXISTING TEMPLATE STATS MUST REMAIN EXACTLY AS THEY ARE.**
+
+---
+
+# 14. FAQ
+
+Use concise, natural French answers for the existing FAQ component.
+
+**Quels types de projets réalisez-vous?**
+
+Les Constructions Godin réalise des projets de construction et de rénovation résidentielle, notamment des transformations intérieures et des rénovations de cuisine.
+
+**Faites-vous de la rénovation résidentielle?**
+
+Oui. Nous réalisons différents travaux de rénovation afin de moderniser et améliorer les propriétés.
+
+**Rénovez-vous les cuisines?**
+
+Oui. La rénovation de cuisine fait partie des projets réalisés par notre entreprise.
+
+**Faites-vous de la construction résidentielle?**
+
+Oui. Nous offrons des services de construction adaptés aux besoins de différents projets résidentiels.
+
+**Pouvez-vous transformer un espace intérieur existant?**
+
+Oui. Nous réalisons des projets de transformation intérieure selon les caractéristiques de la propriété et le résultat recherché.
+
+**Réalisez-vous des travaux de finition?**
+
+Des travaux de finition peuvent faire partie de nos projets de rénovation. Communiquez avec nous pour préciser vos besoins.
+
+**Travaillez-vous en Mauricie?**
+
+Oui. La Mauricie fait partie des secteurs desservis par l'entreprise.
+
+**Offrez-vous vos services à Tadoussac et à Baie-Comeau?**
+
+Oui. Ces secteurs figurent également parmi les territoires desservis par Les Constructions Godin.
+
+**Quel est votre numéro RBQ?**
+
+Notre numéro de licence RBQ est le 5855-8107-01.
+
+**Puis-je vous transmettre mes plans ou des photos?**
+
+Oui. Vous pouvez nous transmettre les documents pertinents pour présenter votre projet.
+
+**Comment obtenir une soumission?**
+
+Communiquez avec nous par téléphone ou par courriel en décrivant votre projet et les travaux souhaités.
+
+---
+
+# 15. CONTACT / SOUMISSION
+
+**Title:**
+Parlons de votre projet.
+
+**Content:**
+
+Vous souhaitez rénover votre cuisine, transformer votre intérieur ou entreprendre un projet de construction?
+
+Communiquez avec Les Constructions Godin pour discuter de vos besoins et des prochaines étapes.
+
+**Company:**
+Les Constructions Godin
+
+**Service areas:**
+- Mauricie
+- Tadoussac
+- Baie-Comeau
+
+**Phone:**
+(819) 944-9037
+
+**Email:**
+lesconstructionsgodin@gmail.com
+
+**RBQ:**
+5855-8107-01
+
+Keep the EXISTING contact form component and structure unchanged.
+
+If its current fields can be updated without changing the layout, use:
+
+- Nom
+- Téléphone
+- Courriel
+- Ville du projet
+- Type de projet
+- Description
+- Échéancier souhaité
+- Budget approximatif
+- Plans ou documents
+- Photos
+
+Project type options:
+- Rénovation résidentielle
+- Rénovation de cuisine
+- Transformation intérieure
+- Construction résidentielle
+- Finition intérieure
+- Autre
+
+**CTA:**
+Envoyer ma demande
+
+---
+
+# 16. FINAL CTA
+
+**Title:**
+Donnons vie à votre prochain projet.
+
+**Content:**
+
+Construction ou rénovation, Les Constructions Godin est disponible pour discuter de vos idées et vous accompagner dans la réalisation de votre projet.
+
+**Primary CTA:**
+Demander une soumission
+
+**Phone:**
+(819) 944-9037
+
+---
+
+# 17. SEO CONTENT
+
+Naturally incorporate relevant keywords throughout the existing website content:
+
+- Les Constructions Godin
+- entrepreneur construction Mauricie
+- rénovation résidentielle Mauricie
+- construction résidentielle Mauricie
+- entrepreneur rénovation Mauricie
+- rénovation cuisine Mauricie
+- construction Tadoussac
+- rénovation Tadoussac
+- entrepreneur construction Baie-Comeau
+- rénovation Baie-Comeau
+- rénovation intérieure
+- transformation résidentielle
+- entreprise de construction
+- entrepreneur en rénovation
+
+Do not keyword-stuff.
+
+Do not create additional city-specific SEO pages outside the confirmed service areas.
+
+---
+
+# FINAL INSTRUCTIONS — ABSOLUTELY CRITICAL
+
+The existing website template must remain exactly as it currently is.
+
+**DO NOT:**
+- Redesign the website
+- Change its visual identity
+- Change the layout
+- Change page structure
+- Reorder sections
+- Add or remove sections
+- Change cards or components
+- Change navigation
+- Change colors or typography
+- Change spacing
+- Change animations
+- Change statistics or counters
+- Replace existing template numbers
+- Transform the testimonial section into another type of section
+- Invent customer reviews or testimonials
+- Invent business information
+
+**ONLY UPDATE THE BUSINESS-SPECIFIC CONTENT FOR LES CONSTRUCTIONS GODIN.**
+
+**ALL EXISTING TEMPLATE STATS MUST REMAIN COMPLETELY UNCHANGED.**
+
+**THE TESTIMONIAL SECTION MUST REMAIN A TESTIMONIAL SECTION.**
+
+Before finishing, verify that all existing sections, statistics, components, animations and testimonials remain structurally unchanged and that only the authorized business content has been updated.

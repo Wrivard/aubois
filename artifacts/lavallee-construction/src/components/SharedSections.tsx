@@ -52,9 +52,9 @@ export function FAQContactSection() {
           
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
-              ["Quels types de rénovations réalisez-vous?", "Gestion Jagster Inc. réalise des rénovations intérieures et extérieures, notamment de cuisines et de salles de bain, ainsi que des travaux de finition, de plancher, de patio, de cabanon, de revêtement extérieur, de terrassement et d’entretien."],
+              ["Quels types de projets réalisez-vous?", "Les Constructions Godin réalise des projets de construction et de rénovation résidentielle, notamment des transformations intérieures et des rénovations de cuisine."],
               ["La soumission est-elle gratuite?", "Oui. Vous pouvez présenter votre projet afin d’obtenir une soumission gratuite."],
-              ["Dans quelles régions intervenez-vous?", "Gestion Jagster Inc. dessert Québec et les environs; le secteur précis est à confirmer selon le projet."],
+              ["Dans quelles régions intervenez-vous?", "Les Constructions Godin dessert la Mauricie, Tadoussac et Baie-Comeau."],
               ["Puis-je vous envoyer des photos de mon projet?", "Oui. Vous pourrez joindre des photos ou des plans au courriel préparé avant de l’envoyer. Aucun fichier n’est téléversé sur ce site."]
             ].map(([question, answer], i) => (
               <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 3 ? "border-b border-border" : "border-b-0"}`}>
@@ -67,8 +67,8 @@ export function FAQContactSection() {
 
         <div>
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Coordonnées</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre rénovation.</h2>
-          <p className="text-muted-foreground mb-10">Cuisine, salle de bain, finition intérieure, patio, revêtement extérieur ou autre projet résidentiel : présentez-nous vos besoins pour obtenir une soumission gratuite.</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet.</h2>
+          <p className="text-muted-foreground mb-10">Rénovation de cuisine, transformation intérieure ou projet de construction résidentielle : présentez-nous vos besoins pour discuter des prochaines étapes.</p>
           
           <div className="bg-white border border-border p-5 sm:p-8 h-auto mb-10">
             <ul className="space-y-6">
@@ -78,7 +78,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Localisation</h4>
-                  <p className="text-muted-foreground">Québec et environs</p>
+                   <p className="text-muted-foreground">Mauricie, Tadoussac et Baie-Comeau</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -87,7 +87,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Téléphone</h4>
-                  <a className="text-muted-foreground hover:text-secondary" href="tel:+15819910397">(581) 991-0397</a>
+                  <a className="text-muted-foreground hover:text-secondary" href="tel:+18199449037">(819) 944-9037</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -96,7 +96,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Courriel</h4>
-                  <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:info@gestionjagster.com">info@gestionjagster.com</a>
+                  <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:lesconstructionsgodin@gmail.com">lesconstructionsgodin@gmail.com</a>
                 </div>
               </li>
             </ul>
@@ -107,12 +107,12 @@ export function FAQContactSection() {
       {/* Full Bleed Embed Map */}
       <div className="w-full h-[400px]">
         <iframe
-          title="Carte de Québec, Québec"
+          title="Carte des secteurs desservis par Les Constructions Godin"
           className="block w-full h-full"
           style={{ border: 0 }}
           loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Qu%C3%A9bec%2C%20Qu%C3%A9bec&z=10&output=embed"
+          src="https://maps.google.com/maps?q=Mauricie%2C%20Qu%C3%A9bec&z=8&output=embed"
         ></iframe>
       </div>
     </section>

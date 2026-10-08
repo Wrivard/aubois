@@ -30,8 +30,8 @@ export default function Soumission() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    const title = "Soumission gratuite | Gestion Jagster Inc.";
-    const description = "Présentez votre projet de rénovation résidentielle à Gestion Jagster Inc., à Québec et dans les environs.";
+    const title = "Soumission | Les Constructions Godin";
+    const description = "Présentez votre projet de construction ou de rénovation résidentielle aux Constructions Godin en Mauricie, à Tadoussac ou à Baie-Comeau.";
     const previousTitle = document.title;
     const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
     const previous = tags.map((selector) => {
@@ -88,7 +88,7 @@ export default function Soumission() {
       "",
       "Vous pouvez joindre vos photos et plans directement à ce courriel avant de l'envoyer."
     ].join("\n");
-    window.location.href = `mailto:info@gestionjagster.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:lesconstructionsgodin@gmail.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
     setIsSubmitted(true);
   };
 
@@ -115,7 +115,7 @@ export default function Soumission() {
             <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
             <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Demande de soumission gratuite</h1>
             <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-              Présentez votre projet de rénovation résidentielle à Québec et dans les environs. Votre demande de soumission gratuite sera préparée dans votre messagerie.
+              Présentez votre projet de construction ou de rénovation résidentielle en Mauricie, à Tadoussac ou à Baie-Comeau. Votre demande sera préparée dans votre messagerie.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function Soumission() {
                   </div>
                   <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre courriel est prêt</h2>
                   <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
-                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à info@gestionjagster.com.
+                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à lesconstructionsgodin@gmail.com.
                   </p>
                   <Button className="uppercase tracking-wider font-bold px-8" onClick={() => window.location.href = "/"}>
                     Retour à l'accueil
@@ -175,17 +175,11 @@ export default function Soumission() {
                                     <SelectValue placeholder="Sélectionnez le type de travaux" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                      <SelectItem value="Rénovation intérieure">Rénovation intérieure</SelectItem>
-                                      <SelectItem value="Cuisine">Cuisine</SelectItem>
-                                      <SelectItem value="Salle de bain">Salle de bain</SelectItem>
-                                      <SelectItem value="Gypse / plâtrage">Gypse / plâtrage</SelectItem>
-                                      <SelectItem value="Peinture">Peinture</SelectItem>
-                                      <SelectItem value="Revêtement de plancher">Revêtement de plancher</SelectItem>
+                                      <SelectItem value="Rénovation résidentielle">Rénovation résidentielle</SelectItem>
+                                      <SelectItem value="Rénovation de cuisine">Rénovation de cuisine</SelectItem>
+                                      <SelectItem value="Transformation intérieure">Transformation intérieure</SelectItem>
+                                      <SelectItem value="Construction résidentielle">Construction résidentielle</SelectItem>
                                       <SelectItem value="Finition intérieure">Finition intérieure</SelectItem>
-                                      <SelectItem value="Patio / cabanon">Patio / cabanon</SelectItem>
-                                      <SelectItem value="Revêtement extérieur">Revêtement extérieur</SelectItem>
-                                      <SelectItem value="Terrassement">Terrassement</SelectItem>
-                                      <SelectItem value="Entretien">Entretien</SelectItem>
                                       <SelectItem value="Autre">Autre</SelectItem>
                                   </SelectContent>
                                 </Select>
@@ -348,10 +342,10 @@ export default function Soumission() {
                 </p>
                 <div className="space-y-4">
                   <p className="flex items-center gap-3 font-medium">
-                     <Phone className="w-5 h-5"/> <a href="tel:+15819910397">(581) 991-0397</a>
+                     <Phone className="w-5 h-5"/> <a href="tel:+18199449037">(819) 944-9037</a>
                   </p>
                   <p className="flex items-center gap-3 font-medium">
-                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:info@gestionjagster.com">info@gestionjagster.com</a>
+                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:lesconstructionsgodin@gmail.com">lesconstructionsgodin@gmail.com</a>
                   </p>
                 </div>
               </div>
@@ -361,15 +355,15 @@ export default function Soumission() {
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                        <span className="text-sm text-white/80 leading-tight">Entrepreneur général en rénovation résidentielle</span>
+                        <span className="text-sm text-white/80 leading-tight">Licence RBQ : 5855-8107-01</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                        <span className="text-sm text-white/80 leading-tight">Travaux de rénovation intérieure et extérieure</span>
+                         <span className="text-sm text-white/80 leading-tight">Construction et rénovation résidentielle</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                        <span className="text-sm text-white/80 leading-tight">Soumission gratuite pour votre projet</span>
+                         <span className="text-sm text-white/80 leading-tight">Des projets adaptés aux besoins de votre propriété</span>
                    </li>
                 </ul>
               </div>

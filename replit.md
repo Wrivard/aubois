@@ -1,6 +1,6 @@
-# Gestion Jagster Inc.
+# Les Constructions Godin
 
-Site vitrine en français présentant les services de rénovation résidentielle et les demandes de soumission gratuite de Gestion Jagster Inc. à Québec et dans les environs.
+Site vitrine en français présentant les services de construction et de rénovation résidentielle des Constructions Godin en Mauricie, à Tadoussac et à Baie-Comeau.
 
 ## Run & Operate
 
@@ -33,15 +33,15 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-- Site vitrine en français pour Gestion Jagster Inc., entrepreneur général en rénovation résidentielle à Québec et dans les environs
+- Site vitrine en français pour Les Constructions Godin, entreprise de construction et de rénovation résidentielle desservant la Mauricie, Tadoussac et Baie-Comeau
 - Navigation responsive, services résidentiels, présentation de projets, témoignages, FAQ, coordonnées et formulaire de soumission gratuite
 - Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 
 ## User preferences
 
-- Garder le gabarit existant, le logo fourni de Gestion Jagster Inc. et l'accent `#D0B07C`.
-- Ne pas attribuer les photos d’illustration à des réalisations confirmées de Gestion Jagster Inc. ni inventer de réalisations, licences, garanties ou témoignages.
-- Conserver inchangés les compteurs et statistiques du gabarit jusqu'à nouvelle instruction explicite.
+- Garder le gabarit existant, le logo fourni des Constructions Godin et l'accent `#795931`.
+- Ne pas attribuer les photos d’illustration à des réalisations confirmées des Constructions Godin ni inventer de réalisations, licences, garanties ou témoignages.
+- Conserver inchangés les compteurs et statistiques du gabarit; utiliser uniquement des témoignages vérifiés.
 
 ## Gotchas
 

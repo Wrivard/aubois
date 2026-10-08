@@ -81,21 +81,21 @@
   --sidebar: 0 0% 100%;
   --sidebar-foreground: 0 0% 11%;
   --sidebar-border: 0 0% 89%;
-  --sidebar-primary: 37.143 47.191% 65.098%;
+  --sidebar-primary: 33.333 42.353% 33.333%;
   --sidebar-primary-foreground: 0 0% 11%;
   --sidebar-accent: 0 0% 96%;
   --sidebar-accent-foreground: 0 0% 11%;
-  --sidebar-ring: 37.143 47.191% 65.098%;
+  --sidebar-ring: 33.333 42.353% 33.333%;
 
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 11%;
   --popover-border: 0 0% 89%;
 
-  /* Gestion Jagster accent: #D0B07C */
-  --primary: 37.143 47.191% 65.098%;
-  --primary-foreground: 0 0% 11%;
+  /* Les Constructions Godin accent: #795931 */
+  --primary: 33.333 42.353% 33.333%;
+  --primary-foreground: 0 0% 100%;
 
-  /* Deep evergreen accent paired with the Gestion Jagster gold accent */
+  /* Deep evergreen surfaces retained from the existing template */
   --forest: 165 40% 17%;
 
   /* #1B1B1B remains the secondary text and surface color */
@@ -114,7 +114,7 @@
   --destructive-foreground: 0 0% 100%;
 
   --input: 0 0% 89%;
-  --ring: 37.143 47.191% 65.098%;
+  --ring: 33.333 42.353% 33.333%;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   
@@ -142,7 +142,7 @@
   --card: 0 0% 11%;
   --card-foreground: 0 0% 100%;
   --card-border: 0 0% 20%;
-  --primary: 223.243 57.513% 37.843%;
+  --primary: 33.333 42.353% 33.333%;
   --primary-foreground: 0 0% 100%;
   --secondary: 0 0% 100%;
   --secondary-foreground: 0 0% 11%;
@@ -151,7 +151,7 @@
   --accent: 0 0% 20%;
   --accent-foreground: 0 0% 100%;
   --input: 0 0% 20%;
-  --ring: 223.243 57.513% 37.843%;
+  --ring: 33.333 42.353% 33.333%;
 }
 
 @layer base {
