@@ -104,7 +104,7 @@ export default function Soumission() {
       <section className="relative pt-[158px] xl:pt-[177px] pb-12 md:pb-16 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-             src="/photos/jagster-bathroom-03.webp"
+             src="/godin-photo-03.jpg"
             alt=""
             className="w-full h-full object-cover object-center opacity-30"
           />

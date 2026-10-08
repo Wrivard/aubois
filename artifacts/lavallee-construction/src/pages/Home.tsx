@@ -17,7 +17,7 @@ export default function Home() {
             loop
             playsInline
             preload="auto"
-            poster="/photos/jagster-garage.webp"
+            poster="/godin-photo-01.jpg"
             aria-hidden="true"
             tabIndex={-1}
             onCanPlay={(event) => {
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/jagster-bathroom-01.webp" alt="Photo d’illustration d’un espace résidentiel rénové" className="w-full h-full object-cover" loading="lazy" />
+                <img src="/godin-photo-02.jpg" alt="Cuisine rénovée avec armoires foncées et îlot en bois" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -144,43 +144,43 @@ export default function Home() {
               {
                 title: "Rénovation résidentielle",
                 desc: "Transformez votre propriété grâce à des travaux de rénovation adaptés à vos besoins, à votre espace et au résultat recherché.",
-                img: "/photos/jagster-garage.webp",
+                img: "/godin-photo-01.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Rénovation de cuisine",
                 desc: "Modernisez votre cuisine avec un aménagement pensé pour améliorer sa fonctionnalité, son apparence et votre confort quotidien.",
-                img: "/photos/jagster-bathroom-02.webp",
+                img: "/godin-photo-02.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Construction résidentielle",
                 desc: "Des services de construction adaptés aux caractéristiques de votre projet résidentiel et aux besoins de votre propriété.",
-                img: "/photos/jagster-garage.webp",
+                img: "/godin-photo-01.jpg",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
                 title: "Transformation intérieure",
                 desc: "Repensez vos espaces de vie afin de créer un environnement plus fonctionnel, moderne et agréable.",
-                img: "/photos/jagster-bathroom-01.webp",
+                img: "/godin-photo-03.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Travaux de finition",
                 desc: "Une attention portée aux détails et aux finitions qui contribuent à l’apparence finale de votre rénovation.",
-                img: "/photos/jagster-cabanon-terrace.webp",
+                img: "/godin-photo-04.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Projets de rénovation personnalisés",
                 desc: "Des solutions adaptées aux particularités de votre maison et à la vision que vous souhaitez concrétiser.",
-                img: "/photos/jagster-patio-01.webp",
+                img: "/godin-photo-05.jpg",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
               <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300">
                 <div className="aspect-[4/3] overflow-hidden relative">
-                  <img src={srv.img} alt={`Image d'illustration — ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                  <img src={srv.img} alt={`${srv.title} — projet des Constructions Godin`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                   <div className="absolute top-4 left-4 bg-primary text-primary-foreground p-3 shadow-lg">
                     {srv.icon}
                   </div>
@@ -205,7 +205,7 @@ export default function Home() {
             <div className="max-w-2xl">
               <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">Nos réalisations</h2>
-              <p className="text-white/80 mt-4">Découvrez des exemples de rénovation de cuisine et de transformation résidentielle. Les photos sont illustratives et ne sont pas attribuées à des réalisations confirmées des Constructions Godin.</p>
+              <p className="text-white/80 mt-4">Découvrez des projets résidentiels, dont une rénovation de cuisine réalisée par Les Constructions Godin.</p>
             </div>
             <Link href="/soumission">
               <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-secondary uppercase tracking-wider font-bold">
@@ -216,9 +216,9 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {[
-              { img: "/photos/jagster-deck-01.webp", title: "Rénovation résidentielle", tag: "Illustration" },
-              { img: "/photos/jagster-bathroom-03.webp", title: "Transformation intérieure", tag: "Illustration" },
-              { img: "/photos/jagster-garage.webp", title: "Travaux de finition", tag: "Illustration" },
+              { img: "/godin-photo-01.jpg", title: "Projet résidentiel", tag: "Construction" },
+              { img: "/godin-photo-02.jpg", title: "Rénovation de cuisine", tag: "Cuisine" },
+              { img: "/godin-photo-05.jpg", title: "Cuisine rénovée", tag: "Réalisation" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={`Photo d'illustration pour la catégorie ${proj.tag.toLowerCase()}`} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
@@ -241,38 +241,38 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Des idées pour votre prochain projet.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Les photos présentées illustrent des types de projets résidentiels; elles ne sont pas attribuées à des réalisations confirmées des Constructions Godin.
+               Les photos montrent des projets résidentiels des Constructions Godin, dont une rénovation de cuisine.
             </p>
           </div>
            <div className="grid sm:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/jagster-bathroom-01.webp"
-                  alt="Photo d’illustration d’une rénovation résidentielle"
+                src="/godin-photo-01.jpg"
+                  alt="Terrasse en bois et agrandissement résidentiel"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/jagster-deck-02.webp"
-                  alt="Photo d’illustration d’un espace résidentiel transformé"
+                src="/godin-photo-02.jpg"
+                  alt="Cuisine rénovée avec armoires foncées et îlot en bois"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/jagster-bathroom-02.webp"
-                  alt="Photo d’illustration de travaux de finition intérieure"
+                src="/godin-photo-03.jpg"
+                  alt="Travaux de rénovation en cours dans une cuisine"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/jagster-patio-01.webp"
-                  alt="Photo d’illustration d’un aménagement résidentiel"
+                src="/godin-photo-05.jpg"
+                  alt="Cuisine rénovée avec grand îlot en bois"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
@@ -287,7 +287,7 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-20 md:py-28 xl:py-32 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/photos/jagster-deck-01.webp" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
+          <img src="/godin-photo-01.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
           <div className="absolute inset-0 bg-forest/80"></div>
         </div>
         

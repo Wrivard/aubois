@@ -95,8 +95,8 @@
   --primary: 33.333 42.353% 33.333%;
   --primary-foreground: 0 0% 100%;
 
-  /* Deep evergreen surfaces retained from the existing template */
-  --forest: 165 40% 17%;
+  /* Keep dark surfaces aligned with the logo's existing #1B1B1B */
+  --forest: 0 0% 11%;
 
   /* #1B1B1B remains the secondary text and surface color */
   --secondary: 0 0% 11%;
