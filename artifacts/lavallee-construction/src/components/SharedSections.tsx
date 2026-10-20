@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Star } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -8,33 +8,53 @@ import {
 
 export function TestimonialsSection() {
   return (
-    <section className="py-16 md:py-20 xl:py-24 bg-white">
+    <section id="temoignages" className="py-16 md:py-20 xl:py-24 bg-[#1B1B1B] text-white">
       <div className="container mx-auto px-6 md:px-12">
-        <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4 text-center">Témoignages</span>
-        <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-10 md:mb-16 text-secondary text-center">Ce que nos clients disent de nous</h2>
-        
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="p-6 sm:p-10 border border-border bg-muted/50 relative">
-            <div className="text-6xl text-primary/20 absolute top-6 left-6 font-serif leading-none">01</div>
-            <p className="text-lg text-secondary font-medium leading-relaxed mb-8 relative z-10 mt-4">
-              Aucun témoignage vérifié n’a encore été fourni pour publication.
-            </p>
-            <div>
-              <p className="font-bold text-secondary text-lg">Témoignage à venir</p>
-              <p className="text-sm text-muted-foreground font-medium uppercase tracking-widest">En attente d’un avis vérifié</p>
-            </div>
-          </div>
-          
-          <div className="p-6 sm:p-10 border border-border bg-muted/50 relative">
-            <div className="text-6xl text-primary/20 absolute top-6 left-6 font-serif leading-none">02</div>
-            <p className="text-lg text-secondary font-medium leading-relaxed mb-8 relative z-10 mt-4">
-              Cet espace accueillera un témoignage de client lorsqu’il sera disponible.
-            </p>
-            <div>
-              <p className="font-bold text-secondary text-lg">Témoignage à venir</p>
-              <p className="text-sm text-muted-foreground font-medium uppercase tracking-widest">En attente d’un avis vérifié</p>
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
+          <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Témoignages</span>
+          <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-white">Ce que nos clients disent de nous.</h2>
+          <p className="text-lg text-white/70 leading-relaxed">
+            Quelques mots partagés par des clients de Céramique Cardinal.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          {[
+            {
+              name: "BobonitA",
+              detail: "Local Guide · 9 photos",
+              quote: "Sébastien est venu effectuer l’appel de service chez nous pour une réparation de céramique. Service professionnel et bien fait. Ponctuel aussi. Merci encore.",
+            },
+            {
+              name: "Pat Laroche",
+              detail: "Google · 5 avis",
+              quote: "Super gentil. Prend le temps qui faut pour conseiller, même pendant une journée de congé.",
+            },
+          ].map((review) => (
+            <article
+              key={review.name}
+              className="group relative flex h-full flex-col overflow-hidden border border-white/10 bg-white p-7 text-secondary shadow-xl transition-transform duration-300 hover:-translate-y-1 sm:p-9"
+            >
+              <div className="absolute inset-y-0 left-0 w-1.5 bg-primary" />
+              <div className="mb-8 flex items-center justify-between gap-4">
+                <div className="flex gap-1 text-primary" role="img" aria-label="5 étoiles sur 5">
+                  {Array.from({ length: 5 }, (_, index) => (
+                    <Star key={index} className="h-5 w-5 fill-current" aria-hidden="true" />
+                  ))}
+                </div>
+                <span className="bg-muted px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
+                  Google
+                </span>
+              </div>
+              <blockquote className="mb-8 flex-1 text-lg font-medium leading-relaxed sm:text-xl">
+                « {review.quote} »
+              </blockquote>
+              <div className="border-t border-border pt-5">
+                <p className="text-lg font-extrabold text-secondary">{review.name}</p>
+                <p className="mt-1 text-sm font-medium text-muted-foreground">{review.detail}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
