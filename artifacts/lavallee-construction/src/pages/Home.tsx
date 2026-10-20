@@ -71,7 +71,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/cardinal-artisans-parement.webp" alt="Artisans de Céramique Cardinal posant un parement mural en briques blanches" className="w-full h-full object-cover object-top" loading="lazy" />
+                <img src="/photos/cardinal-artisans-parement.webp" alt="Artisans de Céramique Cardinal posant un parement mural en briques blanches" className="w-full h-full object-cover object-bottom" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               

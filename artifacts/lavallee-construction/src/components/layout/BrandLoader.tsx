@@ -13,7 +13,9 @@ export function BrandLoader({ active, initial = false }: BrandLoaderProps) {
       setVisible(true);
       return;
     }
-    const timeout = window.setTimeout(() => setVisible(false), initial ? 360 : 220);
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const delay = reducedMotion ? 0 : initial ? 360 : 220;
+    const timeout = window.setTimeout(() => setVisible(false), delay);
     return () => window.clearTimeout(timeout);
   }, [active, initial]);
 
