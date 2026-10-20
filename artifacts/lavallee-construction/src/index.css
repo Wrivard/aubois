@@ -169,6 +169,140 @@
   }
 }
 
+/* Cardinal motion system: quiet, measured, and never a barrier to navigation. */
+.brand-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: #1b1b1b;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 220ms ease, visibility 220ms ease;
+  visibility: visible;
+}
+
+.brand-loader--leaving {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.brand-loader__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(78vw, 330px);
+}
+
+.brand-loader__logo {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  object-fit: contain;
+  animation: cardinal-mark-in 420ms cubic-bezier(.2,.75,.25,1) both;
+}
+
+.brand-loader__tileline {
+  display: flex;
+  gap: 5px;
+  margin-top: 28px;
+}
+
+.brand-loader__tile {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(255,255,255,.36);
+  background: rgba(255,255,255,.035);
+  transform: translateY(5px);
+  opacity: .28;
+  animation: cardinal-tile-set 560ms cubic-bezier(.2,.75,.25,1) both;
+}
+
+.brand-loader__tile:nth-child(2) { animation-delay: 70ms; }
+.brand-loader__tile:nth-child(3) { animation-delay: 140ms; }
+.brand-loader__tile:nth-child(4) { animation-delay: 210ms; }
+
+.brand-loader__tile:nth-child(2n) {
+  border-color: rgba(207, 26, 43, .75);
+}
+
+.brand-loader__caption {
+  margin-top: 14px;
+  color: rgba(255,255,255,.62);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+  animation: cardinal-caption-in 360ms ease 180ms both;
+}
+
+@keyframes cardinal-mark-in {
+  from { opacity: 0; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardinal-tile-set {
+  0% { opacity: .18; transform: translateY(5px); }
+  65% { opacity: 1; transform: translateY(-1px); }
+  100% { opacity: .72; transform: translateY(0); }
+}
+
+@keyframes cardinal-caption-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.motion-enhanced .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 520ms ease var(--reveal-delay, 0ms), transform 520ms cubic-bezier(.2,.7,.2,1) var(--reveal-delay, 0ms);
+}
+
+.motion-enhanced .reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motion-enhanced main > section:first-child .container {
+  animation: cardinal-hero-arrive 650ms cubic-bezier(.2,.7,.2,1) both;
+}
+
+@keyframes cardinal-hero-arrive {
+  from { opacity: 0; transform: translateY(9px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  a, button {
+    transition-property: color, background-color, border-color, opacity, transform;
+    transition-duration: 180ms;
+    transition-timing-function: ease;
+  }
+
+  main section figure img,
+  main section article,
+  main section [class*="group"] {
+    will-change: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .brand-loader__tile,
+  .brand-loader__logo,
+  .brand-loader__caption {
+    animation: none !important;
+  }
+}
+
 /* Disable focus ring outline when not using keyboard to navigate */
 :focus:not(:focus-visible) {
   outline: none;

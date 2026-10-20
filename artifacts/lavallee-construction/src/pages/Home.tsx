@@ -71,7 +71,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/tile-vanity.jpg" alt="Photo d’illustration d’un revêtement intérieur en carreaux" className="w-full h-full object-cover" loading="lazy" />
+                <img src="/photos/cardinal-artisans-parement.webp" alt="Artisans de Céramique Cardinal posant un parement mural en briques blanches" className="w-full h-full object-cover object-top" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -203,9 +203,9 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {[
-              { img: "/photos/tile-white-shower.jpg", title: "Installation de carreaux", tag: "Photo illustrative", alt: "Photo d’illustration d’une installation de carreaux dans une douche" },
-              { img: "/photos/tile-laundry.jpg", title: "Pose de céramique au sol", tag: "Photo illustrative", alt: "Photo d’illustration d’un plancher de céramique" },
-              { img: "/photos/tile-vanity.jpg", title: "Revêtement intérieur en carreaux", tag: "Photo illustrative", alt: "Photo d’illustration d’un revêtement en carreaux dans une salle de bain" },
+              { img: "/photos/cardinal-pose-plancher.webp", title: "Pose de carreaux sur plancher", tag: "Installation en cours", alt: "Pose de grands carreaux sur le plancher d’une pièce lumineuse" },
+              { img: "/photos/cardinal-douche-chevron.webp", title: "Douche vitrée en céramique", tag: "Douche", alt: "Douche vitrée avec revêtement en carreaux à motif chevron" },
+              { img: "/photos/cardinal-grande-superficie.webp", title: "Pose de céramique sur grande superficie", tag: "Grande surface", alt: "Travaux de pose de céramique en cours dans une grande pièce" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={proj.alt} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
@@ -234,32 +234,32 @@ export default function Home() {
            <div className="grid sm:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-kitchen.jpg"
-                  alt="Photo d’illustration d’un dosseret et d’un comptoir en carreaux"
+                src="/photos/cardinal-salle-de-bain-illustration.webp"
+                  alt="Photo d’illustration d’une salle de bain avec douche vitrée et revêtement en carreaux"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-bathroom.jpg"
-                  alt="Photo d’illustration d’un plancher de salle de bain en carreaux"
+                src="/photos/cardinal-espace-ouvert-illustration.webp"
+                  alt="Photo d’illustration d’un espace ouvert avec plancher de céramique"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-entry.jpg"
-                  alt="Photo d’illustration d’un plancher d’entrée en carreaux"
+                src="/photos/tile-laundry.jpg"
+                  alt="Photo d’illustration d’un plancher de céramique dans une salle de lavage"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/tile-stone-shower.jpg"
-                  alt="Photo d’illustration d’une douche avec revêtement en carreaux"
+                src="/photos/tile-vanity.jpg"
+                  alt="Photo d’illustration d’un revêtement de carreaux dans une salle de bain"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />

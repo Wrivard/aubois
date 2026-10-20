@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, type ReactNode } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
@@ -12,6 +12,7 @@ import {
   useLocation,
   Router as WouterRouter,
 } from 'wouter';
+import { BrandLoader } from '@/components/layout/BrandLoader';
 
 const queryClient = new QueryClient();
 
@@ -53,12 +54,69 @@ function RoutedErrorBoundary({ children }: { children: ReactNode }) {
   return <ErrorBoundary resetKey={location}>{children}</ErrorBoundary>;
 }
 
+function BrandedMotion() {
+  const [location] = useLocation();
+  const [initialLoading, setInitialLoading] = useState(true);
+  const [routeLoading, setRouteLoading] = useState(false);
+  const firstLocation = useRef(true);
+
+  useEffect(() => {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const timeout = window.setTimeout(() => setInitialLoading(false), reducedMotion ? 0 : 520);
+    return () => window.clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    if (firstLocation.current) {
+      firstLocation.current = false;
+      return;
+    }
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setRouteLoading(false);
+      return;
+    }
+    setRouteLoading(true);
+    const timeout = window.setTimeout(() => setRouteLoading(false), 220);
+    return () => window.clearTimeout(timeout);
+  }, [location]);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+    root.classList.add("motion-enhanced");
+    const targets = document.querySelectorAll<HTMLElement>(
+      "main > section, main section > .container, main section article, main section figure, main section form, main section .xl\\:col-span-2"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      }),
+      { threshold: 0.08, rootMargin: "0px 0px -36px 0px" }
+    );
+    targets.forEach((target, index) => {
+      target.classList.add("reveal-on-scroll");
+      target.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 55}ms`);
+      observer.observe(target);
+    });
+    return () => {
+      observer.disconnect();
+      root.classList.remove("motion-enhanced");
+    };
+  }, [location]);
+
+  return <BrandLoader active={initialLoading || routeLoading} initial={initialLoading} />;
+}
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
           <RouteScrollReset />
+          <BrandedMotion />
           <Router />
         </WouterRouter>
         <Toaster />
