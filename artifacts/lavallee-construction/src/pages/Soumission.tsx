@@ -112,7 +112,7 @@ export default function Soumission() {
         </div>
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
-            <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
+            <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Parlons de votre projet</span>
             <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Parlons de votre projet de céramique.</h1>
             <p className="text-base sm:text-lg text-white/80 leading-relaxed">
               Présentez votre projet de pose de céramique, de plancher ou d’installation commerciale. Votre demande sera préparée dans votre messagerie.

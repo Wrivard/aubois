@@ -21,8 +21,7 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pt-[150px] xl:pt-[169px] pb-8 sm:pb-10">
           <div className="max-w-3xl 2xl:max-w-5xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <div className="section-eyebrow inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="text-xs font-bold tracking-widest uppercase">Installation de céramique et de carreaux</span>
             </div>
             
@@ -83,7 +82,7 @@ export default function Home() {
             </div>
             
             <div>
-              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos de Céramique Cardinal</span>
+              <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">À propos de Céramique Cardinal</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 lg:mb-8 text-secondary">Des installations qui font toute la différence.</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 La céramique contribue à l’apparence et à la fonctionnalité d’un espace. Chez Céramique Cardinal, nous nous spécialisons dans l’installation de céramique et de revêtements en carreaux.
@@ -120,7 +119,7 @@ export default function Home() {
       <section id="services" className="py-16 md:py-20 xl:py-24 bg-muted border-y border-border scroll-mt-32 xl:scroll-mt-36">
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-                <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Nos services</span>
+                <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">Nos services</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">Des installations adaptées à chaque projet.</h2>
             <p className="text-lg text-muted-foreground">
                 Céramique Cardinal réalise des travaux de pose de céramique et de revêtements en carreaux. Les photos présentées sont des images d’illustration.
@@ -191,7 +190,7 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-10 md:mb-16 gap-6">
             <div className="max-w-2xl">
-              <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
+              <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Nos Réalisations</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">Nos réalisations</h2>
               <p className="text-white/80 mt-4">Découvrez des exemples d’installations en carreaux. Céramique Cardinal a notamment participé à un projet au SPA Strom.</p>
             </div>
@@ -225,7 +224,7 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div className="max-w-2xl">
-                <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">En images</span>
+                <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">En images</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">La céramique en images.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
@@ -280,6 +279,7 @@ export default function Home() {
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
+             <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Parlons de votre projet</span>
              <h2 className="text-3xl sm:text-4xl xl:text-6xl font-extrabold mb-6 leading-tight">Un projet de céramique à réaliser?</h2>
           <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
               Plancher, surface commerciale ou installation spécialisée : Céramique Cardinal est disponible pour discuter de votre projet. Appelez-nous au <a href="tel:+15144449393" className="underline underline-offset-4">(514) 444-9393</a>.

@@ -10,7 +10,7 @@ export function TestimonialsSection() {
   return (
     <section className="py-16 md:py-20 xl:py-24 bg-white">
       <div className="container mx-auto px-6 md:px-12">
-        <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block text-center">Témoignages</span>
+        <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4 text-center">Témoignages</span>
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-10 md:mb-16 text-secondary text-center">Ce que nos clients disent de nous</h2>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -47,7 +47,7 @@ export function FAQContactSection() {
       <div className="container mx-auto px-6 md:px-12 pt-16 md:pt-20 xl:pt-24 pb-20 xl:pb-32 grid lg:grid-cols-2 gap-10 xl:gap-16">
         
         <div>
-          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Questions fréquentes</span>
+          <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">Questions fréquentes</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 lg:mb-10 text-secondary">Ce qu'il faut savoir</h2>
           
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
@@ -66,7 +66,7 @@ export function FAQContactSection() {
         </div>
 
         <div>
-          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Coordonnées</span>
+          <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">Coordonnées</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet de céramique.</h2>
           <p className="text-muted-foreground mb-10">Vous planifiez des travaux de pose de céramique, un projet commercial ou une installation sur une grande superficie? Présentez-nous les détails de votre projet.</p>
           

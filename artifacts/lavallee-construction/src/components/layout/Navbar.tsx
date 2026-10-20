@@ -93,9 +93,9 @@ export function Navbar() {
         </nav>
 
         <div className="hidden xl:flex items-center gap-4">
-          <span className="text-sm font-semibold text-white whitespace-nowrap">
-            Installation de céramique
-          </span>
+          <a href="tel:+15144449393" className="text-sm font-semibold text-white whitespace-nowrap hover:underline">
+            (514) 444-9393
+          </a>
           <Link href="/soumission">
             <Button size="lg" className="font-bold tracking-wide uppercase text-xs">
               Soumission gratuite
@@ -168,9 +168,9 @@ export function Navbar() {
                 Soumission gratuite
               </Button>
             </Link>
-            <p className="mt-3 text-center text-sm font-semibold text-white/80">
+            <a href="tel:+15144449393" className="mt-3 block text-center text-sm font-semibold text-white/80 hover:underline">
               (514) 444-9393
-            </p>
+            </a>
           </div>
         </div>
       )}
