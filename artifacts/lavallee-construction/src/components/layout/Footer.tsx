@@ -13,7 +13,7 @@ export function Footer() {
               loading="lazy"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Céramique Cardinal se spécialise dans l’installation de céramique et de revêtements en carreaux, notamment pour des projets commerciaux et de grandes surfaces.
+              Céramique Cardinal se spécialise dans l’installation de céramique et de revêtements en carreaux sur la Rive-Nord de Montréal, notamment pour des projets commerciaux et de grandes surfaces.
             </p>
           </div>
           

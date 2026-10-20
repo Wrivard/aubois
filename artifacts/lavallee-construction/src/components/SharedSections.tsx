@@ -78,7 +78,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Secteur desservi</h4>
-                   <p className="text-muted-foreground">À confirmer avec notre équipe</p>
+                   <p className="text-muted-foreground">Rive-Nord de Montréal</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -107,12 +107,12 @@ export function FAQContactSection() {
       {/* Full Bleed Embed Map */}
       <div className="w-full h-[400px]">
         <iframe
-          title="Carte générale du Québec — secteur desservi par Céramique Cardinal à confirmer"
+          title="Carte de la Rive-Nord de Montréal — secteur desservi par Céramique Cardinal"
           className="block w-full h-full"
           style={{ border: 0 }}
           loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Quebec%2C%20Canada&z=5&output=embed"
+          src="https://maps.google.com/maps?q=Rive-Nord%20de%20Montr%C3%A9al&z=9&output=embed"
         ></iframe>
       </div>
     </section>

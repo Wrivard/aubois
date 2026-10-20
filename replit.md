@@ -1,6 +1,6 @@
 # Céramique Cardinal
 
-Site vitrine en français présentant les services d’installation de céramique et de revêtements en carreaux de Céramique Cardinal.
+Site vitrine en français présentant les services d’installation de céramique et de revêtements en carreaux de Céramique Cardinal sur la Rive-Nord de Montréal.
 
 ## Run & Operate
 
@@ -33,7 +33,7 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-- Site vitrine en français pour Céramique Cardinal, entreprise spécialisée en installation de céramique et de revêtements en carreaux
+- Site vitrine en français pour Céramique Cardinal, entreprise spécialisée en installation de céramique et de revêtements en carreaux sur la Rive-Nord de Montréal
 - Navigation responsive, services de céramique, présentation de réalisations, témoignages, FAQ, coordonnées et formulaire de soumission
 - Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 

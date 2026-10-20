@@ -31,7 +31,7 @@ export default function Soumission() {
 
   useEffect(() => {
     const title = "Soumission | Céramique Cardinal";
-    const description = "Présentez votre projet de pose de céramique ou de revêtement en carreaux à Céramique Cardinal.";
+    const description = "Présentez votre projet d’installation de céramique sur la Rive-Nord de Montréal à Céramique Cardinal.";
     const previousTitle = document.title;
     const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
     const previous = tags.map((selector) => {
@@ -113,7 +113,7 @@ export default function Soumission() {
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
             <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Parlons de votre projet</span>
-            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Parlons de votre projet de céramique.</h1>
+            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Une soumission pour votre projet de céramique sur la Rive-Nord de Montréal.</h1>
             <p className="text-base sm:text-lg text-white/80 leading-relaxed">
               Présentez votre projet de pose de céramique, de plancher ou d’installation commerciale. Votre demande sera préparée dans votre messagerie.
             </p>
