@@ -25,12 +25,12 @@ export function Navbar() {
   ];
 
   const servicesLinks = [
-    { name: "Rénovation résidentielle", href: "/#services" },
-    { name: "Rénovation de cuisine", href: "/#services" },
-    { name: "Construction résidentielle", href: "/#services" },
-    { name: "Transformation intérieure", href: "/#services" },
-    { name: "Travaux de finition", href: "/#services" },
-    { name: "Projets personnalisés", href: "/#services" },
+    { name: "Installation de céramique", href: "/#services" },
+    { name: "Planchers de céramique", href: "/#services" },
+    { name: "Projets commerciaux", href: "/#services" },
+    { name: "Grandes surfaces", href: "/#services" },
+    { name: "Revêtements intérieurs", href: "/#services" },
+    { name: "Installations spécialisées", href: "/#services" },
   ];
 
   return (
@@ -40,10 +40,10 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[94px] xl:min-h-[113px]">
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Les Constructions Godin — accueil" onClick={() => setMobileMenuOpen(false)}>
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Céramique Cardinal — accueil" onClick={() => setMobileMenuOpen(false)}>
           <img
-            src="/logo-constructions-godin.png"
-            alt="Les Constructions Godin"
+            src="/logo-ceramique-cardinal.png"
+            alt="Céramique Cardinal"
             className="h-[94px] xl:h-[113px] w-auto object-contain mix-blend-screen"
           />
         </Link>
@@ -94,7 +94,7 @@ export function Navbar() {
 
         <div className="hidden xl:flex items-center gap-4">
           <span className="text-sm font-semibold text-white whitespace-nowrap">
-            RBQ : 5855-8107-01
+            Installation de céramique
           </span>
           <Link href="/soumission">
             <Button size="lg" className="font-bold tracking-wide uppercase text-xs">
@@ -169,7 +169,7 @@ export function Navbar() {
               </Button>
             </Link>
             <p className="mt-3 text-center text-sm font-semibold text-white/80">
-              RBQ : 5855-8107-01
+              (514) 444-9393
             </p>
           </div>
         </div>

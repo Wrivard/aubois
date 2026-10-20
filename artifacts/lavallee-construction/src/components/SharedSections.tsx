@@ -52,10 +52,10 @@ export function FAQContactSection() {
           
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
-              ["Quels types de projets réalisez-vous?", "Les Constructions Godin réalise des projets de construction et de rénovation résidentielle, notamment des transformations intérieures et des rénovations de cuisine."],
-              ["La soumission est-elle gratuite?", "Oui. Vous pouvez présenter votre projet afin d’obtenir une soumission gratuite."],
-              ["Dans quelles régions intervenez-vous?", "Les Constructions Godin dessert la Mauricie, Tadoussac et Baie-Comeau."],
-              ["Puis-je vous envoyer des photos de mon projet?", "Oui. Vous pourrez joindre des photos ou des plans au courriel préparé avant de l’envoyer. Aucun fichier n’est téléversé sur ce site."]
+              ["Quels types de travaux réalisez-vous?", "Céramique Cardinal se spécialise dans la pose de céramique et de revêtements en carreaux pour différents types de projets."],
+              ["Réalisez-vous des projets commerciaux?", "Oui. L'entreprise présente notamment des réalisations de céramique en milieu commercial."],
+              ["Pouvez-vous installer de la céramique sur une grande superficie?", "Oui. Céramique Cardinal possède des réalisations démontrant des travaux d'installation sur de grandes surfaces."],
+              ["Comment obtenir une soumission?", "Communiquez avec nous par téléphone ou par courriel en précisant les travaux à réaliser. Vous pourrez joindre vos photos ou vos plans au courriel préparé avant de l'envoyer."]
             ].map(([question, answer], i) => (
               <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 3 ? "border-b border-border" : "border-b-0"}`}>
                 <AccordionTrigger className="text-left font-bold text-lg py-6 hover:no-underline hover:text-secondary">{question}</AccordionTrigger>
@@ -67,8 +67,8 @@ export function FAQContactSection() {
 
         <div>
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Coordonnées</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet.</h2>
-          <p className="text-muted-foreground mb-10">Rénovation de cuisine, transformation intérieure ou projet de construction résidentielle : présentez-nous vos besoins pour discuter des prochaines étapes.</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet de céramique.</h2>
+          <p className="text-muted-foreground mb-10">Vous planifiez des travaux de pose de céramique, un projet commercial ou une installation sur une grande superficie? Présentez-nous les détails de votre projet.</p>
           
           <div className="bg-white border border-border p-5 sm:p-8 h-auto mb-10">
             <ul className="space-y-6">
@@ -77,8 +77,8 @@ export function FAQContactSection() {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-secondary mb-1">Localisation</h4>
-                   <p className="text-muted-foreground">Mauricie, Tadoussac et Baie-Comeau</p>
+                  <h4 className="font-bold text-secondary mb-1">Secteur desservi</h4>
+                   <p className="text-muted-foreground">À confirmer avec notre équipe</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -87,7 +87,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Téléphone</h4>
-                  <a className="text-muted-foreground hover:text-secondary" href="tel:+18199449037">(819) 944-9037</a>
+                  <a className="text-muted-foreground hover:text-secondary" href="tel:+15144449393">(514) 444-9393</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -96,7 +96,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Courriel</h4>
-                  <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:lesconstructionsgodin@gmail.com">lesconstructionsgodin@gmail.com</a>
+                   <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:info@ceramiquecardinal.ca">info@ceramiquecardinal.ca</a>
                 </div>
               </li>
             </ul>
@@ -107,12 +107,12 @@ export function FAQContactSection() {
       {/* Full Bleed Embed Map */}
       <div className="w-full h-[400px]">
         <iframe
-          title="Carte des secteurs desservis par Les Constructions Godin"
+          title="Carte générale du Québec — secteur desservi par Céramique Cardinal à confirmer"
           className="block w-full h-full"
           style={{ border: 0 }}
           loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Mauricie%2C%20Qu%C3%A9bec&z=8&output=embed"
+          src="https://maps.google.com/maps?q=Quebec%2C%20Canada&z=5&output=embed"
         ></iframe>
       </div>
     </section>

@@ -10,24 +10,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] flex flex-col">
         <div className="absolute inset-0 bg-forest">
-          <video
+          <img
             className="w-full h-full object-cover opacity-90"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            poster="/hero-fallback.jpg"
-            aria-hidden="true"
-            tabIndex={-1}
-            onCanPlay={(event) => {
-              void event.currentTarget.play().catch((error) => {
-                console.error("Hero background video playback failed:", error);
-              });
-            }}
-          >
-            <source src="/lavallee-hero-optimized.mp4" type="video/mp4" />
-          </video>
+            src="/photos/tile-patio.jpg"
+            alt=""
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-forest/65"></div>
         </div>
 
@@ -35,15 +23,15 @@ export default function Home() {
           <div className="max-w-3xl 2xl:max-w-5xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-white border border-primary/30 mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              <span className="text-xs font-bold tracking-widest uppercase">Construction et rénovation résidentielle</span>
+              <span className="text-xs font-bold tracking-widest uppercase">Installation de céramique et de carreaux</span>
             </div>
             
             <h1 className="text-[clamp(2.5rem,5vw,5.5rem)] font-extrabold text-white leading-[1.08] mb-5 sm:mb-6 tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]">
-              Rénover, innover, bâtir l'avenir ensemble!
+              La précision au cœur de chaque installation.
             </h1>
             
             <p className="text-base sm:text-lg xl:text-xl text-white/90 mb-8 sm:mb-10 max-w-2xl leading-relaxed font-medium drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
-              Construction et rénovation résidentielle en Mauricie, à Tadoussac et à Baie-Comeau. Les Constructions Godin transforme vos idées en projets concrets, adaptés à vos besoins.
+              Céramique Cardinal réalise des projets de pose de céramique et de revêtements en carreaux, des espaces intérieurs aux installations commerciales de grande envergure.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 sm:mb-12 xl:mb-16">
@@ -84,32 +72,32 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/reno-general.jpg" alt="Photo d’illustration d’un intérieur résidentiel rénové" className="w-full h-full object-cover" loading="lazy" />
+                <img src="/photos/tile-vanity.jpg" alt="Photo d’illustration d’un revêtement intérieur en carreaux" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
               <div className="absolute top-1/2 -right-8 -translate-y-1/2 bg-forest text-white p-6 shadow-xl z-20 hidden xl:block w-48">
                 <HardHat className="w-10 h-10 text-primary mb-4" />
-                <p className="font-bold text-lg leading-tight">Une attention portée à chaque projet.</p>
+                <p className="font-bold text-lg leading-tight">Précision et souci du détail.</p>
               </div>
             </div>
             
             <div>
-              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos des Constructions Godin</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 lg:mb-8 text-secondary">Votre vision, notre engagement.</h2>
+              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">À propos de Céramique Cardinal</span>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 lg:mb-8 text-secondary">Des installations qui font toute la différence.</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Chez Les Constructions Godin, chaque projet est une occasion de transformer un espace et de lui donner une nouvelle vie.
+                La céramique contribue à l’apparence et à la fonctionnalité d’un espace. Chez Céramique Cardinal, nous nous spécialisons dans l’installation de céramique et de revêtements en carreaux.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Que vous souhaitiez moderniser votre cuisine, rénover une partie de votre maison ou entreprendre un projet de construction, notre approche repose sur la compréhension de vos besoins et le souci d’une réalisation soignée.
+                Chaque projet demande de la précision, une préparation adaptée et une attention constante aux détails. Notre approche vise à réaliser des installations soignées, adaptées aux caractéristiques de l’espace.
               </p>
               
               <ul className="space-y-4 mb-10">
                 {[
-                  "Rénovation résidentielle et de cuisine",
-                  "Construction résidentielle",
-                  "Transformation intérieure",
-                  "Travaux de finition associés aux projets de rénovation"
+                  "Installation de céramique",
+                  "Pose de carreaux sur les planchers",
+                  "Projets commerciaux et grandes surfaces",
+                  "Revêtements intérieurs en carreaux"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 font-medium text-secondary">
                     <CheckCircle className="w-6 h-6 text-primary shrink-0" />
@@ -133,48 +121,48 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
                 <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Nos services</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">Des projets adaptés à votre maison.</h2>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">Des installations adaptées à chaque projet.</h2>
             <p className="text-lg text-muted-foreground">
-                Des services de construction et de rénovation résidentielle en Mauricie, à Tadoussac et à Baie-Comeau. Certaines photos des services sont illustratives.
+                Céramique Cardinal réalise des travaux de pose de céramique et de revêtements en carreaux. Les photos présentées sont des images d’illustration.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
-                title: "Rénovation résidentielle",
-                desc: "Transformez votre propriété grâce à des travaux de rénovation adaptés à vos besoins, à votre espace et au résultat recherché.",
-                img: "/service-renovation.jpg",
+                title: "Installation de céramique",
+                desc: "Travaux de pose de céramique adaptés aux dimensions, aux particularités et aux exigences de chaque espace.",
+                img: "/photos/tile-bathroom.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
-                title: "Rénovation de cuisine",
-                desc: "Modernisez votre cuisine avec un aménagement pensé pour améliorer sa fonctionnalité, son apparence et votre confort quotidien.",
-                img: "/reno-cuisine.jpg",
+                title: "Planchers de céramique",
+                desc: "Installation de carreaux sur les planchers afin de créer des surfaces fonctionnelles, uniformes et adaptées à l'utilisation prévue.",
+                img: "/photos/tile-entry.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
-                title: "Construction résidentielle",
-                desc: "Des services de construction adaptés aux caractéristiques de votre projet résidentiel et aux besoins de votre propriété.",
-                img: "/projet-agrandissement.jpg",
+                title: "Projets commerciaux",
+                desc: "Travaux de céramique pour les espaces commerciaux nécessitant une planification et une exécution adaptées à la portée du projet.",
+                img: "/photos/tile-kitchen.jpg",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
-                title: "Transformation intérieure",
-                desc: "Repensez vos espaces de vie afin de créer un environnement plus fonctionnel, moderne et agréable.",
-                img: "/reno-sous-sol.jpg",
+                title: "Grandes surfaces",
+                desc: "Installation de céramique sur des superficies importantes, avec une attention particulière aux alignements et à l'uniformité du résultat.",
+                img: "/photos/tile-patio.jpg",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
-                title: "Travaux de finition",
-                desc: "Une attention portée aux détails et aux finitions qui contribuent à l’apparence finale de votre rénovation.",
-                img: "/projet-salle-de-bain.jpg",
+                title: "Murs et revêtements intérieurs",
+                desc: "Pose de revêtements en carreaux sur différentes surfaces murales selon les besoins du projet.",
+                img: "/photos/tile-fireplace.jpg",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
-                title: "Projets de rénovation personnalisés",
-                desc: "Des solutions adaptées aux particularités de votre maison et à la vision que vous souhaitez concrétiser.",
-                img: "/service-residentiel.jpg",
+                title: "Installations spécialisées",
+                desc: "Travaux de pose de céramique dans des environnements présentant des configurations ou des exigences particulières, notamment certains espaces de type spa.",
+                img: "/photos/tile-stone-shower.jpg",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
@@ -205,7 +193,7 @@ export default function Home() {
             <div className="max-w-2xl">
               <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Nos Réalisations</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">Nos réalisations</h2>
-              <p className="text-white/80 mt-4">Découvrez des projets résidentiels, dont une rénovation de cuisine réalisée par Les Constructions Godin.</p>
+              <p className="text-white/80 mt-4">Découvrez des exemples d’installations en carreaux. Céramique Cardinal a notamment participé à un projet au SPA Strom.</p>
             </div>
             <Link href="/soumission">
               <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-secondary uppercase tracking-wider font-bold">
@@ -216,9 +204,9 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {[
-              { img: "/godin-photo-01.jpg", title: "Projet résidentiel", tag: "Extérieur", alt: "Projet résidentiel avec terrasse en bois et espace vitré" },
-              { img: "/godin-photo-02.jpg", title: "Rénovation de cuisine", tag: "Cuisine", alt: "Cuisine rénovée avec armoires foncées et îlot en bois" },
-              { img: "/godin-photo-05.jpg", title: "Cuisine rénovée", tag: "Réalisation", alt: "Cuisine rénovée avec grand îlot en bois" },
+              { img: "/photos/tile-white-shower.jpg", title: "Installation de carreaux", tag: "Photo illustrative", alt: "Photo d’illustration d’une installation de carreaux dans une douche" },
+              { img: "/photos/tile-laundry.jpg", title: "Pose de céramique au sol", tag: "Photo illustrative", alt: "Photo d’illustration d’un plancher de céramique" },
+              { img: "/photos/tile-vanity.jpg", title: "Revêtement intérieur en carreaux", tag: "Photo illustrative", alt: "Photo d’illustration d’un revêtement en carreaux dans une salle de bain" },
             ].map((proj, i) => (
               <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
                 <img src={proj.img} alt={proj.alt} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
@@ -238,41 +226,41 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div className="max-w-2xl">
                 <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">En images</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Des idées pour votre prochain projet.</h2>
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">La céramique en images.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Les photos de projets des Constructions Godin sont accompagnées de quelques images d’illustration pour inspirer votre prochain projet.
+               Les photos ci-dessous sont des images d’illustration. Elles présentent différents types de revêtements intérieurs en carreaux.
             </p>
           </div>
            <div className="grid sm:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/godin-photo-03.jpg"
-                  alt="Travaux de rénovation en cours dans une cuisine"
+                src="/photos/tile-kitchen.jpg"
+                  alt="Photo d’illustration d’un dosseret et d’un comptoir en carreaux"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/godin-photo-04.jpg"
-                  alt="Détail d’une cuisine rénovée avec armoires foncées et comptoirs"
+                src="/photos/tile-bathroom.jpg"
+                  alt="Photo d’illustration d’un plancher de salle de bain en carreaux"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/projet-cuisine.jpg"
-                  alt="Image d’illustration d’une cuisine contemporaine"
+                src="/photos/tile-entry.jpg"
+                  alt="Photo d’illustration d’un plancher d’entrée en carreaux"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
             </figure>
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/reno-patio.jpg"
-                  alt="Image d’illustration d’un aménagement extérieur résidentiel"
+                src="/photos/tile-stone-shower.jpg"
+                  alt="Photo d’illustration d’une douche avec revêtement en carreaux"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                  loading="lazy"
               />
@@ -287,14 +275,14 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-20 md:py-28 xl:py-32 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/cta-bg.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
+           <img src="/photos/tile-white-shower.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
           <div className="absolute inset-0 bg-forest/80"></div>
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
-             <h2 className="text-3xl sm:text-4xl xl:text-6xl font-extrabold mb-6 leading-tight">Donnons vie à votre prochain projet.</h2>
+             <h2 className="text-3xl sm:text-4xl xl:text-6xl font-extrabold mb-6 leading-tight">Un projet de céramique à réaliser?</h2>
           <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Construction ou rénovation, Les Constructions Godin est disponible pour discuter de vos idées et vous accompagner dans la réalisation de votre projet. Appelez-nous au <a href="tel:+18199449037" className="underline underline-offset-4">(819) 944-9037</a>.
+              Plancher, surface commerciale ou installation spécialisée : Céramique Cardinal est disponible pour discuter de votre projet. Appelez-nous au <a href="tel:+15144449393" className="underline underline-offset-4">(514) 444-9393</a>.
           </p>
           <Link href="/soumission">
             <Button size="lg" className="min-h-14 md:h-16 px-6 md:px-10 text-sm sm:text-lg font-bold uppercase tracking-wider">

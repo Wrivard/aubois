@@ -13,7 +13,7 @@ import { CheckCircle2, ChevronRight, ArrowLeft, Phone, Mail } from "lucide-react
 
 const formSchema = z.object({
   projectType: z.string().min(1, "Veuillez sélectionner un type de projet"),
-  budget: z.string().min(1, "Veuillez sélectionner un budget estimé"),
+  budget: z.string().min(1, "Veuillez sélectionner une surface approximative"),
   timeline: z.string().min(1, "Veuillez sélectionner un délai"),
   description: z.string().min(10, "La description doit contenir au moins 10 caractères"),
   city: z.string().min(2, "Veuillez entrer la ville du projet"),
@@ -30,8 +30,8 @@ export default function Soumission() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    const title = "Soumission | Les Constructions Godin";
-    const description = "Présentez votre projet de construction ou de rénovation résidentielle aux Constructions Godin en Mauricie, à Tadoussac ou à Baie-Comeau.";
+    const title = "Soumission | Céramique Cardinal";
+    const description = "Présentez votre projet de pose de céramique ou de revêtement en carreaux à Céramique Cardinal.";
     const previousTitle = document.title;
     const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
     const previous = tags.map((selector) => {
@@ -81,14 +81,14 @@ export default function Soumission() {
       `Courriel : ${data.email}`,
       `Ville du projet : ${data.city}`,
       `Type de projet : ${data.projectType}`,
-      `Budget approximatif : ${data.budget}`,
+      `Surface approximative : ${data.budget}`,
       `Échéancier souhaité : ${data.timeline}`,
       "",
       `Description du projet : ${data.description}`,
       "",
       "Vous pouvez joindre vos photos et plans directement à ce courriel avant de l'envoyer."
     ].join("\n");
-    window.location.href = `mailto:lesconstructionsgodin@gmail.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@ceramiquecardinal.ca?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
     setIsSubmitted(true);
   };
 
@@ -104,7 +104,7 @@ export default function Soumission() {
       <section className="relative pt-[158px] xl:pt-[177px] pb-12 md:pb-16 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-             src="/quote-header.jpg"
+             src="/photos/tile-stone-shower.jpg"
             alt=""
             className="w-full h-full object-cover object-center opacity-30"
           />
@@ -113,9 +113,9 @@ export default function Soumission() {
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
             <span className="text-white font-bold tracking-widest uppercase text-sm mb-4 block">Parlons de votre projet</span>
-            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Demande de soumission gratuite</h1>
+            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Parlons de votre projet de céramique.</h1>
             <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-              Présentez votre projet de construction ou de rénovation résidentielle en Mauricie, à Tadoussac ou à Baie-Comeau. Votre demande sera préparée dans votre messagerie.
+              Présentez votre projet de pose de céramique, de plancher ou d’installation commerciale. Votre demande sera préparée dans votre messagerie.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function Soumission() {
                   </div>
                   <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre courriel est prêt</h2>
                   <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
-                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à lesconstructionsgodin@gmail.com.
+                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à info@ceramiquecardinal.ca.
                   </p>
                   <Button className="uppercase tracking-wider font-bold px-8" onClick={() => window.location.href = "/"}>
                     Retour à l'accueil
@@ -175,11 +175,13 @@ export default function Soumission() {
                                     <SelectValue placeholder="Sélectionnez le type de travaux" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                      <SelectItem value="Rénovation résidentielle">Rénovation résidentielle</SelectItem>
-                                      <SelectItem value="Rénovation de cuisine">Rénovation de cuisine</SelectItem>
-                                      <SelectItem value="Transformation intérieure">Transformation intérieure</SelectItem>
-                                      <SelectItem value="Construction résidentielle">Construction résidentielle</SelectItem>
-                                      <SelectItem value="Finition intérieure">Finition intérieure</SelectItem>
+                                       <SelectItem value="Installation de céramique">Installation de céramique</SelectItem>
+                                       <SelectItem value="Plancher">Plancher de céramique</SelectItem>
+                                       <SelectItem value="Projet commercial">Projet commercial</SelectItem>
+                                       <SelectItem value="Grande surface">Grande surface</SelectItem>
+                                       <SelectItem value="Revêtement mural">Revêtement mural</SelectItem>
+                                       <SelectItem value="Installation spécialisée">Installation spécialisée</SelectItem>
+                                       <SelectItem value="Projet résidentiel">Projet résidentiel</SelectItem>
                                       <SelectItem value="Autre">Autre</SelectItem>
                                   </SelectContent>
                                 </Select>
@@ -189,21 +191,19 @@ export default function Soumission() {
                           </div>
 
                           <div className="space-y-3">
-                            <Label className="font-bold">Budget approximatif *</Label>
+                            <Label className="font-bold">Surface approximative *</Label>
                             <Controller
                               name="budget"
                               control={control}
                               render={({ field }) => (
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                                   <SelectTrigger className="h-12 rounded-none border-border focus:ring-primary focus:border-primary">
-                                    <SelectValue placeholder="Sélectionnez une fourchette" />
+                                   <SelectValue placeholder="Sélectionnez une surface" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                     <SelectItem value="under-5k">Moins de 5 000 $</SelectItem>
-                                     <SelectItem value="5k-10k">5 000 $ à 10 000 $</SelectItem>
-                                     <SelectItem value="10k-25k">10 000 $ à 25 000 $</SelectItem>
-                                     <SelectItem value="25k+">25 000 $ et plus</SelectItem>
-                                    <SelectItem value="tbd">À déterminer</SelectItem>
+                                     <SelectItem value="petite-surface">Petite surface</SelectItem>
+                                     <SelectItem value="grande-surface">Grande surface</SelectItem>
+                                    <SelectItem value="a-confirmer">À confirmer</SelectItem>
                                   </SelectContent>
                                 </Select>
                               )}
@@ -342,10 +342,10 @@ export default function Soumission() {
                 </p>
                 <div className="space-y-4">
                   <p className="flex items-center gap-3 font-medium">
-                     <Phone className="w-5 h-5"/> <a href="tel:+18199449037">(819) 944-9037</a>
+                     <Phone className="w-5 h-5"/> <a href="tel:+15144449393">(514) 444-9393</a>
                   </p>
                   <p className="flex items-center gap-3 font-medium">
-                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:lesconstructionsgodin@gmail.com">lesconstructionsgodin@gmail.com</a>
+                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:info@ceramiquecardinal.ca">info@ceramiquecardinal.ca</a>
                   </p>
                 </div>
               </div>
@@ -355,15 +355,15 @@ export default function Soumission() {
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                        <span className="text-sm text-white/80 leading-tight">Licence RBQ : 5855-8107-01</span>
+                         <span className="text-sm text-white/80 leading-tight">Spécialisation en pose de céramique et de carreaux</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                         <span className="text-sm text-white/80 leading-tight">Construction et rénovation résidentielle</span>
+                          <span className="text-sm text-white/80 leading-tight">Projets commerciaux et grandes surfaces</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                         <span className="text-sm text-white/80 leading-tight">Des projets adaptés aux besoins de votre propriété</span>
+                          <span className="text-sm text-white/80 leading-tight">Attention aux alignements, aux découpes et aux finitions</span>
                    </li>
                 </ul>
               </div>

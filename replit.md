@@ -1,6 +1,6 @@
-# Les Constructions Godin
+# Céramique Cardinal
 
-Site vitrine en français présentant les services de construction et de rénovation résidentielle des Constructions Godin en Mauricie, à Tadoussac et à Baie-Comeau.
+Site vitrine en français présentant les services d’installation de céramique et de revêtements en carreaux de Céramique Cardinal.
 
 ## Run & Operate
 
@@ -33,14 +33,15 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-- Site vitrine en français pour Les Constructions Godin, entreprise de construction et de rénovation résidentielle desservant la Mauricie, Tadoussac et Baie-Comeau
-- Navigation responsive, services résidentiels, présentation de projets, témoignages, FAQ, coordonnées et formulaire de soumission gratuite
+- Site vitrine en français pour Céramique Cardinal, entreprise spécialisée en installation de céramique et de revêtements en carreaux
+- Navigation responsive, services de céramique, présentation de réalisations, témoignages, FAQ, coordonnées et formulaire de soumission
 - Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 
 ## User preferences
 
-- Garder le gabarit existant, le logo fourni des Constructions Godin et l'accent `#795931`; préserver le noir `#1B1B1B` de la navigation, du pied de page et du texte.
-- Utiliser les photos fournies par le client pour illustrer les projets; ne pas inventer de réalisations, licences, garanties ou témoignages.
+- Garder le gabarit existant et le logo fourni de Céramique Cardinal; utiliser le rouge comme accent et préserver le noir `#1B1B1B` de la navigation, du pied de page et du texte.
+- Utiliser des images de céramique adaptées au contenu et les identifier comme illustratives lorsqu'elles ne documentent pas une réalisation vérifiée.
+- Ne pas inventer de réalisations, adresse, territoire desservi, numéro RBQ, certifications, garanties ou témoignages.
 - Ne pas réutiliser la même photo à plusieurs endroits du site; choisir des visuels distincts et adaptés au contenu.
 - Conserver inchangés les compteurs et statistiques du gabarit; utiliser uniquement des témoignages vérifiés.
 

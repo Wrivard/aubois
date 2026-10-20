@@ -7,13 +7,13 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-8 mb-12 md:mb-16">
           <div className="lg:col-span-1 flex flex-col items-start">
             <img 
-              src="/logo-constructions-godin.png"
-              alt="Les Constructions Godin"
+              src="/logo-ceramique-cardinal.png"
+              alt="Céramique Cardinal"
               className="h-[150px] w-auto object-contain object-left mb-6 mix-blend-screen"
               loading="lazy"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Construction et rénovation résidentielle en Mauricie, à Tadoussac et à Baie-Comeau. RBQ : 5855-8107-01.
+              Céramique Cardinal se spécialise dans l’installation de céramique et de revêtements en carreaux, notamment pour des projets commerciaux et de grandes surfaces.
             </p>
           </div>
           
@@ -32,15 +32,15 @@ export function Footer() {
             <ul className="flex flex-col gap-4 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <span className="font-bold text-white">T.</span>
-                <a href="tel:+18199449037" className="hover:text-white">(819) 944-9037</a>
+                <a href="tel:+15144449393" className="hover:text-white">(514) 444-9393</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-white">C.</span>
-                <a href="mailto:lesconstructionsgodin@gmail.com" className="hover:text-white break-all">lesconstructionsgodin@gmail.com</a>
+                <a href="mailto:info@ceramiquecardinal.ca" className="hover:text-white break-all">info@ceramiquecardinal.ca</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-white">A.</span>
-                <span>Mauricie, Tadoussac et Baie-Comeau</span>
+                <a href="https://ceramiquecardinal.ca" target="_blank" rel="noreferrer" className="hover:text-white">ceramiquecardinal.ca</a>
               </li>
             </ul>
           </div>
@@ -58,10 +58,10 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-xs text-white/70">
-          <p>© {new Date().getFullYear()} Les Constructions Godin. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Céramique Cardinal. Tous droits réservés.</p>
           <div className="flex gap-6">
-            <a href="mailto:lesconstructionsgodin@gmail.com?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
-            <a href="mailto:lesconstructionsgodin@gmail.com" className="hover:text-white transition-colors">Nous écrire</a>
+            <a href="mailto:info@ceramiquecardinal.ca?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
+            <a href="mailto:info@ceramiquecardinal.ca" className="hover:text-white transition-colors">Nous écrire</a>
           </div>
         </div>
       </div>

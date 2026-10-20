@@ -1,0 +1,662 @@
+# Website Content Update — Céramique Cardinal
+
+Update the EXISTING website template for **Céramique Cardinal**.
+
+## CRITICAL INSTRUCTIONS — FOLLOW EXACTLY
+
+- DO NOT redesign the website.
+- DO NOT change the existing layout, design, colors, typography, spacing, animations, navigation, buttons or visual elements.
+- DO NOT add, remove, rearrange or replace any sections or components.
+- DO NOT create a new website.
+- ONLY update the business-specific content.
+- Adapt the content to the EXISTING template, not the template to the content.
+- Keep the exact existing number of service cards, project cards and other components.
+- If the template contains fewer content slots than suggested below, prioritize the most relevant information without modifying its structure.
+- Write all customer-facing website content in French Canadian.
+
+### STATISTICS — ABSOLUTELY DO NOT MODIFY
+
+Keep every existing statistic, number, counter, percentage, metric, label and animation exactly as it currently appears in the template.
+
+Do not replace template statistics with Facebook followers, reviews, years of experience, project counts or invented business numbers.
+
+### TESTIMONIALS — MUST REMAIN TESTIMONIALS
+
+The existing testimonial section MUST remain a testimonial section with its exact existing layout and components.
+
+Do not replace it with services, projects, statistics, benefits, FAQ or any other content type.
+
+Only use authentic, verified customer testimonials. Never invent customer names, quotes, ratings or reviews.
+
+If verified testimonials are unavailable, preserve the existing testimonial placeholders and structure. Do not present fictional testimonials as genuine customer feedback.
+
+---
+
+# BUSINESS INFORMATION
+
+**Company:** Céramique Cardinal
+
+**Business type:** Entreprise spécialisée en installation de céramique et revêtements en carreaux
+
+**Phone:** (514) 444-9393
+
+**Email:** info@ceramiquecardinal.ca
+
+**Website:** https://ceramiquecardinal.ca
+
+**Confirmed expertise and project context:**
+- Installation de céramique
+- Travaux de carrelage
+- Pose de carreaux sur planchers
+- Installations de grande superficie
+- Projets de céramique en milieu commercial
+- Travaux dans des espaces de type spa
+- Revêtements intérieurs en carreaux
+
+**Confirmed portfolio example:**
+
+Céramique Cardinal présente un projet réalisé au SPA Strom, avec des travaux de pose de carreaux sur une grande surface.
+
+The available business information and photographs indicate expertise in tile installation for substantial projects, including commercial environments.
+
+**Positioning:**
+
+Céramique Cardinal se spécialise dans les travaux de pose de céramique, en mettant de l'avant la précision de l'installation, la qualité des finitions et l'adaptation aux différents types de projets.
+
+The website should emphasize tile installation expertise, with a particularly strong focus on commercial and larger-scale projects demonstrated by the portfolio.
+
+Residential applications may be discussed as potential project types, but should not be presented as confirmed specialties unless verified by the company.
+
+**IMPORTANT — DO NOT INVENT:**
+- Street address
+- Exact business location
+- Service territory
+- RBQ number
+- Years of experience
+- Number of employees
+- Number of projects completed
+- Additional certifications
+- Warranties
+- Specific brands or manufacturers
+- Specialized waterproofing certifications
+- Plumbing services
+- Complete bathroom renovation services
+- Exact materials not verified
+- Customer satisfaction percentages
+
+---
+
+# 1. ACCUEIL
+
+## HERO
+
+**Title:**
+La précision au cœur de chaque installation.
+
+**Subtitle:**
+Céramique Cardinal réalise des projets de pose de céramique et de revêtements en carreaux, des espaces intérieurs aux installations commerciales de grande envergure.
+
+**Primary CTA:**
+Demander une soumission
+
+**Secondary CTA:**
+Voir nos réalisations
+
+## INTRODUCTION
+
+**Title:**
+Des installations qui font toute la différence.
+
+**Content:**
+
+La céramique occupe une place importante dans l'apparence, la fonctionnalité et la durabilité d'un espace.
+
+Chez Céramique Cardinal, nous nous spécialisons dans les travaux d'installation de céramique et de revêtements en carreaux.
+
+Qu'il s'agisse d'un plancher, d'une grande surface ou d'un espace nécessitant une installation particulière, chaque projet demande de la précision, une préparation adaptée et une attention constante aux détails.
+
+Notre approche vise à réaliser des installations soignées qui mettent en valeur les espaces et les matériaux choisis.
+
+---
+
+# 2. SERVICES
+
+Keep the EXACT existing number of service cards.
+
+If the template contains six cards, use:
+
+### 1. INSTALLATION DE CÉRAMIQUE
+
+Travaux de pose de céramique adaptés aux dimensions, aux particularités et aux exigences de chaque espace.
+
+### 2. PLANCHERS DE CÉRAMIQUE
+
+Installation de carreaux sur les planchers afin de créer des surfaces fonctionnelles, uniformes et adaptées à l'utilisation prévue.
+
+### 3. PROJETS COMMERCIAUX
+
+Travaux de céramique pour les espaces commerciaux nécessitant une planification et une exécution adaptées à la portée du projet.
+
+### 4. GRANDES SURFACES
+
+Installation de céramique sur des superficies importantes, avec une attention particulière aux alignements et à l'uniformité du résultat.
+
+### 5. MURS ET REVÊTEMENTS INTÉRIEURS
+
+Pose de revêtements en carreaux sur différentes surfaces murales selon les besoins du projet.
+
+### 6. INSTALLATIONS SPÉCIALISÉES
+
+Travaux de pose de céramique dans des environnements présentant des configurations ou des exigences particulières, notamment certains espaces de type spa.
+
+If the template contains fewer service cards, combine related services without modifying the layout.
+
+---
+
+# 3. INSTALLATION DE CÉRAMIQUE
+
+**Title:**
+Un travail précis, du premier carreau au dernier.
+
+**Content:**
+
+La qualité d'une installation de céramique dépend autant du matériau choisi que de la précision du travail réalisé.
+
+Céramique Cardinal réalise des projets de pose de carreaux en tenant compte des dimensions de l'espace, des caractéristiques de la surface et du résultat recherché.
+
+Chaque installation demande une attention particulière aux alignements, aux découpes et aux détails de finition.
+
+Notre objectif est de créer des surfaces cohérentes et adaptées à leur environnement.
+
+**CTA:**
+Parler de mon projet
+
+---
+
+# 4. PLANCHERS DE CÉRAMIQUE
+
+**Title:**
+Des planchers installés avec précision.
+
+**Content:**
+
+Le plancher constitue une composante importante de nombreux projets d'aménagement intérieur.
+
+La céramique permet de créer des surfaces adaptées à différentes utilisations, autant dans les espaces résidentiels que commerciaux lorsque ces mandats sont offerts.
+
+Céramique Cardinal réalise des travaux de pose de céramique au sol, incluant des projets nécessitant une attention particulière à la disposition des carreaux et aux détails d'installation.
+
+**CTA:**
+Demander une soumission
+
+---
+
+# 5. PROJETS COMMERCIAUX
+
+**Title:**
+Des installations adaptées aux projets d'envergure.
+
+**Content:**
+
+Les espaces commerciaux présentent souvent des besoins particuliers en matière de surfaces, de configuration et d'organisation des travaux.
+
+Céramique Cardinal possède une expérience démontrée dans les projets d'installation de céramique sur de grandes superficies.
+
+L'entreprise a notamment présenté des travaux réalisés dans le cadre d'un projet au SPA Strom.
+
+Ce type de réalisation illustre sa capacité à contribuer à des projets nécessitant une coordination attentive et une installation soignée.
+
+**CTA:**
+Discuter de mon projet commercial
+
+---
+
+# 6. GRANDES SURFACES
+
+**Title:**
+La précision, même à grande échelle.
+
+**Content:**
+
+L'installation de céramique sur une grande superficie demande une bonne planification et une exécution constante.
+
+La disposition des carreaux, les alignements et les différentes transitions jouent un rôle important dans le résultat final.
+
+Céramique Cardinal réalise des projets de carrelage de grande superficie en adaptant son intervention aux caractéristiques de l'espace.
+
+**CTA:**
+Présenter mon projet
+
+---
+
+# 7. MURS ET REVÊTEMENTS INTÉRIEURS
+
+**Title:**
+Des murs qui donnent du caractère à vos espaces.
+
+**Content:**
+
+La céramique peut également être utilisée pour habiller différentes surfaces verticales et créer des éléments distinctifs dans un espace intérieur.
+
+Selon les particularités du projet, l'installation de carreaux peut permettre de compléter l'aménagement et de créer une cohérence entre les différentes surfaces.
+
+Communiquez avec Céramique Cardinal afin de vérifier la faisabilité de votre projet de revêtement mural.
+
+**CTA:**
+Parler de mon projet
+
+Do not claim specialized wall systems or wet-area waterproofing services unless confirmed.
+
+---
+
+# 8. INSTALLATIONS SPÉCIALISÉES
+
+**Title:**
+Une approche adaptée aux particularités de votre espace.
+
+**Content:**
+
+Certains projets nécessitent des installations de céramique adaptées à des environnements particuliers.
+
+Les travaux peuvent comporter des surfaces importantes, des configurations spécifiques ou des contraintes liées à l'utilisation des espaces.
+
+Céramique Cardinal a notamment participé à des projets de pose de carreaux dans un environnement de type spa.
+
+Chaque mandat est évalué selon ses caractéristiques afin de déterminer les travaux appropriés.
+
+**CTA:**
+Discuter de mon installation
+
+---
+
+# 9. PROCESSUS
+
+**Title:**
+Votre projet, étape par étape.
+
+Keep the existing process component EXACTLY as it currently is.
+
+Use the following content only where corresponding content slots already exist.
+
+**1. DISCUSSION**
+
+Nous prenons connaissance de votre projet et des surfaces à recouvrir.
+
+**2. ÉVALUATION**
+
+Nous examinons les dimensions, les matériaux et les particularités de l'installation.
+
+**3. PLANIFICATION**
+
+Les principales étapes sont organisées selon les exigences du projet.
+
+**4. INSTALLATION**
+
+Les carreaux sont installés en portant attention aux alignements, aux découpes et aux détails.
+
+**5. FINALISATION**
+
+Les dernières étapes viennent compléter l'installation.
+
+---
+
+# 10. RÉALISATIONS
+
+**Title:**
+Nos réalisations
+
+**Introduction:**
+
+Découvrez quelques projets de céramique réalisés par Céramique Cardinal, notamment des installations commerciales et des travaux sur de grandes superficies.
+
+Keep the EXISTING gallery and project components exactly as they currently are.
+
+Suggested categories, only if the existing template supports them:
+- Tous
+- Projets commerciaux
+- Planchers
+- Grandes surfaces
+- Revêtements intérieurs
+- Installations spécialisées
+- Projets en cours
+
+For every project, only use verified information:
+- Type de projet
+- Surfaces réalisées
+- Matériaux, if confirmed
+- Localisation, if confirmed
+- Photographies
+- Particularités connues
+- Résultat final
+
+Do not invent:
+- Exact tile models
+- Brands
+- Dimensions
+- Budgets
+- Timelines
+- Technical systems
+
+## FEATURED PROJECT — IF THE TEMPLATE ALREADY HAS THIS COMPONENT
+
+**Title:**
+Installation de céramique — SPA Strom
+
+**Content:**
+
+Céramique Cardinal a partagé une réalisation effectuée dans le cadre d'un projet au SPA Strom.
+
+Les travaux présentés comprennent l'installation de carreaux sur une grande surface intérieure.
+
+Ce projet illustre le savoir-faire de l'entreprise dans les installations de céramique nécessitant précision et attention aux détails.
+
+Only mention the exact location, project scope or installation systems if independently confirmed.
+
+---
+
+# 11. POURQUOI CÉRAMIQUE CARDINAL
+
+Keep the exact existing number of content blocks.
+
+Suggested content:
+
+**SPÉCIALISATION**
+
+Une entreprise concentrée sur les travaux de pose de céramique et de revêtements en carreaux.
+
+**PRÉCISION**
+
+Une attention portée aux alignements, aux découpes et aux détails de chaque installation.
+
+**PROJETS COMMERCIAUX**
+
+Une expérience démontrée dans les projets de carrelage en milieu commercial.
+
+**GRANDES SURFACES**
+
+Des réalisations comprenant l'installation de céramique sur des superficies importantes.
+
+**ADAPTABILITÉ**
+
+Une approche adaptée aux caractéristiques et aux contraintes de chaque projet.
+
+**SOUCI DU DÉTAIL**
+
+Une attention particulière au résultat final et à l'intégration des surfaces.
+
+---
+
+# 12. À PROPOS
+
+**Title:**
+À propos de Céramique Cardinal
+
+**Content:**
+
+Céramique Cardinal est une entreprise spécialisée dans les travaux de pose de céramique et de revêtements en carreaux.
+
+Ses réalisations comprennent notamment des projets commerciaux et des installations sur de grandes surfaces.
+
+L'entreprise a notamment présenté des travaux effectués dans le cadre d'un projet au SPA Strom.
+
+Notre approche repose sur la compréhension des caractéristiques de chaque projet et sur une attention particulière à la précision de l'installation.
+
+Qu'il s'agisse d'un plancher, d'une grande surface ou d'un environnement particulier, notre objectif est de réaliser des travaux de céramique soignés et adaptés au projet.
+
+---
+
+# 13. TESTIMONIALS / TÉMOIGNAGES
+
+**THIS SECTION MUST REMAIN A TESTIMONIAL SECTION.**
+
+**Section title:**
+Ce que nos clients disent de nous
+
+**Optional introduction:**
+La confiance de nos clients occupe une place importante dans la réalisation de chaque projet.
+
+Keep the exact existing testimonial layout and components.
+
+DO NOT:
+- Remove the section
+- Convert it into services
+- Convert it into projects
+- Convert it into statistics
+- Convert it into benefits
+- Convert it into FAQ
+- Change its component type
+- Invent testimonials
+
+Only use authentic, verified customer testimonials already available in the website or supplied by the business.
+
+Do not invent customer names, quotes, ratings, review dates or project details attributed to customers.
+
+If no verified testimonials are available, preserve the existing testimonial placeholders and structure.
+
+---
+
+# 14. STATS / COUNTERS
+
+**DO NOT MODIFY THIS SECTION AT ALL.**
+
+Preserve every existing:
+- Number
+- Percentage
+- Counter
+- Metric
+- Label
+- Animation
+- Statistical component
+
+Do not substitute:
+- 313 Facebook followers
+- Facebook review counts
+- Years of experience
+- Number of completed projects
+- Employee counts
+- Number of customers
+- Satisfaction percentages
+- Any invented figures
+
+**ALL EXISTING TEMPLATE STATISTICS MUST REMAIN EXACTLY AS THEY ARE.**
+
+---
+
+# 15. FAQ
+
+Use concise, natural French answers for the existing FAQ component.
+
+**Quels types de travaux réalisez-vous?**
+
+Céramique Cardinal se spécialise dans la pose de céramique et de revêtements en carreaux pour différents types de projets.
+
+**Réalisez-vous des projets commerciaux?**
+
+Oui. L'entreprise présente notamment des réalisations de céramique en milieu commercial.
+
+**Faites-vous des planchers de céramique?**
+
+Oui. La pose de céramique au sol fait partie des travaux présentés par l'entreprise.
+
+**Pouvez-vous installer de la céramique sur une grande superficie?**
+
+Oui. Céramique Cardinal possède des réalisations démontrant des travaux d'installation sur de grandes surfaces.
+
+**Avez-vous travaillé sur des projets de spa?**
+
+Oui. L'entreprise a notamment présenté des travaux réalisés dans le cadre d'un projet au SPA Strom.
+
+**Faites-vous également de la céramique résidentielle?**
+
+Contactez notre équipe afin de confirmer la disponibilité de nos services pour votre projet résidentiel.
+
+**Installez-vous de la céramique sur les murs?**
+
+Vous pouvez communiquer avec notre équipe pour discuter de votre projet de revêtement mural et vérifier les possibilités d'installation.
+
+**Faites-vous les salles de bain?**
+
+Communiquez avec nous pour présenter les surfaces à recouvrir et confirmer les travaux que nous pouvons prendre en charge.
+
+**Travaillez-vous avec différents formats de carreaux?**
+
+Les possibilités dépendent du matériau choisi et des particularités du projet. Contactez-nous pour discuter de votre installation.
+
+**Quels secteurs desservez-vous?**
+
+Communiquez avec notre équipe pour confirmer la disponibilité de nos services dans votre région.
+
+**Puis-je vous transmettre mes plans ou photos?**
+
+Oui. Les plans, dimensions et photos peuvent être utiles pour présenter votre projet.
+
+**Comment obtenir une soumission?**
+
+Communiquez avec nous par téléphone ou par courriel en précisant les travaux à réaliser.
+
+---
+
+# 16. CONTACT / SOUMISSION
+
+**Title:**
+Parlons de votre projet de céramique.
+
+**Content:**
+
+Vous planifiez des travaux de pose de céramique, un projet commercial ou une installation sur une grande superficie?
+
+Communiquez avec Céramique Cardinal pour discuter de vos besoins et des caractéristiques de votre projet.
+
+**Company:**
+Céramique Cardinal
+
+**Phone:**
+(514) 444-9393
+
+**Email:**
+info@ceramiquecardinal.ca
+
+**Website:**
+https://ceramiquecardinal.ca
+
+Do not invent a physical address or service area.
+
+Keep the EXISTING contact form component and structure unchanged.
+
+If the existing fields can be updated without modifying the layout, use:
+- Nom
+- Entreprise, si applicable
+- Téléphone
+- Courriel
+- Ville du projet
+- Type de projet
+- Surface approximative
+- Description
+- Échéancier souhaité
+- Plans ou documents
+- Photos
+
+Suggested project types:
+- Installation de céramique
+- Plancher
+- Projet commercial
+- Grande surface
+- Revêtement mural
+- Installation spécialisée
+- Projet résidentiel
+- Autre
+
+**CTA:**
+Envoyer ma demande
+
+---
+
+# 17. FINAL CTA
+
+**Title:**
+Un projet de céramique à réaliser?
+
+**Content:**
+
+Plancher, surface commerciale ou installation spécialisée : Céramique Cardinal est disponible pour discuter de votre projet et des travaux à effectuer.
+
+**Primary CTA:**
+Demander une soumission
+
+**Phone:**
+(514) 444-9393
+
+---
+
+# 18. SEO CONTENT
+
+Naturally incorporate relevant keywords throughout the existing website content:
+
+- Céramique Cardinal
+- entreprise de pose de céramique
+- entrepreneur en céramique
+- installateur de céramique
+- pose de carrelage
+- installation de carreaux
+- plancher de céramique
+- céramique commerciale
+- pose de céramique commerciale
+- installation de céramique grande surface
+- revêtement intérieur en carreaux
+- entrepreneur carreleur
+- travaux de carrelage
+- céramique projet commercial
+- installation de revêtement céramique
+- pose de céramique professionnelle
+
+Do not keyword-stuff.
+
+Do not create city-specific SEO pages until the company's location and service territory are confirmed.
+
+---
+
+# FINAL INSTRUCTIONS — ABSOLUTELY CRITICAL
+
+**KEEP THE EXISTING WEBSITE TEMPLATE EXACTLY AS IT CURRENTLY IS.**
+
+DO NOT:
+- Redesign the website
+- Change the visual identity
+- Change the layout
+- Change page structure
+- Reorder sections
+- Add or remove sections
+- Change cards or components
+- Change navigation
+- Change colors or typography
+- Change spacing
+- Change animations or functionality
+- Change existing statistics
+- Change counters or metrics
+- Replace any template numbers
+- Convert the testimonial section into another type of section
+- Invent customer testimonials
+- Invent business information
+
+**ONLY UPDATE THE BUSINESS-SPECIFIC CONTENT FOR CÉRAMIQUE CARDINAL.**
+
+**ALL EXISTING TEMPLATE STATISTICS MUST REMAIN COMPLETELY UNCHANGED.**
+
+**THE TESTIMONIAL SECTION MUST REMAIN A TESTIMONIAL SECTION.**
+
+## FINAL VERIFICATION
+
+Before completing the task, verify that:
+
+1. The original design and layout remain completely unchanged.
+2. Every existing section and component remains in its original position.
+3. All template statistics, numbers, counters, percentages, labels and animations remain unchanged.
+4. The testimonial section remains a testimonial section using its original components.
+5. No fictional customer reviews, names or ratings have been generated.
+6. All business-specific information has been updated for Céramique Cardinal.
+7. All contact information is accurate and missing details have not been invented.
+8. All customer-facing website copy is written in French Canadian.
+9. No unrelated content from the previous business remains, except protected statistics and testimonial placeholders.
+10. All existing website functionality remains intact.
+
+**FINAL RULE: THIS IS A CONTENT-ONLY UPDATE. DO NOT MODIFY THE DESIGN, LAYOUT, STRUCTURE, STATISTICS, TESTIMONIAL COMPONENTS OR FUNCTIONALITY UNDER ANY CIRCUMSTANCES.**

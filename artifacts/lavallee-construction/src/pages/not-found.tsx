@@ -14,7 +14,7 @@ export default function NotFound() {
           </div>
 
           <p className="mt-4 text-sm text-gray-600">
-            Cette page n'existe pas. Retournez à l'accueil pour découvrir Les Constructions Godin.
+            Cette page n'existe pas. Retournez à l'accueil pour découvrir Céramique Cardinal.
           </p>
         </CardContent>
       </Card>
