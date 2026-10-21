@@ -186,7 +186,7 @@ export default function Soumission() {
             </div>
           </div>
 
-          <div className="min-w-0 rounded-xl bg-white text-foreground shadow-[0_24px_80px_rgba(0,0,0,0.28)] sm:rounded-2xl">
+          <div className="min-w-0 overflow-hidden rounded-xl bg-white text-foreground shadow-[0_24px_80px_rgba(0,0,0,0.28)] sm:rounded-2xl">
               {isSubmitted ? (
                 <div className="text-center py-16">
                   <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -203,7 +203,7 @@ export default function Soumission() {
               ) : (
                 <>
                   {/* Business Stepper */}
-                  <div className="grid grid-cols-3 gap-2 border-b border-border bg-muted/60 px-5 py-5 sm:gap-4 sm:px-8">
+                  <div className="grid grid-cols-3 gap-2 rounded-t-xl border-b border-border bg-muted/60 px-5 py-5 sm:gap-4 sm:rounded-t-2xl sm:px-8">
                     {steps.map(s => (
                       <div key={s.num} className={`relative flex flex-col items-center gap-2 text-center sm:flex-row sm:justify-center sm:gap-3 ${step === s.num ? 'opacity-100' : step > s.num ? 'opacity-75' : 'opacity-45'}`}>
                          <div className={`flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full text-center font-bold text-sm leading-none ${step >= s.num ? 'bg-primary text-primary-foreground' : 'border border-border bg-white text-muted-foreground'}`}>
