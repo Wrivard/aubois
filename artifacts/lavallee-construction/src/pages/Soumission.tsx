@@ -144,10 +144,10 @@ export default function Soumission() {
           <div className="absolute inset-0 bg-forest/20" />
         </div>
 
-        <div className="container relative z-10 mx-auto grid w-full items-center gap-10 px-6 pb-12 pt-[138px] sm:px-8 md:gap-12 md:px-12 md:pb-16 md:pt-[158px] xl:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] xl:gap-14 xl:pt-[170px]">
+        <div className="container relative z-10 mx-auto grid w-full items-center gap-10 px-6 pb-12 pt-[156px] sm:px-8 md:gap-12 md:px-12 md:pb-16 md:pt-[176px] xl:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] xl:gap-14 xl:pt-[190px]">
           <div className="max-w-xl">
-            <span className="section-eyebrow mb-5 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white/80">
-              <span className="h-px w-6 bg-primary" />
+            <span className="mb-5 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white/80">
+              <span aria-hidden="true" className="h-px w-6 shrink-0 bg-primary" />
               Un projet. Une équipe de confiance.
             </span>
             <h1 id="soumission-title" className="mb-5 max-w-lg text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl xl:text-6xl">
@@ -166,7 +166,7 @@ export default function Soumission() {
               <div className="grid grid-cols-2 gap-3">
                 {trustItems.map(({ icon: Icon, title, detail }) => (
                   <div key={title} className="min-h-[92px] border border-white/15 bg-black/45 p-4 backdrop-blur-sm sm:p-5">
-                    <Icon className="mb-3 h-4 w-4 text-primary" aria-hidden="true" />
+                    <Icon className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
                     <p className="text-xs font-bold leading-snug text-white sm:text-sm">{title}</p>
                     <p className="mt-1 text-[11px] leading-snug text-white/65 sm:text-xs">{detail}</p>
                   </div>
@@ -206,7 +206,7 @@ export default function Soumission() {
                   <div className="grid grid-cols-3 gap-2 border-b border-border bg-muted/60 px-5 py-5 sm:gap-4 sm:px-8">
                     {steps.map(s => (
                       <div key={s.num} className={`relative flex flex-col items-center gap-2 text-center sm:flex-row sm:justify-center sm:gap-3 ${step === s.num ? 'opacity-100' : step > s.num ? 'opacity-75' : 'opacity-45'}`}>
-                         <div className={`flex h-8 w-8 items-center justify-center rounded-full font-bold text-sm ${step >= s.num ? 'bg-primary text-primary-foreground' : 'border border-border bg-white text-muted-foreground'}`}>
+                         <div className={`flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full text-center font-bold text-sm leading-none ${step >= s.num ? 'bg-primary text-primary-foreground' : 'border border-border bg-white text-muted-foreground'}`}>
                           {step > s.num ? <CheckCircle2 className="w-4 h-4"/> : s.num}
                         </div>
                          <div>
