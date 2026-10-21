@@ -25,7 +25,8 @@ Site vitrine en français présentant les services d’élagage, d’abattage d�
 
 - `artifacts/lavallee-construction/src/` — pages, reusable sections, and site interactions
 - `artifacts/lavallee-construction/src/index.css` — global palette and visual tokens
-- `artifacts/lavallee-construction/public/` — supplied logo, credential images, client-provided service photos, and illustrative arboriculture imagery
+- `artifacts/lavallee-construction/public/` — client-supplied logo, credentials, and arboriculture photos
+- Use only photos provided by the client on this website; do not add stock or generated imagery.
 
 ## Architecture decisions
 

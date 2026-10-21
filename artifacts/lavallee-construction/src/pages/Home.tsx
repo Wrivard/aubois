@@ -71,7 +71,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/arbres-aubois/about.jpg" alt="Photo d’illustration d’un arbre dans un environnement naturel" className="w-full h-full object-cover object-bottom" loading="lazy" />
+                <img src="/photos/arbres-aubois/about.jpg" alt="Arboriste effectuant des travaux dans un arbre" className="w-full h-full object-cover object-bottom" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -167,7 +167,7 @@ export default function Home() {
                 title: "Évaluation de projet arboricole",
                 desc: "Discussion des travaux d’élagage, d’abattage ou de taille nécessaires pour votre propriété.",
                 img: "/photos/arbres-aubois/service-evaluation.jpg",
-                alt: "Arboriste en hauteur lors d’une intervention dans un arbre",
+                alt: "Arbres dans une cour arrière lors de l’évaluation d’un projet arboricole",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
@@ -215,7 +215,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 md:py-20 xl:py-24 bg-white">
+      <section id="en-images" className="py-16 md:py-20 xl:py-24 bg-white">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div className="max-w-2xl">
@@ -223,42 +223,32 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Les arbres en images.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               La galerie comprend une photo d’intervention fournie par Service d’Arbres Aubois et des images d’illustration.
+               Découvrez les interventions et les équipements photographiés par Service d’Arbres Aubois.
             </p>
           </div>
-           <div className="grid sm:grid-cols-2 gap-6">
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
-              <img
-                src="/photos/arbres-aubois/gallery-souche.webp"
-                  alt="Photo fournie d’un équipement arboricole près d’une souche après intervention"
-                className="w-full h-full object-contain bg-muted hover:scale-[1.02] transition-transform duration-700"
-                 loading="lazy"
-              />
-            </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
-              <img
-                src="/photos/arbres-aubois/gallery-2.jpg"
-                  alt="Photo d’illustration d’un environnement naturel avec des arbres"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                 loading="lazy"
-              />
-            </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
-              <img
-                src="/photos/arbres-aubois/gallery-3.jpg"
-                  alt="Photo d’illustration d’une zone boisée"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                 loading="lazy"
-              />
-            </figure>
-            <figure className="overflow-hidden aspect-[16/10] bg-muted">
-              <img
-                src="/photos/arbres-aubois/gallery-4.jpg"
-                  alt="Photo d’illustration d’un paysage naturel"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                 loading="lazy"
-              />
-            </figure>
+          <div className="columns-1 gap-6 sm:columns-2 xl:columns-3">
+            {[
+              { src: "/photos/arbres-aubois/gallery-1.jpg", alt: "Grand conifère sur un terrain résidentiel" },
+              { src: "/photos/arbres-aubois/gallery-2.jpg", alt: "Arbre sans feuilles près d’une maison" },
+              { src: "/photos/arbres-aubois/gallery-3.jpg", alt: "Conifère dans une cour arrière" },
+              { src: "/photos/arbres-aubois/gallery-4.jpg", alt: "Arbres dans une cour résidentielle avec piscine" },
+              { src: "/photos/arbres-aubois/gallery-5.jpg", alt: "Arbres le long d’une rue résidentielle" },
+              { src: "/photos/arbres-aubois/gallery-6.jpg", alt: "Arboriste en nacelle lors de travaux sur un arbre" },
+              { src: "/photos/arbres-aubois/gallery-7.jpg", alt: "Arbre sur une propriété résidentielle" },
+              { src: "/photos/arbres-aubois/gallery-8.jpg", alt: "Arbres à proximité d’une résidence" },
+              { src: "/photos/arbres-aubois/gallery-9.jpg", alt: "Arboriste équipé lors d’une intervention" },
+              { src: "/photos/arbres-aubois/gallery-10.jpg", alt: "Arboriste en équipement de sécurité près d’un arbre" },
+              { src: "/photos/arbres-aubois/gallery-souche.webp", alt: "Broyeur à proximité d’une souche après une intervention arboricole" },
+            ].map((photo) => (
+              <figure key={photo.src} className="mb-6 break-inside-avoid overflow-hidden bg-muted">
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className="block h-auto w-full transition-transform duration-700 hover:scale-[1.02]"
+                  loading="lazy"
+                />
+              </figure>
+            ))}
           </div>
         </div>
       </section>
