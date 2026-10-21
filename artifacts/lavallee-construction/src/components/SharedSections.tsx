@@ -7,47 +7,57 @@ import {
 } from "@/components/ui/accordion";
 
 export function TestimonialsSection() {
+  const reviews = [
+    {
+      name: "Tony Pelletier",
+      initials: "TP",
+      quote: "Je suis vraiment satisfait du service et de la qualité! Je le recommande vivement!",
+    },
+    {
+      name: "Lyne Gobeil",
+      initials: "LG",
+      quote: "Service professionnel et rapide. Travail bien fait 🙂",
+    },
+  ];
+
   return (
     <section id="temoignages" className="py-16 md:py-20 xl:py-24 bg-[#1B1B1B] text-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
-          <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Témoignages</span>
+          <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Avis Google</span>
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-white">Ce que nos clients disent de nous.</h2>
-          <p className="text-lg text-white/70 leading-relaxed">
-            Les témoignages seront ajoutés lorsqu’ils auront été confirmés par la clientèle.
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-lg">
+            <span className="font-extrabold">5,0</span>
+            <span className="text-amber-400 tracking-wide" aria-label="5 étoiles sur 5">★★★★★</span>
+            <span className="text-white/70">2 avis</span>
+          </div>
+          <p className="mt-3 text-sm text-white/60">Commentaires traduits en français à partir des avis affichés par Google.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-          {[
-            {
-              name: "Témoignage à venir",
-              detail: "Avis authentique à confirmer",
-              quote: "Aucun témoignage vérifié n’a été fourni pour le moment.",
-            },
-            {
-              name: "Témoignage à venir",
-              detail: "Avis authentique à confirmer",
-              quote: "Les avis de la clientèle seront ajoutés après confirmation.",
-            },
-          ].map((review) => (
+          {reviews.map((review) => (
             <article
-              key={review.quote}
+              key={review.name}
               className="group relative flex h-full flex-col overflow-hidden border border-white/10 bg-white p-7 text-secondary shadow-xl transition-transform duration-300 hover:-translate-y-1 sm:p-9"
             >
               <div className="absolute inset-y-0 left-0 w-1.5 bg-primary" />
-                <div className="mb-8 flex items-center justify-between gap-4">
-                <span className="text-sm font-bold uppercase tracking-wider text-primary">Témoignage à venir</span>
-                <span className="bg-muted px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
-                  À confirmer
-                </span>
+              <div className="mb-7 flex items-center justify-between gap-4">
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center bg-primary text-sm font-bold text-primary-foreground">
+                    {review.initials}
+                  </span>
+                  <div className="min-w-0">
+                    <p className="truncate font-extrabold text-secondary">{review.name}</p>
+                    <p className="mt-1 text-xs font-medium text-muted-foreground">Avis Google</p>
+                  </div>
+                </div>
+                <span className="shrink-0 text-lg tracking-tight text-amber-500" aria-label="5 étoiles sur 5">★★★★★</span>
               </div>
-              <blockquote className="mb-8 flex-1 text-lg font-medium leading-relaxed sm:text-xl">
-                {review.quote}
+              <blockquote className="flex-1 text-lg font-medium leading-relaxed sm:text-xl">
+                « {review.quote} »
               </blockquote>
-              <div className="border-t border-border pt-5">
-                <p className="text-lg font-extrabold text-secondary">{review.name}</p>
-                <p className="mt-1 text-sm font-medium text-muted-foreground">{review.detail}</p>
+              <div className="mt-7 border-t border-border pt-4">
+                <p className="text-xs font-medium text-muted-foreground">Traduction française de l’avis affiché par Google.</p>
               </div>
             </article>
           ))}

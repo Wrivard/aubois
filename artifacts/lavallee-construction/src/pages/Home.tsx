@@ -228,22 +228,24 @@ export default function Home() {
           </div>
           <div className="columns-1 gap-6 sm:columns-2 xl:columns-3">
             {[
-              { src: "/photos/arbres-aubois/gallery-1.jpg", alt: "Grand conifère sur un terrain résidentiel" },
-              { src: "/photos/arbres-aubois/gallery-2.jpg", alt: "Arbre sans feuilles près d’une maison" },
-              { src: "/photos/arbres-aubois/gallery-3.jpg", alt: "Conifère dans une cour arrière" },
-              { src: "/photos/arbres-aubois/gallery-4.jpg", alt: "Arbres dans une cour résidentielle avec piscine" },
-              { src: "/photos/arbres-aubois/gallery-5.jpg", alt: "Arbres le long d’une rue résidentielle" },
-              { src: "/photos/arbres-aubois/gallery-6.jpg", alt: "Arboriste en nacelle lors de travaux sur un arbre" },
-              { src: "/photos/arbres-aubois/gallery-7.jpg", alt: "Arbre sur une propriété résidentielle" },
-              { src: "/photos/arbres-aubois/gallery-8.jpg", alt: "Arbres à proximité d’une résidence" },
-              { src: "/photos/arbres-aubois/gallery-9.jpg", alt: "Arboriste équipé lors d’une intervention" },
-              { src: "/photos/arbres-aubois/gallery-10.jpg", alt: "Arboriste en équipement de sécurité près d’un arbre" },
-              { src: "/photos/arbres-aubois/gallery-souche.webp", alt: "Broyeur à proximité d’une souche après une intervention arboricole" },
+              { src: "/photos/arbres-aubois/gallery-1.jpg", alt: "Grand conifère sur un terrain résidentiel", width: 1536, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-2.jpg", alt: "Arbre sans feuilles près d’une maison", width: 1536, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-3.jpg", alt: "Conifère dans une cour arrière", width: 1536, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-4.jpg", alt: "Arbres dans une cour résidentielle avec piscine", width: 1536, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-5.jpg", alt: "Arbres le long d’une rue résidentielle", width: 1536, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-6.jpg", alt: "Arboriste en nacelle lors de travaux sur un arbre", width: 1536, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-7.jpg", alt: "Arbre sur une propriété résidentielle", width: 1152, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-8.jpg", alt: "Arbres à proximité d’une résidence", width: 1536, height: 2048 },
+              { src: "/photos/arbres-aubois/gallery-9.jpg", alt: "Arboriste équipé lors d’une intervention", width: 1440, height: 1920 },
+              { src: "/photos/arbres-aubois/gallery-10.jpg", alt: "Arboriste en équipement de sécurité près d’un arbre", width: 1440, height: 1920 },
+              { src: "/photos/arbres-aubois/gallery-souche.webp", alt: "Broyeur à proximité d’une souche après une intervention arboricole", width: 1462, height: 1950 },
             ].map((photo) => (
               <figure key={photo.src} className="mb-6 break-inside-avoid overflow-hidden bg-muted">
                 <img
                   src={photo.src}
                   alt={photo.alt}
+                  width={photo.width}
+                  height={photo.height}
                   className="block h-auto w-full transition-transform duration-700 hover:scale-[1.02]"
                   loading="lazy"
                 />
