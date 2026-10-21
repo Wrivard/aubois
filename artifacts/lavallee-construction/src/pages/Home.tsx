@@ -228,12 +228,11 @@ export default function Home() {
           </div>
           <div className="grid auto-rows-[240px] grid-cols-1 gap-4 sm:auto-rows-[220px] sm:grid-cols-2 md:gap-5 xl:auto-rows-[220px] xl:grid-cols-3">
             {[
-              { src: "/photos/arbres-aubois/gallery-1.jpg", alt: "Grand conifère sur un terrain résidentiel", width: 1536, height: 2048, layout: "xl:col-span-2 xl:row-span-2" },
+              { src: "/photos/arbres-aubois/gallery-1.jpg", alt: "Grand conifère sur un terrain résidentiel", width: 1536, height: 2048, layout: "sm:col-span-2 sm:row-span-2" },
               { src: "/photos/arbres-aubois/gallery-6.jpg", alt: "Arboriste en nacelle lors de travaux sur un arbre", width: 1536, height: 2048, layout: "" },
-              { src: "/photos/arbres-aubois/gallery-2.jpg", alt: "Arbre sans feuilles près d’une maison", width: 1536, height: 2048, layout: "" },
+              { src: "/photos/arbres-aubois/gallery-10.jpg", alt: "Arboriste en équipement de sécurité près d’un arbre", width: 1440, height: 1920, layout: "xl:row-span-2" },
               { src: "/photos/arbres-aubois/gallery-souche.webp", alt: "Broyeur à proximité d’une souche après une intervention arboricole", width: 1462, height: 1950, layout: "" },
               { src: "/photos/arbres-aubois/gallery-9.jpg", alt: "Arboristes équipés lors d’une intervention", width: 1440, height: 1920, layout: "" },
-              { src: "/photos/arbres-aubois/gallery-10.jpg", alt: "Arboriste en équipement de sécurité près d’un arbre", width: 1440, height: 1920, layout: "" },
             ].map((photo) => (
               <figure key={photo.src} className={`group relative overflow-hidden bg-muted ${photo.layout}`}>
                 <img
