@@ -144,7 +144,7 @@ export default function Soumission() {
           <div className="absolute inset-0 bg-forest/20" />
         </div>
 
-        <div className="container relative z-10 mx-auto grid w-full items-center gap-10 px-6 pb-12 pt-[156px] sm:px-8 md:gap-12 md:px-12 md:pb-16 md:pt-[176px] xl:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] xl:gap-14 xl:pt-[190px]">
+        <div className="container relative z-10 mx-auto grid w-full items-center gap-10 px-6 pb-12 pt-[156px] sm:px-8 md:gap-12 md:px-12 md:pb-16 md:pt-[176px] xl:min-h-screen xl:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] xl:gap-14 xl:pt-[190px]">
           <div className="max-w-xl">
             <span className="mb-5 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white/80">
               <span aria-hidden="true" className="h-px w-6 shrink-0 bg-primary" />
