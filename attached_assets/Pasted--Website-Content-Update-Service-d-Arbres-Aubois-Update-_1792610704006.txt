@@ -1,0 +1,679 @@
+# Website Content Update — Service d'Arbres Aubois
+
+Update the EXISTING website template for **Service d'Arbres Aubois**.
+
+## CRITICAL INSTRUCTIONS — FOLLOW EXACTLY
+
+- DO NOT redesign the website.
+- DO NOT change the existing layout, design, colors, typography, spacing, animations, navigation, buttons or visual elements.
+- DO NOT add, remove, rearrange or replace existing sections or components.
+- DO NOT create a new website.
+- ONLY update the business-specific content.
+- Adapt the content to the EXISTING template, not the template to the content.
+- Keep the existing number of service cards, project cards and other components.
+- If the template contains fewer content slots than suggested, prioritize the most relevant information without changing the structure.
+- Write all customer-facing website content in French Canadian.
+
+### STATISTICS — ABSOLUTELY DO NOT MODIFY
+
+Keep every existing statistic, number, counter, percentage, metric, label and animation exactly as it currently appears in the template.
+
+Do not replace statistics with Facebook followers, customer reviews, completed projects, years of experience or any invented figures.
+
+### TESTIMONIALS — MUST REMAIN TESTIMONIALS
+
+The existing testimonial section MUST remain a testimonial section, with its original layout and components.
+
+Do not replace it with services, projects, statistics, benefits, FAQ or another content type.
+
+Only use authentic, verified customer testimonials. Never invent customer names, quotations, ratings or reviews.
+
+If verified testimonials are unavailable, preserve the existing testimonial placeholders and structure.
+
+---
+
+# BUSINESS INFORMATION
+
+**Company:** Service d'Arbres Aubois
+
+**Business type:** Entreprise de services arboricoles / entretien et abattage d'arbres
+
+**Business location:**
+Montmagny, Québec
+
+**Additional service location identified:**
+Berthier-sur-Mer, Québec
+
+**Phone:** (418) 941-8897
+
+**Email:** matisaube1@gmail.com
+
+**Confirmed specialties:**
+- Élagage d'arbres
+- Abattage d'arbres
+- Taille de haies
+- Travaux d'entretien des arbres
+- Interventions sur des arbres de grande dimension, selon le projet
+
+**Confirmed business information:**
+
+Service d'Arbres Aubois offre des services d'entretien des arbres, notamment l'élagage, l'abattage et la taille de haies.
+
+L'entreprise présente des travaux réalisés avec des équipements spécialisés, notamment une nacelle permettant d'intervenir en hauteur.
+
+Its portfolio shows tree removal operations in residential environments.
+
+**Business positioning:**
+
+Service d'Arbres Aubois accompagne les propriétaires dans l'entretien et la gestion de leurs arbres.
+
+Que ce soit pour entretenir la croissance d'un arbre, dégager certaines branches, abattre un arbre ou tailler une haie, l'entreprise propose des interventions adaptées aux caractéristiques du terrain et de la végétation.
+
+**IMPORTANT — DO NOT INVENT:**
+- RBQ number
+- Street address
+- Years of experience
+- Number of employees
+- Certifications
+- Insurance coverage
+- Guarantees
+- 24/7 emergency availability
+- Stump grinding services
+- Wood or branch removal services
+- Land clearing or forestry services
+- Exact service radius
+- Number of completed projects
+- Customer satisfaction percentages
+
+Mention additional arboricultural services only if separately confirmed.
+
+---
+
+# 1. ACCUEIL
+
+## HERO
+
+**Title:**
+Vos arbres entre de bonnes mains.
+
+**Subtitle:**
+Élagage, abattage d'arbres et taille de haies dans le secteur de Montmagny et Berthier-sur-Mer. Service d'Arbres Aubois prend soin de vos arbres avec une approche adaptée à votre propriété.
+
+**Primary CTA:**
+Demander une soumission
+
+**Secondary CTA:**
+Découvrir nos services
+
+## INTRODUCTION
+
+**Title:**
+Un service professionnel pour vos arbres.
+
+**Content:**
+
+Les arbres contribuent à la beauté, au confort et au caractère de votre propriété. Leur entretien demande toutefois une attention particulière et des interventions adaptées à leur état et à leur environnement.
+
+Service d'Arbres Aubois se spécialise dans l'élagage, l'abattage et la taille de haies.
+
+Que vous souhaitiez entretenir vos arbres, dégager une section de votre terrain ou planifier l'abattage d'un arbre, notre équipe peut évaluer les travaux nécessaires.
+
+Notre objectif est de réaliser chaque intervention avec soin, en tenant compte des caractéristiques des arbres, de leur emplacement et des éléments environnants.
+
+---
+
+# 2. SERVICES
+
+Keep the EXACT existing number of service cards.
+
+If the template contains six service cards, use the following content.
+
+### 1. ÉLAGAGE D'ARBRES
+
+Travaux d'élagage adaptés aux caractéristiques de l'arbre afin d'entretenir sa structure et de répondre aux besoins de votre propriété.
+
+### 2. ABATTAGE D'ARBRES
+
+Service d'abattage pour les arbres devant être retirés, avec une intervention adaptée à leur emplacement et à l'environnement.
+
+### 3. TAILLE DE HAIES
+
+Entretien et taille de haies afin de conserver une apparence soignée et de maîtriser leur développement.
+
+### 4. ENTRETIEN DES ARBRES
+
+Interventions ciblées pour entretenir les arbres présents sur votre propriété et répondre à leurs besoins.
+
+### 5. TRAVAUX EN HAUTEUR
+
+Interventions sur des arbres nécessitant un accès en hauteur, selon les caractéristiques du terrain et les équipements appropriés.
+
+### 6. ÉVALUATION DE PROJET ARBORICOLE
+
+Discussion et évaluation des travaux d'élagage, d'abattage ou de taille nécessaires pour votre propriété.
+
+If the template contains fewer service cards, combine related services without changing the layout.
+
+---
+
+# 3. ÉLAGAGE D'ARBRES
+
+**Title:**
+Un entretien adapté à chaque arbre.
+
+**Content:**
+
+L'élagage fait partie des interventions permettant d'entretenir les arbres et de répondre à différents besoins liés à leur développement.
+
+Selon leur emplacement et leur état, certaines branches peuvent nécessiter une intervention pour dégager un espace, réduire les conflits avec les éléments environnants ou entretenir la structure de l'arbre.
+
+Service d'Arbres Aubois réalise des travaux d'élagage en tenant compte des caractéristiques de chaque arbre et des besoins du propriétaire.
+
+Chaque intervention est évaluée afin de déterminer les travaux appropriés.
+
+**Applications possibles:**
+- Entretien des branches
+- Dégagement de certains espaces
+- Élagage près des bâtiments, lorsque les conditions le permettent
+- Intervention sur des arbres matures
+- Entretien général
+
+**CTA:**
+Parler de mon projet d'élagage
+
+Do not guarantee improvements to an individual tree's health without an appropriate assessment.
+
+---
+
+# 4. ABATTAGE D'ARBRES
+
+**Title:**
+Des interventions adaptées à votre terrain.
+
+**Content:**
+
+L'abattage d'un arbre peut devenir nécessaire pour différentes raisons, notamment son état, son emplacement ou les besoins d'aménagement d'une propriété.
+
+Service d'Arbres Aubois réalise des travaux d'abattage adaptés aux caractéristiques de l'arbre et aux contraintes de son environnement.
+
+La proximité d'un bâtiment, les dimensions de l'arbre et l'accès au terrain sont des éléments importants à considérer avant toute intervention.
+
+Notre approche consiste à évaluer chaque situation afin de planifier les travaux nécessaires.
+
+**CTA:**
+Demander une soumission d'abattage
+
+Do not promise that every tree can be removed without damage or that permits are never required. Applicable municipal requirements must be respected.
+
+---
+
+# 5. TAILLE DE HAIES
+
+**Title:**
+Des haies entretenues pour une propriété soignée.
+
+**Content:**
+
+Les haies contribuent à l'intimité et à l'aménagement de votre terrain.
+
+Un entretien adapté permet de conserver une apparence structurée et de mieux contrôler leur développement.
+
+Service d'Arbres Aubois propose des travaux de taille de haies selon les dimensions, l'accessibilité et les besoins de votre propriété.
+
+**Applications possibles:**
+- Taille de haies
+- Entretien des formes existantes
+- Réduction de débordements, lorsque approprié
+- Amélioration de l'apparence générale
+- Entretien selon les caractéristiques de la haie
+
+**CTA:**
+Faire tailler ma haie
+
+---
+
+# 6. ENTRETIEN DES ARBRES
+
+**Title:**
+Prenez soin de vos arbres.
+
+**Content:**
+
+Chaque arbre possède ses propres caractéristiques et évolue selon son environnement.
+
+Des branches encombrantes, une croissance qui interfère avec certains espaces ou un besoin d'entretien particulier peuvent justifier une évaluation.
+
+Service d'Arbres Aubois réalise différentes interventions liées à l'entretien des arbres afin de répondre aux besoins des propriétaires.
+
+Notre approche privilégie des travaux adaptés à chaque situation plutôt qu'une intervention identique pour tous les arbres.
+
+**CTA:**
+Discuter de mes arbres
+
+---
+
+# 7. TRAVAUX EN HAUTEUR
+
+**Title:**
+Les bons équipements pour les travaux en hauteur.
+
+**Content:**
+
+Certains arbres nécessitent des interventions en hauteur qui demandent une organisation adaptée.
+
+Service d'Arbres Aubois présente notamment des projets réalisés à l'aide d'équipements d'accès en hauteur.
+
+Ces équipements peuvent faciliter certaines interventions lorsque leur utilisation est appropriée aux conditions du terrain.
+
+Chaque projet doit être évalué selon l'accès, la hauteur, l'environnement immédiat et les travaux à effectuer.
+
+**CTA:**
+Présenter mon projet
+
+Do not invent equipment lifting capacities, certifications, or technical capabilities.
+
+---
+
+# 8. ABATTAGE EN MILIEU RÉSIDENTIEL
+
+**Title:**
+Des arbres parfois situés près de votre maison.
+
+**Content:**
+
+Les arbres résidentiels peuvent être situés à proximité de bâtiments, de clôtures, d'entrées ou d'autres éléments de la propriété.
+
+Ces situations demandent une évaluation attentive avant les travaux.
+
+Service d'Arbres Aubois réalise des projets d'abattage dans des environnements résidentiels et adapte son intervention aux caractéristiques de chaque site.
+
+**CTA:**
+Faire évaluer mon arbre
+
+---
+
+# 9. PROCESSUS
+
+**Title:**
+Votre projet, étape par étape.
+
+Keep the EXISTING process component exactly as it currently is.
+
+Use the following content only where corresponding content slots already exist.
+
+**1. DISCUSSION**
+
+Présentez-nous votre arbre, votre haie ou les travaux que vous souhaitez réaliser.
+
+**2. ÉVALUATION**
+
+Nous prenons connaissance de l'emplacement, de l'accessibilité et des caractéristiques du projet.
+
+**3. PLANIFICATION**
+
+Les principales étapes de l'intervention sont organisées selon les conditions du site.
+
+**4. RÉALISATION**
+
+Les travaux d'élagage, d'abattage ou de taille sont réalisés selon le mandat convenu.
+
+**5. FINALISATION**
+
+Les dernières étapes prévues au mandat sont complétées.
+
+Do not promise debris removal or stump grinding unless these services are confirmed.
+
+---
+
+# 10. RÉALISATIONS
+
+**Title:**
+Nos réalisations
+
+**Introduction:**
+
+Découvrez quelques travaux réalisés par Service d'Arbres Aubois, de l'élagage à l'abattage d'arbres en milieu résidentiel.
+
+Keep the EXISTING project gallery and its components exactly as they currently are.
+
+Suggested categories, only if the template already supports them:
+- Tous
+- Élagage
+- Abattage
+- Taille de haies
+- Travaux en hauteur
+- Projets en cours
+
+For each project, include only verified information:
+- Type d'intervention
+- Travaux réalisés
+- Localisation, if confirmed
+- Photographies
+- Particularités connues
+- Résultat final
+
+Do not invent tree species, heights, technical methods, costs or timelines based solely on photographs.
+
+## FEATURED PROJECT — IF THE TEMPLATE ALREADY HAS THIS COMPONENT
+
+**Title:**
+Intervention sur un arbre de grande dimension.
+
+**Content:**
+
+Un projet d'abattage nécessitant une intervention en hauteur dans un environnement résidentiel.
+
+L'utilisation d'équipements adaptés et la préparation des travaux permettent de tenir compte des caractéristiques de l'arbre et de son emplacement.
+
+Cette réalisation illustre le type de projet pris en charge par Service d'Arbres Aubois.
+
+Only use verified project photos and details.
+
+---
+
+# 11. POURQUOI SERVICE D'ARBRES AUBOIS
+
+Keep the EXACT existing number of content blocks.
+
+Suggested content:
+
+**SERVICES SPÉCIALISÉS**
+
+Une entreprise consacrée aux travaux d'élagage, d'abattage et de taille de haies.
+
+**ÉQUIPEMENTS ADAPTÉS**
+
+Des équipements utilisés selon les besoins et les caractéristiques des interventions.
+
+**TRAVAUX EN HAUTEUR**
+
+Des réalisations démontrant des interventions sur des arbres nécessitant un accès en hauteur.
+
+**ENTRETIEN DES ARBRES**
+
+Des travaux permettant de répondre aux besoins d'entretien des arbres d'une propriété.
+
+**APPROCHE PERSONNALISÉE**
+
+Chaque projet est évalué en tenant compte du terrain et des éléments environnants.
+
+**SERVICE LOCAL**
+
+Une entreprise présente notamment dans les secteurs de Montmagny et Berthier-sur-Mer.
+
+---
+
+# 12. À PROPOS
+
+**Title:**
+À propos de Service d'Arbres Aubois
+
+**Content:**
+
+Service d'Arbres Aubois est une entreprise spécialisée dans les services d'arbres, notamment l'élagage, l'abattage et la taille de haies.
+
+Active dans le secteur de Montmagny et de Berthier-sur-Mer, l'entreprise réalise des travaux adaptés aux besoins des propriétaires.
+
+Nos interventions tiennent compte de l'emplacement des arbres, de leur développement et des particularités du terrain.
+
+Qu'il s'agisse d'entretenir une haie, d'élaguer un arbre ou de planifier un abattage, notre objectif est d'offrir un service professionnel et adapté au projet.
+
+---
+
+# 13. TESTIMONIALS / TÉMOIGNAGES
+
+**THIS SECTION MUST REMAIN A TESTIMONIAL SECTION.**
+
+**Section title:**
+Ce que nos clients disent de nous
+
+**Optional introduction:**
+La confiance de nos clients est au cœur des interventions que nous réalisons.
+
+Keep the exact existing testimonial layout and components.
+
+DO NOT:
+- Remove the section
+- Convert it into services
+- Convert it into projects
+- Convert it into statistics
+- Convert it into benefits
+- Convert it into FAQ
+- Change its component type
+- Invent testimonials
+
+Only use authentic, verified customer testimonials already available in the existing website or explicitly supplied by the business.
+
+Do not invent customer names, quotations, ratings, review dates or project details attributed to customers.
+
+If no verified testimonials are available, preserve the existing placeholders and structure.
+
+---
+
+# 14. STATS / COUNTERS
+
+**DO NOT MODIFY THIS SECTION AT ALL.**
+
+Preserve every existing:
+- Number
+- Percentage
+- Counter
+- Metric
+- Label
+- Animation
+- Statistical component
+
+Do not replace template statistics with:
+- Facebook followers
+- Facebook reviews
+- Number of trees cut
+- Number of projects
+- Years of experience
+- Number of employees
+- Customer satisfaction percentages
+- Any invented figures
+
+**ALL EXISTING TEMPLATE STATISTICS MUST REMAIN EXACTLY AS THEY ARE.**
+
+---
+
+# 15. FAQ
+
+Use concise, natural French answers for the existing FAQ component.
+
+**Quels services offrez-vous?**
+
+Service d'Arbres Aubois se spécialise dans l'élagage, l'abattage d'arbres et la taille de haies.
+
+**Faites-vous de l'élagage d'arbres?**
+
+Oui. Nous réalisons des travaux d'élagage adaptés aux besoins de l'arbre et aux caractéristiques de son environnement.
+
+**Offrez-vous des services d'abattage?**
+
+Oui. L'abattage d'arbres fait partie de nos principales spécialités.
+
+**Taillez-vous les haies?**
+
+Oui. Nous offrons des services de taille de haies pour les propriétés nécessitant un entretien.
+
+**Pouvez-vous intervenir sur de grands arbres?**
+
+Nous avons réalisé des projets nécessitant des équipements d'accès en hauteur. Chaque situation doit être évaluée selon l'arbre et l'accessibilité.
+
+**Faites-vous de l'abattage près des maisons?**
+
+Nous intervenons sur des projets résidentiels. Communiquez avec nous pour évaluer votre situation et les contraintes du site.
+
+**Comment savoir si un arbre doit être abattu?**
+
+La décision dépend notamment de son état, de son emplacement et des risques éventuels. Une évaluation sur place par une personne qualifiée peut être nécessaire.
+
+**Faites-vous l'essouchage?**
+
+Ce service n'est pas confirmé dans les informations disponibles. Contactez notre équipe pour vérifier s'il est offert.
+
+**Ramassez-vous les branches après les travaux?**
+
+Les modalités de ramassage doivent être confirmées lors de la soumission, selon le mandat.
+
+**Travaillez-vous à Montmagny?**
+
+Oui. Montmagny fait partie des secteurs associés à notre entreprise.
+
+**Desservez-vous Berthier-sur-Mer?**
+
+Berthier-sur-Mer figure également parmi les localités indiquées sur notre profil. Contactez-nous pour confirmer la disponibilité.
+
+**Comment obtenir une soumission?**
+
+Communiquez avec notre équipe par téléphone ou par courriel en décrivant les travaux souhaités.
+
+---
+
+# 16. CONTACT / SOUMISSION
+
+**Title:**
+Parlons de vos arbres.
+
+**Content:**
+
+Vous souhaitez faire élaguer un arbre, planifier un abattage ou entretenir vos haies?
+
+Communiquez avec Service d'Arbres Aubois afin de nous présenter votre propriété et les travaux à réaliser.
+
+**Company:**
+Service d'Arbres Aubois
+
+**Location:**
+Montmagny, Québec
+
+**Additional locality:**
+Berthier-sur-Mer, Québec
+
+**Phone:**
+(418) 941-8897
+
+**Email:**
+matisaube1@gmail.com
+
+Do not invent a street address or precise service radius.
+
+Keep the EXISTING contact form structure unchanged.
+
+If existing field labels can be updated without modifying the layout, use:
+- Nom
+- Téléphone
+- Courriel
+- Ville du projet
+- Type de travaux
+- Description
+- Nombre d'arbres concernés
+- Accessibilité du terrain
+- Échéancier souhaité
+- Photos
+
+Suggested project types:
+- Élagage
+- Abattage d'arbre
+- Taille de haies
+- Entretien des arbres
+- Travaux en hauteur
+- Autre
+
+**CTA:**
+Envoyer ma demande
+
+---
+
+# 17. FINAL CTA
+
+**Title:**
+Vos arbres ont besoin d'attention?
+
+**Content:**
+
+Élagage, abattage ou taille de haies : Service d'Arbres Aubois est disponible pour discuter de vos besoins et des travaux à réaliser.
+
+**Primary CTA:**
+Demander une soumission
+
+**Phone:**
+(418) 941-8897
+
+---
+
+# 18. SEO CONTENT
+
+Naturally incorporate relevant keywords throughout the existing website content:
+
+- Service d'Arbres Aubois
+- élagage Montmagny
+- abattage d'arbres Montmagny
+- entretien d'arbres Montmagny
+- taille de haies Montmagny
+- service d'arbres Montmagny
+- élagage Berthier-sur-Mer
+- abattage d'arbres Berthier-sur-Mer
+- entretien arbres
+- entreprise d'élagage
+- entreprise abattage arbres
+- coupe d'arbres
+- travaux arboricoles
+- entretien de haies
+- abattage résidentiel
+- élagage résidentiel
+- travaux d'arbres en hauteur
+
+Do not keyword-stuff.
+
+Do not create individual city-specific SEO pages beyond confirmed service locations.
+
+---
+
+# FINAL INSTRUCTIONS — ABSOLUTELY CRITICAL
+
+**KEEP THE EXISTING WEBSITE TEMPLATE EXACTLY AS IT CURRENTLY IS.**
+
+DO NOT:
+- Redesign the website
+- Change the visual identity
+- Change the layout
+- Change page structure
+- Reorder sections
+- Add or remove sections
+- Change cards or components
+- Change navigation
+- Change colors or typography
+- Change spacing
+- Change animations or functionality
+- Change existing statistics
+- Change counters or metrics
+- Replace template numbers
+- Convert the testimonial section into another type of section
+- Invent customer testimonials
+- Invent business information
+
+**ONLY UPDATE THE BUSINESS-SPECIFIC CONTENT FOR SERVICE D'ARBRES AUBOIS.**
+
+**ALL EXISTING TEMPLATE STATISTICS MUST REMAIN COMPLETELY UNCHANGED.**
+
+**THE TESTIMONIAL SECTION MUST REMAIN A TESTIMONIAL SECTION.**
+
+## FINAL VERIFICATION
+
+Before completing the task, verify that:
+
+1. The original website design and layout remain unchanged.
+2. All existing sections remain in their original positions.
+3. All statistics, numbers, counters, percentages, labels and animations remain identical.
+4. The testimonial section retains its original component type and layout.
+5. No fictional testimonials, customer names or ratings have been created.
+6. All business-specific content has been updated for Service d'Arbres Aubois.
+7. The phone number and email address are accurate.
+8. No unconfirmed certification, service or location has been invented.
+9. All customer-facing website content is written in French Canadian.
+10. No unrelated content from the previous business remains, except protected statistics and testimonial placeholders.
+11. All existing website functionality remains intact.
+
+**FINAL RULE: THIS IS A CONTENT-ONLY UPDATE. DO NOT REDESIGN THE WEBSITE, MODIFY ITS STRUCTURE, CHANGE THE STATS OR TRANSFORM THE TESTIMONIAL SECTION.**
