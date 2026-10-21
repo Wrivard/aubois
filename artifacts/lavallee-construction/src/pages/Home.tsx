@@ -122,7 +122,7 @@ export default function Home() {
                 <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">Nos services</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-secondary">Des services adaptés à vos arbres.</h2>
             <p className="text-lg text-muted-foreground">
-                Élagage, abattage, taille de haies et entretien des arbres à Montmagny et dans le secteur de Berthier-sur-Mer. Les photos présentées sont des images d’illustration.
+                Élagage, abattage, taille de haies et entretien des arbres à Montmagny et dans le secteur de Berthier-sur-Mer.
             </p>
           </div>
 
@@ -131,43 +131,49 @@ export default function Home() {
               {
                 title: "Élagage d’arbres",
                 desc: "Travaux d’élagage adaptés aux caractéristiques de l’arbre, à son emplacement et aux besoins de votre propriété.",
-                img: "/photos/arbres-aubois/service-1.jpg",
+                img: "/photos/arbres-aubois/service-elagage.webp",
+                alt: "Arbres taillés dans un environnement résidentiel",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Abattage d’arbres",
                 desc: "Intervention adaptée aux dimensions de l’arbre, à son emplacement et aux éléments qui l’entourent.",
-                img: "/photos/arbres-aubois/service-2.jpg",
+                img: "/photos/arbres-aubois/service-abattage.jpg",
+                alt: "Arboriste équipé travaillant dans un arbre",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Taille de haies",
                 desc: "Entretien des haies selon leurs dimensions, leur accessibilité et les besoins de votre propriété.",
-                img: "/photos/arbres-aubois/service-3.jpg",
+                img: "/photos/arbres-aubois/service-haies.webp",
+                alt: "Haie entretenue le long d’une propriété résidentielle",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
                 title: "Entretien des arbres",
                 desc: "Interventions ciblées pour entretenir les arbres présents sur votre terrain et répondre à leurs besoins.",
-                img: "/photos/arbres-aubois/service-4.jpg",
+                img: "/photos/arbres-aubois/service-entretien.jpg",
+                alt: "Arboriste qui travaille dans un arbre à l’aide de cordes",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Travaux en hauteur",
                 desc: "Interventions nécessitant un accès en hauteur, avec des équipements adaptés aux conditions du terrain.",
-                img: "/photos/arbres-aubois/service-5.jpg",
+                img: "/photos/arbres-aubois/service-hauteur.webp",
+                alt: "Équipement de Service d’Arbres Aubois prêt pour des travaux arboricoles",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Évaluation de projet arboricole",
                 desc: "Discussion des travaux d’élagage, d’abattage ou de taille nécessaires pour votre propriété.",
-                img: "/photos/arbres-aubois/service-6.jpg",
+                img: "/photos/arbres-aubois/service-evaluation.jpg",
+                alt: "Arboriste en hauteur lors d’une intervention dans un arbre",
                 icon: <HardHat className="w-6 h-6" />
               }
             ].map((srv, i) => (
               <div key={i} className="bg-white border border-border group hover:-translate-y-2 transition-transform duration-300">
                 <div className="aspect-[4/3] overflow-hidden relative">
-                  <img src={srv.img} alt={`Photo d’illustration pour le service ${srv.title.toLowerCase()}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                  <img src={srv.img} alt={srv.alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                   <div className="absolute top-4 left-4 bg-primary text-primary-foreground p-3 shadow-lg">
                     {srv.icon}
                   </div>
@@ -200,8 +206,8 @@ export default function Home() {
               { img: "/certifications/isa-certified-arborist.png", alt: "Insigne Certified Arborist de l’ISA" },
               { img: "/certifications/elagage-centre-horticole-laval.png", alt: "Badge de formation en élagage du Centre de formation horticole de Laval" },
             ].map((credential) => (
-              <figure key={credential.img} className="flex min-h-[250px] items-center justify-center">
-                <img src={credential.img} alt={credential.alt} className="max-h-[280px] w-full max-w-[340px] object-contain mix-blend-screen" loading="lazy" />
+              <figure key={credential.img} className="flex min-h-[330px] items-center justify-center overflow-visible py-3">
+                <img src={credential.img} alt={credential.alt} className="block h-auto max-h-[300px] w-full max-w-[320px] object-contain mix-blend-screen" loading="lazy" />
               </figure>
             ))}
           </div>
@@ -217,15 +223,15 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Les arbres en images.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Les photos ci-dessous sont des images d’illustration. Elles ne représentent pas des réalisations de Service d’Arbres Aubois.
+               La galerie comprend une photo d’intervention fournie par Service d’Arbres Aubois et des images d’illustration.
             </p>
           </div>
            <div className="grid sm:grid-cols-2 gap-6">
             <figure className="overflow-hidden aspect-[16/10] bg-muted">
               <img
-                src="/photos/arbres-aubois/gallery-1.jpg"
-                  alt="Photo d’illustration d’un paysage boisé"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                src="/photos/arbres-aubois/gallery-souche.webp"
+                  alt="Photo fournie d’un équipement arboricole près d’une souche après intervention"
+                className="w-full h-full object-contain bg-muted hover:scale-[1.02] transition-transform duration-700"
                  loading="lazy"
               />
             </figure>

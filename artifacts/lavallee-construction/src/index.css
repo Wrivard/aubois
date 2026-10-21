@@ -169,7 +169,7 @@
   }
 }
 
-/* Cardinal motion system: quiet, measured, and never a barrier to navigation. */
+/* Minimal brand loader: logo, dark field, and a short green progress bar. */
 .brand-loader {
   position: fixed;
   inset: 0;
@@ -192,66 +192,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(78vw, 330px);
+  width: min(70vw, 190px);
+  gap: 16px;
 }
 
 .brand-loader__logo {
   display: block;
-  width: min(100%, 300px);
+  width: min(100%, 180px);
   height: auto;
   object-fit: contain;
-  animation: cardinal-mark-in 420ms cubic-bezier(.2,.75,.25,1) both;
+  animation: aubois-logo-in 360ms ease both;
 }
 
-.brand-loader__tileline {
-  display: flex;
-  gap: 5px;
-  margin-top: 28px;
+.brand-loader__progress {
+  width: 112px;
+  height: 3px;
+  overflow: hidden;
+  background: rgba(255,255,255,.18);
 }
 
-.brand-loader__tile {
+.brand-loader__progress-fill {
   display: block;
-  width: 22px;
-  height: 22px;
-  border: 1px solid rgba(255,255,255,.36);
-  background: rgba(255,255,255,.035);
-  transform: translateY(5px);
-  opacity: .28;
-  animation: cardinal-tile-set 560ms cubic-bezier(.2,.75,.25,1) both;
+  width: 100%;
+  height: 100%;
+  background: hsl(var(--primary));
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: aubois-progress-fill 860ms cubic-bezier(.3,.7,.25,1) both;
 }
 
-.brand-loader__tile:nth-child(2) { animation-delay: 70ms; }
-.brand-loader__tile:nth-child(3) { animation-delay: 140ms; }
-.brand-loader__tile:nth-child(4) { animation-delay: 210ms; }
-
-.brand-loader__tile:nth-child(2n) {
-  border-color: rgba(75, 135, 73, .85);
-}
-
-.brand-loader__caption {
-  margin-top: 14px;
-  color: rgba(255,255,255,.62);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .17em;
-  text-transform: uppercase;
-  animation: cardinal-caption-in 360ms ease 180ms both;
-}
-
-@keyframes cardinal-mark-in {
+@keyframes aubois-logo-in {
   from { opacity: 0; transform: translateY(7px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes cardinal-tile-set {
-  0% { opacity: .18; transform: translateY(5px); }
-  65% { opacity: 1; transform: translateY(-1px); }
-  100% { opacity: .72; transform: translateY(0); }
-}
-
-@keyframes cardinal-caption-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes aubois-progress-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
 
 .motion-enhanced .reveal-on-scroll {
@@ -296,10 +273,13 @@
     transition-duration: .01ms !important;
   }
 
-  .brand-loader__tile,
   .brand-loader__logo,
-  .brand-loader__caption {
+  .brand-loader__progress-fill {
     animation: none !important;
+  }
+
+  .brand-loader__progress-fill {
+    transform: scaleX(1);
   }
 }
 

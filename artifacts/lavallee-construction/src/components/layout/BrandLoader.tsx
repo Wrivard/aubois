@@ -34,13 +34,9 @@ export function BrandLoader({ active, initial = false }: BrandLoaderProps) {
           alt=""
           fetchPriority="high"
         />
-        <div className="brand-loader__tileline">
-          <span className="brand-loader__tile" />
-          <span className="brand-loader__tile" />
-          <span className="brand-loader__tile" />
-          <span className="brand-loader__tile" />
+        <div className="brand-loader__progress">
+          <span className="brand-loader__progress-fill" />
         </div>
-        <span className="brand-loader__caption">Des arbres entre bonnes mains.</span>
       </div>
     </div>
   );
