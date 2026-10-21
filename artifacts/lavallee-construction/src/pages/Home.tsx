@@ -39,7 +39,7 @@ export default function Home() {
                   Demander une soumission <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <a href="#realisations">
+              <a href="#certifications">
                 <Button size="lg" variant="outline" className="h-14 px-5 sm:px-8 text-sm sm:text-base font-bold uppercase tracking-wider w-full sm:w-auto bg-white/5 text-white border-white/20 hover:bg-white hover:text-secondary">
                   Découvrir nos services
                 </Button>
@@ -93,10 +93,10 @@ export default function Home() {
               
               <ul className="space-y-4 mb-10">
                 {[
-                  "Élagage et entretien des arbres",
-                  "Abattage d’arbres en milieu résidentiel",
-                  "Taille et entretien de haies",
-                  "Interventions en hauteur, selon le projet"
+                  "Assurance responsabilité de 5 000 000 $",
+                  "Certification Certified Arborist — ISA",
+                  "Formation en élagage — Centre horticole de Laval",
+                  "Interventions en hauteur avec une nacelle, selon le projet"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 font-medium text-secondary">
                     <CheckCircle className="w-6 h-6 text-primary shrink-0" />
@@ -185,35 +185,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="realisations" className="py-16 md:py-20 xl:py-24 bg-forest text-white scroll-mt-32 xl:scroll-mt-36">
+      {/* Certifications Section */}
+      <section id="certifications" className="py-16 md:py-20 xl:py-24 bg-forest text-white scroll-mt-32 xl:scroll-mt-36">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-10 md:mb-16 gap-6">
-            <div className="max-w-2xl">
-              <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Nos Réalisations</span>
-              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">Nos réalisations</h2>
-              <p className="text-white/80 mt-4">Découvrez les types d’interventions arboricoles proposés par Service d’Arbres Aubois. Les images sont des illustrations et ne représentent pas des réalisations confirmées.</p>
-            </div>
-            <Link href="/soumission">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-secondary uppercase tracking-wider font-bold">
-                Discuter de mon projet
-              </Button>
-            </Link>
+          <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
+            <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Qualifications</span>
+            <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold">Assurance et certifications</h2>
+            <p className="text-white/80 mt-4">Les accréditations et la couverture présentées ci-dessous proviennent des documents fournis pour Service d’Arbres Aubois.</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 items-center max-w-6xl mx-auto">
             {[
-              { img: "/photos/arbres-aubois/project-1.jpg", title: "Abattage en milieu résidentiel", tag: "Illustration", alt: "Photo d’illustration d’un milieu résidentiel arboré" },
-              { img: "/photos/arbres-aubois/project-2.jpg", title: "Entretien des arbres", tag: "Illustration", alt: "Photo d’illustration d’arbres dans un environnement naturel" },
-              { img: "/photos/arbres-aubois/project-3.jpg", title: "Travaux arboricoles", tag: "Illustration", alt: "Photo d’illustration d’un paysage boisé" },
-            ].map((proj, i) => (
-              <div key={i} className="group relative overflow-hidden bg-black aspect-[4/3]">
-                <img src={proj.img} alt={proj.alt} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" loading="lazy" />
-                <div className="absolute inset-0 bg-black/55 flex flex-col justify-end p-6 xl:p-8 opacity-100 xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus-within:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1 mb-3 w-fit">{proj.tag}</span>
-                  <h3 className="text-2xl font-bold">{proj.title}</h3>
-                </div>
-              </div>
+              { img: "/certifications/assurance-responsabilite.png", alt: "Badge d’assurance responsabilité indiquant une couverture de 5 000 000 $" },
+              { img: "/certifications/isa-certified-arborist.png", alt: "Insigne Certified Arborist de l’ISA" },
+              { img: "/certifications/elagage-centre-horticole-laval.png", alt: "Badge de formation en élagage du Centre de formation horticole de Laval" },
+            ].map((credential) => (
+              <figure key={credential.img} className="flex min-h-[250px] items-center justify-center">
+                <img src={credential.img} alt={credential.alt} className="max-h-[280px] w-full max-w-[340px] object-contain mix-blend-screen" loading="lazy" />
+              </figure>
             ))}
           </div>
         </div>
@@ -274,8 +263,8 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-20 md:py-28 xl:py-32 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
-           <img src="/photos/arbres-aubois/cta.jpg" alt="" className="w-full h-full object-cover opacity-20" loading="lazy" />
-          <div className="absolute inset-0 bg-forest/80"></div>
+           <img src="/photos/arbres-aubois/cta.jpg" alt="" className="w-full h-full object-cover opacity-45" loading="lazy" />
+          <div className="absolute inset-0 bg-forest/65"></div>
         </div>
         
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">

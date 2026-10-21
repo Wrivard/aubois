@@ -25,7 +25,7 @@ Site vitrine en français présentant les services d’élagage, d’abattage d�
 
 - `artifacts/lavallee-construction/src/` — pages, reusable sections, and site interactions
 - `artifacts/lavallee-construction/src/index.css` — global palette and visual tokens
-- `artifacts/lavallee-construction/public/` — supplied logo and illustrative arboriculture imagery
+- `artifacts/lavallee-construction/public/` — supplied logo, credential images, and illustrative arboriculture imagery
 
 ## Architecture decisions
 
@@ -34,7 +34,7 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 ## Product
 
 - Site vitrine en français pour Service d’Arbres Aubois, entreprise spécialisée en élagage, abattage d’arbres, taille de haies et entretien des arbres à Montmagny et Berthier-sur-Mer
-- Navigation responsive, services arboricoles, présentation de réalisations, témoignages, FAQ, coordonnées et formulaire de soumission
+- Navigation responsive, services arboricoles, section d’assurance et de certifications, témoignages, FAQ, coordonnées et formulaire de soumission
 - Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 
 ## User preferences
