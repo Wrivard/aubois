@@ -30,7 +30,7 @@ export function BrandLoader({ active, initial = false }: BrandLoaderProps) {
       <div className="brand-loader__inner">
         <img
           className="brand-loader__logo"
-          src="/logo-ceramique-cardinal.png"
+          src="/logo-service-arbres-aubois.png"
           alt=""
           fetchPriority="high"
         />
@@ -40,7 +40,7 @@ export function BrandLoader({ active, initial = false }: BrandLoaderProps) {
           <span className="brand-loader__tile" />
           <span className="brand-loader__tile" />
         </div>
-        <span className="brand-loader__caption">Pose soignée. Finition durable.</span>
+        <span className="brand-loader__caption">Des arbres entre bonnes mains.</span>
       </div>
     </div>
   );

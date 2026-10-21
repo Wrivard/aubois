@@ -7,13 +7,13 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-8 mb-12 md:mb-16">
           <div className="lg:col-span-1 flex flex-col items-start">
             <img 
-              src="/logo-ceramique-cardinal.png"
-              alt="Céramique Cardinal"
+              src="/logo-service-arbres-aubois.png"
+              alt="Service d’Arbres Aubois"
               className="h-[150px] w-auto object-contain object-left mb-6 mix-blend-screen"
               loading="lazy"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Céramique Cardinal se spécialise dans l’installation de céramique et de revêtements en carreaux sur la Rive-Nord de Montréal, notamment pour des projets commerciaux et de grandes surfaces.
+              Service d’Arbres Aubois offre des services d’élagage, d’abattage, de taille de haies et d’entretien des arbres à Montmagny et dans le secteur de Berthier-sur-Mer.
             </p>
           </div>
           
@@ -32,15 +32,15 @@ export function Footer() {
             <ul className="flex flex-col gap-4 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <span className="font-bold text-white">T.</span>
-                <a href="tel:+15144449393" className="hover:text-white">(514) 444-9393</a>
+                <a href="tel:+14189418897" className="hover:text-white">(418) 941-8897</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-white">C.</span>
-                <a href="mailto:info@ceramiquecardinal.ca" className="hover:text-white break-all">info@ceramiquecardinal.ca</a>
+                <a href="mailto:matisaube1@gmail.com" className="hover:text-white break-all">matisaube1@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold text-white">A.</span>
-                <a href="https://ceramiquecardinal.ca" target="_blank" rel="noreferrer" className="hover:text-white">ceramiquecardinal.ca</a>
+                <span>Montmagny, Québec</span>
               </li>
             </ul>
           </div>
@@ -50,7 +50,7 @@ export function Footer() {
             <div className="mt-6">
               <Link href="/soumission">
                 <button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 text-sm uppercase tracking-wide transition-colors w-full">
-                  Obtenir une soumission gratuite
+                  Demander une soumission
                 </button>
               </Link>
             </div>
@@ -58,10 +58,10 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-xs text-white/70">
-          <p>© {new Date().getFullYear()} Céramique Cardinal. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Service d’Arbres Aubois. Tous droits réservés.</p>
           <div className="flex gap-6">
-            <a href="mailto:info@ceramiquecardinal.ca?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
-            <a href="mailto:info@ceramiquecardinal.ca" className="hover:text-white transition-colors">Nous écrire</a>
+            <a href="mailto:matisaube1@gmail.com?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
+            <a href="mailto:matisaube1@gmail.com" className="hover:text-white transition-colors">Nous écrire</a>
           </div>
         </div>
       </div>

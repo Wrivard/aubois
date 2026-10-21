@@ -13,7 +13,7 @@ import { CheckCircle2, ChevronRight, ArrowLeft, Phone, Mail } from "lucide-react
 
 const formSchema = z.object({
   projectType: z.string().min(1, "Veuillez sélectionner un type de projet"),
-  budget: z.string().min(1, "Veuillez sélectionner une surface approximative"),
+  budget: z.string().min(1, "Veuillez sélectionner l’envergure approximative"),
   timeline: z.string().min(1, "Veuillez sélectionner un délai"),
   description: z.string().min(10, "La description doit contenir au moins 10 caractères"),
   city: z.string().min(2, "Veuillez entrer la ville du projet"),
@@ -30,8 +30,8 @@ export default function Soumission() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    const title = "Soumission | Céramique Cardinal";
-    const description = "Présentez votre projet d’installation de céramique sur la Rive-Nord de Montréal à Céramique Cardinal.";
+    const title = "Soumission | Service d’Arbres Aubois";
+    const description = "Présentez votre projet d’élagage, d’abattage d’arbres ou de taille de haies à Service d’Arbres Aubois.";
     const previousTitle = document.title;
     const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
     const previous = tags.map((selector) => {
@@ -81,14 +81,14 @@ export default function Soumission() {
       `Courriel : ${data.email}`,
       `Ville du projet : ${data.city}`,
       `Type de projet : ${data.projectType}`,
-      `Surface approximative : ${data.budget}`,
+      `Envergure approximative : ${data.budget}`,
       `Échéancier souhaité : ${data.timeline}`,
       "",
       `Description du projet : ${data.description}`,
       "",
-      "Vous pouvez joindre vos photos et plans directement à ce courriel avant de l'envoyer."
+       "Vous pouvez joindre des photos directement à ce courriel avant de l'envoyer."
     ].join("\n");
-    window.location.href = `mailto:info@ceramiquecardinal.ca?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:matisaube1@gmail.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
     setIsSubmitted(true);
   };
 
@@ -104,7 +104,7 @@ export default function Soumission() {
       <section className="relative pt-[158px] xl:pt-[177px] pb-12 md:pb-16 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-             src="/photos/tile-stone-shower.jpg"
+             src="/photos/arbres-aubois/soumission.jpg"
             alt=""
             className="w-full h-full object-cover object-center opacity-30"
           />
@@ -113,9 +113,9 @@ export default function Soumission() {
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-3xl">
             <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Parlons de votre projet</span>
-            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Une soumission pour votre projet de céramique sur la Rive-Nord de Montréal.</h1>
+            <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-4 leading-tight">Parlons de vos arbres.</h1>
             <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-              Présentez votre projet de pose de céramique, de plancher ou d’installation commerciale. Votre demande sera préparée dans votre messagerie.
+              Présentez votre projet d’élagage, d’abattage ou de taille de haies. Votre demande sera préparée dans votre messagerie.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function Soumission() {
                   </div>
                   <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre courriel est prêt</h2>
                   <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
-                    Votre messagerie devrait s'ouvrir avec les détails du projet. Ajoutez vos photos ou vos plans, puis envoyez le courriel. Rien n'a été transmis automatiquement par ce site. Si votre messagerie ne s'ouvre pas, écrivez directement à info@ceramiquecardinal.ca.
+                    Votre messagerie devrait s’ouvrir avec les détails du projet. Ajoutez vos photos, puis envoyez le courriel. Rien n’a été transmis automatiquement par ce site. Si votre messagerie ne s’ouvre pas, écrivez directement à matisaube1@gmail.com.
                   </p>
                   <Button className="uppercase tracking-wider font-bold px-8" onClick={() => window.location.href = "/"}>
                     Retour à l'accueil
@@ -175,13 +175,11 @@ export default function Soumission() {
                                     <SelectValue placeholder="Sélectionnez le type de travaux" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                       <SelectItem value="Installation de céramique">Installation de céramique</SelectItem>
-                                       <SelectItem value="Plancher">Plancher de céramique</SelectItem>
-                                       <SelectItem value="Projet commercial">Projet commercial</SelectItem>
-                                       <SelectItem value="Grande surface">Grande surface</SelectItem>
-                                       <SelectItem value="Revêtement mural">Revêtement mural</SelectItem>
-                                       <SelectItem value="Installation spécialisée">Installation spécialisée</SelectItem>
-                                       <SelectItem value="Projet résidentiel">Projet résidentiel</SelectItem>
+                                       <SelectItem value="Élagage">Élagage</SelectItem>
+                                       <SelectItem value="Abattage d’arbre">Abattage d’arbre</SelectItem>
+                                       <SelectItem value="Taille de haies">Taille de haies</SelectItem>
+                                       <SelectItem value="Entretien des arbres">Entretien des arbres</SelectItem>
+                                       <SelectItem value="Travaux en hauteur">Travaux en hauteur</SelectItem>
                                       <SelectItem value="Autre">Autre</SelectItem>
                                   </SelectContent>
                                 </Select>
@@ -191,19 +189,20 @@ export default function Soumission() {
                           </div>
 
                           <div className="space-y-3">
-                            <Label className="font-bold">Surface approximative *</Label>
+                            <Label className="font-bold">Envergure approximative *</Label>
                             <Controller
                               name="budget"
                               control={control}
                               render={({ field }) => (
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                                   <SelectTrigger className="h-12 rounded-none border-border focus:ring-primary focus:border-primary">
-                                   <SelectValue placeholder="Sélectionnez une surface" />
+                                    <SelectValue placeholder="Sélectionnez l’envergure" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                     <SelectItem value="petite-surface">Petite surface</SelectItem>
-                                     <SelectItem value="grande-surface">Grande surface</SelectItem>
-                                    <SelectItem value="a-confirmer">À confirmer</SelectItem>
+                                      <SelectItem value="petit-projet">Petit projet</SelectItem>
+                                      <SelectItem value="projet-moyen">Projet de taille moyenne</SelectItem>
+                                      <SelectItem value="grand-projet">Projet de grande envergure</SelectItem>
+                                     <SelectItem value="a-evaluer">À évaluer</SelectItem>
                                   </SelectContent>
                                 </Select>
                               )}
@@ -219,13 +218,13 @@ export default function Soumission() {
                               render={({ field }) => (
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                                   <SelectTrigger className="h-12 rounded-none border-border focus:ring-primary focus:border-primary">
-                                    <SelectValue placeholder="Quand souhaitez-vous débuter ?" />
+                                       <SelectValue placeholder="Quand souhaitez-vous réaliser les travaux?" />
                                   </SelectTrigger>
                                   <SelectContent className="rounded-none">
-                                    <SelectItem value="asap">Le plus tôt possible</SelectItem>
-                                    <SelectItem value="3-6-months">Dans 3 à 6 mois</SelectItem>
-                                    <SelectItem value="6-12-months">Dans 6 à 12 mois</SelectItem>
-                                    <SelectItem value="next-year">L'année prochaine</SelectItem>
+                                    <SelectItem value="des-que-possible">Dès que possible</SelectItem>
+                                    <SelectItem value="prochaines-semaines">Dans les prochaines semaines</SelectItem>
+                                    <SelectItem value="prochains-mois">Dans les prochains mois</SelectItem>
+                                    <SelectItem value="a-determiner">À déterminer</SelectItem>
                                   </SelectContent>
                                 </Select>
                               )}
@@ -259,7 +258,7 @@ export default function Soumission() {
                             {errors.city && <p className="text-destructive text-sm">{errors.city.message}</p>}
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          Photos et plans ou documents : vous pourrez les joindre au courriel préparé à la dernière étape. Aucun fichier n'est téléversé sur ce site.
+                          Vous pourrez joindre des photos au courriel préparé à la dernière étape. Aucun fichier n’est téléversé sur ce site.
                         </p>
                       </div>
                     )}
@@ -272,7 +271,7 @@ export default function Soumission() {
                             <Label className="font-bold">Prénom *</Label>
                             <Input 
                               {...register("firstName")} 
-                              className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
+                            className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                             />
                             {errors.firstName && <p className="text-destructive text-sm">{errors.firstName.message}</p>}
                           </div>
@@ -323,7 +322,7 @@ export default function Soumission() {
                         </Button>
                       ) : (
                         <Button type="submit" className="font-bold uppercase tracking-wider h-12 px-8 bg-forest hover:bg-forest/90 text-white w-full sm:w-auto mt-4 sm:mt-0">
-                           Obtenir ma soumission gratuite
+                           Envoyer ma demande
                         </Button>
                       )}
                     </div>
@@ -342,10 +341,10 @@ export default function Soumission() {
                 </p>
                 <div className="space-y-4">
                   <p className="flex items-center gap-3 font-medium">
-                     <Phone className="w-5 h-5"/> <a href="tel:+15144449393">(514) 444-9393</a>
+                     <Phone className="w-5 h-5"/> <a href="tel:+14189418897">(418) 941-8897</a>
                   </p>
                   <p className="flex items-center gap-3 font-medium">
-                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:info@ceramiquecardinal.ca">info@ceramiquecardinal.ca</a>
+                     <Mail className="w-5 h-5"/> <a className="break-all" href="mailto:matisaube1@gmail.com">matisaube1@gmail.com</a>
                   </p>
                 </div>
               </div>
@@ -355,15 +354,15 @@ export default function Soumission() {
                 <ul className="space-y-5">
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                         <span className="text-sm text-white/80 leading-tight">Spécialisation en pose de céramique et de carreaux</span>
+                          <span className="text-sm text-white/80 leading-tight">Spécialisation en élagage, abattage et taille de haies</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                          <span className="text-sm text-white/80 leading-tight">Projets commerciaux et grandes surfaces</span>
+                           <span className="text-sm text-white/80 leading-tight">Interventions adaptées à chaque terrain</span>
                    </li>
                    <li className="flex items-start gap-3">
                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0"/> 
-                          <span className="text-sm text-white/80 leading-tight">Attention aux alignements, aux découpes et aux finitions</span>
+                           <span className="text-sm text-white/80 leading-tight">Équipements d’accès en hauteur selon les besoins du projet</span>
                    </li>
                 </ul>
               </div>

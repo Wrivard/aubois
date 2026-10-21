@@ -25,12 +25,12 @@ export function Navbar() {
   ];
 
   const servicesLinks = [
-    { name: "Installation de céramique", href: "/#services" },
-    { name: "Planchers de céramique", href: "/#services" },
-    { name: "Projets commerciaux", href: "/#services" },
-    { name: "Grandes surfaces", href: "/#services" },
-    { name: "Revêtements intérieurs", href: "/#services" },
-    { name: "Installations spécialisées", href: "/#services" },
+    { name: "Élagage d’arbres", href: "/#services" },
+    { name: "Abattage d’arbres", href: "/#services" },
+    { name: "Taille de haies", href: "/#services" },
+    { name: "Entretien des arbres", href: "/#services" },
+    { name: "Travaux en hauteur", href: "/#services" },
+    { name: "Évaluation d’un projet", href: "/#services" },
   ];
 
   return (
@@ -40,10 +40,10 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 relative flex items-center justify-between min-h-[94px] xl:min-h-[113px]">
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Céramique Cardinal — accueil" onClick={() => setMobileMenuOpen(false)}>
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2 z-50 block" aria-label="Service d’Arbres Aubois — accueil" onClick={() => setMobileMenuOpen(false)}>
           <img
-            src="/logo-ceramique-cardinal.png"
-            alt="Céramique Cardinal"
+            src="/logo-service-arbres-aubois.png"
+            alt="Service d’Arbres Aubois"
             className="h-[94px] xl:h-[113px] w-auto object-contain mix-blend-screen"
           />
         </Link>
@@ -93,12 +93,12 @@ export function Navbar() {
         </nav>
 
         <div className="hidden xl:flex items-center gap-4">
-          <a href="tel:+15144449393" className="text-sm font-semibold text-white whitespace-nowrap hover:underline">
-            (514) 444-9393
+          <a href="tel:+14189418897" className="text-sm font-semibold text-white whitespace-nowrap hover:underline">
+            (418) 941-8897
           </a>
           <Link href="/soumission">
             <Button size="lg" className="font-bold tracking-wide uppercase text-xs">
-              Soumission gratuite
+              Demander une soumission
             </Button>
           </Link>
         </div>
@@ -165,11 +165,11 @@ export function Navbar() {
           <div className="mt-auto py-8">
             <Link href="/soumission" onClick={() => setMobileMenuOpen(false)}>
               <Button size="lg" className="w-full font-bold tracking-wide uppercase text-sm h-14">
-                Soumission gratuite
+                Demander une soumission
               </Button>
             </Link>
-            <a href="tel:+15144449393" className="mt-3 block text-center text-sm font-semibold text-white/80 hover:underline">
-              (514) 444-9393
+            <a href="tel:+14189418897" className="mt-3 block text-center text-sm font-semibold text-white/80 hover:underline">
+              (418) 941-8897
             </a>
           </div>
         </div>

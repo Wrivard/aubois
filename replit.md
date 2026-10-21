@@ -1,6 +1,6 @@
-# Céramique Cardinal
+# Service d’Arbres Aubois
 
-Site vitrine en français présentant les services d’installation de céramique et de revêtements en carreaux de Céramique Cardinal sur la Rive-Nord de Montréal.
+Site vitrine en français présentant les services d’élagage, d’abattage d’arbres, de taille de haies et d’entretien des arbres de Service d’Arbres Aubois à Montmagny et dans le secteur de Berthier-sur-Mer.
 
 ## Run & Operate
 
@@ -25,7 +25,7 @@ Site vitrine en français présentant les services d’installation de céramiqu
 
 - `artifacts/lavallee-construction/src/` — pages, reusable sections, and site interactions
 - `artifacts/lavallee-construction/src/index.css` — global palette and visual tokens
-- `artifacts/lavallee-construction/public/` — supplied logo and tile-installation images
+- `artifacts/lavallee-construction/public/` — supplied logo and illustrative arboriculture imagery
 
 ## Architecture decisions
 
@@ -33,14 +33,14 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-- Site vitrine en français pour Céramique Cardinal, entreprise spécialisée en installation de céramique et de revêtements en carreaux sur la Rive-Nord de Montréal
-- Navigation responsive, services de céramique, présentation de réalisations, témoignages, FAQ, coordonnées et formulaire de soumission
+- Site vitrine en français pour Service d’Arbres Aubois, entreprise spécialisée en élagage, abattage d’arbres, taille de haies et entretien des arbres à Montmagny et Berthier-sur-Mer
+- Navigation responsive, services arboricoles, présentation de réalisations, témoignages, FAQ, coordonnées et formulaire de soumission
 - Demande de soumission en trois étapes qui prépare un courriel dans la messagerie du visiteur; aucune transmission automatique ni téléversement de fichiers
 
 ## User preferences
 
-- Garder le gabarit existant et le logo fourni de Céramique Cardinal; utiliser le rouge comme accent et préserver le noir `#1B1B1B` de la navigation, du pied de page et du texte.
-- Utiliser des images de céramique adaptées au contenu et les identifier comme illustratives lorsqu'elles ne documentent pas une réalisation vérifiée.
+- Garder la structure et le logo fourni de Service d’Arbres Aubois; utiliser le vert comme accent et préserver le noir `#1B1B1B` de la navigation, du pied de page et du texte.
+- Identifier les images comme illustratives lorsqu’elles ne documentent pas une réalisation vérifiée.
 - Ne pas inventer de réalisations, adresse, territoire desservi, numéro RBQ, certifications, garanties ou témoignages.
 - Ne pas réutiliser la même photo à plusieurs endroits du site; choisir des visuels distincts et adaptés au contenu.
 - Conserver inchangés les compteurs et statistiques du gabarit; utiliser uniquement des témoignages vérifiés.

@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Star } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -14,40 +14,36 @@ export function TestimonialsSection() {
           <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Témoignages</span>
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-white">Ce que nos clients disent de nous.</h2>
           <p className="text-lg text-white/70 leading-relaxed">
-            Quelques mots partagés par des clients de Céramique Cardinal.
+            Les témoignages seront ajoutés lorsqu’ils auront été confirmés par la clientèle.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
           {[
             {
-              name: "BobonitA",
-              detail: "Local Guide · 9 photos",
-              quote: "Sébastien est venu effectuer l’appel de service chez nous pour une réparation de céramique. Service professionnel et bien fait. Ponctuel aussi. Merci encore.",
+              name: "Témoignage à venir",
+              detail: "Avis authentique à confirmer",
+              quote: "Aucun témoignage vérifié n’a été fourni pour le moment.",
             },
             {
-              name: "Pat Laroche",
-              detail: "Google · 5 avis",
-              quote: "Super gentil. Prend le temps qui faut pour conseiller, même pendant une journée de congé.",
+              name: "Témoignage à venir",
+              detail: "Avis authentique à confirmer",
+              quote: "Les avis de la clientèle seront ajoutés après confirmation.",
             },
           ].map((review) => (
             <article
-              key={review.name}
+              key={review.quote}
               className="group relative flex h-full flex-col overflow-hidden border border-white/10 bg-white p-7 text-secondary shadow-xl transition-transform duration-300 hover:-translate-y-1 sm:p-9"
             >
               <div className="absolute inset-y-0 left-0 w-1.5 bg-primary" />
-              <div className="mb-8 flex items-center justify-between gap-4">
-                <div className="flex gap-1 text-primary" role="img" aria-label="5 étoiles sur 5">
-                  {Array.from({ length: 5 }, (_, index) => (
-                    <Star key={index} className="h-5 w-5 fill-current" aria-hidden="true" />
-                  ))}
-                </div>
+                <div className="mb-8 flex items-center justify-between gap-4">
+                <span className="text-sm font-bold uppercase tracking-wider text-primary">Témoignage à venir</span>
                 <span className="bg-muted px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
-                  Google
+                  À confirmer
                 </span>
               </div>
               <blockquote className="mb-8 flex-1 text-lg font-medium leading-relaxed sm:text-xl">
-                « {review.quote} »
+                {review.quote}
               </blockquote>
               <div className="border-t border-border pt-5">
                 <p className="text-lg font-extrabold text-secondary">{review.name}</p>
@@ -72,10 +68,10 @@ export function FAQContactSection() {
           
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
-              ["Quels types de travaux réalisez-vous?", "Céramique Cardinal se spécialise dans la pose de céramique et de revêtements en carreaux pour différents types de projets."],
-              ["Réalisez-vous des projets commerciaux?", "Oui. L'entreprise présente notamment des réalisations de céramique en milieu commercial."],
-              ["Pouvez-vous installer de la céramique sur une grande superficie?", "Oui. Céramique Cardinal possède des réalisations démontrant des travaux d'installation sur de grandes surfaces."],
-              ["Comment obtenir une soumission?", "Communiquez avec nous par téléphone ou par courriel en précisant les travaux à réaliser. Vous pourrez joindre vos photos ou vos plans au courriel préparé avant de l'envoyer."]
+              ["Quels services offrez-vous?", "Service d’Arbres Aubois se spécialise dans l’élagage, l’abattage d’arbres, la taille de haies et l’entretien des arbres."],
+              ["Pouvez-vous intervenir sur de grands arbres?", "L’entreprise a réalisé des projets nécessitant un accès en hauteur. Chaque situation est évaluée selon l’arbre et l’accessibilité du terrain."],
+              ["Faites-vous de l’abattage près des maisons?", "Service d’Arbres Aubois réalise des projets d’abattage en milieu résidentiel. Communiquez avec nous pour faire évaluer votre situation."],
+              ["Comment obtenir une soumission?", "Appelez-nous au (418) 941-8897 ou écrivez à matisaube1@gmail.com en décrivant les travaux souhaités."]
             ].map(([question, answer], i) => (
               <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 3 ? "border-b border-border" : "border-b-0"}`}>
                 <AccordionTrigger className="text-left font-bold text-lg py-6 hover:no-underline hover:text-secondary">{question}</AccordionTrigger>
@@ -87,8 +83,8 @@ export function FAQContactSection() {
 
         <div>
           <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">Coordonnées</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de votre projet de céramique.</h2>
-          <p className="text-muted-foreground mb-10">Vous planifiez des travaux de pose de céramique, un projet commercial ou une installation sur une grande superficie? Présentez-nous les détails de votre projet.</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de vos arbres.</h2>
+          <p className="text-muted-foreground mb-10">Vous souhaitez faire élaguer un arbre, planifier un abattage ou entretenir vos haies? Présentez-nous les détails de votre propriété.</p>
           
           <div className="bg-white border border-border p-5 sm:p-8 h-auto mb-10">
             <ul className="space-y-6">
@@ -97,8 +93,8 @@ export function FAQContactSection() {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-secondary mb-1">Secteur desservi</h4>
-                   <p className="text-muted-foreground">Rive-Nord de Montréal</p>
+                    <h4 className="font-bold text-secondary mb-1">Localités indiquées</h4>
+                   <p className="text-muted-foreground">Montmagny et Berthier-sur-Mer, Québec</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -107,7 +103,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Téléphone</h4>
-                  <a className="text-muted-foreground hover:text-secondary" href="tel:+15144449393">(514) 444-9393</a>
+                  <a className="text-muted-foreground hover:text-secondary" href="tel:+14189418897">(418) 941-8897</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -116,7 +112,7 @@ export function FAQContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary mb-1">Courriel</h4>
-                   <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:info@ceramiquecardinal.ca">info@ceramiquecardinal.ca</a>
+                   <a className="text-muted-foreground hover:text-secondary break-all" href="mailto:matisaube1@gmail.com">matisaube1@gmail.com</a>
                 </div>
               </li>
             </ul>
@@ -127,12 +123,12 @@ export function FAQContactSection() {
       {/* Full Bleed Embed Map */}
       <div className="w-full h-[400px]">
         <iframe
-          title="Carte de la Rive-Nord de Montréal — secteur desservi par Céramique Cardinal"
+          title="Carte de Montmagny et Berthier-sur-Mer, Québec"
           className="block w-full h-full"
           style={{ border: 0 }}
           loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Rive-Nord%20de%20Montr%C3%A9al&z=9&output=embed"
+          src="https://maps.google.com/maps?q=Montmagny%2C%20Qu%C3%A9bec&z=10&output=embed"
         ></iframe>
       </div>
     </section>

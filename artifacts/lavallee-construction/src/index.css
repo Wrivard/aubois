@@ -81,18 +81,18 @@
   --sidebar: 0 0% 100%;
   --sidebar-foreground: 0 0% 11%;
   --sidebar-border: 0 0% 89%;
-  --sidebar-primary: 356 82.5% 47%;
+  --sidebar-primary: 123 39% 38%;
   --sidebar-primary-foreground: 0 0% 11%;
   --sidebar-accent: 0 0% 96%;
   --sidebar-accent-foreground: 0 0% 11%;
-  --sidebar-ring: 356 82.5% 47%;
+  --sidebar-ring: 123 39% 38%;
 
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 11%;
   --popover-border: 0 0% 89%;
 
-  /* Céramique Cardinal accent: red */
-  --primary: 356 82.5% 47%;
+  /* Service d’Arbres Aubois accent: green */
+  --primary: 123 39% 38%;
   --primary-foreground: 0 0% 100%;
 
   /* Keep dark surfaces aligned with the logo's existing #1B1B1B */
@@ -114,7 +114,7 @@
   --destructive-foreground: 0 0% 100%;
 
   --input: 0 0% 89%;
-  --ring: 356 82.5% 47%;
+  --ring: 123 39% 38%;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   
@@ -142,7 +142,7 @@
   --card: 0 0% 11%;
   --card-foreground: 0 0% 100%;
   --card-border: 0 0% 20%;
-  --primary: 356 82.5% 47%;
+  --primary: 123 39% 38%;
   --primary-foreground: 0 0% 100%;
   --secondary: 0 0% 100%;
   --secondary-foreground: 0 0% 11%;
@@ -151,7 +151,7 @@
   --accent: 0 0% 20%;
   --accent-foreground: 0 0% 100%;
   --input: 0 0% 20%;
-  --ring: 356 82.5% 47%;
+  --ring: 123 39% 38%;
 }
 
 @layer base {
@@ -225,7 +225,7 @@
 .brand-loader__tile:nth-child(4) { animation-delay: 210ms; }
 
 .brand-loader__tile:nth-child(2n) {
-  border-color: rgba(207, 26, 43, .75);
+  border-color: rgba(75, 135, 73, .85);
 }
 
 .brand-loader__caption {
