@@ -122,7 +122,7 @@ export default function Soumission() {
       </section>
 
       {/* Main Form Section */}
-      <section className="py-10 md:py-16 xl:py-24 bg-muted min-h-screen">
+      <section className="pt-10 pb-8 md:pt-16 md:pb-10 xl:pt-24 xl:pb-12 bg-muted">
         <div className="container mx-auto px-6 md:px-12">
           
           <div className="grid xl:grid-cols-3 gap-6 xl:gap-8 items-start">
