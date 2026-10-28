@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -29,10 +28,8 @@ import {
 
 const formSchema = z.object({
   projectType: z.string().min(1, "Veuillez sélectionner un type de projet"),
-  budget: z.string().min(1, "Veuillez sélectionner l’envergure approximative"),
-  timeline: z.string().min(1, "Veuillez sélectionner un délai"),
   description: z.string().min(10, "La description doit contenir au moins 10 caractères"),
-  city: z.string().min(2, "Veuillez entrer la ville du projet"),
+  address: z.string().min(2, "Veuillez indiquer l’adresse ou la localisation du projet"),
   firstName: z.string().min(2, "Prénom requis"),
   lastName: z.string().min(2, "Nom requis"),
   email: z.string().email("Adresse courriel invalide"),
@@ -47,7 +44,7 @@ export default function Soumission() {
 
   useEffect(() => {
     const title = "Soumission | Service d’Arbres Aubois";
-    const description = "Présentez votre projet d’élagage, d’abattage d’arbres ou de taille de haies à Service d’Arbres Aubois.";
+    const description = "Demandez une soumission pour l’élagage, l’essouchement, l’abattage, le déchiquetage de branches ou la taille de haies à Montmagny, Berthier-sur-Mer et L’Islet.";
     const previousTitle = document.title;
     const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
     const previous = tags.map((selector) => {
@@ -67,10 +64,8 @@ export default function Soumission() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       projectType: "",
-      budget: "",
-      timeline: "",
       description: "",
-      city: "",
+      address: "",
       firstName: "",
       lastName: "",
       email: "",
@@ -81,8 +76,8 @@ export default function Soumission() {
 
   const nextStep = async () => {
     let fieldsToValidate: (keyof FormValues)[] = [];
-    if (step === 1) fieldsToValidate = ["projectType", "budget", "timeline"];
-    if (step === 2) fieldsToValidate = ["description", "city"];
+    if (step === 1) fieldsToValidate = ["projectType"];
+    if (step === 2) fieldsToValidate = ["description", "address"];
 
     const isStepValid = await trigger(fieldsToValidate);
     if (isStepValid) setStep(step + 1);
@@ -95,10 +90,8 @@ export default function Soumission() {
       `Nom : ${data.firstName} ${data.lastName}`,
       `Téléphone : ${data.phone}`,
       `Courriel : ${data.email}`,
-      `Ville du projet : ${data.city}`,
-      `Type de projet : ${data.projectType}`,
-      `Envergure approximative : ${data.budget}`,
-      `Échéancier souhaité : ${data.timeline}`,
+      `Adresse ou localisation : ${data.address}`,
+      `Service demandé : ${data.projectType}`,
       "",
       `Description du projet : ${data.description}`,
       "",
@@ -115,19 +108,20 @@ export default function Soumission() {
   ];
 
   const projectTypes = [
-    { id: "elagage", value: "Élagage", label: "Émondage et élagage", icon: TreePine },
-    { id: "abattage", value: "Abattage d’arbre", label: "Abattage", icon: Axe },
+    { id: "elagage", value: "Élagage d’arbres", label: "Élagage", icon: TreePine },
+    { id: "essouchement", value: "Essouchement", label: "Essouchement", icon: Axe },
+    { id: "abattage", value: "Abattage d’arbres", label: "Abattage", icon: Axe },
+    { id: "branches", value: "Déchiquetage de branches", label: "Déchiquetage de branches", icon: ArrowUpRight },
     { id: "haies", value: "Taille de haies", label: "Taille de haies", icon: Scissors },
-    { id: "entretien", value: "Entretien des arbres", label: "Entretien des arbres", icon: Leaf },
-    { id: "hauteur", value: "Travaux en hauteur", label: "Travaux en hauteur", icon: ArrowUpRight },
-    { id: "autre", value: "Autre", label: "Autre travail arboricole", icon: CircleHelp },
+    { id: "conseils", value: "J’ai besoin de conseils", label: "J’ai besoin de conseils", icon: Leaf },
+    { id: "autre", value: "Autre", label: "Autre", icon: CircleHelp },
   ];
 
   const trustItems = [
-    { icon: ShieldCheck, title: "Assurance responsabilité", detail: "Couverture de 5 000 000 $" },
-    { icon: Award, title: "Certified Arborist", detail: "Certification ISA" },
-    { icon: GraduationCap, title: "Formation en élagage", detail: "Centre horticole de Laval" },
-    { icon: TreePine, title: "Interventions en hauteur", detail: "Nacelle selon le projet" },
+    { icon: ShieldCheck, title: "Assurance responsabilité", detail: "Couverture de 2 000 000 $" },
+    { icon: Award, title: "Certification en arboriculture", detail: "" },
+    { icon: GraduationCap, title: "DEP en aménagement de la foresterie", detail: "École de foresterie de Duchesnay" },
+    { icon: TreePine, title: "Lift sur roues", detail: "Accès en hauteur et aux espaces difficiles" },
   ];
 
   return (
@@ -158,7 +152,7 @@ export default function Soumission() {
             </p>
             <p className="mt-4 flex items-center gap-2 text-sm font-medium text-white/75">
               <MapPin className="h-4 w-4 text-primary" />
-              Montmagny, Berthier-sur-Mer et les environs
+              Montmagny, Berthier-sur-Mer et L’Islet
             </p>
 
             <div className="mt-8 sm:mt-10">
@@ -168,7 +162,7 @@ export default function Soumission() {
                   <div key={title} className="min-h-[92px] border border-white/15 bg-black/45 p-4 backdrop-blur-sm sm:p-5">
                     <Icon className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
                     <p className="text-xs font-bold leading-snug text-white sm:text-sm">{title}</p>
-                    <p className="mt-1 text-[11px] leading-snug text-white/65 sm:text-xs">{detail}</p>
+                    {detail && <p className="mt-1 text-[11px] leading-snug text-white/65 sm:text-xs">{detail}</p>}
                   </div>
                 ))}
               </div>
@@ -260,51 +254,6 @@ export default function Soumission() {
                           {errors.projectType && <p className="text-destructive text-sm">{errors.projectType.message}</p>}
                         </div>
 
-                        <div className="grid gap-4 sm:grid-cols-2 sm:gap-5">
-                          <div className="space-y-2.5">
-                            <Label className="font-bold">Envergure approximative *</Label>
-                            <Controller
-                              name="budget"
-                              control={control}
-                              render={({ field }) => (
-                                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                  <SelectTrigger data-testid="select-project-budget" className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary">
-                                    <SelectValue placeholder="Sélectionnez l’envergure" />
-                                  </SelectTrigger>
-                                  <SelectContent className="rounded-lg">
-                                      <SelectItem value="petit-projet">Petit projet</SelectItem>
-                                      <SelectItem value="projet-moyen">Projet de taille moyenne</SelectItem>
-                                      <SelectItem value="grand-projet">Projet de grande envergure</SelectItem>
-                                     <SelectItem value="a-evaluer">À évaluer</SelectItem>
-                                  </SelectContent>
-                                </Select>
-                              )}
-                            />
-                            {errors.budget && <p className="text-destructive text-sm">{errors.budget.message}</p>}
-                          </div>
-                          
-                          <div className="space-y-2.5">
-                            <Label className="font-bold">Échéancier souhaité *</Label>
-                            <Controller
-                              name="timeline"
-                              control={control}
-                              render={({ field }) => (
-                                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                  <SelectTrigger data-testid="select-project-timeline" className="h-12 rounded-lg border-border focus:ring-primary focus:border-primary">
-                                       <SelectValue placeholder="Quand souhaitez-vous réaliser les travaux?" />
-                                  </SelectTrigger>
-                                  <SelectContent className="rounded-lg">
-                                    <SelectItem value="des-que-possible">Dès que possible</SelectItem>
-                                    <SelectItem value="prochaines-semaines">Dans les prochaines semaines</SelectItem>
-                                    <SelectItem value="prochains-mois">Dans les prochains mois</SelectItem>
-                                    <SelectItem value="a-determiner">À déterminer</SelectItem>
-                                  </SelectContent>
-                                </Select>
-                              )}
-                            />
-                            {errors.timeline && <p className="text-destructive text-sm">{errors.timeline.message}</p>}
-                          </div>
-                        </div>
                       </div>
                     )}
 
@@ -314,21 +263,23 @@ export default function Soumission() {
                         <div className="space-y-3">
                           <Label className="font-bold">Description détaillée du projet *</Label>
                           <Textarea 
+                            data-testid="textarea-project-description"
                             {...register("description")} 
-                              placeholder="Décrivez les travaux que vous souhaitez réaliser..."
+                              placeholder="Décrivez les travaux ou les conseils souhaités..."
                              className="min-h-[180px] rounded-none border-border focus:ring-primary focus:border-primary resize-y"
                           />
                           {errors.description && <p className="text-destructive text-sm">{errors.description.message}</p>}
                         </div>
                         
                         <div className="space-y-3">
-                            <Label className="font-bold">Ville du projet *</Label>
+                            <Label className="font-bold">Adresse ou localisation du projet *</Label>
                           <Input 
-                              {...register("city")}
-                              placeholder="Ville où se situe le projet"
+                              data-testid="input-project-location"
+                              {...register("address")}
+                              placeholder="Adresse, quartier ou municipalité"
                             className="h-12 rounded-none border-border focus:ring-primary focus:border-primary"
                           />
-                            {errors.city && <p className="text-destructive text-sm">{errors.city.message}</p>}
+                            {errors.address && <p className="text-destructive text-sm">{errors.address.message}</p>}
                         </div>
                         <p className="text-sm text-muted-foreground">
                           Vous pourrez joindre des photos au courriel préparé à la dernière étape. Aucun fichier n’est téléversé sur ce site.

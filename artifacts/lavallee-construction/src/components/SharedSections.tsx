@@ -78,10 +78,11 @@ export function FAQContactSection() {
           
           <Accordion type="single" collapsible className="w-full bg-white border border-border">
             {[
-              ["Quels services offrez-vous?", "Service d’Arbres Aubois se spécialise dans l’élagage, l’abattage d’arbres, la taille de haies et l’entretien des arbres."],
-              ["Pouvez-vous intervenir sur de grands arbres?", "L’entreprise a réalisé des projets nécessitant un accès en hauteur. Chaque situation est évaluée selon l’arbre et l’accessibilité du terrain."],
-              ["Faites-vous de l’abattage près des maisons?", "Service d’Arbres Aubois réalise des projets d’abattage en milieu résidentiel. Communiquez avec nous pour faire évaluer votre situation."],
-              ["Comment obtenir une soumission?", "Appelez-nous au (418) 941-8897 ou écrivez à matisaube1@gmail.com en décrivant les travaux souhaités."]
+              ["Quels services offrez-vous?", "Élagage, essouchement, abattage, déchiquetage de branches, taille de haies et conseils arboricoles."],
+              ["Votre équipe peut-elle accéder aux arbres difficiles?", "Le lift sur roues facilite l’accès aux arbres en hauteur, aux cours arrière et aux espaces restreints, tout en limitant l’impact sur le terrain. Chaque projet est évalué selon les lieux."],
+              ["Faut-il un permis pour abattre un arbre?", "Oui, un permis est généralement requis pour l’abattage d’un arbre situé en façade. Les règles varient selon la municipalité; confirmez les exigences locales avant de planifier les travaux."],
+              ["Pouvez-vous intervenir près des fils?", "Certaines situations près des fils de branchement à basse tension d’une résidence peuvent être évaluées. Si vous n’êtes pas certain du type de ligne, appelez-nous avant de planifier les travaux. Les lignes de distribution électrique doivent être traitées avec leur fournisseur."],
+              ["Comment obtenir une soumission?", "Remplissez le formulaire de soumission ou appelez-nous au (418) 941-8897. Vous pouvez aussi écrire à matisaube1@gmail.com."]
             ].map(([question, answer], i) => (
               <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 3 ? "border-b border-border" : "border-b-0"}`}>
                 <AccordionTrigger className="text-left font-bold text-lg py-6 hover:no-underline hover:text-secondary">{question}</AccordionTrigger>
@@ -94,7 +95,7 @@ export function FAQContactSection() {
         <div>
           <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">Coordonnées</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-secondary">Parlons de vos arbres.</h2>
-          <p className="text-muted-foreground mb-10">Vous souhaitez faire élaguer un arbre, planifier un abattage ou entretenir vos haies? Présentez-nous les détails de votre propriété.</p>
+              <p className="text-muted-foreground mb-10">Vous souhaitez faire élaguer un arbre, enlever une souche, déchiqueter des branches ou obtenir un conseil? Présentez-nous les détails du projet.</p>
           
           <div className="bg-white border border-border p-5 sm:p-8 h-auto mb-10">
             <ul className="space-y-6">
@@ -103,8 +104,8 @@ export function FAQContactSection() {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                    <h4 className="font-bold text-secondary mb-1">Localités indiquées</h4>
-                   <p className="text-muted-foreground">Montmagny et Berthier-sur-Mer, Québec</p>
+                    <h4 className="font-bold text-secondary mb-1">Secteur desservi</h4>
+                   <p className="text-muted-foreground">Montmagny, Berthier-sur-Mer et L’Islet, Québec</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -133,12 +134,12 @@ export function FAQContactSection() {
       {/* Full Bleed Embed Map */}
       <div className="w-full h-[400px]">
         <iframe
-          title="Carte de Montmagny et Berthier-sur-Mer, Québec"
+          title="Carte du secteur de Montmagny, Berthier-sur-Mer et L’Islet, Québec"
           className="block w-full h-full"
           style={{ border: 0 }}
           loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Montmagny%2C%20Qu%C3%A9bec&z=10&output=embed"
+          src="https://maps.google.com/maps?q=Montmagny%2C%20Qu%C3%A9bec&z=8&output=embed"
         ></iframe>
       </div>
     </section>

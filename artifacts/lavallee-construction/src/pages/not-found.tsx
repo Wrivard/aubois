@@ -14,7 +14,7 @@ export default function NotFound() {
           </div>
 
           <p className="mt-4 text-sm text-gray-600">
-            Cette page n’existe pas. Retournez à l’accueil pour découvrir Service d’Arbres Aubois.
+            Cette page n’existe pas. Découvrez nos services d’élagage, d’essouchement, d’abattage et de taille de haies dans le secteur de Montmagny, Berthier-sur-Mer et L’Islet.
           </p>
         </CardContent>
       </Card>

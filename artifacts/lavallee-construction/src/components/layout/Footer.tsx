@@ -13,7 +13,7 @@ export function Footer() {
               loading="lazy"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Service d’Arbres Aubois offre des services d’élagage, d’abattage, de taille de haies et d’entretien des arbres à Montmagny et dans le secteur de Berthier-sur-Mer.
+              Service d’Arbres Aubois offre des services d’élagage, d’essouchement, d’abattage, de déchiquetage de branches et de taille de haies à Montmagny, Berthier-sur-Mer et L’Islet.
             </p>
           </div>
           
@@ -39,8 +39,8 @@ export function Footer() {
                 <a href="mailto:matisaube1@gmail.com" className="hover:text-white break-all">matisaube1@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
-                <span className="font-bold text-white">A.</span>
-                <span>Montmagny, Québec</span>
+                <span className="font-bold text-white">S.</span>
+                <span>Montmagny, Berthier-sur-Mer et L’Islet</span>
               </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-xs text-white/70">
           <p>© {new Date().getFullYear()} Service d’Arbres Aubois. Tous droits réservés.</p>
           <div className="flex gap-6">
-            <a href="mailto:matisaube1@gmail.com?subject=Confidentialit%C3%A9" className="hover:text-white transition-colors">Questions sur la confidentialité</a>
+            <Link data-testid="link-privacy-policy" href="/politique-de-confidentialite" className="hover:text-white transition-colors">Politique de confidentialité</Link>
             <a href="mailto:matisaube1@gmail.com" className="hover:text-white transition-colors">Nous écrire</a>
           </div>
         </div>
