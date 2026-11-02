@@ -129,7 +129,7 @@ export default function Soumission() {
       <section id="soumission" className="relative isolate min-h-screen overflow-hidden bg-forest text-white">
         <div className="absolute inset-0" aria-hidden="true">
           <img
-            src="/photos/arbres-aubois/soumission.jpg"
+            src="/photos/arbres-aubois/generated/quote.jpg"
             alt=""
             className="h-full w-full object-cover object-center"
             fetchPriority="high"

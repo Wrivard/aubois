@@ -1,3 +1,4 @@
 - [Preview image timing](preview-image-timing.md) — large eager images can appear black or partly painted in immediate previews; prioritize and preload above-the-fold media.
 - [Local build environment](local-build-environment.md) — direct shell builds lack the managed workflow's PORT and BASE_PATH; supply both when verifying production bundles.
 - [Gestion Jagster palette](gestion-jagster-palette.md) — keep black navigation, footer, and text while using green as a separate accent beside gold.
+- [Aubois site visuals](aubois-site-visuals.md) — preserve the existing layout; use original generated imagery without people and label it illustrative.

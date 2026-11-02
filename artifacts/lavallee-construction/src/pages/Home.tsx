@@ -26,7 +26,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-forest">
           <img
             className="w-full h-full object-cover opacity-90"
-            src="/photos/arbres-aubois/hero.jpg"
+            src="/photos/arbres-aubois/generated/hero.jpg"
             alt=""
             fetchPriority="high"
           />
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/arbres-aubois/about.jpg" alt="Arboriste effectuant des travaux dans un arbre" className="w-full h-full object-cover object-bottom" loading="lazy" />
+                <img src="/photos/arbres-aubois/generated/about.jpg" alt="Visuel illustratif d’un érable mature dans une cour résidentielle" className="w-full h-full object-cover object-bottom" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -148,43 +148,43 @@ export default function Home() {
               {
                 title: "Élagage d’arbres",
                 desc: "Taille et entretien adaptés à l’arbre, à son emplacement et aux besoins de votre propriété.",
-                img: "/photos/arbres-aubois/service-entretien.jpg",
-                alt: "Arboriste qui travaille dans un arbre à l’aide de cordes",
+                img: "/photos/arbres-aubois/generated/service-pruning.jpg",
+                alt: "Visuel illustratif d’un érable mature aux branches entretenues",
                 icon: <TreePine className="w-6 h-6" />
               },
               {
                 title: "Essouchement",
                 desc: "Rognage de souches pour libérer l’espace après un abattage et faciliter l’aménagement du terrain.",
-                img: "/photos/arbres-aubois/gallery-souche.webp",
-                alt: "Machine de rognage à proximité d’une souche",
+                img: "/photos/arbres-aubois/generated/service-stump-grinding.jpg",
+                alt: "Visuel illustratif d’une rogneuse jaune près d’une souche",
                 icon: <Axe className="w-6 h-6" />
               },
               {
                 title: "Abattage d’arbres",
                 desc: "Intervention adaptée aux dimensions de l’arbre, à son emplacement et aux éléments qui l’entourent.",
-                img: "/photos/arbres-aubois/service-abattage.jpg",
-                alt: "Arboriste équipé travaillant dans un arbre",
+                img: "/photos/arbres-aubois/generated/service-removal.jpg",
+                alt: "Visuel illustratif de troncs déposés après un abattage",
                 icon: <Ruler className="w-6 h-6" />
               },
               {
                 title: "Déchiquetage de branches",
                 desc: "Déchiquetage des branches après les travaux pour dégager l’espace et faciliter le nettoyage du terrain.",
-                img: "/photos/arbres-aubois/service-hauteur.webp",
-                alt: "Équipement arboricole et déchiqueteuse sur remorque",
+                img: "/photos/arbres-aubois/generated/service-chipping.jpg",
+                alt: "Visuel illustratif d’une déchiqueteuse et de copeaux de bois",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
                 title: "Taille de haies",
                 desc: "Entretien des haies selon leurs dimensions, leur accessibilité et les besoins de votre propriété.",
-                img: "/photos/arbres-aubois/service-haies.webp",
-                alt: "Haie entretenue le long d’une propriété résidentielle",
+                img: "/photos/arbres-aubois/generated/service-hedges.jpg",
+                alt: "Visuel illustratif d’une haie de cèdres taillée",
                 icon: <HardHat className="w-6 h-6" />
               },
               {
                 title: "Conseil arboricole",
                 desc: "Une discussion pour évaluer votre situation et déterminer les travaux à envisager pour vos arbres.",
-                img: "/photos/arbres-aubois/service-evaluation.jpg",
-                alt: "Arbres dans une cour arrière lors de l’évaluation d’un projet arboricole",
+                img: "/photos/arbres-aubois/generated/service-advice.jpg",
+                alt: "Visuel illustratif d’arbres matures dans une cour résidentielle",
                 icon: <Leaf className="w-6 h-6" />
               }
             ].map((srv, i) => (
@@ -261,16 +261,16 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Les arbres en images.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Découvrez les interventions et les équipements photographiés par Service d’Arbres Aubois.
+               Ces visuels générés illustrent les services offerts; ils ne représentent pas des chantiers précis.
             </p>
           </div>
           <div className="grid auto-rows-[240px] grid-cols-1 gap-4 sm:auto-rows-[220px] sm:grid-cols-2 md:gap-5 xl:auto-rows-[220px] xl:grid-cols-3">
             {[
-              { src: "/photos/arbres-aubois/gallery-1.jpg", alt: "Grand conifère sur un terrain résidentiel", width: 1536, height: 2048, layout: "sm:col-span-2 sm:row-span-2" },
-              { src: "/photos/arbres-aubois/gallery-6.jpg", alt: "Arboriste en nacelle lors de travaux sur un arbre", width: 1536, height: 2048, layout: "" },
-              { src: "/photos/arbres-aubois/gallery-10.jpg", alt: "Arboriste en équipement de sécurité près d’un arbre", width: 1440, height: 1920, layout: "xl:row-span-2" },
-              { src: "/photos/arbres-aubois/gallery-souche.webp", alt: "Broyeur à proximité d’une souche après une intervention arboricole", width: 1462, height: 1950, layout: "" },
-              { src: "/photos/arbres-aubois/gallery-9.jpg", alt: "Arboristes équipés lors d’une intervention", width: 1440, height: 1920, layout: "" },
+              { src: "/photos/arbres-aubois/generated/gallery-tree.jpg", alt: "Visuel illustratif d’un grand conifère sur un terrain résidentiel", width: 1024, height: 1024, layout: "sm:col-span-2 sm:row-span-2" },
+              { src: "/photos/arbres-aubois/generated/gallery-lift.jpg", alt: "Visuel illustratif d’un lift sur roues stationné près d’un érable", width: 1024, height: 1024, layout: "" },
+              { src: "/photos/arbres-aubois/generated/gallery-maple.jpg", alt: "Visuel illustratif d’un érable mature près d’une maison", width: 1024, height: 1024, layout: "xl:row-span-2" },
+              { src: "/photos/arbres-aubois/generated/service-stump-grinding.jpg", alt: "Visuel illustratif d’une rogneuse jaune près d’une souche", width: 1024, height: 1024, layout: "" },
+              { src: "/photos/arbres-aubois/generated/gallery-cleanup.jpg", alt: "Visuel illustratif d’une déchiqueteuse et de branches après nettoyage", width: 1024, height: 1024, layout: "" },
             ].map((photo) => (
               <figure key={photo.src} className={`group relative overflow-hidden bg-muted ${photo.layout}`}>
                 <img
@@ -293,7 +293,7 @@ export default function Home() {
       {/* CTA Background */}
       <section className="relative py-20 md:py-28 xl:py-32 bg-forest text-white overflow-hidden">
         <div className="absolute inset-0">
-           <img src="/photos/arbres-aubois/cta.jpg" alt="" className="w-full h-full object-cover opacity-45" loading="lazy" />
+           <img src="/photos/arbres-aubois/generated/cta.jpg" alt="" className="w-full h-full object-cover opacity-45" loading="lazy" />
           <div className="absolute inset-0 bg-forest/65"></div>
         </div>
         
