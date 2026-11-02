@@ -85,7 +85,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
             <div className="relative w-full max-w-xl lg:max-w-none mx-auto">
               <div className="aspect-square bg-muted relative z-10 clip-diagonal overflow-hidden">
-                <img src="/photos/arbres-aubois/generated/about.jpg" alt="Visuel illustratif d’un érable mature dans une cour résidentielle" className="w-full h-full object-cover object-bottom" loading="lazy" />
+                <img src="/photos/arbres-aubois/client/lift-equipment.jpg" alt="Lift sur roues et déchiqueteuse stationnés dans une cour résidentielle" className="w-full h-full object-cover object-bottom" loading="lazy" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-primary -z-0 clip-diagonal"></div>
               
@@ -261,15 +261,15 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Les arbres en images.</h2>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-               Ces visuels générés illustrent les services offerts; ils ne représentent pas des chantiers précis.
+               La galerie combine des photos d’intervention avec des visuels générés à titre illustratif; les images générées ne représentent pas des chantiers précis.
             </p>
           </div>
           <div className="grid auto-rows-[240px] grid-cols-1 gap-4 sm:auto-rows-[220px] sm:grid-cols-2 md:gap-5 xl:auto-rows-[220px] xl:grid-cols-3">
             {[
-              { src: "/photos/arbres-aubois/generated/gallery-tree.jpg", alt: "Visuel illustratif d’un grand conifère sur un terrain résidentiel", width: 1024, height: 1024, layout: "sm:col-span-2 sm:row-span-2" },
-              { src: "/photos/arbres-aubois/generated/gallery-lift.jpg", alt: "Visuel illustratif d’un lift sur roues stationné près d’un érable", width: 1024, height: 1024, layout: "" },
-              { src: "/photos/arbres-aubois/generated/gallery-maple.jpg", alt: "Visuel illustratif d’un érable mature près d’une maison", width: 1024, height: 1024, layout: "xl:row-span-2" },
-              { src: "/photos/arbres-aubois/generated/service-stump-grinding.jpg", alt: "Visuel illustratif d’une rogneuse jaune près d’une souche", width: 1024, height: 1024, layout: "" },
+              { src: "/photos/arbres-aubois/client/job-lift-wide-02.jpg", alt: "Travaux d’élagage en hauteur avec le lift sur roues et une déchiqueteuse", width: 1600, height: 1200, layout: "sm:col-span-2 sm:row-span-2" },
+              { src: "/photos/arbres-aubois/client/job-lift-wide-01.jpg", alt: "Arboriste dans une nacelle lors de l’élagage d’un arbre", width: 1600, height: 1200, layout: "" },
+              { src: "/photos/arbres-aubois/client/job-lift-vertical.jpg", alt: "Intervention en hauteur dans un arbre près d’une résidence", width: 1200, height: 1600, layout: "xl:row-span-2" },
+              { src: "/photos/arbres-aubois/generated/gallery-tree.jpg", alt: "Visuel illustratif d’un grand conifère sur un terrain résidentiel", width: 1024, height: 1024, layout: "" },
               { src: "/photos/arbres-aubois/generated/gallery-cleanup.jpg", alt: "Visuel illustratif d’une déchiqueteuse et de branches après nettoyage", width: 1024, height: 1024, layout: "" },
             ].map((photo) => (
               <figure key={photo.src} className={`group relative overflow-hidden bg-muted ${photo.layout}`}>
