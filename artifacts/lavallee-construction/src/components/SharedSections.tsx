@@ -26,12 +26,6 @@ export function TestimonialsSection() {
         <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
           <span className="section-eyebrow text-white font-bold tracking-widest uppercase text-sm mb-4">Avis Google</span>
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mb-6 text-white">Ce que nos clients disent de nous.</h2>
-          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-lg">
-            <span className="font-extrabold">5,0</span>
-            <span className="text-amber-400 tracking-wide" aria-label="5 étoiles sur 5">★★★★★</span>
-            <span className="text-white/70">2 avis</span>
-          </div>
-          <p className="mt-3 text-sm text-white/60">Commentaires traduits en français à partir des avis affichés par Google.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
@@ -56,9 +50,6 @@ export function TestimonialsSection() {
               <blockquote className="flex-1 text-lg font-medium leading-relaxed sm:text-xl">
                 « {review.quote} »
               </blockquote>
-              <div className="mt-7 border-t border-border pt-4">
-                <p className="text-xs font-medium text-muted-foreground">Traduction française de l’avis affiché par Google.</p>
-              </div>
             </article>
           ))}
         </div>
