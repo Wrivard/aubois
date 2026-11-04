@@ -258,9 +258,6 @@ export default function Home() {
                 <span className="section-eyebrow text-secondary font-bold tracking-widest uppercase text-sm mb-4">En images</span>
               <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-secondary">Les arbres en images.</h2>
             </div>
-            <p className="text-muted-foreground max-w-md leading-relaxed">
-               La galerie combine des photos d’intervention avec des visuels générés à titre illustratif; les images générées ne représentent pas des chantiers précis.
-            </p>
           </div>
           <div className="grid auto-rows-[240px] grid-cols-1 gap-4 sm:auto-rows-[220px] sm:grid-cols-2 md:gap-5 xl:auto-rows-[220px] xl:grid-cols-3">
             {[
