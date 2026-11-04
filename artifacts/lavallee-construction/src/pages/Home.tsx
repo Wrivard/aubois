@@ -13,7 +13,6 @@ import {
   Axe,
   Scissors,
   Leaf,
-  GraduationCap,
 } from "lucide-react";
 
 export default function Home() {
@@ -231,14 +230,16 @@ export default function Home() {
                 title: "Certification Feirbourg",
                 detail: "Élagage",
               },
-              { id: "formation", icon: GraduationCap, title: "DEP en aménagement de la foresterie", detail: "École de foresterie de Duchesnay" },
-            ].map(({ id, icon: Icon, image, imageAlt, title, detail }) => (
+              {
+                id: "formation",
+                image: "/photos/arbres-aubois/client/duchesnay-elagage.webp",
+                imageAlt: "Badge de l’École de foresterie de Duchesnay — Élagage",
+                title: "Formation en élagage",
+                detail: "École de foresterie de Duchesnay",
+              },
+            ].map(({ id, image, imageAlt, title, detail }) => (
               <figure key={id} data-testid={`credential-${id}`} className="flex min-h-[330px] flex-col items-center justify-center gap-5 overflow-visible py-3 text-center">
-                {image ? (
-                  <img src={image} alt={imageAlt} className="h-56 w-full max-w-[280px] object-contain" loading="lazy" />
-                ) : Icon ? (
-                  <Icon className="h-14 w-14 text-primary" aria-hidden="true" />
-                ) : null}
+                <img src={image} alt={imageAlt} className="h-56 w-full max-w-[280px] object-contain" loading="lazy" />
                 <figcaption>
                   <h3 className="text-xl font-bold leading-snug text-white">{title}</h3>
                   {detail && <p className="mt-3 text-base leading-relaxed text-white/75">{detail}</p>}

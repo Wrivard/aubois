@@ -14,7 +14,6 @@ import {
   CheckCircle2,
   ChevronRight,
   CircleHelp,
-  GraduationCap,
   Leaf,
   Mail,
   MapPin,
@@ -128,7 +127,12 @@ export default function Soumission() {
       title: "Certification Feirbourg",
       detail: "Élagage",
     },
-    { icon: GraduationCap, title: "DEP en aménagement de la foresterie", detail: "École de foresterie de Duchesnay" },
+    {
+      image: "/photos/arbres-aubois/client/duchesnay-elagage.webp",
+      imageAlt: "Badge de l’École de foresterie de Duchesnay — Élagage",
+      title: "Formation en élagage",
+      detail: "École de foresterie de Duchesnay",
+    },
     { icon: TreePine, title: "Lift sur roues", detail: "Accès en hauteur et aux espaces difficiles" },
   ];
 
