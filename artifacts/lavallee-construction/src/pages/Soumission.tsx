@@ -11,7 +11,6 @@ import { z } from "zod";
 import {
   ArrowLeft,
   ArrowUpRight,
-  Award,
   CheckCircle2,
   ChevronRight,
   CircleHelp,
@@ -21,7 +20,6 @@ import {
   MapPin,
   Phone,
   Scissors,
-  ShieldCheck,
   TreePine,
   Axe,
 } from "lucide-react";
@@ -118,8 +116,18 @@ export default function Soumission() {
   ];
 
   const trustItems = [
-    { icon: ShieldCheck, title: "Assurance responsabilité", detail: "Couverture de 2 000 000 $" },
-    { icon: Award, title: "Certification en arboriculture", detail: "" },
+    {
+      image: "/photos/arbres-aubois/client/assurance-responsabilite-2m.webp",
+      imageAlt: "Badge d’assurance responsabilité de 2 000 000 $",
+      title: "Assurance responsabilité",
+      detail: "2 M$",
+    },
+    {
+      image: "/photos/arbres-aubois/client/feirbourg-elagage.webp",
+      imageAlt: "Badge Feirbourg Élagage",
+      title: "Certification Feirbourg",
+      detail: "Élagage",
+    },
     { icon: GraduationCap, title: "DEP en aménagement de la foresterie", detail: "École de foresterie de Duchesnay" },
     { icon: TreePine, title: "Lift sur roues", detail: "Accès en hauteur et aux espaces difficiles" },
   ];
@@ -158,11 +166,17 @@ export default function Soumission() {
             <div className="mt-8 sm:mt-10">
               <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white/60">Un travail bien encadré</p>
               <div className="grid grid-cols-2 gap-3">
-                {trustItems.map(({ icon: Icon, title, detail }) => (
-                  <div key={title} className="min-h-[92px] border border-white/15 bg-black/45 p-4 backdrop-blur-sm sm:p-5">
-                    <Icon className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
-                    <p className="text-xs font-bold leading-snug text-white sm:text-sm">{title}</p>
-                    {detail && <p className="mt-1 text-[11px] leading-snug text-white/65 sm:text-xs">{detail}</p>}
+                {trustItems.map(({ icon: Icon, image, imageAlt, title, detail }) => (
+                  <div key={title} className="flex min-h-[92px] items-center gap-3 border border-white/15 bg-black/45 p-3 backdrop-blur-sm sm:p-4">
+                    {image ? (
+                      <img src={image} alt={imageAlt ?? title} className="h-12 w-12 shrink-0 object-contain" loading="lazy" />
+                    ) : Icon ? (
+                      <Icon className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                    ) : null}
+                    <div className="min-w-0">
+                      <p className="text-xs font-bold leading-snug text-white sm:text-sm">{title}</p>
+                      {detail && <p className="mt-1 text-[11px] leading-snug text-white/65 sm:text-xs">{detail}</p>}
+                    </div>
                   </div>
                 ))}
               </div>

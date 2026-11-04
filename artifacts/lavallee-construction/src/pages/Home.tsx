@@ -13,8 +13,6 @@ import {
   Axe,
   Scissors,
   Leaf,
-  ShieldCheck,
-  Award,
   GraduationCap,
 } from "lucide-react";
 
@@ -112,7 +110,7 @@ export default function Home() {
                 {[
                   "Plus de 3 500 travaux réalisés",
                   "Assurance responsabilité de 2 000 000 $",
-                  "Certification en arboriculture",
+                  "Certification Feirbourg en élagage",
                   "DEP en aménagement de la foresterie — École de foresterie de Duchesnay"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 font-medium text-secondary">
@@ -219,32 +217,31 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 items-center max-w-6xl mx-auto">
             {[
-              { id: "assurance", icon: ShieldCheck, title: "Assurance responsabilité", detail: "Couverture de 2 000 000 $" },
               {
-                id: "arboriculture",
-                icon: Award,
-                title: "Certification en arboriculture",
-                detail: "Voir le référentiel de qualification au Québec",
-                href: "https://www.quebec.ca/emploi/informer-metier-profession/profession-metier-reglemente/connaitre-certificats-qualification-obligatoire/arboriculture",
+                id: "assurance",
+                image: "/photos/arbres-aubois/client/assurance-responsabilite-2m.webp",
+                imageAlt: "Badge d’assurance responsabilité de 2 000 000 $",
+                title: "Assurance responsabilité",
+                detail: "Couverture de 2 000 000 $",
+              },
+              {
+                id: "feirbourg",
+                image: "/photos/arbres-aubois/client/feirbourg-elagage.webp",
+                imageAlt: "Badge Feirbourg Élagage",
+                title: "Certification Feirbourg",
+                detail: "Élagage",
               },
               { id: "formation", icon: GraduationCap, title: "DEP en aménagement de la foresterie", detail: "École de foresterie de Duchesnay" },
-            ].map(({ id, icon: Icon, title, detail, href }) => (
+            ].map(({ id, icon: Icon, image, imageAlt, title, detail }) => (
               <figure key={id} data-testid={`credential-${id}`} className="flex min-h-[330px] flex-col items-center justify-center gap-5 overflow-visible py-3 text-center">
-                <Icon className="h-14 w-14 text-primary" aria-hidden="true" />
+                {image ? (
+                  <img src={image} alt={imageAlt} className="h-56 w-full max-w-[280px] object-contain" loading="lazy" />
+                ) : Icon ? (
+                  <Icon className="h-14 w-14 text-primary" aria-hidden="true" />
+                ) : null}
                 <figcaption>
                   <h3 className="text-xl font-bold leading-snug text-white">{title}</h3>
-                  {detail && (href ? (
-                    <a
-                      className="mt-3 inline-block text-base leading-relaxed text-white/75 underline underline-offset-4 hover:text-white"
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {detail}
-                    </a>
-                  ) : (
-                    <p className="mt-3 text-base leading-relaxed text-white/75">{detail}</p>
-                  ))}
+                  {detail && <p className="mt-3 text-base leading-relaxed text-white/75">{detail}</p>}
                 </figcaption>
               </figure>
             ))}
