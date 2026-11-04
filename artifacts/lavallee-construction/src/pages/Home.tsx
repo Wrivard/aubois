@@ -166,8 +166,8 @@ export default function Home() {
               {
                 title: "Déchiquetage de branches",
                 desc: "Déchiquetage des branches après les travaux pour dégager l’espace et faciliter le nettoyage du terrain.",
-                img: "/photos/arbres-aubois/generated/service-chipping.jpg",
-                alt: "Visuel illustratif d’une déchiqueteuse et de copeaux de bois",
+                img: "/photos/arbres-aubois/client/lift-equipment.jpg",
+                alt: "Équipement de déchiquetage utilisé pour garder le terrain dégagé",
                 icon: <Building2 className="w-6 h-6" />
               },
               {
