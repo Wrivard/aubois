@@ -105,9 +105,11 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="xl:hidden relative z-50 p-2 -mr-2 ml-auto"
+          className="xl:hidden relative z-50 flex h-11 w-11 items-center justify-center -mr-2 ml-auto"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Menu"
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation-menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6 text-white" /> : <Menu className="w-6 h-6 text-white" />}
         </button>
@@ -115,7 +117,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#1B1B1B] z-40 xl:hidden flex flex-col pt-32 px-6 h-[100dvh] overflow-y-auto text-white">
+        <div id="mobile-navigation-menu" className="fixed inset-0 bg-[#1B1B1B] z-40 xl:hidden flex flex-col pt-32 px-6 h-[100dvh] overflow-y-auto text-white">
           <nav className="flex flex-col gap-6 text-xl font-bold">
             <Link 
               href="/" 

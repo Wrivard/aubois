@@ -169,7 +169,7 @@ export default function Soumission() {
 
             <div className="mt-8 sm:mt-10">
               <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white/60">Un travail bien encadré</p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 gap-3 min-[390px]:grid-cols-2">
                 {trustItems.map(({ icon: Icon, image, imageAlt, title, detail }) => (
                   <div key={title} className="flex min-h-[92px] items-center gap-3 border border-white/15 bg-black/45 p-3 backdrop-blur-sm sm:p-4">
                     {image ? (
