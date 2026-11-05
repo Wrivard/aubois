@@ -1,10 +1,10 @@
 ---
-name: Local build environment
-description: Environment difference between managed web workflows and direct shell builds
+name: Portable website builds
+description: Keep external Vercel builds independent of Replit preview runtime settings
 ---
 
-Direct shell build commands do not inherit the managed web workflow's runtime variables. When verifying the production bundle locally, supply both a valid PORT and BASE_PATH in the command environment.
+The Aubois site also targets Vercel as a static website. Keep static builds independent of managed preview runtime variables, and keep the internal design sandbox out of the Vercel website deployment.
 
-**Why:** The first direct build failed without PORT, and the next failed without BASE_PATH, even though the managed preview workflow ran successfully.
+**Why:** External builds do not receive Replit's preview configuration. Requiring it at build time caused the user's Vercel deployment to fail before the website could compile.
 
-**How to apply:** For a direct web artifact build in this workspace, explicitly set both variables rather than treating a missing-variable build failure as a source-code regression. Prefer the workflow environment for preview checks.
+**How to apply:** Verify portable builds with PORT and BASE_PATH absent rather than injecting them to hide a failure. Preserve explicitly supplied preview settings and keep external hosting scoped to the client-facing website.
