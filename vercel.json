@@ -4,10 +4,32 @@
   "installCommand": "pnpm install --frozen-lockfile",
   "buildCommand": "pnpm run typecheck && pnpm --filter @workspace/lavallee-construction run build",
   "outputDirectory": "artifacts/lavallee-construction/dist/public",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/soumission/index.html",
+      "destination": "/soumission",
+      "permanent": true
+    },
+    {
+      "source": "/politique-de-confidentialite/index.html",
+      "destination": "/politique-de-confidentialite",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/soumission",
+      "destination": "/soumission/index.html"
+    },
+    {
+      "source": "/politique-de-confidentialite",
+      "destination": "/politique-de-confidentialite/index.html"
     }
   ]
 }

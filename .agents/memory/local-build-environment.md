@@ -8,3 +8,9 @@ The Aubois site also targets Vercel as a static website. Keep static builds inde
 **Why:** External builds do not receive Replit's preview configuration. Requiring it at build time caused the user's Vercel deployment to fail before the website could compile.
 
 **How to apply:** Verify portable builds with PORT and BASE_PATH absent rather than injecting them to hide a failure. Preserve explicitly supplied preview settings and keep external hosting scoped to the client-facing website.
+
+SEO improvements must retain portable static hosting, without adding a required runtime rendering server. Verify initial HTML at the extensionless canonical URLs, not merely the generated files.
+
+**Why:** A static host's SPA fallback can serve the homepage instead of an existing route-specific HTML file. Successful file-generation checks alone do not prove crawlers receive the correct page.
+
+**How to apply:** Check raw HTTP responses for each canonical route and ensure preview and production routing preserve per-page HTML. Keep both hosting configurations consistent when changing public routes.

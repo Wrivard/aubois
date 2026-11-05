@@ -60,7 +60,7 @@ export default function Home() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-2 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 border-t border-white/10">
               <div>
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-1">25<span className="text-primary">+</span></p>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-1">12<span className="text-primary">+</span></p>
                 <p className="text-[10px] sm:text-xs uppercase tracking-wide sm:tracking-widest text-white/75 font-bold">Années d'expérience</p>
               </div>
               <div>
@@ -232,8 +232,8 @@ export default function Home() {
               },
               {
                 id: "formation",
-                image: "/photos/arbres-aubois/client/duchesnay-elagage.webp",
-                imageAlt: "Badge de l’École de foresterie de Duchesnay — Élagage",
+                image: "/photos/arbres-aubois/client/duchesnay-foresterie.png",
+                imageAlt: "Écusson de l’École de foresterie de Duchesnay",
                 title: "Formation en aménagement de la forêt",
                 detail: "École de foresterie de Duchesnay",
               },

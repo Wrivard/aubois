@@ -1,35 +1,6 @@
-import { useEffect } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 
-const pageTitle = "Politique de confidentialité | Service d’Arbres Aubois";
-const pageDescription = "Découvrez comment Service d’arbres Aubois traite les renseignements transmis par son formulaire de soumission et sa carte intégrée.";
-
 export default function Confidentialite() {
-  useEffect(() => {
-    const previousTitle = document.title;
-    const selectors = [
-      'meta[name="description"]',
-      'meta[property="og:title"]',
-      'meta[property="og:description"]',
-      'meta[name="twitter:title"]',
-      'meta[name="twitter:description"]',
-    ];
-    const previous = selectors.map((selector) => {
-      const element = document.querySelector<HTMLMetaElement>(selector);
-      const content = element?.content;
-      if (element) element.content = selector.includes("title") ? pageTitle : pageDescription;
-      return { element, content };
-    });
-
-    document.title = pageTitle;
-    return () => {
-      document.title = previousTitle;
-      previous.forEach(({ element, content }) => {
-        if (element && content !== undefined) element.content = content;
-      });
-    };
-  }, []);
-
   return (
     <MainLayout>
       <section className="bg-white pb-16 pt-[156px] sm:pb-20 sm:pt-[176px] xl:pb-24 xl:pt-[190px]">
@@ -65,7 +36,16 @@ export default function Confidentialite() {
             <section>
               <h2 className="mb-2 text-xl font-bold text-secondary">Transmission par courriel</h2>
               <p>
-                Lorsque vous soumettez le formulaire, le site prépare un courriel dans votre application de messagerie. Le formulaire ne transmet pas automatiquement ces renseignements à un serveur du site. Ils sont envoyés à Service d'arbres Aubois seulement si vous choisissez d’envoyer le courriel. Votre application de messagerie et les services de courriel concernés traitent alors le message.
+                Lorsque vous soumettez le formulaire, vos renseignements sont transmis par courriel au propriétaire du site et un accusé de réception est envoyé à l’adresse que vous avez fournie. Le service d’envoi Resend traite ces renseignements pour acheminer les messages; consultez la{" "}
+                <a
+                  className="font-semibold text-secondary underline underline-offset-4"
+                  href="https://resend.com/legal/privacy-policy"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  politique de confidentialité de Resend
+                </a>
+                . Le site ne conserve pas ces demandes dans une base de données.
               </p>
             </section>
 

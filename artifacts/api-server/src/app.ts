@@ -6,6 +6,9 @@ import { logger } from "./lib/logger";
 
 const app: Express = express();
 
+// Replit's public proxy is the single trusted hop used by the quote rate limiter.
+app.set("trust proxy", 1);
+
 app.use(
   pinoHttp({
     logger,
@@ -26,7 +29,7 @@ app.use(
   }),
 );
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", router);

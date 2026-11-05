@@ -14,6 +14,7 @@ import {
   Router as WouterRouter,
 } from 'wouter';
 import { BrandLoader } from '@/components/layout/BrandLoader';
+import { RouteSeo } from '@/components/RouteSeo';
 
 const queryClient = new QueryClient();
 
@@ -58,7 +59,9 @@ function RoutedErrorBoundary({ children }: { children: ReactNode }) {
 
 function BrandedMotion() {
   const [location] = useLocation();
-  const [initialLoading, setInitialLoading] = useState(true);
+  const [initialLoading, setInitialLoading] = useState(() =>
+    typeof document !== 'undefined' && !document.getElementById('root')?.hasAttribute('data-prerendered')
+  );
   const [routeLoading, setRouteLoading] = useState(false);
   const firstLocation = useRef(true);
 
@@ -112,11 +115,12 @@ function BrandedMotion() {
   return <BrandLoader active={initialLoading || routeLoading} initial={initialLoading} />;
 }
 
-function App() {
+function App({ ssrPath }: { ssrPath?: string }) {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')} ssrPath={ssrPath}>
+          <RouteSeo />
           <RouteScrollReset />
           <BrandedMotion />
           <Router />

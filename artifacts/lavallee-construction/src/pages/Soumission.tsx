@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { TestimonialsSection, FAQContactSection } from "@/components/SharedSections";
 import { Button } from "@/components/ui/button";
@@ -7,7 +7,9 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useSubmitQuoteRequest } from "@workspace/api-client-react";
 import { z } from "zod";
+import type { LucideIcon } from "lucide-react";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -23,14 +25,25 @@ import {
   Axe,
 } from "lucide-react";
 
+const projectTypeValues = [
+  "Élagage d’arbres",
+  "Essouchement",
+  "Abattage d’arbres",
+  "Déchiquetage de branches",
+  "Taille de haies",
+  "J’ai besoin de conseils",
+  "Autre",
+] as const;
+
 const formSchema = z.object({
-  projectType: z.string().min(1, "Veuillez sélectionner un type de projet"),
+  projectType: z.enum(projectTypeValues, { required_error: "Veuillez sélectionner un type de projet" }),
   description: z.string().min(10, "La description doit contenir au moins 10 caractères"),
   address: z.string().min(2, "Veuillez indiquer l’adresse ou la localisation du projet"),
   firstName: z.string().min(2, "Prénom requis"),
   lastName: z.string().min(2, "Nom requis"),
   email: z.string().email("Adresse courriel invalide"),
-  phone: z.string().min(10, "Numéro de téléphone invalide"),
+  phone: z.string().regex(/^[+0-9().\s-]{10,30}$/, "Numéro de téléphone invalide"),
+  companyWebsite: z.string().max(200).optional(),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -38,29 +51,13 @@ type FormValues = z.infer<typeof formSchema>;
 export default function Soumission() {
   const [step, setStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  useEffect(() => {
-    const title = "Soumission | Service d’Arbres Aubois";
-    const description = "Demandez une soumission pour l’élagage, l’essouchement, l’abattage, le déchiquetage de branches ou la taille de haies à Montmagny, Berthier-sur-Mer et L’Islet.";
-    const previousTitle = document.title;
-    const tags = ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]'];
-    const previous = tags.map((selector) => {
-      const element = document.querySelector<HTMLMetaElement>(selector);
-      const value = element?.content;
-      if (element) element.content = selector.includes("title") ? title : description;
-      return { element, value };
-    });
-    document.title = title;
-    return () => {
-      document.title = previousTitle;
-      previous.forEach(({ element, value }) => { if (element && value !== undefined) element.content = value; });
-    };
-  }, []);
+  const [emailError, setEmailError] = useState<string | null>(null);
+  const submissionId = useRef("");
+  const submitQuoteRequest = useSubmitQuoteRequest();
 
   const { register, control, handleSubmit, trigger, formState: { errors } } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      projectType: "",
       description: "",
       address: "",
       firstName: "",
@@ -82,20 +79,17 @@ export default function Soumission() {
 
   const prevStep = () => setStep(step - 1);
 
-  const onSubmit = (data: FormValues) => {
-    const body = [
-      `Nom : ${data.firstName} ${data.lastName}`,
-      `Téléphone : ${data.phone}`,
-      `Courriel : ${data.email}`,
-      `Adresse ou localisation : ${data.address}`,
-      `Service demandé : ${data.projectType}`,
-      "",
-      `Description du projet : ${data.description}`,
-      "",
-       "Vous pouvez joindre des photos directement à ce courriel avant de l'envoyer."
-    ].join("\n");
-    window.location.href = `mailto:matisaube1@gmail.com?subject=${encodeURIComponent(`Demande de soumission — ${data.firstName} ${data.lastName}`)}&body=${encodeURIComponent(body)}`;
-    setIsSubmitted(true);
+  const onSubmit = async (data: FormValues) => {
+    setEmailError(null);
+    if (!submissionId.current) submissionId.current = crypto.randomUUID();
+    try {
+      await submitQuoteRequest.mutateAsync({
+        data: { ...data, submissionId: submissionId.current },
+      });
+      setIsSubmitted(true);
+    } catch {
+      setEmailError("L’envoi n’a pas pu être confirmé. Vos renseignements restent dans le formulaire. Réessayez ou appelez-nous au (418) 941-8897.");
+    }
   };
 
   const steps = [
@@ -112,7 +106,7 @@ export default function Soumission() {
     { id: "haies", value: "Taille de haies", label: "Taille de haies", icon: Scissors },
     { id: "conseils", value: "J’ai besoin de conseils", label: "J’ai besoin de conseils", icon: Leaf },
     { id: "autre", value: "Autre", label: "Autre", icon: CircleHelp },
-  ];
+  ] satisfies readonly { id: string; value: FormValues["projectType"]; label: string; icon: LucideIcon }[];
 
   const trustItems = [
     {
@@ -128,8 +122,8 @@ export default function Soumission() {
       detail: "Élagage",
     },
     {
-      image: "/photos/arbres-aubois/client/duchesnay-elagage.webp",
-      imageAlt: "Badge de l’École de foresterie de Duchesnay — Élagage",
+      image: "/photos/arbres-aubois/client/duchesnay-foresterie.png",
+      imageAlt: "Écusson de l’École de foresterie de Duchesnay",
       title: "Formation en aménagement de la forêt",
       detail: "École de foresterie de Duchesnay",
     },
@@ -204,9 +198,9 @@ export default function Soumission() {
                   <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle2 className="w-10 h-10 text-primary" />
                   </div>
-                  <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre courriel est prêt</h2>
+                  <h2 className="text-3xl font-extrabold mb-4 text-secondary">Votre demande est envoyée</h2>
                   <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
-                    Votre messagerie devrait s’ouvrir avec les détails du projet. Ajoutez vos photos, puis envoyez le courriel. Rien n’a été transmis automatiquement par ce site. Si votre messagerie ne s’ouvre pas, écrivez directement à matisaube1@gmail.com.
+                    Nous avons envoyé un récapitulatif au propriétaire et une confirmation à l’adresse courriel indiquée. Si vous ne trouvez pas le message, vérifiez vos courriels indésirables ou appelez-nous au (418) 941-8897.
                   </p>
                   <Button className="uppercase tracking-wider font-bold px-8" onClick={() => window.location.href = "/"}>
                     Retour à l'accueil
@@ -308,6 +302,10 @@ export default function Soumission() {
                     {/* STEP 3 */}
                     {step === 3 && (
                       <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-300">
+                        <div aria-hidden="true" className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden">
+                          <Label htmlFor="quote-company-website">Site Web</Label>
+                          <Input id="quote-company-website" tabIndex={-1} autoComplete="off" {...register("companyWebsite")} />
+                        </div>
                         <div className="grid md:grid-cols-2 gap-6">
                           <div className="space-y-3">
                             <Label className="font-bold">Prénom *</Label>
@@ -352,6 +350,7 @@ export default function Soumission() {
 
                     {/* Navigation Buttons */}
                     <div className="mt-7 flex items-center justify-between border-t border-border pt-6 sm:mt-8">
+                      {emailError && <p role="alert" className="mr-4 text-sm font-medium text-destructive">{emailError}</p>}
                       {step > 1 ? (
                         <Button data-testid="button-form-back" type="button" variant="outline" onClick={prevStep} className="h-11 w-full rounded-lg px-6 font-bold uppercase tracking-wider sm:w-auto">
                           <ArrowLeft className="mr-2 w-4 h-4" /> Retour
@@ -363,8 +362,8 @@ export default function Soumission() {
                           Suivant <ChevronRight className="ml-2 w-4 h-4" />
                         </Button>
                       ) : (
-                        <Button data-testid="button-form-submit" type="submit" className="mt-4 h-11 w-full rounded-lg bg-forest px-8 font-bold uppercase tracking-wider text-white hover:bg-forest/90 sm:mt-0 sm:w-auto">
-                           Envoyer ma demande
+                        <Button data-testid="button-form-submit" type="submit" disabled={submitQuoteRequest.isPending} className="mt-4 h-11 w-full rounded-lg bg-forest px-8 font-bold uppercase tracking-wider text-white hover:bg-forest/90 sm:mt-0 sm:w-auto">
+                           {submitQuoteRequest.isPending ? "Envoi en cours…" : "Envoyer ma demande"}
                         </Button>
                       )}
                     </div>

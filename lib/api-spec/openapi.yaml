@@ -24,6 +24,31 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /quote-requests:
+    post:
+      operationId: submitQuoteRequest
+      tags: [quotes]
+      summary: Send a quote request by email
+      description: Sends a branded receipt to the customer and the request summary to the site owner.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QuoteRequestInput"
+      responses:
+        "202":
+          description: The request emails were accepted.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuoteRequestAccepted"
+        "400":
+          description: The request contains invalid fields.
+        "429":
+          description: Too many quote requests from this connection.
+        "503":
+          description: Email delivery is unavailable.
 components:
   schemas:
     HealthStatus:
@@ -33,4 +58,71 @@ components:
           type: string
       required:
         - status
+    QuoteRequestInput:
+      type: object
+      additionalProperties: false
+      required:
+        - submissionId
+        - projectType
+        - description
+        - address
+        - firstName
+        - lastName
+        - email
+        - phone
+      properties:
+        submissionId:
+          type: string
+          format: uuid
+        projectType:
+          type: string
+          enum:
+            - Élagage d’arbres
+            - Essouchement
+            - Abattage d’arbres
+            - Déchiquetage de branches
+            - Taille de haies
+            - J’ai besoin de conseils
+            - Autre
+        description:
+          type: string
+          minLength: 10
+          maxLength: 5000
+        address:
+          type: string
+          minLength: 2
+          maxLength: 300
+        firstName:
+          type: string
+          minLength: 2
+          maxLength: 100
+        lastName:
+          type: string
+          minLength: 2
+          maxLength: 100
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        phone:
+          type: string
+          minLength: 10
+          maxLength: 30
+          pattern: '^[+0-9().\s-]{10,30}$'
+        companyWebsite:
+          type: string
+          maxLength: 200
+          description: Hidden anti-spam field; requests with a value are silently discarded.
+    QuoteRequestAccepted:
+      type: object
+      required:
+        - status
+        - submissionId
+      properties:
+        status:
+          type: string
+          enum: [accepted]
+        submissionId:
+          type: string
+          format: uuid
 

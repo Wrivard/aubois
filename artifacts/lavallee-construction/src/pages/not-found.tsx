@@ -1,19 +1,9 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MainLayout } from "@/components/layout/MainLayout";
 
 export default function NotFound() {
-  useEffect(() => {
-    const previousTitle = document.title;
-    document.title = "Page introuvable (404) | Service d’Arbres Aubois";
-
-    return () => {
-      document.title = previousTitle;
-    };
-  }, []);
-
   return (
     <MainLayout>
       <section className="relative isolate flex min-h-[60vh] items-center overflow-hidden bg-forest px-6 pb-16 pt-[156px] text-white sm:px-8 sm:pt-[176px] xl:min-h-[65vh] xl:px-12 xl:pt-[190px]">

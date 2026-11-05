@@ -20,8 +20,12 @@ serve = "static"
 publicDir = "artifacts/lavallee-construction/dist/public"
 
 [[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
+from = "/soumission"
+to = "/soumission/index.html"
+
+[[services.production.rewrites]]
+from = "/politique-de-confidentialite"
+to = "/politique-de-confidentialite/index.html"
 
 [services.env]
 PORT = "20943"
