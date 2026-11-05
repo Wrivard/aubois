@@ -99,7 +99,7 @@ export default function Home() {
                 Les arbres contribuent à la beauté, au confort et au caractère de votre propriété. Leur entretien demande des interventions adaptées à leur état et à leur environnement.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Depuis 25 ans, Service d’Arbres Aubois accompagne les propriétaires pour l’élagage, l’essouchement, l’abattage, le déchiquetage de branches, la taille de haies et les conseils arboricoles. L’équipe dessert Montmagny, Berthier-sur-Mer et L’Islet.
+                Depuis 12 ans, Service d’Arbres Aubois accompagne les propriétaires pour l’élagage, l’essouchement, l’abattage, le déchiquetage de branches, la taille de haies et les conseils arboricoles. L’équipe dessert Montmagny, Berthier-sur-Mer et L’Islet.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Son nouveau lift sur roues facilite l’élagage des arbres de grande hauteur, l’accès aux cours arrière et le démontage dans des espaces restreints, tout en limitant l’impact sur le terrain. Chaque intervention est planifiée selon les lieux et les travaux à réaliser.
