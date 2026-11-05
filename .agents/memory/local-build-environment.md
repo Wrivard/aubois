@@ -20,3 +20,9 @@ Vercel compiles serverless functions separately after the website build succeeds
 **Why:** A local check with explicit Web API types passed while Vercel's subsequent function compiler used the repository configuration and failed on the same source.
 
 **How to apply:** Validate serverless code through checked-in TypeScript configuration, not only command-line overrides, and check the function entry point against the root configuration as well.
+
+Serverless runtime checks must preserve module/package boundaries rather than bundle the entry point.
+
+**Why:** Bundled smoke tests hid a CommonJS entry point importing an ES-module workspace library. Vercel built successfully but crashed before reaching Resend.
+
+**How to apply:** Keep the API's module mode explicit and relative runtime import extensions compatible with emitted JavaScript. Include a non-bundled import-and-handler smoke test in deployment validation.

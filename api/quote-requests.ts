@@ -1,5 +1,5 @@
-import { SubmitQuoteRequestBody, SubmitQuoteRequestResponse } from "../lib/api-zod/src/generated/api";
-import { sendQuoteEmails, type QuoteEmailData } from "../lib/quote-emails/src/index";
+import { SubmitQuoteRequestBody, SubmitQuoteRequestResponse } from "../lib/api-zod/src/generated/api.js";
+import { sendQuoteEmails, type QuoteEmailData } from "../lib/quote-emails/src/index.js";
 
 const attempts = new Map<string, { count: number; expiresAt: number }>();
 const MAX_ATTEMPTS = 5;
@@ -45,7 +45,7 @@ function normalizeBody(body: Record<string, unknown>) {
   };
 }
 
-export async function POST(request: Request): Promise<Response> {
+async function handleQuoteRequest(request: Request): Promise<Response> {
   if (request.method !== "POST") {
     return json({ error: "Méthode non permise." }, 405, { Allow: "POST" });
   }
@@ -96,3 +96,5 @@ export async function POST(request: Request): Promise<Response> {
 
   return json(SubmitQuoteRequestResponse.parse({ status: "accepted", submissionId: input.submissionId }), 202);
 }
+
+export default { fetch: handleQuoteRequest };
