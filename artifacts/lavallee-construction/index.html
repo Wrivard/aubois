@@ -2,6 +2,44 @@
 <html lang="fr-CA">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var hostname = window.location.hostname.toLowerCase();
+        if (
+          hostname === "localhost" ||
+          hostname === "127.0.0.1" ||
+          hostname.includes("replit")
+        ) {
+          return;
+        }
+
+        var cookiebotId = "4abe8d52-ddbd-4ab7-aab6-80bb9112abca";
+        var gtmId = "GTM-WJ6CKKT9";
+
+        function loadGoogleTagManager() {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            "gtm.start": new Date().getTime(),
+            event: "gtm.js",
+          });
+          var gtmScript = document.createElement("script");
+          gtmScript.async = true;
+          gtmScript.src =
+            "https://www.googletagmanager.com/gtm.js?id=" + gtmId;
+          cookiebot.parentNode.insertBefore(gtmScript, cookiebot.nextSibling);
+        }
+
+        var cookiebot = document.createElement("script");
+        cookiebot.id = "Cookiebot";
+        cookiebot.src = "https://consent.cookiebot.com/uc.js";
+        cookiebot.setAttribute("data-cbid", cookiebotId);
+        cookiebot.setAttribute("data-blockingmode", "auto");
+        cookiebot.type = "text/javascript";
+        cookiebot.async = false;
+        cookiebot.onload = loadGoogleTagManager;
+        document.head.appendChild(cookiebot);
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--seo-head:start-->
     <!--seo-head:end-->
@@ -13,6 +51,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WJ6CKKT9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+        title="Google Tag Manager"
+      ></iframe>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

@@ -1,6 +1,35 @@
+import { useEffect, useRef } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 
 export default function Confidentialite() {
+  const declarationRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const hostname = window.location.hostname.toLowerCase();
+    if (
+      hostname === "localhost" ||
+      hostname === "127.0.0.1" ||
+      hostname.includes("replit")
+    ) {
+      return;
+    }
+
+    const container = declarationRef.current;
+    if (!container) return;
+
+    const script = document.createElement("script");
+    script.id = "CookieDeclaration";
+    script.src =
+      "https://consent.cookiebot.com/4abe8d52-ddbd-4ab7-aab6-80bb9112abca/cd.js";
+    script.type = "text/javascript";
+    script.async = true;
+    container.appendChild(script);
+
+    return () => {
+      container.replaceChildren();
+    };
+  }, []);
+
   return (
     <MainLayout>
       <section className="bg-white pb-16 pt-[156px] sm:pb-20 sm:pt-[176px] xl:pb-24 xl:pt-[190px]">
@@ -11,7 +40,7 @@ export default function Confidentialite() {
           <h1 className="mb-4 text-3xl font-extrabold text-secondary sm:text-4xl xl:text-5xl">
             Politique de confidentialité
           </h1>
-          <p className="mb-10 text-sm text-muted-foreground">Dernière mise à jour : 28 octobre 2026</p>
+          <p className="mb-10 text-sm text-muted-foreground">Dernière mise à jour : 5 novembre 2026</p>
 
           <div className="space-y-8 text-base leading-relaxed text-muted-foreground">
             <p>
@@ -50,7 +79,15 @@ export default function Confidentialite() {
             </section>
 
             <section>
-              <h2 className="mb-2 text-xl font-bold text-secondary">Carte et services externes</h2>
+              <h2 className="mb-2 text-xl font-bold text-secondary">Témoins de connexion et balises</h2>
+              <p>
+                Sur le site public, Cookiebot sert à recueillir et gérer vos choix concernant les témoins et technologies similaires. La déclaration ci-dessous présente les témoins détectés. Google Tag Manager sert à gérer les balises intégrées; les services activés et les renseignements transmis dépendent des balises configurées et de vos choix de consentement.
+              </p>
+              <div ref={declarationRef} className="mt-5 min-h-8" />
+            </section>
+
+            <section>
+              <h2 className="mb-2 text-xl font-bold text-secondary">Carte et autres services externes</h2>
               <p>
                 Le site intègre une carte Google Maps. Son chargement peut transmettre à Google des renseignements techniques liés à votre visite. Le traitement effectué par Google est régi par sa{" "}
                 <a
@@ -63,7 +100,7 @@ export default function Confidentialite() {
                 </a>.
               </p>
               <p className="mt-3">
-                Le site n’intègre pas d’outil de mesure d’audience ou de publicité. La carte demeure un service tiers et peut fonctionner selon les paramètres de Google.
+                Google Tag Manager peut également communiquer avec Google lors du chargement des balises configurées. Consultez la politique de confidentialité de Google pour en savoir plus sur le traitement de ces renseignements.
               </p>
             </section>
 
