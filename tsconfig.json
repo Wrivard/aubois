@@ -3,6 +3,7 @@
   "compileOnSave": false,
   "files": [],
   "references": [
+    { "path": "./lib/quote-emails" },
     {
       "path": "./lib/db"
     },

@@ -170,15 +170,15 @@ importers:
 
   artifacts/api-server:
     dependencies:
-      '@replit/connectors-sdk':
-        specifier: ^0.4.1
-        version: 0.4.1
       '@workspace/api-zod':
         specifier: workspace:*
         version: link:../../lib/api-zod
       '@workspace/db':
         specifier: workspace:*
         version: link:../../lib/db
+      '@workspace/quote-emails':
+        specifier: workspace:*
+        version: link:../../lib/quote-emails
       cookie-parser:
         specifier: ^1.4.7
         version: 1.4.7
@@ -643,6 +643,8 @@ importers:
       drizzle-kit:
         specifier: ^0.31.10
         version: 0.31.10
+
+  lib/quote-emails: {}
 
   scripts:
     devDependencies:
