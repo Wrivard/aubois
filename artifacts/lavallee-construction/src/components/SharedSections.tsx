@@ -73,7 +73,7 @@ export function FAQContactSection() {
               ["Votre équipe peut-elle accéder aux arbres difficiles?", "Le lift sur roues facilite l’accès aux arbres en hauteur, aux cours arrière et aux espaces restreints, tout en limitant l’impact sur le terrain. Chaque projet est évalué selon les lieux."],
               ["Faut-il un permis pour abattre un arbre?", "Oui, un permis est généralement requis pour l’abattage d’un arbre situé en façade. Les règles varient selon la municipalité; confirmez les exigences locales avant de planifier les travaux."],
               ["Pouvez-vous intervenir près des fils?", "Certaines situations près des fils de branchement à basse tension d’une résidence peuvent être évaluées. Si vous n’êtes pas certain du type de ligne, appelez-nous avant de planifier les travaux. Les lignes de distribution électrique doivent être traitées avec leur fournisseur."],
-              ["Comment obtenir une soumission?", "Remplissez le formulaire de soumission ou appelez-nous au (418) 941-8897. Vous pouvez aussi écrire à matisaube1@gmail.com."]
+              ["Comment obtenir une soumission?", "Remplissez le formulaire de soumission ou appelez-nous au (418) 941-8897."]
             ].map(([question, answer], i) => (
               <AccordionItem key={question} value={`item-${i + 1}`} className={`px-6 ${i < 3 ? "border-b border-border" : "border-b-0"}`}>
                 <AccordionTrigger className="text-left font-bold text-lg py-6 hover:no-underline hover:text-secondary">{question}</AccordionTrigger>
