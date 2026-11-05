@@ -234,7 +234,7 @@ export default function Home() {
                 id: "formation",
                 image: "/photos/arbres-aubois/client/duchesnay-elagage.webp",
                 imageAlt: "Badge de l’École de foresterie de Duchesnay — Élagage",
-                title: "Formation en élagage",
+                title: "Formation en aménagement de la forêt",
                 detail: "École de foresterie de Duchesnay",
               },
             ].map(({ id, image, imageAlt, title, detail }) => (
