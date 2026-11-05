@@ -7,7 +7,7 @@
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck && pnpm run typecheck:vercel-api",
-    "typecheck:vercel-api": "tsc --noEmit --strict --skipLibCheck --target ES2022 --module ESNext --moduleResolution Bundler --lib ES2022,DOM api/quote-requests.ts"
+    "typecheck:vercel-api": "tsc --project api/tsconfig.json"
   },
   "private": true,
   "dependencies": {

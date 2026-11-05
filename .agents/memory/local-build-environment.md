@@ -14,3 +14,9 @@ SEO improvements must retain portable static hosting, without adding a required 
 **Why:** A static host's SPA fallback can serve the homepage instead of an existing route-specific HTML file. Successful file-generation checks alone do not prove crawlers receive the correct page.
 
 **How to apply:** Check raw HTTP responses for each canonical route and ensure preview and production routing preserve per-page HTML. Keep both hosting configurations consistent when changing public routes.
+
+Vercel compiles serverless functions separately after the website build succeeds. Command-line TypeScript overrides in a custom validation script do not configure that separate compiler.
+
+**Why:** A local check with explicit Web API types passed while Vercel's subsequent function compiler used the repository configuration and failed on the same source.
+
+**How to apply:** Validate serverless code through checked-in TypeScript configuration, not only command-line overrides, and check the function entry point against the root configuration as well.
