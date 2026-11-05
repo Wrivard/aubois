@@ -130,7 +130,7 @@ export default function Soumission() {
     {
       image: "/photos/arbres-aubois/client/duchesnay-elagage.webp",
       imageAlt: "Badge de l’École de foresterie de Duchesnay — Élagage",
-      title: "Formation en élagage",
+      title: "Formation en aménagement de la forêt",
       detail: "École de foresterie de Duchesnay",
     },
     { icon: TreePine, title: "Lift sur roues", detail: "Accès en hauteur et aux espaces difficiles" },
